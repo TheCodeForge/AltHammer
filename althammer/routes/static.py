@@ -3,8 +3,7 @@ import cssutils
 from flask import *
 from werkzeug.utils import safe_join
 
-from evidencelocker.decorators.auth import *
-from evidencelocker.__main__ import app
+from althammer.__main__ import app
 
 @app.get('/')
 def home():
@@ -14,7 +13,7 @@ def home():
 
 @app.get("/assets/style/<stylefile>.css")
 def light_css(stylefile):
-    with open(safe_join("evidencelocker/assets/style/", stylefile)+'.scss') as stylesheet:
+    with open(safe_join("althammer/assets/style/", stylefile)+'.scss') as stylesheet:
         scss=stylesheet.read()
         scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
         scss=scss.replace('{secondary}', app.config['COLOR_SECONDARY'])
