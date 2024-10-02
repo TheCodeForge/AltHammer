@@ -1,5 +1,4 @@
 from .classes import *
-from .helpers.hashes import *
 
 from flask import *
 from os import environ
@@ -11,6 +10,7 @@ app = Flask(
     static_folder='./assets'
     )
 
+from .helpers.hashes import *
 from .routes import *
 
 app.url_map.strict_slashes=False
