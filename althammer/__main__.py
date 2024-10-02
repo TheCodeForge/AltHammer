@@ -21,6 +21,10 @@ app.config['SERVER_NAME']                   = environ.get("SERVER_NAME")
 #app.config['FORCE_HTTPS']                   = bool(int(environ.get("FORCE_HTTPS", 1)))
 app.config['SESSION_COOKIE_SECURE']         = True
 
+#===STYLE===
+app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY","357DED").lstrip().rstrip()
+app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "56EEF4").lstrip().rstrip()
+
 @app.before_request
 def before_request():
 
