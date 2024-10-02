@@ -2,6 +2,7 @@ from .classes import *
 
 from flask import *
 from os import environ
+import secrets
 
 app = Flask(
     __name__,
@@ -11,6 +12,7 @@ app = Flask(
 
 app.url_map.strict_slashes=False
 
+app.config['SECRET_KEY']                    = environ.get("SECRET_KEY", secrets.token_hex(128))
 app.config['SERVER_NAME']                   = environ.get("SERVER_NAME")
 app.config['FORCE_HTTPS']                   = bool(int(environ.get("FORCE_HTTPS", 1)))
 app.config['SESSION_COOKIE_SECURE']         = True
