@@ -1,0 +1,25 @@
+{% extends "_core.html" %}
+
+{% block content %}
+<div class="row my-md-2 mx-lg-1 gx-0 gx-lg-4">
+  <div class="col col-md-2 col-lg-3">
+    {% block leftsidebar %}
+    {% endblock %}
+  </div>
+  <div class="col col-12 col-md-8 col-lg-6">
+    {% block pagecontent %}
+    {% endblock %}
+
+    {% block pagenav %}
+    {% endblock %}
+  </div>
+  <div class="col col-md-2 col-lg-3">
+    {% block rightsidebar %}
+    {% endblock %}
+    {% if g.user and g.user.type_id.startswith('a') %}
+      {% block adminpanel %}
+      {% endblock %}
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
