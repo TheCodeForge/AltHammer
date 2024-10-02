@@ -1,0 +1,20 @@
+<!--Clipboard -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js" importance="high"></script>
+<!-- Instantiate clipboard by passing a string selector -->
+<script type="text/javascript" nonce="{{ g.time | nonce }}">
+  var clipboard = new ClipboardJS('.clipboard-copy');
+  clipboard.on('success', function(e) {
+
+    jQuery(function($) {
+      $('#toast-copy-success').toast('show');
+    })
+    console.log(e);
+  });
+  clipboard.on('error', function(e) {
+
+    jQuery(function($) {
+      $('#toast-copy-error').toast('show');
+    })
+    console.log(e);
+  });
+</script>

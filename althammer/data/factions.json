@@ -1,8 +1,14 @@
 {
     "adeptus_astartes": {
-        "display": "Adeptus Astartes",
+        "name": "Adeptus Astartes",
         "rules": {
-            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time a model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +ADEPTUS ASTARTES+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+        }
+    },
+    "heretic_astartes": {
+        "name": "Heretic Astartes",
+        "rules": {
+            "Dark Pacts": "Each time a unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* [LETHAL HITS]\n* [SUSTAINED HITS 1]\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
     }
 }
