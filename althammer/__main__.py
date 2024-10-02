@@ -24,7 +24,7 @@ app.config['SESSION_COOKIE_SECURE']         = True
 @app.before_request
 def before_request():
 
-    g.time=int(time.gmtime())
+    g.time=int(time.time())
 
     if app.config["FORCE_HTTPS"] and request.scheme=="http":
         return redirect(f"https://{app.config['SERVER_NAME']}{request.path}")
