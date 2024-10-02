@@ -1,0 +1,58 @@
+.keyword {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.splash-1 {
+    background-image: url(/assets/images/splash/cover1.jpg);
+    background-size: 100%;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+    background-position: center;
+}
+
+//Fonts
+$small-font-size: 12px;
+
+.text-small {
+    font-size: $small-font-size!important;
+}
+
+.card-body {
+    z-index:10;
+}
+
+//Input overlay icon label for donate page
+.input-overlay-icon {
+    margin-left: -2em;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    background-color: $white;
+}
+
+//Toast positioning
+
+.toast {
+    position: fixed;
+    bottom: 1.5rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 275px;
+    z-index: 10000;
+}
+
+//Avoid pagebreak class
+.avoid-pagebreak {
+    page-break-inside: avoid;
+}
+
+//invert colors on dark mode hover
+#dark-mode-toggle:hover {
+    background: $black;
+    color: $white;
+}
