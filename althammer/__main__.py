@@ -1,8 +1,9 @@
 from .classes import *
 
-from flask import *
 from os import environ
 import secrets
+import time
+from flask import *
 
 app = Flask(
     __name__,
@@ -22,6 +23,8 @@ app.config['SESSION_COOKIE_SECURE']         = True
 
 @app.before_request
 def before_request():
+
+    g.time=int(time.gmtime())
 
     if app.config["FORCE_HTTPS"] and request.scheme=="http":
         return redirect(f"https://{app.config['SERVER_NAME']}{request.path}")
