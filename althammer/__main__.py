@@ -10,6 +10,8 @@ app = Flask(
     static_folder='./assets'
     )
 
+from .routes import *
+
 app.url_map.strict_slashes=False
 
 app.config['SECRET_KEY']                    = environ.get("SECRET_KEY", secrets.token_hex(128))
