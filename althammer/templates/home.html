@@ -1,1 +1,52 @@
 {% extends "_core_centered.html" %}
+
+{% block pagecontent %}
+<div class="card m-0 border-0">
+  <div class="card-body bg-light text-dark">
+    <h1 class="card-title text-center fw-bold text-primary">{{ "SITE_NAME" | app_config }}</h1>
+    <h2 class="card-subtitle text-primary text-center pb-4">The better tabletop rules kit</h2>
+    <p class="text-center">Always easy, always clear, always intuitive</p>
+    <p class="text-center">{{ "SITE_NAME" | app_config }} is free: no codex required</p>
+
+  </div>
+</div>
+<div class="card m-0 border-0">
+  <h2 class="card-title text-center fw-bold my-3">{{_("How it works")}}</h2>
+  <div class="card-body">
+    <div class="d-md-flex justify-content-center">
+      <div class="col card border-0 m-0">
+        <div class="card-title text-center">
+          <i class="text-primary fas fa-fw fa-2x fa-helmet-battle"></i>
+        </div>
+        <div class="card-body">
+          <p class="text-center">Start with your existing collection of Warhammer 40,000 miniatures or other tabletop figurines</p>
+        </div>
+      </div>
+      <div class="col card border-0 m-0">
+        <div class="card-title text-center">
+          <i class="text-primary fas fa-fw fa-2x fa-book"></i>
+        </div>
+        <div class="card-body">
+          <p class="text-center">Download the {{ "SITE_NAME" | app_config }} core rules, and the rules for your faction - for free.</p>
+        </div>
+      </div>
+      <div class="col card border-0 m-0">
+        <div class="card-title text-center">
+          <i class="text-primary fas fa-fw fa-2x fa-chess-rook"></i>
+        </div>
+        <div class="card-body">
+          <p class="text-center">Muster your army and collect your dice, ruler, terrain, and other tabletop supplies.</p>
+        </div>
+      </div>
+      <div class="col card border-0 m-0">
+        <div class="card-title text-center">
+          <i class="text-primary fas fa-fw fa-2x fa-dice"></i>
+        </div>
+        <div class="card-body">
+          <p class="text-center">Let the battle begin!</p>
+        </div>
+      </div>
+    </div></i>
+  </div>
+</div>
+{% endblock %}

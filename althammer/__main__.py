@@ -18,6 +18,7 @@ app.url_map.strict_slashes=False
 
 app.config['SECRET_KEY']                    = environ.get("SECRET_KEY", secrets.token_hex(128))
 app.config['SERVER_NAME']                   = environ.get("SERVER_NAME")
+app.config["SITE_NAME"]                     = environ.get("SITE_NAME", "AltHammer")
 app.config['FORCE_HTTPS']                   = bool(int(environ.get("FORCE_HTTPS", 1)))
 app.config['SESSION_COOKIE_SECURE']         = True
 
