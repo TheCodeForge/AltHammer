@@ -11,6 +11,7 @@ app = Flask(
     static_folder='./assets'
     )
 
+from .helpers.filters import *
 from .helpers.hashes import *
 from .routes import *
 
