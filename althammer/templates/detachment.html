@@ -25,11 +25,11 @@
 Restrictions: {{ d.rules[rule].get("restrictions", "None") }}
 
 {% for option in d.rules[rule]['options'] %}
-#### {{ d.rules[rule]['options'][option]['name'] }}
+#### {{ option['name'] }}
 
-*{{ d.rules[rule]['options'][option]['lore'] }}*
+*{{ option['lore'] }}*
 
-{{ d.rules[rule]['options'][option]['text'] }}
+{{ option['text'] }}
 
 {% endfor %}
 
