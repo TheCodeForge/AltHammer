@@ -1,5 +1,3 @@
-from .classes import *
-
 from os import environ
 import secrets
 import time
@@ -13,6 +11,7 @@ app = Flask(
     )
 cache=Cache(app)
 
+from .classes import *
 from .helpers.filters import *
 from .helpers.hashes import *
 from .routes import *

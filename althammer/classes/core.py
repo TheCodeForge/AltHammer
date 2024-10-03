@@ -20,9 +20,12 @@ class Faction(Base):
     @cache.memoize
     def detachments(self):
 
-        with open(f"althammer/data/{self.id}/_detachments.json", "r+") as file:
-            data=json.load(file)
-
+        try:
+            with open(f"althammer/data/{self.id}/_detachments.json", "r+") as file:
+                data=json.load(file)
+        except:
+            return []
+            
         output = [Detachment(x) for x in data.values()]
 
         for d in output:
