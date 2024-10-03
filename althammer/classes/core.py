@@ -1,5 +1,7 @@
 import json
 
+from althammer.__main__ import cache
+
 class Base():
 
     def __init__(self, data):
@@ -15,6 +17,7 @@ class Detachment(Base):
 class Faction(Base):
     
     @property
+    @cache.memoize
     def detachments(self):
 
         with open(f"althammer/data/{self.id}/_detachments.json", "r+") as file:
@@ -27,6 +30,7 @@ class Faction(Base):
 
         return output
     
+    @cache.memoize
     def detachment(self, id):
 
         for x in self.detachments:
