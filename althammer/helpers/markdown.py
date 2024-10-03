@@ -19,8 +19,6 @@ class CustomRenderer(HTMLRenderer):
         for i in kwargs:
             self.__dict__[i] = kwargs[i]
 
-    def render_user_mention(self, token):
-        space = token.target[0]
-        target = token.target[1]
+    def render_keyword(self, target):
 
         return f'<span class="keyword">{target}</span>'
