@@ -20,8 +20,10 @@ class Faction(Base):
     @cache.memoize()
     def detachments(self):
 
+        path=f"althammer/data/{self.id}/_detachments.json"
+        print(path)
         try:
-            with open(f"althammer/data/{self.id}/_detachments.json", "r+") as file:
+            with open(path, "r+") as file:
                 data=json.load(file)
         except:
             return []
