@@ -1,4 +1,5 @@
 from .hashes import *
+from .markdown import CustomRenderer
 
 import mistletoe
 
@@ -40,7 +41,8 @@ def full_link(x):
 
 @app.template_filter('markdown')
 def markdown_filter(x):
-    return mistletoe.markdown(x.lstrip().rstrip())
+    with CustomRenderer as renderer:
+        return renderer.render(Document(x))
 
 @app.template_filter('nonce')
 def nonce(x):
