@@ -12,7 +12,15 @@
         "name": "Star Traitors",
         "lore": "Ten thousand years ago, as the God-King and his Star Marines were on the cusp of uniting the galaxy, some of the Star Marines uncovered dark powers. They revolted against their father, plunging the God-King's fledgling empire into civil war.",
         "rules": {
-            "Dark Pacts": "Each time a +Star Traitors+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
+            "Dark Pacts": "Each time a +Star Traitors+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
+        }
+    },
+    "orx": {
+        "id": "orx",
+        "name": "Orx",
+        "lore": "The infamous war cry of the Orx is known and feared throughout the galaxy. When it echoes across the battelfield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
+        "rules": {
+            "AAAAAAAA!": "Once per battle, at the start of a battle round, call an AAAAAAAA. If you do, until the start of the next battle round:\n* Your +Orx+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orx+ models.\n* Your +Orx+ models have a 5++ Invulnerable Save."
         }
     }
 }
