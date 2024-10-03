@@ -1,16 +1,16 @@
 {
-    "adeptus_astartes": {
-        "id": "adeptus_astartes",
-        "name": "Adeptus Astartes",
+    "star_marines": {
+        "id": "star_marines",
+        "name": "Star Marines",
         "rules": {
-            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +Adeptus Astartes+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+            "Momentary Oath": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time a +Star Marines+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
         }
     },
-    "heretic_astartes": {
-        "id": "heretic_astartes",
-        "name": "Heretic Astartes",
+    "star_traitors": {
+        "id": "star_traitors",
+        "name": "Star Traitors",
         "rules": {
-            "Dark Pacts": "Each time a unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
+            "Dark Pacts": "Each time a +Star Traitors+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
     }
 }

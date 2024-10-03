@@ -4,12 +4,12 @@
         "rules": {
             "combat_doctrines": {
                 "name": "Combat Doctrines",
-                "lore": "The Codex Astartes has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Space Marines hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
+                "lore": "The Codex Stellar has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Space Marines hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
                 "text": "At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all Adeptus Astartes units from your army. You can only select each Combat Doctrine once per battle.",
                 "options": [
                     {
                         "name": "Devastator Doctrine",
-                        "lore": "The Codex Astartes explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
+                        "lore": "The Codex Stellar explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
                         "text": "This unit is eligible to shoot in a turn in which it Advanced."
                     },
                     {
@@ -19,7 +19,7 @@
                     },
                     {
                         "name": "Assault Doctrine",
-                        "lore": "The Codex Astartes leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
+                        "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
                         "text": "This unit is eligible to declare a charge in a turn in which it Advanced."
                     }
                 ]
