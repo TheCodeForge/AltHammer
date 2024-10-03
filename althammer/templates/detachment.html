@@ -23,13 +23,14 @@
 {{ rule.text }}
 
 {% for option in rule.options %}
-
-{% endfor %}
 #### {{ option['name'] }}
 
 *{{ option['lore'] }}*
 
 {{ option['text'] }}
+
+{% endfor %}
+
 {% endfor %}
 
 {% endfilter %}
