@@ -13,10 +13,10 @@ def faction_faction(faction):
 
 
 @app.get("/faction/<faction>/detachment/<detachment>")
-def faction_faction(faction, detachment):
+def faction_faction_detachment_detachment(faction, detachment):
 
     f = get_faction(faction)
 
     d = f.detachment(detachment)
 
-    return render_template("detachment.html", f=f)
+    return render_template("detachment.html", f=f, d=d)
