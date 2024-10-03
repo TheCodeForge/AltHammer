@@ -1,10 +1,4 @@
-class Unit():
+class Faction():
 
-    Mv = 0
-    Tk = 0
-    Sv = 0
-    Hp = 0
-    Ld = 0
-    Oc = 0
-    Is = 0
-    
+    def __init__(self, data):
+        self.__dict__.update(data)
