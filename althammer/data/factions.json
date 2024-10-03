@@ -3,7 +3,7 @@
         "id": "adeptus_astartes",
         "name": "Adeptus Astartes",
         "rules": {
-            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +ADEPTUS ASTARTES+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +Adeptus Astartes+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
         }
     },
     "heretic_astartes": {
