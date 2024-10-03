@@ -4,7 +4,7 @@
 {% filter markdown %}
 # {{ f.name }}
 
-{{f.lore}}
+*{{f.lore}}*
 
 {% for rule in f.rules %}
 ## {{ rule }}
@@ -17,6 +17,8 @@
 
 {% for d in f.detachments %}
 * [{{ d.name }}]({{ d.permalink }})
+{% else %}
+*None yet. Stay tuned!*
 {% endfor %} 
 
 {% endfilter %}
