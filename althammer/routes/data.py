@@ -1,7 +1,8 @@
 from althammer.helpers.get import *
-from althammer.__main__ import app
 
 from flask import *
+
+from althammer.__main__ import app
 
 @app.get("/faction/<faction>")
 def faction_faction(faction):
