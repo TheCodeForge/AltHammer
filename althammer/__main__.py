@@ -9,6 +9,7 @@ app = Flask(
     template_folder='./templates',
     static_folder='./assets'
     )
+app.config["CACHE_TYPE"]                    = "FileSystemCache"
 cache=Cache(app)
 
 from .classes import *
@@ -28,8 +29,6 @@ app.config['SESSION_COOKIE_SECURE']         = True
 app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY","357DED").lstrip().rstrip()
 app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "56EEF4").lstrip().rstrip()
 
-#===CACHE===
-app.config["CACHE_TYPE"]                    = "FileSystemCache"
 
 @app.before_request
 def before_request():
