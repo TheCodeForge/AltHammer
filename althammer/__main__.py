@@ -60,4 +60,7 @@ def after_request(resp):
     resp.headers["X-Content-Type-Options"]="nosniff"
     resp.headers["X-Frame-Options"]="DENY"
 
+    if request.path.startswith("/assets/"):
+        resp.headers["Cache-Control"] = "public, max-age=604800"
+
     return resp
