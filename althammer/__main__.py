@@ -10,6 +10,7 @@ app = Flask(
     static_folder='./assets'
     )
 app.config["CACHE_TYPE"]                    = "FileSystemCache"
+app.config["CACHE_DIR"]                     = "flaskcache"
 cache=Cache(app)
 
 from .classes import *
