@@ -22,6 +22,8 @@
 
 {{ rule['text'] }}
 
+Restrictions: {{ rule.get("restrictions", "None") }}
+
 {% for option in rule['options'] %}
 #### {{ option['name'] }}
 
