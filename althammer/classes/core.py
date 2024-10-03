@@ -22,11 +22,11 @@ class Faction(Base):
 
         path=f"althammer/data/{self.id}/_detachments.json"
         print(path)
-        try:
-            with open(path, "r+") as file:
-                data=json.load(file)
-        except:
-            return []
+        # try:
+        with open(path, "r+") as file:
+            data=json.load(file)
+        # except:
+        #     return []
             
         output = [Detachment(x) for x in data.values()]
 
