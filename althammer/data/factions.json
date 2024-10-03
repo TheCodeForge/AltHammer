@@ -20,7 +20,7 @@
         "name": "Orx",
         "lore": "The infamous war cry of the Orx is known and feared throughout the galaxy. When it echoes across the battelfield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
         "rules": {
-            "AAAAAAAA!": "Once per battle, at the start of a battle round, call an AAAAAAAA. If you do, until the start of the next battle round:\n* Your +Orx+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orx+ models.\n* Your +Orx+ models have a 5++ Invulnerable Save."
+            "RAAAAGH!": "Once per battle, at the start of a battle round, call a RAAAAGH. If you do, until the start of the next battle round:\n* Your +Orx+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orx+ models.\n* Your +Orx+ models have a 5++ Invulnerable Save."
         }
     }
 }
