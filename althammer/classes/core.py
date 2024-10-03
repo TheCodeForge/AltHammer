@@ -19,3 +19,10 @@ class Faction(Base):
 
         return [Detachment(x) for x in data.values()]
     
+    def detachment(self, id):
+
+        for x in self.detachments:
+            if x.id==id:
+                return x
+
+        abort(404)
