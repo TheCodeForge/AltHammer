@@ -14,3 +14,12 @@ def get_faction(faction):
         abort(404)
 
     return Faction(data)
+
+def get_factions():
+
+    with open("althammer/data/factions.json", "r+") as file:
+        data=json.load(file)
+
+    return sorted([Faction(x) for x in data.values()], key= lambda y: y.name)
+
+    return Faction(data)
