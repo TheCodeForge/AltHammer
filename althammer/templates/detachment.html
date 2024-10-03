@@ -16,13 +16,13 @@
 ## Detachment: {{ d.name }}
 
 {% for rule in d.rules %}
-### {{ rule.name }}
+### {{ rule['name'] }}
 
-*{{ rule.lore }}*
+*{{ rule['lore'] }}*
 
-{{ rule.text }}
+{{ rule['text'] }}
 
-{% for option in rule.options %}
+{% for option in rule['options'] %}
 #### {{ option['name'] }}
 
 *{{ option['lore'] }}*
