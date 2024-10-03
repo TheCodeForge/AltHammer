@@ -16,7 +16,7 @@
 ## Detachments
 
 {% for d in f.detachments %}
-* [d.name](d.permalink)
+* [{{ d.name }}]({{ d.permalink }})
 {% endfor %} 
 
 {% endfilter %}
