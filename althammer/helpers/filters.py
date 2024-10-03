@@ -41,7 +41,7 @@ def full_link(x):
 
 @app.template_filter('markdown')
 def markdown_filter(x):
-    with CustomRenderer as renderer:
+    with CustomRenderer() as renderer:
         return renderer.render(Document(x))
 
 @app.template_filter('nonce')
