@@ -1,6 +1,7 @@
-cssutils    ==2.9.0
-flask       ==3.0.3
-gevent      ==24.2.1
-gunicorn    ==23.0.0
-libsass     ==0.22.0
-mistletoe   ==1.4.0
+cssutils        ==2.9.0
+flask           ==3.0.3
+flask-caching   ==2.3.0
+gevent          ==24.2.1
+gunicorn        ==23.0.0
+libsass         ==0.22.0
+mistletoe       ==1.4.0
