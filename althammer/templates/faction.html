@@ -1,5 +1,17 @@
 {% extends "_core_centered.html" %}
 
 {% block pagecontent %}
-{{ f.__dict__ }}
+{% filter markdown %}
+# {{ f.name }}
+
+{{f.lore}}
+
+{% for rule in f.rules %}
+## {{ rule }}
+
+{{ f.rules[rule] }}
+
+{% endfor %}
+
+{% endfilter %}
 {% endblock %}
