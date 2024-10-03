@@ -1,6 +1,6 @@
 from althammer.__main__ import app
 
-@app.get("/faction/<faction>"):
+@app.get("/faction/<faction>")
 def faction_faction(faction):
 
     f = get_faction(faction)
