@@ -17,7 +17,7 @@ class Detachment(Base):
 class Faction(Base):
     
     @property
-    @cache.memoize
+    @cache.memoize()
     def detachments(self):
 
         try:
@@ -33,7 +33,7 @@ class Faction(Base):
 
         return output
     
-    @cache.memoize
+    @cache.memoize()
     def detachment(self, id):
 
         for x in self.detachments:
