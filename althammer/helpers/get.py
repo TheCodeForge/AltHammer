@@ -1,7 +1,7 @@
 from flask import abort
 import json
 
-from .classes import *
+from althammer.classes import *
 
 def get_faction(faction):
 
@@ -11,6 +11,6 @@ def get_faction(faction):
         data=data[faction]
     except KeyError:
         abort(404)
-        
+
     return Faction(data)
 
