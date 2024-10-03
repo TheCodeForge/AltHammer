@@ -6,7 +6,10 @@ class Base():
         self.__dict__.update(data)
 
 class Detachment(Base):
-    pass
+
+    @property
+    def permalink(self):
+        return f"/faction/{self.faction.id}/detachment/{self.id}"
 
 
 class Faction(Base):
@@ -17,12 +20,24 @@ class Faction(Base):
         with open(f"althammer/data/{self.id}/_detachments.json", "r+") as file:
             data=json.load(file)
 
-        return [Detachment(x) for x in data.values()]
+        output = [Detachment(x) for x in data.values()]
+
+        for d in output:
+            d.faction = self
+
+        return output
     
     def detachment(self, id):
 
         for x in self.detachments:
             if x.id==id:
-                return x
+                output = x
+                output.faction = self
+                return output
 
         abort(404)
+
+    @property
+    def permalink(self):
+        return f"/faction/{self.id}"
+    
