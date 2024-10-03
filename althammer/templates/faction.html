@@ -13,5 +13,11 @@
 
 {% endfor %}
 
+## Detachments
+
+{% for d in f.detachments %}
+* [d.name](d.permalink)
+{% endfor %} 
+
 {% endfilter %}
 {% endblock %}
