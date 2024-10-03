@@ -3,6 +3,8 @@ from .markdown import CustomRenderer
 
 import mistletoe
 
+from althammer.helpers.get import *
+
 from althammer.__main__ import app
 
 @app.template_filter('app_config')
@@ -39,6 +41,10 @@ def qrcode_filter(x):
 def full_link(x):
     return urlunparse(urlparse(x)._replace(scheme=f"http{ 's' if app.config['FORCE_HTTPS'] else '' }", netloc=app.config['SERVER_NAME']))
 
+@app.template_filter('get_factions')
+def filter_get_factions(x):
+    return get_factions()
+
 @app.template_filter('markdown')
 def markdown_filter(x):
     with CustomRenderer() as renderer:
@@ -47,4 +53,3 @@ def markdown_filter(x):
 @app.template_filter('nonce')
 def nonce(x):
     return generate_hash(f"{session.get('session_id')}+{x}")
-
