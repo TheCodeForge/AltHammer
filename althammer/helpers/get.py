@@ -5,7 +5,8 @@ from althammer.classes import *
 
 def get_faction(faction):
 
-    data = json.load(open("althammer/althammer/data/factions.json", "r+"))
+    with open("althammer/data/factions.json", "r+") as f:
+        data=json.load(f)
 
     try:
         data=data[faction]
