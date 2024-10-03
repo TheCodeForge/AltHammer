@@ -4,12 +4,14 @@ from os import environ
 import secrets
 import time
 from flask import *
+from flask_caching import Cache
 
 app = Flask(
     __name__,
     template_folder='./templates',
     static_folder='./assets'
     )
+cache=Cache(app)
 
 from .helpers.filters import *
 from .helpers.hashes import *
@@ -26,6 +28,9 @@ app.config['SESSION_COOKIE_SECURE']         = True
 #===STYLE===
 app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY","357DED").lstrip().rstrip()
 app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "56EEF4").lstrip().rstrip()
+
+#===CACHE===
+app.config["CACHE_TYPE"]                    = "FileSystemCache"
 
 @app.before_request
 def before_request():
