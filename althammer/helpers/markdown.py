@@ -4,7 +4,7 @@ import re
 
 class Keyword(SpanToken):
 
-    pattern = re.compile("\+\b(.{3,25})\b\+")
+    pattern = re.compile(r"\+\b(.{3,25})\b\+")
     parse_inner = False
 
     def __init__(self, match_obj):
