@@ -22,7 +22,7 @@
 
 {{ d.rules[rule]['text'] }}
 
-Restrictions: {{ d.rules[rule].get("restrictions", "None") }}
+**Restrictions:** {{ d.rules[rule].get("restrictions", "None") }}
 
 {% for option in d.rules[rule]['options'] %}
 #### {{ option['name'] }}
