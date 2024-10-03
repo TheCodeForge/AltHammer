@@ -1,3 +1,4 @@
+from althammer.helpers.get import *
 from althammer.__main__ import app
 
 @app.get("/faction/<faction>")
