@@ -1,20 +1,6 @@
-from .get import *
-
 from mistletoe.span_token import SpanToken
 from mistletoe.html_renderer import HTMLRenderer
-import os.path
 import re
-
-from flask import g
-
-#preprocess re
-
-enter_re=re.compile("(\n\r?\w+){3,}")
-
-
-
-# add token/rendering for @username mentions
-
 
 class Keyword(SpanToken):
 
