@@ -1,5 +1,6 @@
 {
-    "gladius_task_force":{
+    "codex_stellar_task_force":{
+        "id": "codex_stellar_task_force",
         "name": "Codex Stellar Task Force",
         "rules": {
             "combat_doctrines": {
