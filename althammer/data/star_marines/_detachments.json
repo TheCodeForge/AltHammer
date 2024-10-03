@@ -1,11 +1,11 @@
 {
     "gladius_task_force":{
-        "name": "Gladius Task Force",
+        "name": "Codex Stellar Task Force",
         "rules": {
             "combat_doctrines": {
                 "name": "Combat Doctrines",
-                "lore": "The Codex Stellar has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Space Marines hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
-                "text": "At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all Adeptus Astartes units from your army. You can only select each Combat Doctrine once per battle.",
+                "lore": "The Codex Stellar has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Star Marines hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
+                "text": "At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all +Star Marines+ units from your army. You can only select each Combat Doctrine once per battle.",
                 "options": [
                     {
                         "name": "Devastator Doctrine",
