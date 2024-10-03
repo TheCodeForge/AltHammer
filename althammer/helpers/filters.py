@@ -42,7 +42,7 @@ def full_link(x):
 @app.template_filter('markdown')
 def markdown_filter(x):
     with CustomRenderer() as renderer:
-        return renderer.render(Document(x))
+        return renderer.render(mistletoe.Document(x))
 
 @app.template_filter('nonce')
 def nonce(x):
