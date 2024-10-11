@@ -11,9 +11,9 @@ def home():
         "home.html"
         )
 
-@app.get("/core_rules")
-def core_rules():
-    return render_template("core_rules.html")
+@app.get("/rules/<x>")
+def rules_x():
+    return render_template(safe_join("rules", f"{x}.html"))
 
 @app.get("/assets/style/<stylefile>.css")
 def light_css(stylefile):
