@@ -13,7 +13,7 @@
     background-position: center;
 }
 
-//Fonts
+/*Fonts*/
 $small-font-size: 12px;
 
 .text-small {
@@ -24,7 +24,7 @@ $small-font-size: 12px;
     z-index:10;
 }
 
-//Input overlay icon label for donate page
+/*Input overlay icon label for donate page*/
 .input-overlay-icon {
     margin-left: -2em;
     padding-left: 0.25rem;
@@ -34,7 +34,7 @@ $small-font-size: 12px;
     background-color: $white;
 }
 
-//Toast positioning
+/*Toast positioning*/
 
 .toast {
     position: fixed;
@@ -46,18 +46,18 @@ $small-font-size: 12px;
     z-index: 10000;
 }
 
-//Avoid pagebreak class
+/*Avoid pagebreak class*/
 .avoid-pagebreak {
     page-break-inside: avoid;
 }
 
-//invert colors on dark mode hover
+/*invert colors on dark mode hover*/
 #dark-mode-toggle:hover {
     background: $black;
     color: $white;
 }
 
-// Nested Numbering
+/* Nested Numbering */
 .nested-numbered-list {
     counter-reset: h1 h2 h3 h4 h5 h6;
 }
@@ -102,3 +102,12 @@ $small-font-size: 12px;
     content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";
     counter-increment: h6
     }
+
+
+/*blockquotes*/
+
+blockquote {
+    border-left: 2px solid grey;
+    padding-left: 0.5rem;
+    margin: 0 1rem 1rem 1rem;
+}
