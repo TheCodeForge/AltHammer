@@ -61,7 +61,7 @@ $small-font-size: 12px;
 .nested-numbered-list {
     counter-reset: h1 h2 h3 h4 h5 h6;
 }
-.nested-numbered-list h1 {counter-set: h2 }
+.nested-numbered-list h1 {counter-set: h2}
 .nested-numbered-list h2 {counter-set: h3}
 .nested-numbered-list h3 {counter-set: h4}
 .nested-numbered-list h4 {counter-set: h5}
