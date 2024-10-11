@@ -5,18 +5,18 @@
 <style nonce="{{ g.nonce }}">
 
     .nested-numbered-list {
-        counter-reset: h1;
-        counter-reset: h2;
-        counter-reset: h3;
-        counter-reset: h4;
-        counter-reset: h5;
-        counter-reset: h6;
+        counter-reset: h1 1;
+        counter-reset: h2 1;
+        counter-reset: h3 1;
+        counter-reset: h4 1;
+        counter-reset: h5 1;
+        counter-reset: h6 1;
     }
-    .nested-numbered-list h1 {counter-reset: h2}
-    .nested-numbered-list h2 {counter-reset: h3}
-    .nested-numbered-list h3 {counter-reset: h4}
-    .nested-numbered-list h4 {counter-reset: h5}
-    .nested-numbered-list h5 {counter-reset: h6}
+    .nested-numbered-list h1 {counter-reset: h2 1}
+    .nested-numbered-list h2 {counter-reset: h3 1}
+    .nested-numbered-list h3 {counter-reset: h4 1}
+    .nested-numbered-list h4 {counter-reset: h5 1}
+    .nested-numbered-list h5 {counter-reset: h6 1}
 
 
     .nested-numbered-list h1,
@@ -60,7 +60,7 @@
 
 #Core Rules
 
-<div class=".nested-numbered-list">
+<div class="nested-numbered-list">
 
 # Definitions
 
