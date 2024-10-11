@@ -24,8 +24,10 @@
     .nested-numbered-list h3,
     .nested-numbered-list h4,
     .nested-numbered-list h5,
-    .nested-numbered-list h6
-    { display: block}
+    .nested-numbered-list h6 { 
+        display: block;
+        font-size: calc(1.25rem + 0.6vw);
+    }
 
     .nested-numbered-list h1:before {
         content: counter(h1) " ";
