@@ -219,7 +219,7 @@ All +Psychic+ Models know the spell Smite:
 
 ## Shoot
 
-Select a target Enemy Unit. For each Model in your Unit with line-of-sight to at least one Enemy Unit Model, select a Ranged weapon profile. Roll dice.
+Select a target Enemy Unit. For each Model in your Unit with line-of-sight to at least one Enemy Unit Model, select a Ranged weapon profile to attack with; see the Combat section below.
 
 ## Charge
 
@@ -229,16 +229,30 @@ Select a target Enemy Unit. Roll 2d6 for Charge Movement; if the result is great
 
 ## Fight
 
-Select a target Enemy Unit that is within Melee Distance. Choose a melee weapon profile and roll dice.
+Select a target Enemy Unit that is within Melee Distance. Choose a melee weapon profile to attack with; see the Combat section below.
 
 +Aircraft+ cannot be selected as a Fight target unless all models in the attacking Unit have +Fly+.
 
-# two
+# Combat
 
-# three
+All combat consists of three to four dice rolls made by an attacking unit and its target:
 
-## three.one
+Regardless of any modifiers applied to the dice rolls in this process, an Unmodified 6 is always a "success" and an Unmodified 1 is always a "fail"
 
+* Hit Roll: Attacker rolls d6. If the result is greater than or equal to the Skill characteristic of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
+* Wound Roll: Attacker rolls d6. Compare the attacking weapon profile's Strength characteristic with the targeted unit's Toughness characteristic to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
+     * Strength half of Toughness or less: 6+ required
+     * Strength less than Toughness: 5+ required
+     * Strength equal to Toughness: 4+ required
+     * Strength greater than Toughness: 3+ required
+     * Strength double Toughness or greater: 2+ required.
+* Saving Throw: The defending player selects a Model in the targeted Unit that is within line of sight and range to the attacking Unit. The defending player rolls d6 and modifies the result by the attacking weapon's Armor Penetration characteristic. If the result is greater than or equal to the Armor Save characteristic of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the Damage characteristic of the attacking weapon.
+     * If the target Model has an Invulnerable Save characteristic, the Armor Save cannot be modified to be worse than the Invulnerable Save.
+* Feel No Pain: If the target has a Feel No Pain rule characteristic, roll one d6 for each point of damage to be taken. If the result is greater than or equal to the Feel No Pain rule characteristic, a point of damage is ignored.
+
+Multiple points of damage within a single attack do not overflow from one Model in a Unit to the next.
+
+Damage must be allocated to an already-wounded Model in the unit first, if such a Model exists, unless that Model is not visible or within range of to the attacking Unit, or that model is an attached +Leader+.
 
 </div>
 
