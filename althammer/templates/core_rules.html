@@ -5,13 +5,13 @@
 <style nonce="{{ g.nonce }}">
 
     .nested-numbered-list {
-        counter-reset: h1 1 h2 1 h3 1 h4 1 h5 1 h6 1;
+        counter-reset: h1 h2 h3 h4 h5 h6;
     }
-    .nested-numbered-list h1 {counter-reset: h2 1}
-    .nested-numbered-list h2 {counter-reset: h3 1}
-    .nested-numbered-list h3 {counter-reset: h4 1}
-    .nested-numbered-list h4 {counter-reset: h5 1}
-    .nested-numbered-list h5 {counter-reset: h6 1}
+    .nested-numbered-list h1 {counter-reset: h2}
+    .nested-numbered-list h2 {counter-reset: h3}
+    .nested-numbered-list h3 {counter-reset: h4}
+    .nested-numbered-list h4 {counter-reset: h5}
+    .nested-numbered-list h5 {counter-reset: h6}
 
 
     .nested-numbered-list h1,
@@ -58,6 +58,8 @@
 <div class="nested-numbered-list">
 
 # one
+
+## one.one
 
 ## one.two
 
