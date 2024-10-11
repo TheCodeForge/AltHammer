@@ -12,7 +12,7 @@ def home():
         )
 
 @app.get("/rules/<x>")
-def rules_x():
+def rules_x(x):
     return render_template(safe_join("rules", f"{x}.html"))
 
 @app.get("/assets/style/<stylefile>.css")
