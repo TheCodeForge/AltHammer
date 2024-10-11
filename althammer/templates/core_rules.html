@@ -19,7 +19,7 @@ AltHammer is a turn-based activation tabletop wargaming experience. It is intend
 In the event of inconsistency between two sources of rules, use the rule that is found in the earliest location in this list:
 
 * Unit rules card
-* Detachment rules
+* Detachment Rules
 * Faction Rules
 * Core Rules
 
@@ -30,6 +30,10 @@ If you are already familiar with tabletop wargames, you can probably skip these.
 ## Model
 
 A single painted figurine.
+
+## Mortal Damage
+
+Damage inflicted to a Model which bypasses any armor saving roll.
 
 ## Roll Off
 
@@ -50,6 +54,10 @@ If the Unit has six or more Models, each Model must be no more than 2" from two 
 Units must end all movement in Unit coherency.
 
 At any point in the game, if a Unit is found to *not* be in Unit Coherency, the player controlling that unit must remove Models from the Unit until Unit Coherency is achieved. When removing Models to achieve Unit Coherency, do not activate On Death rules for the removed Models.
+
+## Unmodified (dice roll)
+
+Numerous effects modify the results of dice rolls. An "Unmodified" roll refers to the raw dice results, before any such alterations are made.
 
 # Order of Play
 
@@ -111,14 +119,12 @@ When Activated, a Unit may do up to two of the following actions:
 
 * Move
 * Advance
-* Magik
+* Magik (+Psychic+ Units only)
 * Shoot
 * Charge
 * Fight
 
-A unit may not Advance and Shoot in the same Activation.
-
-A unit may not Advance and Charge in the same Activation.
+A unit may not Magik, Shoot, or Charge in an Activation in which it also Advances.
 
 A unit may not be Activated two turns in a row, unless it is the last remaining Unit in the army.
 
@@ -128,9 +134,29 @@ Each Model in the Unit may move up to the number of inches indicated by its Move
 
 Units must end their movement in Unit Coherency.
 
-### Advance
+## Advance
 
-### one.two.two
+For the duration of the Activation, the Unit's Move characteristic is increased by 1d6 inches.
+
+## Magik
+
+Only +Psychic+ Models may perform this action.
+
+Select a spell from your Detachment rules..
+
+For each Model in the Unit, make a Psychic test. Roll 2d6 and add the Model's Mind characteristic; if the result is greater than the spell's Difficulty, then the spell is successful. Resolve the effects of the spell.
+
+If the result of the Psychic test was an unmodified 2 or unmodified 12, then the Model suffers Perils of Power: The Model's unit suffers d3 Mortal Damage. (For an unmodified 12, the spell is still successful; resolve its effects first.)
+
+All +Psychic+ Models know the spell Smite:
+
+> Smite (Difficulty: 6)
+> Select a target. It suffers d6 Mortal Damage. The Difficulty of this spell increases by 1 for your army.
+
+
+## Shoot
+
+Select a target. If it is in range, roll dice
 
 ## one.three
 
