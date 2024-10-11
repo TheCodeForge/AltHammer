@@ -1,0 +1,39 @@
+{% extends "_core_centered.html" %}
+
+{% block pagecontent %}
+{% filter markdown %}
+
+# Terrain
+
+<div class="nested-numbered-list">
+
+
+# Hill
+
+* Can be climbed (with vertical movement) and freely traversed
+* Can be stood upon
+* Obstructs visibility
+
+# Wall
+
+* Cannot be climbed or traversed
+* Cannot be stood upon
+* Obstructs visbility
+
+# Rubble
+
+* Cannot be traversed
+* Cannot be stood upon or within
+* Does not obstruct visibility
+
+# Defense Line
+
+* Can be traversed
+* Can be stood upon
+* Does not obstruct visibility
+* Units with one or more models touching the terrain feature have the Benefit of Cover against ranged attacks made through the terrain feature
+
+</div>
+
+{% endfilter %}
+{% endblock %}
