@@ -14,9 +14,10 @@ class Keyword(SpanToken):
 class HBlock(BlockToken):
 
     start_pattern = re.compile(r"^#{1,6} ")
+    render_inner=True
 
     def __init__(self, target):
-        self.target = [match[0]]+tokenize(match[1:])
+        self.target = target
 
     @classmethod
     def start(cls, line):
