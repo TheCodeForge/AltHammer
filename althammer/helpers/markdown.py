@@ -17,6 +17,7 @@ class HOneBlock(BlockToken):
     parse_inner = True
 
     def __init__(self, match_obj):
+        print(match_obj)
         self.target = match_obj.group(1)
 
     @staticmethod
