@@ -19,6 +19,25 @@ class HBlock(BlockToken):
     def start(line):
         return bool(re.match(line, self.start_pattern))
 
+    @classmethod
+    def read(lines):
+
+        line_buffer=[next(lines)]
+
+        hash_count = str(len(line_buffer[0].split()[0]))
+
+        end_pattern = re.compile(r"^#{1,"+hash_count+r"} ")
+
+        for line in lines:
+
+            if re.match(line, end_pattern):
+                break
+
+            line_buffer.append(line)
+
+        return line_buffer
+
+
 
 
 
