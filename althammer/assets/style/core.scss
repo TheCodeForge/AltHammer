@@ -104,12 +104,57 @@ $small-font-size: 12px;
     counter-increment: h6
     }
 
-.nested-numbered-list h1 ~ p, .nested-numbered-list h2 { padding-left: 15px }
-.nested-numbered-list h2 ~ p, .nested-numbered-list h3 { padding-left: 30px }
-.nested-numbered-list h3 ~ p, .nested-numbered-list h4 { padding-left: 45px }
-.nested-numbered-list h4 ~ p, .nested-numbered-list h5 { padding-left: 60px }
-.nested-numbered-list h5 ~ p, .nested-numbered-list h6 { padding-left: 75px }
-.nested-numbered-list h6 ~ p                           { padding-left: 90px }
+.nested-numbered-list h1 + p, 
+.nested-numbered-list h1 + p + p, 
+.nested-numbered-list h1 + p + p + p, 
+.nested-numbered-list h2 { 
+    padding-left: 15px 
+}
+
+.nested-numbered-list h2 + p, 
+.nested-numbered-list h2 + p + p, 
+.nested-numbered-list h2 + p + p + p, 
+.nested-numbered-list h3 { 
+    padding-left: 30px 
+}
+
+.nested-numbered-list h2 + p + ul
+.nested-numbered-list h3 + p, 
+.nested-numbered-list h3 + p + p, 
+.nested-numbered-list h3 + p + p + p, 
+.nested-numbered-list h4 { 
+    padding-left: 45px 
+}
+
+.nested-numbered-list h4 + p, 
+.nested-numbered-list h4 + p + p, 
+.nested-numbered-list h4 + p + p + p, 
+.nested-numbered-list h5 { 
+    padding-left: 60px 
+}
+
+.nested-numbered-list h5 + p, 
+.nested-numbered-list h5 + p + p, 
+.nested-numbered-list h5 + p + p + p, 
+.nested-numbered-list h6 { 
+    padding-left: 75px 
+}
+
+.nested-numbered-list h6 + p, 
+.nested-numbered-list h6 + p + p, 
+.nested-numbered-list h6 + p + p + p { 
+    padding-left: 90px 
+}
+
+.nested-numbered-list h2 + p + ul,
+.nested-numbered-list h2 + p + p + ul {
+    padding-left: 50px;
+}
+
+.nested-numbered-list h3 + p + ul,
+.nested-numbered-list h3 + p + p + ul {
+    padding-left: 65px;
+}
 
 
 /*blockquotes*/
