@@ -35,5 +35,15 @@
 
 {% endfor %}
 
+{% if d.get('spells') %}
+
+{% for spell in d.spells %}
+>[{{ spell['difficulty'] }}] {{ spell['name'] }}
+>
+>{{ spell['effect'] }}
+
+{% endfor %}
+{% endif %}
+
 {% endfilter %}
 {% endblock %}
