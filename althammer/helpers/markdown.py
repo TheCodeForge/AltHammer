@@ -54,7 +54,7 @@ class NumberedRenderer(CustomRenderer):
 
     def render_h_block(self, token):
 
-        header = lines[0]
+        header = token.lines[0]
         header = header.lstrip("#")
         header = header.lstrip()
         return f'<h1>{header}</h1><div class="h-block">{'\n\n'.join(token.lines[1:])}</div>'
