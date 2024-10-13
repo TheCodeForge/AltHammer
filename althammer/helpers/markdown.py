@@ -1,4 +1,5 @@
-from mistletoe.span_token import BlockToken, SpanToken
+from mistletoe.span_token import SpanToken
+from mistletoe.block_token import BlockToken
 from mistletoe.html_renderer import HTMLRenderer
 import re
 
