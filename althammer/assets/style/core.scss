@@ -153,7 +153,8 @@ $small-font-size: 12px;
 }
 
 .nested-numbered-list h2 + p + ul,
-.nested-numbered-list h2 + p + p + ul {
+.nested-numbered-list h2 + p + p + ul,
+.nested-numbered-list h2 + p + p + p + ul {
     padding-left: 50px;
 }
 
