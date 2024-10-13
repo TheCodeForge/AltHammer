@@ -107,6 +107,7 @@ $small-font-size: 12px;
 .nested-numbered-list h1 + p, 
 .nested-numbered-list h1 + p + p, 
 .nested-numbered-list h1 + p + p + p, 
+.nested-numbered-list h1 + p + ul + p,
 .nested-numbered-list h2 { 
     padding-left: 15px 
 }
@@ -114,6 +115,9 @@ $small-font-size: 12px;
 .nested-numbered-list h2 + p, 
 .nested-numbered-list h2 + p + p, 
 .nested-numbered-list h2 + p + p + p, 
+.nested-numbered-list h2 + p + p + p + ul + p,
+.nested-numbered-list h2 + p + p + p + ul + p + p,
+.nested-numbered-list h2 + p + p + p + ul + p + p + p,
 .nested-numbered-list h3 { 
     padding-left: 30px 
 }
@@ -122,6 +126,7 @@ $small-font-size: 12px;
 .nested-numbered-list h3 + p, 
 .nested-numbered-list h3 + p + p, 
 .nested-numbered-list h3 + p + p + p, 
+.nested-numbered-list h3 + p + p + p + p, 
 .nested-numbered-list h4 { 
     padding-left: 45px 
 }
