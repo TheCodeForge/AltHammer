@@ -1,6 +1,8 @@
 {% extends "_core_centered.html" %}
 
 {% block pagecontent %}
+
+<div class=".nested-numbered-list">
 {% filter numbered markdown %}
 
 # [{{ f.name }}]({{ f.permalink }})
@@ -61,4 +63,5 @@
 {% endif %}
 
 {% endfilter %}
+</div>
 {% endblock %}
