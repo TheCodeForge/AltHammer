@@ -19,20 +19,44 @@ class HOneBlock(BlockToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
+    @staticmethod
+    def start(line):
+        return line.startswith("# ")
+
 class HTwoBlock(HOneBlock):
     pattern = re.compile(r"^#{2} .+?\n\n(.+?)(?=\n#)")
+
+    @staticmethod
+    def start(line):
+        return line.startswith("## ")
 
 class HThreeBlock(HOneBlock):
     pattern = re.compile(r"^#{3} .+?\n\n(.+?)(?=\n#)")
 
+    @staticmethod
+    def start(line):
+        return line.startswith("###")
+
 class HFourBlock(HOneBlock):
     pattern = re.compile(r"^#{4} .+?\n\n(.+?)(?=\n#)")
+
+    @staticmethod
+    def start(line):
+        return line.startswith("#### ")
 
 class HFiveBlock(HOneBlock):
     pattern = re.compile(r"^#{5} .+?\n\n(.+?)(?=\n#)")
 
+    @staticmethod
+    def start(line):
+        return line.startswith("##### ")
+
 class HSixBlock(HOneBlock):
     pattern = re.compile(r"^#{6} .+?\n\n(.+?)(?=\n#)")
+
+    @staticmethod
+    def start(line):
+        return line.startswith("###### ")
 
 
 
