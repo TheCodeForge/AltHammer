@@ -1,5 +1,6 @@
-import sass
 import cssutils
+import sass
+import jinja2
 from flask import *
 from werkzeug.utils import safe_join
 
@@ -13,7 +14,10 @@ def home():
 
 @app.get("/rules/<x>")
 def rules_x(x):
-    return render_template(safe_join("rules", f"{x}.html"))
+    try:
+        return render_template(safe_join("rules", f"{x}.html"))
+    except jinja2.exceptions.TemplateNotFound:
+        abort(404)
 
 @app.get("/assets/style/<stylefile>.css")
 def light_css(stylefile):
