@@ -23,7 +23,7 @@
                         "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
                         "text": "This unit is eligible to declare a charge in a turn in which it Advanced."
                     }
-                ]                
+                ]
             }
         },
         "spells": [
@@ -40,6 +40,23 @@
             {
                 "name": "Armor of Contempt",
                 "difficulty": 7,
+                "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
+            }
+        ],
+        "strategems": [
+            {
+                "name": "Armor of Contempt",
+                "cost": 7,
+                "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
+            },
+            {
+                "name": "Armor of Contempt",
+                "cost": 7,
+                "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
+            },
+            {
+                "name": "Armor of Contempt",
+                "cost": 7,
                 "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
             }
         ]
