@@ -118,6 +118,7 @@ $small-font-size: 12px;
 .nested-numbered-list h2 + p + p + p + ul + p,
 .nested-numbered-list h2 + p + p + p + ul + p + p,
 .nested-numbered-list h2 + p + p + p + ul + p + p + p,
+.nested-numbered-list h2 + p + p + p + ul + p + p + p + blockquote,
 .nested-numbered-list h3 { 
     padding-left: 30px 
 }
