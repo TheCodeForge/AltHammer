@@ -36,11 +36,6 @@ class HBlock(BlockToken):
 
         return line_buffer
 
-
-
-
-
-
 class CustomRenderer(HTMLRenderer):
 
     def __init__(self, *args, **kwargs):
@@ -58,4 +53,4 @@ class NumberedRenderer(CustomRenderer):
         super().__init__(HBlock)
 
     def render_h_block(self, lines):
-        return f'{lines[0]}<div class="ms-3">{'\n\n'.join(lines[1:])}</div>'
+        return f'{lines[0]}<div class="h-block">{'\n'.join(lines[1:])}</div>'
