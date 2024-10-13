@@ -104,65 +104,12 @@ $small-font-size: 12px;
     counter-increment: h6
     }
 
-.nested-numbered-list h1 + p, 
-.nested-numbered-list h1 + p + p, 
-.nested-numbered-list h1 + p + p + p, 
-.nested-numbered-list h1 + p + ul + p,
-.nested-numbered-list h1 + p + ul,
-.nested-numbered-list h1 + p + p + ul,
-.nested-numbered-list h1 + p + p + ul + p,
-.nested-numbered-list h1 + p + p + ul + p + p,
-.nested-numbered-list h2 { 
-    margin-left: 15px 
-}
-
-.nested-numbered-list h2 + p, 
-.nested-numbered-list h2 + p + ul,
-.nested-numbered-list h2 + p + p, 
-.nested-numbered-list h2 + p + p + p, 
-.nested-numbered-list h2 + p + p + p + ul + p,
-.nested-numbered-list h2 + p + p + p + ul + p + p,
-.nested-numbered-list h2 + p + p + p + ul + p + p + p,
-.nested-numbered-list h2 + p + ul + p,
-.nested-numbered-list h2 + p + ul + p + p,
-.nested-numbered-list h2 + p + p + ul + p,
-.nested-numbered-list h2 + p + ul,
-.nested-numbered-list h2 + p + p + ul,
-.nested-numbered-list h2 + p + p + p + ul,
-.nested-numbered-list h3 { 
-    margin-left: 30px 
-}
-
-.nested-numbered-list h3 + p, 
-.nested-numbered-list h3 + p + p, 
-.nested-numbered-list h3 + p + p + p, 
-.nested-numbered-list h3 + p + p + p + p, 
-.nested-numbered-list h3 + p + ul,
-.nested-numbered-list h3 + p + p + ul,
-.nested-numbered-list h4 { 
-    margin-left: 45px 
-}
-
-.nested-numbered-list h3 + p + blockquote,
-.nested-numbered-list h4 + p, 
-.nested-numbered-list h4 + p + p, 
-.nested-numbered-list h4 + p + p + p, 
-.nested-numbered-list h5 { 
-    margin-left: 60px 
-}
-
-.nested-numbered-list h5 + p, 
-.nested-numbered-list h5 + p + p, 
-.nested-numbered-list h5 + p + p + p, 
-.nested-numbered-list h6 { 
-    margin-left: 75px 
-}
-
-.nested-numbered-list h6 + p, 
-.nested-numbered-list h6 + p + p, 
-.nested-numbered-list h6 + p + p + p { 
-    margin-left: 90px 
-}
+.h1-block { margin-left: 15px }
+.h2-block { margin-left: 30px }
+.h3-block { margin-left: 45px }
+.h4-block { margin-left: 60px }
+.h5-block { margin-left: 75px }
+.h6-block { margin-left: 90px }
 
 /*blockquotes*/
 

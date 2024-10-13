@@ -1,5 +1,5 @@
 from .hashes import *
-from .markdown import CustomRenderer
+from .markdown import CustomRenderer, NumberedRenderer
 
 import mistletoe
 
@@ -48,6 +48,11 @@ def filter_get_factions(x):
 @app.template_filter('markdown')
 def markdown_filter(x):
     with CustomRenderer() as renderer:
+        return renderer.render(mistletoe.Document(x))
+
+@app.template_filter('numbered_markdown')
+def markdown_filter(x):
+    with NumberedRenderer() as renderer:
         return renderer.render(mistletoe.Document(x))
 
 @app.template_filter('nonce')
