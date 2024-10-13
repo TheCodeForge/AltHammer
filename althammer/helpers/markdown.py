@@ -18,7 +18,7 @@ class HBlock(BlockToken):
     def __init__(self, lines):
         self.lines = lines
         # self.target = lines[0]
-        # self.children = tokenize(lines[1:])
+        self.children = tokenize('\n'.join(lines[1:]))
 
     @classmethod
     def start(cls, line):
@@ -64,7 +64,7 @@ class NumberedRenderer(CustomRenderer):
 
         output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
 
-        output += self.render_inner(token.lines[1:])
+        output += self.render_inner(self)
 
         output += "</div>"
         return output
