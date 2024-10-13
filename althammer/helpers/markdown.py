@@ -64,8 +64,7 @@ class NumberedRenderer(CustomRenderer):
 
         output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
 
-        for child in token.children:
-            output += self.render_inner(lines[1:])
+        output += self.render_inner(lines[1:])
 
         output += "</div>"
         return output
