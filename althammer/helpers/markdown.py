@@ -16,8 +16,8 @@ class HBlock(BlockToken):
     start_pattern = re.compile(r"^#{1,6} ")
 
     @classmethod
-    def start(line):
-        return bool(re.match(line, self.start_pattern))
+    def start(cls, line):
+        return bool(re.match(line, cls.start_pattern))
 
     @classmethod
     def read(lines):
