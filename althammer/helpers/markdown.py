@@ -68,7 +68,7 @@ class NumberedRenderer(CustomRenderer):
 
         snake = "_".join(header.lower().split())
 
-        output = f'<h{tier} id="{snake}" data-clipboard-text="https://{SERVER_NAME}{request.path}#{snake}">{header}</h{tier}><div class="h-block">'
+        output = f'<h{tier} id="{snake}" class="clipboard-copy" data-clipboard-text="https://{SERVER_NAME}{request.path}#{snake}">{header}</h{tier}><div class="h-block">'
 
         output += self.render_inner(token)
 
