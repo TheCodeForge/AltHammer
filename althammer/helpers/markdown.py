@@ -17,7 +17,7 @@ class HBlock(BlockToken):
 
     def start(self, line):
 
-        if re.match(line, cls.start_pattern):
+        if re.match(line, self.start_pattern):
             hash_count = len(line.split()[0])
             return True
         else:
