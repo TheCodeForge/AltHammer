@@ -2,37 +2,47 @@
 
 {% block pagecontent %}
 
-# Terrain
+<h1>Terrain</h1>
 
 {% filter numbered_markdown %}
 
 <div class="nested-numbered-list">
 
-# Defense Line (ex. pipes, trenches, temporary fortifications)
+# Defense Line
+
+Pipes, trenches, sandbag lines, temporary fortifications
 
 * Can be traversed
 * Can be stood upon
 * Does not obstruct visibility
 
-# Hill (ex. building roof)
+# Hill
+
+Natural sloped terrain, building roof, platforms
 
 * Can be climbed (with vertical movement) and freely traversed
 * Can be stood upon
 * Obstructs visibility
 
-# Impassible Space (ex. lava, ponds, rivers, void space)
+# Impassible Space
+
+Lava, ponds, rivers, void space
 
 * Cannot be traversed unless Model has +Fly+
 * Cannot be stood upon unless Model has +Fly+
 * Does not obstruct visibility
 
-# Walls, Solid (ex. vehicle wreckage, solid walls, statues)
+# Walls, Solid
+
+Vehicle wreckage, solid walls, statues
 
 * Can be climbed
 * Cannot be stood upon
 * Obstructs visbility
 
-# Walls, Windowed (ex. ruined walls, dense brush)
+# Walls, Windowed
+
+Ruined walls, dense brush
 
 * Can be climbed
 * Cannot be stood upon
