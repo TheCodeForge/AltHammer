@@ -6,22 +6,22 @@
             {
                 "name": "Combat Doctrines",
                 "lore": "The Codex Stellar has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Star Marines hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
-                "text": "At the start of your Command phase, you can select one of the Combat Doctrines listed below. Until the start of your next Command phase, that Combat Doctrine is active and its effects apply to all +Star Marines+ units from your army. You can only select each Combat Doctrine once per battle.",
+                "text": "At the start of the Battle Round, you can select one of the Combat Doctrines listed below. Until the end of the Battle Round, that Combat Doctrine is active and its effects apply to all +Star Marines+ units from your army. You can only select each Combat Doctrine once per battle.",
                 "options": [
                     {
                         "name": "Devastator Doctrine",
                         "lore": "The Codex Stellar explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
-                        "text": "This unit is eligible to shoot in a turn in which it Advanced."
+                        "text": "Your Units may Move, Advance and Shoot in a single Activation."
                     },
                     {
                         "name": "Tactical Doctrine",
                         "lore": "As the warring armies close upon one another and vicious fire-fights erupt, the Codex lays out strategies for swiftly seizing the initiative and combining versatility with firepower.",
-                        "text": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+                        "text": "Your Units may Fight and then Move an extra d6 inches."
                     },
                     {
                         "name": "Assault Doctrine",
                         "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
-                        "text": "This unit is eligible to declare a charge in a turn in which it Advanced."
+                        "text": "Your Units may Move, Advance and Charge in a single Activation."
                     }
                 ]
             }
