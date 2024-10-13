@@ -57,4 +57,10 @@ class NumberedRenderer(CustomRenderer):
         header = token.lines[0]
         header = header.lstrip("#")
         header = header.lstrip()
-        return f'<h1>{header}</h1><div class="h-block">{'\n\n'.join(token.lines[1:])}</div>'
+
+        output = f'<h1>{header}</h1><div class="h-block">'
+        for line in token.lines[1:]:
+            output += str(line)
+
+        output += "</div>"
+        return output
