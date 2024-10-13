@@ -24,6 +24,14 @@
 
 **Restrictions:** {{ d.rules[rule].get("restrictions", "None") }}
 
+### Strategems
+
+{% for strat in strategems %}
+>[{{ strat['cost'] }}] {{ strat['name'] }}
+>
+>{{ strat['effect'] }}
+{% endfor %}
+
 {% for option in d.rules[rule]['options'] %}
 #### {{ option['name'] }}
 
@@ -36,6 +44,8 @@
 {% endfor %}
 
 {% if d.get('spells') %}
+
+### Spells
 
 {% for spell in d.spells %}
 >[{{ spell['difficulty'] }}] {{ spell['name'] }}
