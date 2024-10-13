@@ -109,7 +109,7 @@ $small-font-size: 12px;
 .nested-numbered-list h1 + p + p + p, 
 .nested-numbered-list h1 + p + ul + p,
 .nested-numbered-list h2 { 
-    padding-left: 15px 
+    margin-left: 15px 
 }
 
 .nested-numbered-list h2 + p, 
@@ -122,7 +122,7 @@ $small-font-size: 12px;
 .nested-numbered-list h2 + p + ul + p + p,
 .nested-numbered-list h2 + p + p + ul + p,
 .nested-numbered-list h3 { 
-    padding-left: 30px 
+    margin-left: 30px 
 }
 
 .nested-numbered-list h2 + p + ul,
@@ -131,45 +131,45 @@ $small-font-size: 12px;
 .nested-numbered-list h3 + p + p + p, 
 .nested-numbered-list h3 + p + p + p + p, 
 .nested-numbered-list h4 { 
-    padding-left: 45px 
+    margin-left: 45px 
 }
 
 .nested-numbered-list h4 + p, 
 .nested-numbered-list h4 + p + p, 
 .nested-numbered-list h4 + p + p + p, 
 .nested-numbered-list h5 { 
-    padding-left: 60px 
+    margin-left: 60px 
 }
 
 .nested-numbered-list h5 + p, 
 .nested-numbered-list h5 + p + p, 
 .nested-numbered-list h5 + p + p + p, 
 .nested-numbered-list h6 { 
-    padding-left: 75px 
+    margin-left: 75px 
 }
 
 .nested-numbered-list h6 + p, 
 .nested-numbered-list h6 + p + p, 
 .nested-numbered-list h6 + p + p + p { 
-    padding-left: 90px 
+    margin-left: 90px 
 }
 
 
 .nested-numbered-list h1 + p + ul,
 .nested-numbered-list h1 + p + p + ul {
-    padding-left: 35px;
+    margin-left: 35px;
 }
 
 .nested-numbered-list h2 + p + ul,
 .nested-numbered-list h2 + p + p + ul,
 .nested-numbered-list h2 + p + p + p + ul {
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .nested-numbered-list h3 + p + ul,
 .nested-numbered-list h3 + p + p + ul,
 .nested-numbered-list h2 + p + p + p + ul + p + p + p + blockquote {
-    padding-left: 65px;
+    margin-left: 65px;
 }
 
 
