@@ -55,10 +55,11 @@ class NumberedRenderer(CustomRenderer):
     def render_h_block(self, token):
 
         header = token.children[0]
+        tier = len(header.split()[0])
         header = header.lstrip("#")
         header = header.lstrip()
 
-        output = f'<h1>{header}</h1><div class="h-block">'
+        output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
         for line in token.children[1:]:
             output += str(line)
 
