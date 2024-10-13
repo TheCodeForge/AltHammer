@@ -62,7 +62,9 @@ class NumberedRenderer(CustomRenderer):
         header = header.lstrip("#")
         header = header.lstrip()
 
-        output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
+        snake = "_".join(header.lower().split())
+
+        output = f'<h{tier} id="{snake}">{header}</h{tier}><div class="h-block">'
 
         output += self.render_inner(token)
 
