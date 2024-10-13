@@ -2,6 +2,10 @@ from mistletoe.span_token import SpanToken
 from mistletoe.block_token import BlockToken, tokenize
 from mistletoe.html_renderer import HTMLRenderer
 import re
+from os import environ
+from flask import request
+
+SERVER_NAME = environ.get("SERVER_NAME")
 
 class Keyword(SpanToken):
 
@@ -64,7 +68,7 @@ class NumberedRenderer(CustomRenderer):
 
         snake = "_".join(header.lower().split())
 
-        output = f'<h{tier} id="{snake}">{header}</h{tier}><div class="h-block">'
+        output = f'<h{tier} id="{snake}" data-clipboard-text="https://{SERVER_NAME}{request.path}#{snake}">{header}</h{tier}><div class="h-block">'
 
         output += self.render_inner(token)
 
