@@ -75,9 +75,11 @@ Add terrain features in a mutually agreeable manner. Overall terrain layout shou
 
 Ensure that the classification of all terrain features is mutually understood and agreed upon. See [Terrain](/core_rules/terrain)
 
-## Reveal Armies
+## Reveal Armies and Formations
 
 Reveal your chosen Faction, Detachment, and mustered Units to the opposing player, if you have not already done so. Identify which Model is your +Warlord+.
+
+Identify any 
 
 ## Sideboard Option
 
@@ -210,7 +212,7 @@ All +Psychic+ Models know the spell Smite:
 
 > **[6] Smite**
 > 
-> Select a target within 18". It suffers d6 Mortal Damage. For the remainder of the Battle Round, increase the Difficulty of this spell by 1.
+> Select a target within 18". It suffers d6 Mortal Damage. Until the end of the Battle Round, increase the Difficulty of this spell by 1.
 
 ## Shoot
 
@@ -232,26 +234,41 @@ Select a target Enemy Unit that is within Melee Distance. Choose a melee weapon 
 
 # Combat
 
-All combat consists of three to four dice rolls made by an attacking unit and its target:
+All combat is made with a weapon profile listed on the attacking Unit's data card. The attacking model makes a number of attacks equal to the Attacks characteristic of the weapon profile.
 
-Regardless of any modifiers applied to the dice rolls in this process, an Unmodified 6 is always a "success" and an Unmodified 1 is always a "fail".
+For each attack:
+
+# Attacker rolls to Hit. If successful, continue.
+# Attacker rolls to Wound. If successful, continue.
+# Defender rolls to Save. If failed, 
 
 ## Hit Roll
 
 Attacker rolls d6. If the result is greater than or equal to the Skill characteristic of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
 
+Unmodified Hit Rolls of 1 are treated as "Critical Fails", and are always unsuccessful, regardless of any modifiers.
+
+Unmodified Hit Rolls of 6 are treated as "Critical Hits", and are always successful, regardless of any modifiers. 
+
 ## Wound Roll
 
 Attacker rolls d6. Compare the attacking weapon profile's Strength characteristic with the targeted unit's Toughness characteristic to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
+
      * Strength half of Toughness or less: 6+ required
      * Strength less than Toughness: 5+ required
      * Strength equal to Toughness: 4+ required
      * Strength greater than Toughness: 3+ required
      * Strength double Toughness or greater: 2+ required.
 
+Unmodified Wound Rolls of 1 are treated as "Critical Fails", and are always unsuccessful, regardless of any modifiers.
+
+Unmodified Wound Rolls of 6 are treated as "Critical Wounds", and are always successful, regardless of any modifiers. 
+
 ## Saving Throw
 
-The defending player selects a Model in the targeted Unit that is within line of sight and range to the attacking Unit. If a wounded model which is not an attached +Leader+ meets this criteria, then that model must be selected.
+The defending player selects a Model in the targeted Unit that is within line of sight and range to the attacking Unit. 
+
+If a wounded Model is a legal option, select that Model. A +Leader+ Model must not be chosen, unless the attacking weapon is +[Precise]+
 
 The defending player rolls d6 and worsens the result by the attacking weapon's Armor Penetration characteristic. If the result is greater than or equal to the Armor Save characteristic of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the Damage characteristic of the attacking weapon.
 
@@ -259,9 +276,9 @@ The defending player rolls d6 and worsens the result by the attacking weapon's A
 
 If the target Model has an Invulnerable Save characteristic, the Armor Save cannot be modified to be worse than the Invulnerable Save.
 
-## Feel No Pain
+### Feel No Pain
 
-If the target Model has a Feel No Pain rule characteristic, roll one d6 for each point of damage to be taken. If the result is greater than or equal to the Feel No Pain rule characteristic, a point of damage is ignored.
+If the target Model has a Feel No Pain rule characteristic, after failing a Saving Throw, roll one d6 for each point of damage to be taken. If the result is greater than or equal to the Feel No Pain rule characteristic, reduce the damage of the attack by 1.
 
 ## Apply Damage
 
