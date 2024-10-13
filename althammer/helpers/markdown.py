@@ -15,10 +15,9 @@ class HBlock(BlockToken):
 
     pattern = re.compile(r"^#{1,6} ")
 
-    
-    @staticmethod
-    def start(line):
-        return bool(re.match(line, pattern))
+    @classmethod
+    def start(cls, line):
+        return bool(re.match(line, cls.pattern))
 
 
 
