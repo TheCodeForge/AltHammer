@@ -11,52 +11,28 @@ class Keyword(SpanToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
-class HOneBlock(BlockToken):
+class HOneBlock(SpanToken):
 
+    pattern = re.compile(r"^#{1} .+?\n\n(.+?)(?=\n#)", flags=re.S)
     parse_inner = True
 
-    @staticmethod
-    def start(line):
-        return line.startswith("# ")
-
-    @staticmethod
-    def read(lines):
-        line_buffer = [next(lines)]
-        for line in lines:
-            if line.startswith('#'):
-                break
-            line_buffer.append(line)
-        return line_buffer
+    def __init__(self, match_obj):
+        self.target = match_obj.group(1)
 
 class HTwoBlock(HOneBlock):
-
-    @staticmethod
-    def start(line):
-        return line.startswith("## ")
+    pattern = re.compile(r"^#{2} .+?\n\n(.+?)(?=\n#)", flags=re.S)
 
 class HThreeBlock(HOneBlock):
-
-    @staticmethod
-    def start(line):
-        return line.startswith("### ")
+    pattern = re.compile(r"^#{3} .+?\n\n(.+?)(?=\n#)", flags=re.S)
 
 class HFourBlock(HOneBlock):
-
-    @staticmethod
-    def start(line):
-        return line.startswith("#### ")
+    pattern = re.compile(r"^#{4} .+?\n\n(.+?)(?=\n#)", flags=re.S)
 
 class HFiveBlock(HOneBlock):
-
-    @staticmethod
-    def start(line):
-        return line.startswith("##### ")
+    pattern = re.compile(r"^#{5} .+?\n\n(.+?)(?=\n#)", flags=re.S)
 
 class HSixBlock(HOneBlock):
-
-    @staticmethod
-    def start(line):
-        return line.startswith("###### ")
+    pattern = re.compile(r"^#{6} .+?\n\n(.+?)(?=\n#)", flags=re.S)
 
 
 
@@ -76,20 +52,20 @@ class NumberedRenderer(CustomRenderer):
     def __init__(self, **kwargs):
         super().__init__(HOneBlock, HTwoBlock, HThreeBlock, HFourBlock, HFiveBlock, HSixBlock)
 
-    def render_h_one_block(self, lines):
-        return f'{lines[0]}<div class="h1-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_one_block(self, token):
+        return f'<div class="h1-block">{token.target}</div>'
 
-    def render_h_two_block(self, lines):
-        return f'{lines[0]}<div class="h2-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_two_block(self, token):
+        return f'<div class="h2-block">{token.target}</div>'
 
-    def render_h_three_block(self, lines):
-        return f'{lines[0]}<div class="h3-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_three_block(self, token):
+        return f'<div class="h3-block">{token.target}</div>'
 
-    def render_h_four_block(self, lines):
-        return f'{lines[0]}<div class="h4-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_four_block(self, token):
+        return f'<div class="h4-block">{token.target}</div>'
 
-    def render_h_five_block(self, lines):
-        return f'{lines[0]}<div class="h5-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_five_block(self, token):
+        return f'<div class="h5-block">{token.target}</div>'
 
-    def render_h_six_block(self, lines):
-        return f'{lines[0]}<div class="h6-block">{'\n\n'.join(lines[1:])}</div>'
+    def render_h_six_block(self, token):
+        return f'<div class="h6-block">{token.target}</div>'
