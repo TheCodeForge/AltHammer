@@ -1,7 +1,9 @@
 {% extends "_core_centered.html" %}
 
 {% block pagecontent %}
-{% filter markdown %}
+
+{% filter numbered_markdown %}
+
 # {{ f.name }}
 
 *{{f.lore}}*
