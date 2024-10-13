@@ -18,7 +18,7 @@ class HBlock(BlockToken):
     def __init__(self, lines):
         self.lines = lines
         # self.target = lines[0]
-        self.children = tokenize('\n'.join(lines[1:]))
+        self.children = tokenize(lines[1:])
 
     @classmethod
     def start(cls, line):
