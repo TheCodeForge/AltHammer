@@ -19,19 +19,19 @@ class HOneBlock(BlockToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
-class HTwoBlock(H1Block):
+class HTwoBlock(HOneBlock):
     pattern = re.compile(r"^#{2} .+?\n\n(.+?)(?=\n#)")
 
-class HThreeBlock(H1Block):
+class HThreeBlock(HOneBlock):
     pattern = re.compile(r"^#{3} .+?\n\n(.+?)(?=\n#)")
 
-class HFourBlock(H1Block):
+class HFourBlock(HOneBlock):
     pattern = re.compile(r"^#{4} .+?\n\n(.+?)(?=\n#)")
 
-class HFiveBlock(H1Block):
+class HFiveBlock(HOneBlock):
     pattern = re.compile(r"^#{5} .+?\n\n(.+?)(?=\n#)")
 
-class HSixBlock(H1Block):
+class HSixBlock(HOneBlock):
     pattern = re.compile(r"^#{6} .+?\n\n(.+?)(?=\n#)")
 
 
