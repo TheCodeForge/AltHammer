@@ -34,7 +34,7 @@ class HBlock(BlockToken):
                 break
             child_lines.append(line)
 
-        return tokenize(child_lines)
+        return tokenize(child_lines[1:])
 
 class CustomRenderer(HTMLRenderer):
 
@@ -53,4 +53,8 @@ class NumberedRenderer(CustomRenderer):
         super().__init__(HBlock)
 
     def render_h_block(self, token):
-        return f'{token.lines[0]}<div class="h-block">{'\n\n'.join(token.lines[1:])}</div>'
+
+        header = lines[0]
+        header = header.lstrip("#")
+        header = header.lstrip()
+        return f'<h1>{header}</h1><div class="h-block">{'\n\n'.join(token.lines[1:])}</div>'
