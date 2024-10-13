@@ -29,7 +29,11 @@
 {% for strat in strategems %}
 >[{{ strat['cost'] }}] {{ strat['name'] }}
 >
->{{ strat['effect'] }}
+>**When:** {{ strat['when'] }}
+>
+>**Target:** {{ strat['target'] }}
+>
+>**Effect:** {{ strat['effect'] }}
 {% endfor %}
 
 {% for option in d.rules[rule]['options'] %}

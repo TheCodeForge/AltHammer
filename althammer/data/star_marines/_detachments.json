@@ -47,15 +47,17 @@
             {
                 "name": "Armor of Contempt",
                 "cost": 7,
-                "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
+                "when": "Immediately after an enemy Unit has declared a Ranged or Melee attack",
+                "target": "Your unit being attacked",
+                "effect": "Until the end of the Battle Round, your Unit has +1 to its Saving Rolls"
             },
             {
-                "name": "Armor of Contempt",
+                "name": "Shield of Disgust",
                 "cost": 7,
                 "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
             },
             {
-                "name": "Armor of Contempt",
+                "name": "Sword of Hatred",
                 "cost": 7,
                 "effect": "Until the end of the Battle Round, Friendly Units within 18\" have +1 to all Saving Rolls."
             }
