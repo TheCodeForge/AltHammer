@@ -26,7 +26,7 @@ class HBlock(BlockToken):
     def read(cls, lines):
         #Reads lines until encountering an equal or higher heading
         child_lines=[next(lines)]
-        hash_count = str(len(line_buffer[0].split()[0]))
+        hash_count = str(len(child_lines[0].split()[0]))
         end_pattern = re.compile(r"^#{1,"+hash_count+r"} ")
 
         for line in lines:
