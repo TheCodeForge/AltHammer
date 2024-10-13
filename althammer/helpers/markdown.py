@@ -32,6 +32,7 @@ class HBlock(BlockToken):
 
         for line in lines:
             if re.match(end_pattern, line):
+                lines.set_pos(lines.get_pos()-1)
                 break
             child_lines.append(line)
 
