@@ -106,6 +106,17 @@ $small-font-size: 12px;
 
 .nested-numbered-list .h-block { margin-left: 15px }
 
+.nested-numbered-list h1:hover::after,
+.nested-numbered-list h2:hover::after,
+.nested-numbered-list h3:hover::after,
+.nested-numbered-list h4:hover::after,
+.nested-numbered-list h5:hover::after,
+.nested-numbered-list h6:hover::after {
+    content: "";
+    color: grey;
+}
+
+
 /*blockquotes*/
 
 blockquote {
