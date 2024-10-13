@@ -25,16 +25,17 @@ class HBlock(BlockToken):
     @classmethod
     def read(cls, lines):
         #Reads lines until encountering an equal or higher heading
-        line_buffer=[next(lines)]
+        child_lines=[next(lines)]
         hash_count = str(len(line_buffer[0].split()[0]))
         end_pattern = re.compile(r"^#{1,"+hash_count+r"} ")
 
         for line in lines:
             if re.match(end_pattern, line):
                 break
-            line_buffer.append(line)
+            child_lines.append(line)
 
-        return line_buffer
+        children = tokenize(child_lines)
+        return children
 
 class CustomRenderer(HTMLRenderer):
 
