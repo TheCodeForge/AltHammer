@@ -34,8 +34,7 @@ class HBlock(BlockToken):
                 break
             child_lines.append(line)
 
-        children = tokenize(child_lines)
-        return children
+        return tokenize(child_lines)
 
 class CustomRenderer(HTMLRenderer):
 
