@@ -110,6 +110,8 @@ $small-font-size: 12px;
 .nested-numbered-list h1 + p + ul + p,
 .nested-numbered-list h1 + p + ul,
 .nested-numbered-list h1 + p + p + ul,
+.nested-numbered-list h1 + p + p + ul + p,
+.nested-numbered-list h1 + p + p + ul + p + p,
 .nested-numbered-list h2 { 
     margin-left: 15px 
 }
