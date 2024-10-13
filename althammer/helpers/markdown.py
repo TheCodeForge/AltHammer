@@ -20,7 +20,7 @@ class HBlock(BlockToken):
         return bool(re.match(cls.start_pattern, line))
 
     @classmethod
-    def read(lines):
+    def read(cls, lines):
         #Reads lines until encountering an equal or higher heading
         line_buffer=[next(lines)]
         hash_count = str(len(line_buffer[0].split()[0]))
