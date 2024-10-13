@@ -104,12 +104,7 @@ $small-font-size: 12px;
     counter-increment: h6
     }
 
-.nested-numbered-list h2, .h1-block { margin-left: 15px }
-.nested-numbered-list h3, .h2-block { margin-left: 30px }
-.nested-numbered-list h4, .h3-block { margin-left: 45px }
-.nested-numbered-list h5, .h4-block { margin-left: 60px }
-.nested-numbered-list h6, .h5-block { margin-left: 75px }
-.h6-block { margin-left: 90px }
+.nested-numbered-list .h-block { margin-left: 15px }
 
 /*blockquotes*/
 

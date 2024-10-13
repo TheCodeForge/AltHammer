@@ -1,5 +1,5 @@
 from mistletoe.span_token import SpanToken
-from mistletoe.block_token import BlockToken
+from mistletoe.block_token import BlockToken, tokenize
 from mistletoe.html_renderer import HTMLRenderer
 import re
 
@@ -11,30 +11,33 @@ class Keyword(SpanToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
-class HOneBlock(SpanToken):
+class HBlock(BlockToken):
 
-    pattern = re.compile(r"^#{1} .+?\n\n(.+?)(?=\n#)", flags=re.S)
-    parse_inner = True
+    start_pattern = re.compile(r"^#{1,6} ")
 
-    def __init__(self, match_obj):
-        self.target = match_obj.group(1)
+    def __init__(self, lines):
+        self.lines = lines
+        # self.target = lines[0]
+        self.children = tokenize(lines[1:])
 
-class HTwoBlock(HOneBlock):
-    pattern = re.compile(r"^#{2} .+?\n\n(.+?)(?=\n#)", flags=re.S)
+    @classmethod
+    def start(cls, line):
+        return bool(re.match(cls.start_pattern, line))
 
-class HThreeBlock(HOneBlock):
-    pattern = re.compile(r"^#{3} .+?\n\n(.+?)(?=\n#)", flags=re.S)
+    @classmethod
+    def read(cls, lines):
+        #Reads lines until encountering an equal or higher heading
+        child_lines=[next(lines)]
+        hash_count = str(len(child_lines[0].split()[0]))
+        end_pattern = re.compile(r"^#{1,"+hash_count+r"} ")
 
-class HFourBlock(HOneBlock):
-    pattern = re.compile(r"^#{4} .+?\n\n(.+?)(?=\n#)", flags=re.S)
+        for line in lines:
+            if re.match(end_pattern, line):
+                lines.set_pos(lines.get_pos()-1)
+                break
+            child_lines.append(line)
 
-class HFiveBlock(HOneBlock):
-    pattern = re.compile(r"^#{5} .+?\n\n(.+?)(?=\n#)", flags=re.S)
-
-class HSixBlock(HOneBlock):
-    pattern = re.compile(r"^#{6} .+?\n\n(.+?)(?=\n#)", flags=re.S)
-
-
+        return child_lines #[child_lines[0]]+tokenize(child_lines[1:])
 
 class CustomRenderer(HTMLRenderer):
 
@@ -50,22 +53,18 @@ class CustomRenderer(HTMLRenderer):
 class NumberedRenderer(CustomRenderer):
 
     def __init__(self, **kwargs):
-        super().__init__(HOneBlock, HTwoBlock, HThreeBlock, HFourBlock, HFiveBlock, HSixBlock)
+        super().__init__(HBlock)
 
-    def render_h_one_block(self, token):
-        return f'<div class="h1-block">{token.target}</div>'
+    def render_h_block(self, token):
 
-    def render_h_two_block(self, token):
-        return f'<div class="h2-block">{token.target}</div>'
+        header = token.lines[0]
+        tier = len(header.split()[0])
+        header = header.lstrip("#")
+        header = header.lstrip()
 
-    def render_h_three_block(self, token):
-        return f'<div class="h3-block">{token.target}</div>'
+        output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
 
-    def render_h_four_block(self, token):
-        return f'<div class="h4-block">{token.target}</div>'
+        output += self.render_inner(token)
 
-    def render_h_five_block(self, token):
-        return f'<div class="h5-block">{token.target}</div>'
-
-    def render_h_six_block(self, token):
-        return f'<div class="h6-block">{token.target}</div>'
+        output += "</div>"
+        return output
