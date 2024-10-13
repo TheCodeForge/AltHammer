@@ -103,6 +103,12 @@ $small-font-size: 12px;
     counter-increment: h6
     }
 
+.nested-numbered-list h2 { padding-left: 15px }
+.nested-numbered-list h3 { padding-left: 30px }
+.nested-numbered-list h4 { padding-left: 45px }
+.nested-numbered-list h5 { padding-left: 60px }
+.nested-numbered-list h6 { padding-left: 75px }
+
 
 /*blockquotes*/
 
