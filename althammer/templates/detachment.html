@@ -47,7 +47,7 @@
 
 {% endfor %}
 
-{% if d.getattr('spells') %}
+{% if d.__dict__.get('spells') %}
 
 ### Spells
 
