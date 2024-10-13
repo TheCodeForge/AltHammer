@@ -53,4 +53,4 @@ class NumberedRenderer(CustomRenderer):
         super().__init__(HBlock)
 
     def render_h_block(self, token):
-        return f'{token.lines[0]}<div class="h-block">{'\n'.join(token.lines[1:])}</div>'
+        return f'{token.lines[0]}<div class="h-block">{'\n\n'.join(token.lines[1:])}</div>'
