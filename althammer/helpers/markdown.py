@@ -38,7 +38,7 @@ class HThreeBlock(HOneBlock):
 
     @staticmethod
     def start(line):
-        return line.startswith("###")
+        return line.startswith("### ")
 
 class HFourBlock(HOneBlock):
 
