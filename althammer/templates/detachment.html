@@ -24,18 +24,6 @@
 
 **Restrictions:** {{ rule.get("restrictions", "None") }}
 
-### Strategems
-
-{% for strat in strategems %}
->[{{ strat['cost'] }}] {{ strat['name'] }}
->
->**When:** {{ strat['when'] }}
->
->**Target:** {{ strat['target'] }}
->
->**Effect:** {{ strat['effect'] }}
-{% endfor %}
-
 {% for option in rule['options'] %}
 #### {{ option['name'] }}
 
@@ -48,6 +36,18 @@
 {% endfor %}
 
 {% if d.__dict__.get('spells') %}
+
+### Strategems
+
+{% for strat in d.strategems %}
+>[{{ strat['cost'] }}] {{ strat['name'] }}
+>
+>**When:** {{ strat['when'] }}
+>
+>**Target:** {{ strat['target'] }}
+>
+>**Effect:** {{ strat['effect'] }}
+{% endfor %}
 
 ### Spells
 
