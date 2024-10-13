@@ -13,11 +13,17 @@ class Keyword(SpanToken):
 
 class HBlock(BlockToken):
 
-    pattern = re.compile(r"^#{1,6} ")
+    start_pattern = re.compile(r"^#{1,6} ")
 
-    @classmethod
-    def start(cls, line):
-        return bool(re.match(line, cls.pattern))
+    def start(self, line):
+
+        if re.match(line, cls.start_pattern):
+            hash_count = len(line.split()[0])
+            return True
+        else:
+            return False
+
+
 
 
 
