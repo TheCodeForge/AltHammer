@@ -16,13 +16,13 @@
 ## Detachment: {{ d.name }}
 
 {% for rule in d.rules %}
-### {{ d.rules[rule]['name'] }}
+### {{ rule['name'] }}
 
-*{{ d.rules[rule]['lore'] }}*
+*{{ rule['lore'] }}*
 
-{{ d.rules[rule]['text'] }}
+{{ rule['text'] }}
 
-**Restrictions:** {{ d.rules[rule].get("restrictions", "None") }}
+**Restrictions:** {{ rule.get("restrictions", "None") }}
 
 ### Strategems
 
@@ -36,7 +36,7 @@
 >**Effect:** {{ strat['effect'] }}
 {% endfor %}
 
-{% for option in d.rules[rule]['options'] %}
+{% for option in rule['options'] %}
 #### {{ option['name'] }}
 
 *{{ option['lore'] }}*
