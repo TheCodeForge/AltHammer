@@ -15,13 +15,9 @@ class HBlock(BlockToken):
 
     start_pattern = re.compile(r"^#{1,6} ")
 
-    def start(self, line):
-
-        if re.match(line, self.start_pattern):
-            self.hash_count = len(line.split()[0])
-            return True
-        else:
-            return False
+    @classmethod
+    def start(line):
+        return bool(re.match(line, self.start_pattern))
 
 
 
