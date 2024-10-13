@@ -50,7 +50,7 @@ class CustomRenderer(HTMLRenderer):
 class NumberedRenderer(CustomRenderer):
 
     def __init__(self, **kwargs):
-        super().__init__(HOneBlocklock, HTwoBlock, HThreeBlock, HFourBlock, HFiveBlock, HSixBlock)
+        super().__init__(HOneBlock, HTwoBlock, HThreeBlock, HFourBlock, HFiveBlock, HSixBlock)
 
     def render_h_one_block(self, token):
         return f'<div class="h1-block">{token.target}</div>'
