@@ -146,6 +146,12 @@ $small-font-size: 12px;
     padding-left: 90px 
 }
 
+
+.nested-numbered-list h1 + p + ul,
+.nested-numbered-list h1 + p + p + ul {
+    padding-left: 35px;
+}
+
 .nested-numbered-list h2 + p + ul,
 .nested-numbered-list h2 + p + p + ul {
     padding-left: 50px;
