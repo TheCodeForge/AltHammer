@@ -112,8 +112,18 @@ $small-font-size: 12px;
 .nested-numbered-list h4:hover::after,
 .nested-numbered-list h5:hover::after,
 .nested-numbered-list h6:hover::after {
-    content: "";
-    color: grey;
+    content: "click to copy";
+    font-size: $small-font-size;
+    color: lightgray;
+}
+
+.nested-numbered-list h1,
+.nested-numbered-list h2,
+.nested-numbered-list h3,
+.nested-numbered-list h4,
+.nested-numbered-list h5,
+.nested-numbered-list h6 {
+    cursor: pointer;
 }
 
 
