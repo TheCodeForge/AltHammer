@@ -133,7 +133,6 @@ $small-font-size: 12px;
     margin-left: 30px 
 }
 
-.nested-numbered-list h2 + p + p + p + ul + p + p + p + blockquote,
 .nested-numbered-list h3 + p, 
 .nested-numbered-list h3 + p + p, 
 .nested-numbered-list h3 + p + p + p, 
@@ -144,6 +143,7 @@ $small-font-size: 12px;
     margin-left: 45px 
 }
 
+.nested-numbered-list h3 + p + blockquote,
 .nested-numbered-list h4 + p, 
 .nested-numbered-list h4 + p + p, 
 .nested-numbered-list h4 + p + p + p, 
