@@ -16,8 +16,9 @@ class HBlock(BlockToken):
     start_pattern = re.compile(r"^#{1,6} ")
 
     def __init__(self, lines):
-        self.target = lines[0]
-        self.children = tokenize(lines[1:])
+        self.lines = lines
+        # self.target = lines[0]
+        # self.children = tokenize(lines[1:])
 
     @classmethod
     def start(cls, line):
@@ -56,7 +57,7 @@ class NumberedRenderer(CustomRenderer):
 
     def render_h_block(self, token):
 
-        header = token.target
+        header = token.lines[0]
         tier = len(header.split()[0])
         header = header.lstrip("#")
         header = header.lstrip()
@@ -64,7 +65,7 @@ class NumberedRenderer(CustomRenderer):
         output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
 
         for child in token.children:
-            output += self.render_inner(child)
+            output += self.render_inner(lines[1:])
 
         output += "</div>"
         return output
