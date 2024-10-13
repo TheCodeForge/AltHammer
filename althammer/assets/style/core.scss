@@ -75,7 +75,8 @@ $small-font-size: 12px;
 .nested-numbered-list h5,
 .nested-numbered-list h6 { 
     display: block;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .nested-numbered-list h1:before {
