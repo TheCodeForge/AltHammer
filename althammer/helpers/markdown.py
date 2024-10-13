@@ -61,8 +61,9 @@ class NumberedRenderer(CustomRenderer):
         header = header.lstrip()
 
         output = f'<h{tier}>{header}</h{tier}><div class="h-block">'
-        for line in token.children:
-            output += self.render_inner(line)
+
+        for child in token.children:
+            output += self.render_inner(child)
 
         output += "</div>"
         return output
