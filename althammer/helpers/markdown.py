@@ -18,6 +18,7 @@ class HBlock(BlockToken):
 
     def __init__(self, target):
         self.target = target
+        self.target = [self.target[0]]+[tokenize(self.target[1:])]
 
     @classmethod
     def start(cls, line):
