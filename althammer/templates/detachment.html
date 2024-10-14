@@ -43,6 +43,8 @@
 ### Strategems
 
 {% for strat in d.strategems %}
+#### {{ strat['name'] }}
+
 >**[{{ strat['cost'] }}] {{ strat['name'] }}**
 >
 >**When:** {{ strat['when'] }}
@@ -55,6 +57,8 @@
 ### Spells
 
 {% for spell in d.spells %}
+#### {{ spell['name'] }}
+
 >**[{{ spell['difficulty'] }}] {{ spell['name'] }}**
 >
 >{{ spell['effect'] }}
