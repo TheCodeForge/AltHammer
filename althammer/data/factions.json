@@ -5,7 +5,7 @@
         "lore": "In battle, Space Marines swear mighty oaths to ruin the enemies of the Imperium and uphold the honor of their Chapter. When the Space Marines strike, they do so with precision, reading the shifting battle with post-human speed and clarity, directing their wrath towards one priority target after another. Command assets, heavy artilery, and vaunted elites are laid waste with horrifying speed, until the Emperor's angels stand victorious over a field of smoulering ruin.",
         "rules": {
             "Space Marine Chapters": "Your army's units may not feature different secondary Faction keywords.",
-            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time a +Star Marines+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+            "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +Adeptus Astartes+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
         }
     },
     "heretic_astartes": {
