@@ -2,12 +2,12 @@
     "waaaagh_tribe":{
         "id": "waaaagh_tribe",
         "name": "WAAAAGH Tribe",
-        "rules": {
-            "get_stuck_in": {
+        "rules": [
+            {
                 "name": "Get Stuck In",
                 "lore": "Once an Orx gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
                 "text": "Melee weapons equipped by your +Orcs+ have +[Sustained Hits 1]+"
             }
-        }
+        ]
     }
 }
