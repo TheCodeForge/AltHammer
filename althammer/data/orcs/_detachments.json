@@ -5,7 +5,7 @@
         "rules": [
             {
                 "name": "Get Stuck In",
-                "lore": "Once an Orx gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
+                "lore": "Once an Orc gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
                 "text": "Melee weapons equipped by your +Orcs+ have +[Sustained Hits 1]+"
             }
         ]
