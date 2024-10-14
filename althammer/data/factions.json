@@ -13,7 +13,7 @@
         "name": "Heretic Astartes",
         "lore": "Beseeching the Chaos Gods with heretical fervor, the profane champions of the Heretic Astartes pray for diabolical blessings, promising the vilest of sacrifices in return for power.",
         "rules": {
-            "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
+            "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
     },
     "necrons": {
