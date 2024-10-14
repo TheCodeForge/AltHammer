@@ -10,7 +10,7 @@
     "heretic_astartes": {
         "id": "heretic_astartes",
         "name": "Heretic Astartes",
-        "lore": "Ten thousand years ago, as the God-King and his Star Marines were on the cusp of uniting the galaxy, some of the Star Marines uncovered dark powers. They revolted against their father, plunging the God-King's fledgling empire into civil war.",
+        "lore": "Ten thousand years ago, as the Emperor and his Space Marines were on the cusp of uniting the galaxy, some of the Marines fell to dark powers. They revolted against their father, plunging the fledgling Imperium into civil war.",
         "rules": {
             "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
