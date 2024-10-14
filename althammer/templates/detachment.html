@@ -30,7 +30,7 @@
 {% for option in rule['options'] %}
 #### {{ option['name'] }}
 
-*{{ option['lore'] }}*
+{% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
 
 {{ option['text'] }}
 
