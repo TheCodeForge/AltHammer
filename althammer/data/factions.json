@@ -2,15 +2,16 @@
     "adeptus_astartes": {
         "id": "adeptus_astartes",
         "name": "Adeptus Astartes",
-        "lore": "The Adeptus Astartes - the Space Marines - are some of the Emperor's finest warriors, created using advanced genetic science few others understand. In His absence, the Marines follow His primarch son's written teachings on the conquest of the stars - the Codex Astartes",
+        "lore": "In battle, Space Marines swear mighty oaths to ruin the enemies of the Imperium and uphold the honor of their Chapter. When the Space Marines strike, they do so with precision, reading the shifting battle with post-human speed and clarity, directing their wrath towards one priority target after another. Command assets, heavy artilery, and vaunted elites are laid waste with horrifying speed, until the Emperor's angels stand victorious over a field of smoulering ruin.",
         "rules": {
+            "Space Marine Chapters": "Your army's units may not feature different secondary Faction keywords.",
             "Oath of Moment": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time a +Star Marines+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
         }
     },
     "heretic_astartes": {
         "id": "heretic_astartes",
         "name": "Heretic Astartes",
-        "lore": "Ten thousand years ago, as the Emperor and his Space Marines were on the cusp of uniting the galaxy, some of the Marines fell to dark powers. They revolted against their father, plunging the fledgling Imperium into civil war.",
+        "lore": "Beseechign the Chaos Gods with heretical fervor, the profane champions of the Heretic Astartes pray for diabolical blessings, promising the vilest of sacrifices in return for power.",
         "rules": {
             "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
@@ -18,7 +19,7 @@
     "necrons": {
         "id": "necrons",
         "name": "Necrons",
-        "lore": "The scattered dynasties of the Necrons pursue many different paths to dominance, each guided by their own traditions and martial doctrins. All dynasties also benefit from the practically supernatural technologies that they once used to dominate the galaxy. Perhaps the most unsettling of these are the Reanimation Protocols. Should a Necron be slain, its body may begin reattaching and reforming, until the Necron rises again to return to battle..",
+        "lore": "The scattered dynasties of the Necrons pursue many different paths to dominance, each guided by their own traditions and martial doctrins. All dynasties also benefit from the practically supernatural technologies that they once used to dominate the galaxy. Perhaps the most unsettling of these are the Reanimation Protocols. Should a Necron be slain, its body may begin reattaching and reforming, until the Necron rises again to return to battle.",
         "rules": {
             "Reanimation Protocols": "At the start of each Battle Round, each unit from your army restores d3 Health. Each time such a unit restores a point of Health:\n* If the unit contains one or more models below their starting Health, select one of those models; that model regains one point of Health\n* If all models in that unit are at their starting Health, but the unit is below its starting strength, return one destroyed model to the unit with one point of Health remaining.\n* If all models in the unit are at their starting Health and the unit is at its starting strength, nothing happens."
         }
