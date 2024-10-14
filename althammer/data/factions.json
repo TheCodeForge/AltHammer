@@ -15,10 +15,18 @@
             "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[LETHAL HITS]+\n* +[SUSTAINED HITS 1]+\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal wounds."
         }
     },
+    "necrons": {
+        "id": "necrons",
+        "name": "Necrons",
+        "lore": "The scattered dynasties of the Necrons pursue many different paths to dominance, each guided by their own traditions and martial doctrins. All dynasties also benefit from the practically supernatural technologies that they once used to dominate the galaxy. Perhaps the most unsettling of these are the Reanimation Protocols. Should a Necron be slain, its body may begin reattaching and reforming, until the Necron rises again to return to battle..",
+        "rules": {
+            "Reanimation Protocols": "At the start of each Battle Round, each unit from your army restores d3 Health. Each time such a unit restores a point of Health:\n* If the unit contains one or more models below their starting Health, select one of those models; that model regains one point of Health\n* If all models in that unit are at their starting Health, but the unit is below its starting strength, return one destroyed model to the unit with one point of Health remaining.\n* If all models in the unit are at their starting Health and the unit is at its starting strength, nothing happens."
+        }
+    },
     "orcs": {
         "id": "orcs",
         "name": "Orcs",
-        "lore": "The infamous war cry of the Orx is known and feared throughout the galaxy. When it echoes across the battelfield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
+        "lore": "The infamous war cry of the Orc is known and feared throughout the galaxy. When it echoes across the battelfield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
         "rules": {
             "WAAAAGH!": "Once per battle, at the start of a battle round, call a WAAAAGH. If you do, until the start of the next battle round:\n* Your +Orcs+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orx+ models.\n* Your +Orcs+ models have a 5++ Invulnerable Save."
         }
