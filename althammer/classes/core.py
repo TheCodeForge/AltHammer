@@ -25,7 +25,8 @@ class Faction(Base):
         try:
             with open(path, "r+") as file:
                 data=json.load(file)
-        except:
+        except Exception as e:
+            print(e)
             return []
             
         output = [Detachment(x) for x in data.values()]
