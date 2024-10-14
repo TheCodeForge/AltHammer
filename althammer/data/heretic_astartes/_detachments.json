@@ -74,6 +74,20 @@
                 "when": "Immediately after an enemy unit selects a Shoot target",
                 "target": "Your unit being attacked",
                 "effect": "Until the end of the Battle Round, your unit has the Stealth ability. In addition, if your unit is a +Nurgle+ unit, your unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
+            },
+            {
+                "name": "Unnatural Swiftness",
+                "cost": 1,
+                "when": "Your unit Activation",
+                "target": "Your unit being Activated",
+                "effect": "For this Activation, your unit may Shoot or Charge after making a Fall Back move. In addition, if your unit is a +Slaanesh+ unit, your unit may Shoot or Charge after making an Advance move."
+            },
+            {
+                "name": "Profane Zeal",
+                "cost": 1,
+                "when": "Your unit Activation",
+                "target": "Your +Chaos Undivided+ unit being activated",
+                "effect": "Until the end of the Activation, whenever your unit makes an attack, you may re-roll the Wound roll."
             }
         ]
     }
