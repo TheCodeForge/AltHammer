@@ -29,13 +29,18 @@
         "spells": [
             {
                 "name": "Veil of Time",
-                "difficulty": 6,
+                "difficulty": 7,
                 "effect": "Select one friendly unit with in 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
             },
             {
                 "name": "Fury of the Ancients",
-                "difficulty": 6,
+                "difficulty": 7,
                 "effect": "Select one visible enemy Model within 18\". Draw a line between any part of this model's base and any part of the selected model's base (or hull). The selected model's unit, and every other enemy unit that this line passes over or through, suffers 1 Mortal Damage"
+            },
+            {
+                "name": "Psychic Fortress",
+                "difficulty": 7,
+                "effect": "Until the end of the Battle Round, friendly units within 6\" have a 5++ Invulnerable Save."
             }
         ],
         "strategems": [
