@@ -1,28 +1,38 @@
 {
-    "codex_astartes_task_force":{
-        "id": "codex_astartes_task_force",
-        "name": "Codex Astartes Task Force",
+    "slaves_to_chaos_undivided":{
+        "id": "slaves_to_chaos_undivided",
+        "name": "Slaves to Chaos Undivided",
         "rules": [ 
             {
-                "name": "Combat Doctrines",
-                "lore": "The Codex Astartes has proven its worth as a superb treatise on warfare over countless battlefields, and has remained so even after ten thousand years. Many Adeptus Astartes hold its wisdom in awe, and exemplify its teachings, employing a flexible set of combat doctrines to eliminate their enemy. Few opponents can withstand the fury of such an onslaught.",
-                "text": "At the start of the Battle Round, you can select one of the Combat Doctrines listed below. Until the end of the Battle Round, that Combat Doctrine is active and its effects apply to all +Adeptus Astartes+ units from your army. You can only select each Combat Doctrine once per battle.",
+                "name": "Marks of Chaos",
+                "lore": "The traiterous warriors of the Heretic Astartes call on the ruinous powers, attempting to draw their favor.",
+                "text": "When mustering your army, select one of the options below for each unit mustered. You may not select a keyword for any unit which already has any of the following keywords: +Epic Hero+, +Khorne+, +Tzeentch+, +Nurgle+, +Slaanesh+, +Chaos Undivided+",
                 "options": [
                     {
-                        "name": "Devastator Doctrine",
-                        "lore": "The Codex Stellar explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
-                        "text": "Your units may Move, Advance and Shoot in a single Activation."
+                        "name": "Khorne - Blood Fury",
+                        "text": "Gain the +Khorne+ keyword. Melee weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                     },
                     {
-                        "name": "Tactical Doctrine",
-                        "lore": "As the warring armies close upon one another and vicious fire-fights erupt, the Codex lays out strategies for swiftly seizing the initiative and combining versatility with firepower.",
-                        "text": "Your units may Fight and then Move an extra d6 inches."
+                        "name": "Tzeentch - Warpfire",
+                        "text": "Gain the +Tzeentch+ keyword. Ranged weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                     },
                     {
-                        "name": "Assault Doctrine",
-                        "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
-                        "text": "Your units may Move, Advance and Charge in a single Activation."
+                        "name": "Nurgle - Spreading Sickness",
+                        "text": "Gain the +Nurgle+ keyword. Ranged weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
+                    },
+                    {
+                        "name": "Slaanesh - Excessive Cruelty",
+                        "text": "Gain the +Slaanesh+ keyword. Melee weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                     }
+                    {
+                        "name": "Chaos Undivided - Blood Fury",
+                        "text": "Gain the +Chaos Undivided+ keyword. Re-roll Hit rolls of 1."
+                    },
+                ],
+                "restrictions":[
+                    "+Psyker+ units may not be given the +Khorne+ option.",
+                    "+Character+ units with the Leader ability can only be attached to a Unit which shares the same keyword from the list above.",
+                    "A unit may only embark within (or start the battle embarked within) a +Transport+ if both units share the same keyword from the list above."
                 ]
             }
         ],
@@ -45,25 +55,25 @@
         ],
         "strategems": [
             {
-                "name": "Armor of Contempt",
+                "name": "Eternal Hate",
                 "cost": 1,
-                "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+                "when": "Immediately after an enemy unit selects a Fight target.",
                 "target": "Your unit being attacked",
-                "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+                "effect": "Until the end of the Battle Round, each time a model in your unit is destroyed, roll d6, adding 1 to the result if it is a +Khorne+ unit. On a 4+, the destroyed models fight back before being removed from play."
             },
             {
-                "name": "Shield of Disgust",
+                "name": "Skinshift",
                 "cost": 1,
-                "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
-                "target": "Your unit being attacked",
-                "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
+                "when": "At the start of the Battle Round",
+                "target": "One friendly +Heretic Astartes+ unit",
+                "effect": "One model in your unit regains up to 3 Health. In addition, if your unit is a +Tzeentch+ unit below starting strength, one destroyed non-+Character+ model is returned to your unit at full Health."
             },
             {
-                "name": "Sword of Hatred",
+                "name": "Dark Obscuration",
                 "cost": 1,
-                "when": "Upon Activation of a friendly unit",
-                "target": "Your unit being Activated",
-                "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
+                "when": "Immediately after an enemy unit selects a Shoot target",
+                "target": "Your unit being attacked",
+                "effect": "Until the end of the Battle Round, your unit has the Stealth ability. In addition, if your unit is a +Nurgle+ unit, your unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
             }
         ]
     }

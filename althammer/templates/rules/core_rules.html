@@ -184,7 +184,6 @@ Any effects or Strategems which take place "at the end of the Battle Round" shou
 When Activated, a unit may do up to two of the following actions:
 
 * [Move](#move)
-* [Advance](#advance)
 * [Magik](#magik) (+Psyker+ units only)
 * [Shoot](#shoot)
 * [Charge](#charge)
@@ -196,28 +195,32 @@ Each Model in the unit may move up to the number of inches indicated by its Move
 
 Models may use their Movement to move horizontally, or vertically up or down terrain.
 
-Models with +Fly+ may move diagonally through the air to go over terrain. Models with +Fortification+ may not move at all.
++Fortification+ models may not move at all.
+
++Fly+ models may move diagonally through the air to go over terrain.
+
++Aircraft+ models only need to consider horizontal movement; they are not impacted by terrain and can move vertically for free.
+
+### Advance
+
+Units that are Moving may choose to Advance instead. When Advancing, roll d6 and add the result in inches to the unit's Movement property.
+
+Units which Advance may not Shoot, Magic, or Charge in the same Activation, unless using an +[Assault]+ weapon.
 
 ### Restrictions
 
 The following restrictions apply to any form of movement, whether performed as a part of a Move action or for any other reason:
 
 * Units in Melee Distance of an enemy unit may not move through enemy Models.
-* Models may not end their movement on another Model or its base
-* Models may not move through enemy Models.
-* Models may not end a movement within Melee Distance of enemy Models.
+* Models may not end their movement on another Model or its base.
+* Models may not move through enemy Models, unless either unit has +Fly+.
+* Models may not end a movement within Melee Distance of enemy Models, unless either unit is an +Aircraft+
 * Models may not end their movement partially up a wall or other terrain obstacle.
 * Units must end their movement in [Unit Coherency](/rules/definitions#unit_coherency).
 
 ### Unit Coherency
 
 At any point in the game (except during a Unit's movement), if a Unit is found to *not* be in [Unit Coherency](/rules/definitions#unit_coherency), the player controlling that unit must immediately remove Models from the Unit until Unit Coherency is achieved. When removing Models to achieve Unit Coherency, do not activate On Death rules for the removed Models.
-
-## Advance
-
-Must be paired with a Move action in the same Activation.
-
-Roll d6; Move the unit up to that many inches towards the opponent's edge of the battlefield, or towards the nearest enemy unit, as described in the Move action above.
 
 ## Magik
 
@@ -299,7 +302,7 @@ Unmodified Wound Rolls of 1 are treated as "Critical Fails", and are always unsu
 
 Unmodified Wound Rolls of 6 are treated as "Critical Wounds", and are always successful, regardless of any modifiers. 
 
-## Saving Throw
+## Saving Roll
 
 The defending player selects a Model in the targeted unit that is within line of sight and range to the attacking unit. 
 
@@ -309,17 +312,21 @@ The defending player rolls d6 and worsens the result by the attacking weapon's A
 
 An unmodified roll of 1 is always a failed save.
 
+### Benefit of Cover
+
+Some terrain rules and other effects provide a Benefit of Cover to units taking attacks. Units with the Benefit of Cover have +1 to their Saving roll.
+
 ### Invulnerable Save
 
-If the target Model has an Invulnerable Save property, the Armor Save cannot be modified to be worse than the Invulnerable Save.
+If the target Model has an Invulnerable Save property, the defending player may choose to take the Saving Roll agianst the model's Invulnerable Save rather than against it's Armor Save. Saving rolls made against the Invulnerable Save property are always unmodified.
 
 ### Feel No Pain
 
-If the target Model has a Feel No Pain rule property, after failing a Saving Throw, roll one d6 for each point of damage to be taken. If the result is greater than or equal to the Feel No Pain rule property, reduce the damage of the attack by 1.
+If the target Model has a Feel No Pain rule property, after failing a saving Roll, roll one d6 for each point of damage to be taken. If the result is greater than or equal to the Feel No Pain rule property, reduce the damage of the attack by 1.
 
 ## Apply Damage
 
-Apply the resulting damage to the Model selected in the Saving Throw step.
+Apply the resulting damage to the Model selected in the saving Roll step.
 
 If the Model is now at zero (or less) Health, the Model is now Dead. Tip the Model over onto its side (or use a token marker) to indicate that it is Dead, but do not remove it from the Battlefield yet. Narratively, all Activations occur at about the same moment of time, so the Model can still move, shoot, cast magik, charge and fight until the end of the Battle Round.
 
