@@ -1,0 +1,20 @@
+<head>
+  <link href="/assets/images/favicon.png" rel="icon">
+  {% if session.get('darkmode') %}
+    <link id="mainstyle" href="/assets/style/dark.css?v=0.0.1" rel="stylesheet">
+  {% else %}
+    <link id="mainstyle" href="/assets/style/light.css?v=0.0.1" rel="stylesheet">
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--FontAwesome-->
+  <link href="/assets/fontawesome/css/all.min.css" rel="stylesheet">
+  <meta name="description" content="{% block meta %}Tabletop Wargaming Done Right{% endblock %}">
+</head>
+<body>
+<div class="col-6">
+    <iframe src="/">
+</div>
+<div class="col-6">
+    <iframe src="/">
+</div>
+</body>
