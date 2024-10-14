@@ -52,6 +52,10 @@
 >**Target:** {{ strat['target'] }}
 >
 >**Effect:** {{ strat['effect'] }}
+{% if strat.get('restrictions') %}
+>
+> **Restrictions: * {{ strat['restrictions'] }}
+{% endif %}
 {% endfor %}
 
 ### Spells
