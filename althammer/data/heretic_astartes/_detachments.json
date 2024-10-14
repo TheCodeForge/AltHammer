@@ -27,7 +27,7 @@
                     {
                         "name": "Chaos Undivided - Blood Fury",
                         "text": "Gain the +Chaos Undivided+ keyword. Re-roll Hit rolls of 1."
-                    },
+                    }
                 ],
                 "restrictions":[
                     "+Psyker+ units may not be given the +Khorne+ option.",
