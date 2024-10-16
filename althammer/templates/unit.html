@@ -32,6 +32,7 @@
       <th scope="col">Ranged Weapons</th>
       <th scope="col">Range</th>
       <th scope="col">A</th>
+      <th scope="col">RS</th>
       <th scope="col">S</th>
       <th scope="col">AP</th>
       <th scope="col">Dmg</th>
@@ -42,6 +43,7 @@
     <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
     <td>{{ weapon.rng }}"</td>
     <td>{{ weapon.atk }}</td>
+    <td>{{ weapon.skill }}+</td>
     <td>{{ weapon.str }}</td>
     <td>-{{ weapon.ap }}</td>
     <td>{{ weapon.dmg }}</td>
@@ -52,6 +54,7 @@
       <th scope="col">Melee Weapons</th>
       <th scope="col">Range</th>
       <th scope="col">A</th>
+      <th scope="col">MS</th>
       <th scope="col">S</th>
       <th scope="col">AP</th>
       <th scope="col">Dmg</th>
@@ -62,6 +65,7 @@
     <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
     <td>Melee</td>
     <td>{{ weapon.atk }}</td>
+    <td>{{ weapon.skill }}+</td>
     <td>{{ weapon.str }}</td>
     <td>-{{ weapon.ap }}</td>
     <td>{{ weapon.dmg }}</td>
