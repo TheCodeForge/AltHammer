@@ -32,7 +32,7 @@
 ### {{ role }}
 
 {% for unit in f.unit_listing[role] %}
-* [{{ unit }}]({{ f.unit_listing[role][unit] }})
+* [{{ unit }}](/faction/{{ f.id }}/unit/{{ f.unit_listing[role][unit] }})
 {% endfor %}
 {% else %}
 *None yet. Stay tuned!*
