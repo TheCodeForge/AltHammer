@@ -1,5 +1,48 @@
 {% extends "_core_centered.html" %}
 
+{% macro backside() %}
+    {% if u.core_rules %}
+    <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules) }}</span></p>
+    {% endif %}
+    {% if u.faction_rules %}
+    <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
+    {% endif %}
+    {% if u.unit_rules %}
+    <p><span class="fw-bold">ABILITIES</span></p>
+    <ul>
+    {% for rule in u.unit_rules %}
+      <li><span class="fw-bold">{{ rule['name'] }}</span> - {{ rule['text'] }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    <span class="fw-bold">UNIT COMPOSITION</span>
+    <ul>
+      {% for entry in u.composition %}
+      <li>{{ entry }}</li>
+      {% endfor %}
+    </ul>
+    <p>Every model is equipped with: </p>
+      <ul>
+      {% for weapon in u.default_weapons %}
+        <li>{{ weapon.name }}</li>
+      {% endfor %}
+      </ul>
+    {% if u.replacement_gear %}
+    <p>The following substitutions may be made: </p>
+      <ul>
+      {% for x in u.replacement_gear %}
+        <li>{{ x }} may be replaced with one of:</li>
+        <ul>
+          {% for y in u.replacement_gear[x] %}
+          <li>{{ u.weapon(y).name }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+      </ul>
+    {% endif %}
+{% endmacro %}
+
+
 {% block pagecontent %}
 
 <h1>{{ u.name }}</h1>
@@ -84,47 +127,12 @@
         <p>FACTION: <span class="keyword">{{ ', '.join(u.faction_keywords) }}</span></p>
       </div>
     </div>
+    <div class="row d-block d-lg-none">
+      {{ backside () }}
+    </row>
   </div>
-  <div class="col col-4">
-    {% if u.core_rules %}
-    <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules) }}</span></p>
-    {% endif %}
-    {% if u.faction_rules %}
-    <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
-    {% endif %}
-    {% if u.unit_rules %}
-    <p><span class="fw-bold">ABILITIES</span></p>
-    <ul>
-    {% for rule in u.unit_rules %}
-      <li><span class="fw-bold">{{ rule['name'] }}</span> - {{ rule['text'] }}</li>
-    {% endfor %}
-    </ul>
-    {% endif %}
-    <span class="fw-bold">UNIT COMPOSITION</span>
-    <ul>
-      {% for entry in u.composition %}
-      <li>{{ entry }}</li>
-      {% endfor %}
-    </ul>
-    <p>Every model is equipped with: </p>
-      <ul>
-      {% for weapon in u.default_weapons %}
-        <li>{{ weapon.name }}</li>
-      {% endfor %}
-      </ul>
-    {% if u.replacement_gear %}
-    <p>The following substitutions may be made: </p>
-      <ul>
-      {% for x in u.replacement_gear %}
-        <li>{{ x }} may be replaced with one of:</li>
-        <ul>
-          {% for y in u.replacement_gear[x] %}
-          <li>{{ u.weapon(y).name }}</li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
-      </ul>
-    {% endif %}
+  <div class="col col-4 d-none d-lg-block">
+    {{ backside () }}
   </div>
 </div>
 
