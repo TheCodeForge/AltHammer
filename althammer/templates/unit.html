@@ -113,7 +113,7 @@
         <li>{{ x }} may be replaced with one of:</li>
         <ul>
           {% for y in u.replacement_gear[x] %}
-          <li>{{ y }}</li>
+          <li>{{ u.weapon(y).name }}</li>
           {% endfor %}
         </ul>
       {% endfor %}
