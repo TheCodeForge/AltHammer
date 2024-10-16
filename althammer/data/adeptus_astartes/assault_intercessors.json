@@ -12,7 +12,6 @@
         "Battleline",
         "Grenades",
         "Imperium",
-        "Tacticus",
         "Assault Intercessor Squad"
     ],
     "core_rules": [],
@@ -36,7 +35,7 @@
     ],
     "composition":[
         "1 Assault Intercessor Sergeant",
-        "4-9 Assault Intercessors"
+        "9 Assault Intercessors"
     ],
     "default_gear":[
         "heavy_bolt_pistol",
