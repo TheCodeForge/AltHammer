@@ -68,6 +68,7 @@ class Faction(Base):
     def unit(self, id):
 
         path=safe_join(f"althammer/data/{self.id}/unit", f"{id}.json")
+        print(path)
 
         with open(path, "r+") as file:
             data=json.load(file)
