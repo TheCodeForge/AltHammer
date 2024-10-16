@@ -21,6 +21,11 @@ class Unit(Base):
     def melee_weapons(self):
         return [self.faction.weapon(x) for x in self.__dict__["melee_weapons"]]
 
+    @property
+    @cache.memoize()
+    def default_weapons(self):
+        return [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
+
     def weapon(self, name):
         return self.faction.weapon(name)
     
@@ -105,6 +110,7 @@ class Faction(Base):
         return output
     
     @cache.memoize()
+    @property
     def unit_listing(self):
 
         path=f"althammer/data/{self.id}/_units.json"
