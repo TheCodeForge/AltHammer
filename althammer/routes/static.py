@@ -51,10 +51,6 @@ def light_css(stylefile):
         mimetype="text/css"
         )
 
-@app.get("/split")
-def get_split():
-    return render_template("splitview.html")
-
 @app.post("/toggle_darkmode")
 def post_toggle_darkmode():
     session["darkmode"] = not session.get('darkmode', False)
