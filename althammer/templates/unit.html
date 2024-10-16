@@ -5,24 +5,41 @@
 <h1>{{ u.name }}</h1>
 
 <table class="table">
-    <thead>
-        <tr>
-            <th scope="col">M</th>
-            <th scope="col">T</th>
-            <th scope="col">Sv</th>
-            <th scope="col">HP</th>
-            <th scope="col">Ld</th>
-            <th scope="col">OC</th>
-        </tr>
-    </thead>
+  <thead>
     <tr>
-        <td>{{ u.move }}</td>
-        <td>{{ u.tough }}</td>
-        <td>{{ u.save }}</td>
-        <td>{{ u.hp }}</td>
-        <td>{{ u.lead }}</td>
-        <td>{{ u.oc }}</td>
+      <th scope="col">M</th>
+      <th scope="col">T</th>
+      <th scope="col">Sv</th>
+      <th scope="col">HP</th>
+      <th scope="col">Ld</th>
+      <th scope="col">OC</th>
     </tr>
+  </thead>
+  <tr>
+    <td>{{ u.move }}</td>
+    <td>{{ u.tough }}</td>
+    <td>{{ u.save }}</td>
+    <td>{{ u.hp }}</td>
+    <td>{{ u.lead }}</td>
+    <td>{{ u.oc }}</td>
+  </tr>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Ranged Weapons</th>
+      <th scope="col">Range</th>
+      <th scope="col">A</th>
+      <th scope="col">S</th>
+      <th scope="col">AP</th>
+      <th scope="col">Dmg</th>
+    </tr>
+  </thead>
+  {% for weapon in u.ranged_weapons %}
+  <tr>
+  </tr>
+  {% endfor %}
 </table>
 
 {% endblock %}
