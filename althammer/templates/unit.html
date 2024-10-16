@@ -1,0 +1,28 @@
+{% extends "_core_centered.html" %}
+
+{% block pagecontent %}
+
+<h1>{{ u.name }}</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">M</th>
+            <th scope="col">T</th>
+            <th scope="col">Sv</th>
+            <th scope="col">HP</th>
+            <th scope="col">Ld</th>
+            <th scope="col">OC</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>{{ u.move }}</td>
+        <td>{{ u.tough }}</td>
+        <td>{{ u.save }}</td>
+        <td>{{ u.hp }}</td>
+        <td>{{ u.lead }}</td>
+        <td>{{ u.oc }}</td>
+    </tr>
+</table>
+
+{% endblock %}

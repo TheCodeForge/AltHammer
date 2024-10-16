@@ -8,6 +8,22 @@ class Base():
         self.__dict__.update(data)
         self.__dict__.update(kwargs)
 
+class Unit(Base):
+
+    @property
+    @cache.memoize()
+    def ranged_weapons(self):
+        return [self.faction.weapon(x) for x in self.__dict__["ranged_weapons"]]
+
+    @property
+    @cache.memoize()
+    def melee_weapons(self):
+        return [self.faction.weapon(x) for x in self.__dict__["melee_weapons"]]
+    
+
+class Weapon(Base):
+    pass
+
 class Detachment(Base):
 
     @property
@@ -22,7 +38,7 @@ class Faction(Base):
     def detachments(self):
 
         path=f"althammer/data/{self.id}/_detachments.json"
-        print(path)
+        #print(path)
         try:
             with open(path, "r+") as file:
                 data=json.load(file)
@@ -47,6 +63,37 @@ class Faction(Base):
                 return output
 
         abort(404)
+
+    @cache.memoize():
+    def unit(self, id):
+
+        path=safe_join(f"althammer/data/{self.id}/unit", f"{id}.json")
+
+        with open(path, "r+") as file:
+            data=json.load(file)
+        try:
+            output = Unit(data)
+        except KeyError:
+            abort(404)
+
+        output.faction=self
+        return output
+
+    @cache.memoize()
+    def weapon(self, id):
+
+        path=f"althammer/data/{self.id}/_weapons.json"
+
+        with open(path, "r+") as file:
+            data=json.load(file)
+        try:
+            data=data[id]
+        except KeyError:
+            abort(404)
+
+        output = Weapon(data)
+        output.faction=self
+        return output
 
     @property
     def permalink(self):
