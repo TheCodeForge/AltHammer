@@ -38,6 +38,32 @@
   </thead>
   {% for weapon in u.ranged_weapons %}
   <tr>
+    <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+    <td>{{ weapon.rng }}"</td>
+    <td>{{ weapon.atk }}</td>
+    <td>{{ weapon.str }}</td>
+    <td>-{{ weapon.ap }}</td>
+    <td>{{ weapon.dmg }}</td>
+  </tr>
+  {% endfor %}
+  <thead>
+    <tr>
+      <th scope="col">Melee Weapons</th>
+      <th scope="col">Range</th>
+      <th scope="col">A</th>
+      <th scope="col">S</th>
+      <th scope="col">AP</th>
+      <th scope="col">Dmg</th>
+    </tr>
+  </thead>
+  {% for weapon in u.melee_weapons %}
+  <tr>
+    <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+    <td>Melee</td>
+    <td>{{ weapon.atk }}</td>
+    <td>{{ weapon.str }}</td>
+    <td>-{{ weapon.ap }}</td>
+    <td>{{ weapon.dmg }}</td>
   </tr>
   {% endfor %}
 </table>
