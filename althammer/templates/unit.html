@@ -40,7 +40,7 @@
   </thead>
   {% for weapon in u.ranged_weapons %}
   <tr>
-    <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+    <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
     <td>{{ weapon.rng }}"</td>
     <td>{{ weapon.atk }}</td>
     <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
@@ -62,7 +62,7 @@
   </thead>
   {% for weapon in u.melee_weapons %}
   <tr>
-    <td>{{ weapon.name }}{% if weapon.keywords %}<span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+    <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
     <td>Melee</td>
     <td>{{ weapon.atk }}</td>
     <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
