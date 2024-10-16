@@ -20,3 +20,12 @@ def faction_faction_detachment_detachment(faction, detachment):
     d = f.detachment(detachment)
 
     return render_template("detachment.html", f=f, d=d)
+
+@app.get("/faction/<faction>/unit/<unit>")
+def faction_faction_unit_unit(faction, unit):
+
+    f=get_faction(faction)
+
+    u = f.unit(u)
+
+    return render_template("unit.html", f=f, u=u)

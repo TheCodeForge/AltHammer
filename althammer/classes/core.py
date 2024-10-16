@@ -38,7 +38,6 @@ class Faction(Base):
     def detachments(self):
 
         path=f"althammer/data/{self.id}/_detachments.json"
-        #print(path)
         try:
             with open(path, "r+") as file:
                 data=json.load(file)
@@ -72,10 +71,8 @@ class Faction(Base):
 
         with open(path, "r+") as file:
             data=json.load(file)
-        try:
-            output = Unit(data)
-        except KeyError:
-            abort(404)
+        
+        output = Unit(data)
 
         output.faction=self
         return output
