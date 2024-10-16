@@ -22,12 +22,15 @@ class Unit(Base):
         if self.__dict__.get("melee_weapons"):
             return [self.faction.weapon(x) for x in self.__dict__.get["melee_weapons"]]
         else:
-            return [self.faction.weapon("close_combat_weapon")]
+            return [self.faction.default_melee_weapon]
 
     @property
     @cache.memoize()
     def default_weapons(self):
-        return [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
+        output = [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
+        if not self.__dict__.get['melee_weapons']:
+            output.append(self.faction.default_melee_weapon)
+
 
     @property
     def faction_keywords(self):
@@ -120,6 +123,12 @@ class Faction(Base):
         output = Weapon(data)
         output.faction=self
         return output
+
+    @cache.memoize()
+    @property
+    def default_melee_weapon():
+        return self.weapon("close_combat_weapon")
+
     
     @property
     @cache.memoize()
