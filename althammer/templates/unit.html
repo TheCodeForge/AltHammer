@@ -90,7 +90,25 @@
       <li>{{ entry }}</li>
       {% endfor %}
     </ul>
-
+    <p>Every model is equipped with: </p>
+      <ul>
+      {% for weapon in u.default_gear %}
+        <li>{{ weapon.name }}</li>
+      {% endfor %}
+      </ul>
+    {% if u.replacement_gear %}
+    <p>The following substitutions may be made: </p>
+      <ul>
+      {% for x in u.replacement_gear %}
+        <li>{{ x }} may be replaced with one of:</li>
+        <ul>
+          {% for y in u.replacement_gear[x] %}
+          <li>{{ y }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </div>
 
