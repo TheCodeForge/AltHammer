@@ -70,8 +70,11 @@ class Faction(Base):
         path=safe_join(f"althammer/data/{self.id}/unit", f"{id}.json")
         print(path)
 
-        with open(path, "r+") as file:
-            data=json.load(file)
+        try:
+            with open(path, "r+") as file:
+                data=json.load(file)
+        except FileNotFoundError:
+            abort(404)
         
         output = Unit(data)
 
