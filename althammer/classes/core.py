@@ -19,7 +19,10 @@ class Unit(Base):
     @property
     @cache.memoize()
     def melee_weapons(self):
-        return [self.faction.weapon(x) for x in self.__dict__["melee_weapons"]]
+        if self.__dict__.get("melee_weapons"):
+            return [self.faction.weapon(x) for x in self.__dict__.get["melee_weapons"]]
+        else:
+            return [self.faction.weapon("close_combat_weapon")]
 
     @property
     @cache.memoize()
