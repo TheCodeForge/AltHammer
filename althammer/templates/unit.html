@@ -86,6 +86,12 @@
     </div>
   </div>
   <div class="col col-4">
+    {% if u.core_rules %}
+    <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules) }}</span></p>
+    {% endif %}
+    {% if u.faction_rules %}
+    <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
+    {% endif %}
     {% if u.unit_rules %}
     <p><span class="fw-bold">ABILITIES</span></p>
     <ul>
