@@ -33,6 +33,10 @@ class Detachment(Base):
 
 
 class Faction(Base):
+
+    @property
+    def permalink(self):
+        return f"/faction/{self.id}"
     
     @property
     @cache.memoize()
@@ -96,8 +100,13 @@ class Faction(Base):
         output = Weapon(data)
         output.faction=self
         return output
-
-    @property
-    def permalink(self):
-        return f"/faction/{self.id}"
     
+    @cache.memoize()
+    def unit_listing(self):
+
+        path=f"althammer/data/{self.id}/_units.json"
+
+        with open(path, "r+") as file:
+            data=json.load(file)
+
+        return data
