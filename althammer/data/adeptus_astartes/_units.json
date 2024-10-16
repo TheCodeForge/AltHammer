@@ -1,3 +1,6 @@
-{"Infantry":{
-    "Assault Intercessors": "assault_intercessors"
-}}
+{
+    "Infantry":[
+        "Assault Intercessors",
+        "Infernus Marines"
+    ]
+}
