@@ -58,3 +58,8 @@ def markdown_filter(x):
 @app.template_filter('nonce')
 def nonce(x):
     return generate_hash(f"{session.get('session_id')}+{x}")
+
+@app.template_filter("snake")
+def snake(x):
+
+    return "_".join(x.lower().split())
