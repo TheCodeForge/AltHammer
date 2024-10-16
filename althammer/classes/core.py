@@ -114,7 +114,6 @@ class Faction(Base):
     def unit_listing(self):
 
         path=f"althammer/data/{self.id}/_units.json"
-
         with open(path, "r+") as file:
             data=json.load(file)
 
