@@ -20,6 +20,9 @@ class Unit(Base):
     @cache.memoize()
     def melee_weapons(self):
         return [self.faction.weapon(x) for x in self.__dict__["melee_weapons"]]
+
+    def weapon(self, name):
+        return self.faction.weapon(name)
     
 
 class Weapon(Base):
