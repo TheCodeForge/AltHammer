@@ -109,11 +109,12 @@ class Faction(Base):
         output.faction=self
         return output
     
-    @cache.memoize()
     @property
+    @cache.memoize()
     def unit_listing(self):
 
         path=f"althammer/data/{self.id}/_units.json"
+        
         with open(path, "r+") as file:
             data=json.load(file)
 
