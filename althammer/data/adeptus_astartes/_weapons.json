@@ -7,6 +7,26 @@
         "ap": 1,
         "dmg":1
     },
+    "bolt_pistol":{
+        "name": "Bolt Pistol",
+        "keywords":[
+            "Pistol"
+        ],
+        "rng":12,
+        "atk":1,
+        "skl":3,
+        "str":4,
+        "ap": 0,
+        "dmg":1
+    },
+    "close_combat_weapon":{
+        "name":"Close Combat Knives",
+        "atk":3,
+        "skl":3,
+        "str":4,
+        "ap": 0,
+        "dmg":1
+    },
     "hand_flamer":{
         "name":"Hand Flamer",
         "keywords":[
@@ -65,6 +85,19 @@
         "skl":3,
         "str":5,
         "ap": 2,
+        "dmg":1
+    },
+    "pyreblaster":{
+        "name":"Pyreblaster",
+        "keywords":[
+            "Ignores Cover",
+            "Incendiary",
+            "Torrent"
+        ],
+        "atk":"d6",
+        "skl":null,
+        "str":5,
+        "ap": 0,
         "dmg":1
     },
     "thunder_hammer":{
