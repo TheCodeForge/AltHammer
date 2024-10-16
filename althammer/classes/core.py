@@ -1,5 +1,7 @@
 import json
 
+from flask import safe_join
+
 from althammer.__main__ import cache
 
 class Base():
