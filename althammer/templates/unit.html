@@ -4,73 +4,93 @@
 
 <h1>{{ u.name }}</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">M</th>
-      <th scope="col">T</th>
-      <th scope="col">Sv</th>
-      <th scope="col">HP</th>
-      <th scope="col">Ld</th>
-      <th scope="col">OC</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>{{ u.move }}</td>
-    <td>{{ u.tough }}</td>
-    <td>{{ u.save }}</td>
-    <td>{{ u.hp }}</td>
-    <td>{{ u.lead }}</td>
-    <td>{{ u.oc }}</td>
-  </tr>
-</table>
+<div class="row">
+  <div class="col col-8">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">M</th>
+          <th scope="col">T</th>
+          <th scope="col">Sv</th>
+          <th scope="col">HP</th>
+          <th scope="col">Ld</th>
+          <th scope="col">OC</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>{{ u.move }}</td>
+        <td>{{ u.tough }}</td>
+        <td>{{ u.save }}</td>
+        <td>{{ u.hp }}</td>
+        <td>{{ u.lead }}</td>
+        <td>{{ u.oc }}</td>
+      </tr>
+    </table>
 
-<table class="table">
-  <tr></tr>
-  <thead>
-    <tr>
-      <th scope="col">Ranged Weapons</th>
-      <th scope="col">Range</th>
-      <th scope="col">A</th>
-      <th scope="col">RS</th>
-      <th scope="col">S</th>
-      <th scope="col">AP</th>
-      <th scope="col">Dmg</th>
-    </tr>
-  </thead>
-  {% for weapon in u.ranged_weapons %}
-  <tr>
-    <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
-    <td>{{ weapon.rng }}"</td>
-    <td>{{ weapon.atk }}</td>
-    <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
-    <td>{{ weapon.str }}</td>
-    <td>-{{ weapon.ap }}</td>
-    <td>{{ weapon.dmg }}</td>
-  </tr>
-  {% endfor %}
-  <thead>
-    <tr>
-      <th scope="col">Melee Weapons</th>
-      <th scope="col">Range</th>
-      <th scope="col">A</th>
-      <th scope="col">MS</th>
-      <th scope="col">S</th>
-      <th scope="col">AP</th>
-      <th scope="col">Dmg</th>
-    </tr>
-  </thead>
-  {% for weapon in u.melee_weapons %}
-  <tr>
-    <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
-    <td>Melee</td>
-    <td>{{ weapon.atk }}</td>
-    <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
-    <td>{{ weapon.str }}</td>
-    <td>-{{ weapon.ap }}</td>
-    <td>{{ weapon.dmg }}</td>
-  </tr>
-  {% endfor %}
-</table>
+    <table class="table">
+      <tr></tr>
+      <thead>
+        <tr>
+          <th scope="col">Ranged Weapons</th>
+          <th scope="col">Range</th>
+          <th scope="col">A</th>
+          <th scope="col">RS</th>
+          <th scope="col">S</th>
+          <th scope="col">AP</th>
+          <th scope="col">Dmg</th>
+        </tr>
+      </thead>
+      {% for weapon in u.ranged_weapons %}
+      <tr>
+        <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+        <td>{{ weapon.rng }}"</td>
+        <td>{{ weapon.atk }}</td>
+        <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
+        <td>{{ weapon.str }}</td>
+        <td>-{{ weapon.ap }}</td>
+        <td>{{ weapon.dmg }}</td>
+      </tr>
+      {% endfor %}
+      <thead>
+        <tr>
+          <th scope="col">Melee Weapons</th>
+          <th scope="col">Range</th>
+          <th scope="col">A</th>
+          <th scope="col">MS</th>
+          <th scope="col">S</th>
+          <th scope="col">AP</th>
+          <th scope="col">Dmg</th>
+        </tr>
+      </thead>
+      {% for weapon in u.melee_weapons %}
+      <tr>
+        <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
+        <td>Melee</td>
+        <td>{{ weapon.atk }}</td>
+        <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}{% endif %}</td>
+        <td>{{ weapon.str }}</td>
+        <td>-{{ weapon.ap }}</td>
+        <td>{{ weapon.dmg }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="col col-4">
+    {% if u.unit_rules %}
+    <span class="font-weight-bold">ABILITIES</span>
+    <ul>
+    {% for rule in u.unit_rules %}
+      <li><span class="font-weight-bold">{{ rule['name'] }}</span> - {{ rule['text'] }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    <span class="font-weight-bold">UNIT COMPOSITION</span>
+    <ul>
+      {% for entry in u.composition %}
+      <li>{{ entry }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
 {% endblock %}
