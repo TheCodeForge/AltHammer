@@ -11,6 +11,7 @@
         "name":"Hand Flamer",
         "keywords":[
             "Ignores Cover",
+            "Incendiary",
             "Pistol",
             "Torrent"
         ],
@@ -37,6 +38,7 @@
         "name": "Plasma Pistol",
         "keywords":[
             "Hazardous",
+            "Incendiary",
             "Pistol"
         ],
         "rng":12,
@@ -56,6 +58,9 @@
     },
     "power_weapon":{
         "name":"Power Weapon",
+        "keywords":[
+            "Incendiary"
+        ],
         "atk":4,
         "skl":3,
         "str":5,
