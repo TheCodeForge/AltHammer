@@ -77,19 +77,20 @@
   </div>
   <div class="col col-4">
     {% if u.unit_rules %}
-    <span class="font-weight-bold">ABILITIES</span>
+    <p><span class="fw-bold">ABILITIES</span></p>
     <ul>
     {% for rule in u.unit_rules %}
-      <li><span class="font-weight-bold">{{ rule['name'] }}</span> - {{ rule['text'] }}</li>
+      <li><span class="fw-bold">{{ rule['name'] }}</span> - {{ rule['text'] }}</li>
     {% endfor %}
     </ul>
     {% endif %}
-    <span class="font-weight-bold">UNIT COMPOSITION</span>
+    <span class="fw-bold">UNIT COMPOSITION</span>
     <ul>
       {% for entry in u.composition %}
       <li>{{ entry }}</li>
       {% endfor %}
     </ul>
+
   </div>
 </div>
 
