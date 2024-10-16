@@ -53,21 +53,21 @@
       <table class="table w-100">
         <thead>
           <tr>
-            <th scope="col">M</th>
-            <th scope="col">T</th>
-            <th scope="col">Sv</th>
-            <th scope="col">HP</th>
-            <th scope="col">Ld</th>
-            <th scope="col">OC</th>
+            <th scope="col" class="text-center">M</th>
+            <th scope="col" class="text-center">T</th>
+            <th scope="col" class="text-center">Sv</th>
+            <th scope="col" class="text-center">HP</th>
+            <th scope="col" class="text-center">Ld</th>
+            <th scope="col" class="text-center">OC</th>
           </tr>
         </thead>
         <tr>
-          <td>{{ u.move }}"</td>
-          <td>{{ u.tough }}</td>
-          <td>{{ u.save }}+</td>
-          <td>{{ u.hp }}</td>
-          <td>{{ u.lead }}+</td>
-          <td>{{ u.oc }}</td>
+          <td class="text-center">{{ u.move }}"</td>
+          <td class="text-center">{{ u.tough }}</td>
+          <td class="text-center">{{ u.save }}+</td>
+          <td class="text-center">{{ u.hp }}</td>
+          <td class="text-center">{{ u.lead }}+</td>
+          <td class="text-center">{{ u.oc }}</td>
         </tr>
       </table>
 
@@ -76,45 +76,45 @@
         <thead>
           <tr>
             <th scope="col">Ranged Weapons</th>
-            <th scope="col">Range</th>
-            <th scope="col">A</th>
-            <th scope="col">RS</th>
-            <th scope="col">S</th>
-            <th scope="col">AP</th>
-            <th scope="col">Dmg</th>
+            <th scope="col" class="text-center">Range</th>
+            <th scope="col" class="text-center">A</th>
+            <th scope="col" class="text-center">RS</th>
+            <th scope="col" class="text-center">S</th>
+            <th scope="col" class="text-center">AP</th>
+            <th scope="col" class="text-center">Dmg</th>
           </tr>
         </thead>
         {% for weapon in u.ranged_weapons %}
         <tr>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
-          <td>{{ weapon.rng }}"</td>
-          <td>{{ weapon.atk }}</td>
-          <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}-{% endif %}</td>
-          <td>{{ weapon.str }}</td>
-          <td>-{{ weapon.ap }}</td>
-          <td>{{ weapon.dmg }}</td>
+          <td class="text-center">{{ weapon.rng }}"</td>
+          <td class="text-center">{{ weapon.atk }}</td>
+          <td class="text-center">{% if weapon.skl %}{{ weapon.skl }}+{% else %}-{% endif %}</td>
+          <td class="text-center">{{ weapon.str }}</td>
+          <td class="text-center">-{{ weapon.ap }}</td>
+          <td class="text-center">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
         <thead>
           <tr>
             <th scope="col">Melee Weapons</th>
-            <th scope="col">Range</th>
-            <th scope="col">A</th>
-            <th scope="col">MS</th>
-            <th scope="col">S</th>
-            <th scope="col">AP</th>
-            <th scope="col">Dmg</th>
+            <th scope="col" class="text-center">Range</th>
+            <th scope="col" class="text-center">A</th>
+            <th scope="col" class="text-center">MS</th>
+            <th scope="col" class="text-center">S</th>
+            <th scope="col" class="text-center">AP</th>
+            <th scope="col" class="text-center">Dmg</th>
           </tr>
         </thead>
         {% for weapon in u.melee_weapons %}
         <tr>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords) }}]</span>{% endif %}</td>
-          <td>Melee</td>
-          <td>{{ weapon.atk }}</td>
-          <td>{% if weapon.skl %}{{ weapon.skl }}+{% else %}-{% endif %}</td>
-          <td>{{ weapon.str }}</td>
-          <td>-{{ weapon.ap }}</td>
-          <td>{{ weapon.dmg }}</td>
+          <td class="text-center">Melee</td>
+          <td class="text-center">{{ weapon.atk }}</td>
+          <td class="text-center">{% if weapon.skl %}{{ weapon.skl }}+{% else %}-{% endif %}</td>
+          <td class="text-center">{{ weapon.str }}</td>
+          <td class="text-center">-{{ weapon.ap }}</td>
+          <td class="text-center">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
       </table>
