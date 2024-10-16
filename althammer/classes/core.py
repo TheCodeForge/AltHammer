@@ -26,6 +26,15 @@ class Unit(Base):
     def default_weapons(self):
         return [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
 
+    @property
+    def faction_keywords(self):
+        output = [self.faction.name]
+
+        if self.__dict__.get('secondary_faction'):
+            output.append(self.secondary_faction)
+
+        return output
+
     def weapon(self, name):
         return self.faction.weapon(name)
     
@@ -114,7 +123,7 @@ class Faction(Base):
     def unit_listing(self):
 
         path=f"althammer/data/{self.id}/_units.json"
-        
+
         with open(path, "r+") as file:
             data=json.load(file)
 
