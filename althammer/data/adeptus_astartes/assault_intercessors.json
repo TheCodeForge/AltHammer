@@ -1,0 +1,55 @@
+{
+    "name": "Assault Intercessor Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Imperium",
+        "Tacticus",
+        "Assault Intercessor Squad"
+    ],
+    "core_rules": [],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Shock Assault",
+            "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, you may re-roll all wound rolls instead."
+        }
+    ],
+    "range_weapons": [
+        "hand_flamer",
+        "heavy_bolt_pistol",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
+    ],
+    "composition":[
+        "1 Assault Intercessor Sergeant",
+        "4-9 Assault Intercessors"
+    ],
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "astartes_chainsword"
+    ],
+    "replacement_gear":{
+        "Assault Intercessor Sergeant's Heavy Bolt Pistol":[
+            "hand_flamer",
+            "plasma_pistol"
+        ],
+        "Assault Intercessor Sergeant's Astartes Chainsword":[
+            "power_fist",
+            "power_weapon",
+            "thunder_hammer"
+        ]
+    }
+}
