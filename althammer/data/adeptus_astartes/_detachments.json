@@ -2,6 +2,7 @@
     "codex_astartes_task_force":{
         "id": "codex_astartes_task_force",
         "name": "Codex Astartes Task Force",
+        "army_restrictions":["You may not include units with a secondary faction keyword other than +Ultramarines+"],
         "rules": [ 
             {
                 "name": "Combat Doctrines",
