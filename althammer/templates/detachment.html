@@ -26,7 +26,7 @@
 
 {% endfor %}
 
-## Detachment: {{ d.name }}
+# Detachment: {{ d.name }}
 
 ## Restrictions
 
@@ -37,14 +37,14 @@
 {% endif %}
 
 {% for rule in d.rules %}
-### {{ rule['name'] }}
+## {{ rule['name'] }}
 
 *{{ rule['lore'] }}*
 
 {{ rule['text'] }}
 
 {% for option in rule['options'] %}
-#### {{ option['name'] }}
+### {{ option['name'] }}
 
 {% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
 
@@ -56,7 +56,7 @@
 
 {% if d.__dict__.get('restrictions') %}
 
-### Restrictions
+## Restrictions
 
 {% for r in d['restrictions'] %}
 * {{ r }}
@@ -69,7 +69,7 @@
 ### Strategems
 
 {% for strat in d.strategems %}
-#### {{ strat['name'] }}
+### {{ strat['name'] }}
 
 >**[{{ strat['cost'] }}] {{ strat['name'] }}**
 >
@@ -84,10 +84,10 @@
 {% endif %}
 {% endfor %}
 
-### Spells
+## Spells
 
 {% for spell in d.spells %}
-#### {{ spell['name'] }}
+### {{ spell['name'] }}
 
 >**[{{ spell['difficulty'] }}] {{ spell['name'] }}**
 >
