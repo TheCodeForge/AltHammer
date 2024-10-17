@@ -11,14 +11,6 @@
 
 {% if d.__dict__.get('army_restrictions') %}
 
-### Restrictions
-
-{% for r in d['army_restrictions'] %}
-* {{ r }}
-{% endfor %}
-
-{% endif %}
-
 {% for rule in f.rules %}
 ## {{ rule }}
 
@@ -27,6 +19,14 @@
 {% endfor %}
 
 ## Detachment: {{ d.name }}
+
+## Restrictions
+
+{% for r in d['army_restrictions'] %}
+* {{ r }}
+{% endfor %}
+
+{% endif %}
 
 {% for rule in d.rules %}
 ### {{ rule['name'] }}
