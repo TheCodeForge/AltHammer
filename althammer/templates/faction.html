@@ -21,7 +21,7 @@
 ## Detachments
 
 {% for d in f.detachments %}
-* [{{ d.name }}]({{ d.permalink }})
+* <a href="{{ d.permalink }}">{{ d.name }}</a>
 {% else %}
 *None yet. Stay tuned!*
 {% endfor %} 
@@ -32,7 +32,7 @@
 ### {{ role }}
 
 {% for unit in f.unit_listing[role] %}
-* [{{ unit }}](/faction/{{ f.id }}/unit/{{ unit | snake }})
+* <a href="/faction/{{ f.id }}/unit/{{ unit | snake }}">{{ unit }}</a>
 {% endfor %}
 {% else %}
 *None yet. Stay tuned!*
