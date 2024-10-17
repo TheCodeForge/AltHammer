@@ -32,11 +32,11 @@
         }
     ],
     "range_weapons": [
-        "hand_of_dominion",
-        "storm_bolter"
+        "hand_of_dominion_ranged"
     ],
     "melee_weapons": [
-        "emperors_sword"
+        "emperors_sword",
+        "hand_of_dominion_melee"
     ],
     "composition":[
         "1 Roboute Guilliman"
