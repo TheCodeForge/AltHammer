@@ -28,7 +28,7 @@
 ## Detachments
 
 {% for d in f.detachments %}
-* <a href="{{ d.permalink }}">{{ d.name }}</a>
+<li><a href="{{ d.permalink }}">{{ d.name }}</a></li>
 {% else %}
 *None yet. Stay tuned!*
 {% endfor %} 
