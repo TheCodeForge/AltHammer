@@ -138,3 +138,8 @@ class Faction(Base):
             data=json.load(file)
 
         return data
+
+    @property
+    def color(self):
+        return self.__dict__.get("color", "ADD8E6")
+    
