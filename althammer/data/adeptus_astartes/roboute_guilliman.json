@@ -1,0 +1,52 @@
+{    
+    "name": "Roboute Guilliman",
+    "move":8,
+    "tough": 9,
+    "save": 2,
+    "hp":10,
+    "lead": 5,
+    "oc": 4,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Primarch",
+        "Roboute Guilliman"
+    ],
+    "secondary_faction":"Ultramarines",
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Author of the Codex",
+            "text":"At the start of the Battle Round, do one of the following."
+        },
+        {
+            "name":"Ultramarines Bodyguard",
+            "text":"While within 3\" of a friendly +Adeptus Astartes Infantry+ unit, this model has +Lone Operative+."
+        },
+        {
+            "name":"Armor of Fate",
+            "text":"The first time this model is destroyed, roll d6. On a 3+, set this model back up on the battlefield as close to where it was as possible, not within Melee Distance, with 6 Health remaining."
+        }
+    ],
+    "range_weapons": [
+        "hand_of_dominion",
+        "storm_bolter"
+    ],
+    "melee_weapons": [
+        "emperors_sword"
+    ],
+    "composition":[
+        "1 Roboute Guilliman"
+    ],
+    "default_gear":[
+        "hand_of_dominion",
+        "emperors_sword"
+    ],
+    "replacement_gear":{
+        "Storm Bolter":[
+            "combi_weapon"
+        ]
+    }
+}
