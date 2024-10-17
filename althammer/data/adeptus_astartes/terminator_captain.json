@@ -1,0 +1,61 @@
+{    
+    "name": "Terminator Captain",
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Terminator",
+        "Captain"
+    ],
+    "core_rules": [
+        "Deep Strike",
+        "Leader"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Rites of Battle",
+            "text":"Once per Battle Round, you may target a friendly +Captain+ unit with a Strategem for 0 CP, even if that Strategem has already been used that turn."
+        },
+        {
+            "name":"The Imperium's Sword",
+            "text":"You may re-roll Charge rolls made for this model's unit."
+        }
+    ],
+    "range_weapons": [
+        "hand_flamer",
+        "heavy_bolt_pistol",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
+    ],
+    "composition":[
+        "1 Assault Intercessor Sergeant",
+        "9 Assault Intercessors"
+    ],
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "astartes_chainsword"
+    ],
+    "replacement_gear":{
+        "Assault Intercessor Sergeant's Heavy Bolt Pistol":[
+            "hand_flamer",
+            "plasma_pistol"
+        ],
+        "Assault Intercessor Sergeant's Astartes Chainsword":[
+            "power_fist",
+            "power_weapon",
+            "thunder_hammer"
+        ]
+    }
+}
