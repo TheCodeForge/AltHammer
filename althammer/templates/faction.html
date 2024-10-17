@@ -39,7 +39,7 @@
 ### {{ role }}
 
 {% for unit in f.unit_listing[role] %}
-* <a href="/faction/{{ f.id }}/unit/{{ unit | snake }}">{{ unit }}</a>
+<li><a href="/faction/{{ f.id }}/unit/{{ unit | snake }}">{{ unit }}</a></li>
 {% endfor %}
 {% else %}
 *None yet. Stay tuned!*
