@@ -1,0 +1,36 @@
+{    
+    "name": "Necron Warriors",
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":1,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Their Number is Legion",
+            "text":"Whenever Reanimation Protocols activates on this unit, restore d6 Health instead of d3 Health. If within range of an objective marker, restore d3+3 health instead."
+        }
+    ],
+    "range_weapons": [
+        "gauss_flayer",
+        "gauss_reaper"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "10 Necron Warriors"
+    ],
+    "default_gear":[
+        "gauss_flayer"
+    ],
+    "replacement_gear":{
+        "Any model's Gauss Flayer":[
+            "gauss_reaper"
+        ]
+    }
+}
