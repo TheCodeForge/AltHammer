@@ -28,7 +28,7 @@ class Unit(Base):
     @cache.memoize()
     def default_weapons(self):
         output = [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
-        if not self.__dict__.get['melee_weapons']:
+        if not self.__dict__.get('melee_weapons'):
             output.append(self.faction.default_melee_weapon)
 
 
