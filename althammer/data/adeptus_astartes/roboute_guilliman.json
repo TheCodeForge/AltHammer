@@ -41,12 +41,7 @@
         "1 Roboute Guilliman"
     ],
     "default_gear":[
-        "hand_of_dominion",
+        "hand_of_dominion_ranged",
         "emperors_sword"
-    ],
-    "replacement_gear":{
-        "Storm Bolter":[
-            "combi_weapon"
-        ]
-    }
+    ]
 }

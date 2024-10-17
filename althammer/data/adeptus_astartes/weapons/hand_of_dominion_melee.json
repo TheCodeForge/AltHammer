@@ -1,0 +1,9 @@
+{
+    "name":"Hand of Dominion",
+    "keywords": ["Lethal hits"],
+    "atk":7,
+    "skl":2,
+    "str":14,
+    "ap": 4,
+    "dmg":4
+ }
