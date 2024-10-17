@@ -15,6 +15,14 @@ class Keyword(SpanToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
+class KeywordAlt(SpanToken):
+
+    pattern = re.compile(r"!((\[|\b).{3,25}?(\]|\b|\+))!")
+    parse_inner = False
+
+    def __init__(self, match_obj):
+        self.target = match_obj.group(1)
+
 class HBlock(BlockToken):
 
     start_pattern = re.compile(r"^#{1,6} ")
@@ -53,6 +61,9 @@ class CustomRenderer(HTMLRenderer):
 
     def render_keyword(self, token):
         return f'<span class="keyword">{token.target}</span>'
+
+    def render_keyword_alt(self, *args, **kwargs):
+        return self.render_keyword(*args, **kwargs)
 
 class NumberedRenderer(CustomRenderer):
 
