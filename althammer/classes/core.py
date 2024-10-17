@@ -20,7 +20,7 @@ class Unit(Base):
     @cache.memoize()
     def melee_weapons(self):
         if self.__dict__.get("melee_weapons"):
-            return [self.faction.weapon(x) for x in self.__dict__.get["melee_weapons"]]
+            return [self.faction.weapon(x) for x in self.__dict__.get("melee_weapons")]
         else:
             return [self.faction.default_melee_weapon]
 
