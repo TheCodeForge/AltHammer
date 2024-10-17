@@ -1,0 +1,55 @@
+{    
+    "name": "Intercessor Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Imperium",
+        "Intercessor Squad"
+    ],
+    "core_rules": ["Secure Objectives"],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [],
+    "range_weapons": [
+        "bolt_pistol",
+        "bolt_rifle",
+        "hand_flamer",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "close_combat_weapon",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
+    ],
+    "composition":[
+        "1 Intercessor Sergeant",
+        "9 Intercessors"
+    ],
+    "default_gear":[
+        "bolt_pistol",
+        "bolt_rifle",
+        "close_combat_weapon"
+    ],
+    "replacement_gear":{
+        "Intercessor Sergeant's Bolt Rifle":[
+            "astartes_chainsword",
+            "hand_flamer",
+            "plasma_pistol",
+            "power_weapon"
+        ],
+        "Intercessor Sergeant's Close Combat Knives":[
+            "astartes_chainsword",
+            "power_fist"
+            "power_weapon",
+            "thunder_hammer"
+        ]
+    }
+}
