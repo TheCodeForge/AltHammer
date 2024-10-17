@@ -2,6 +2,14 @@
 
 {% block pagecontent %}
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ f.permalink }}">{{ f.name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ d.name }}</li>
+  </ol>
+</nav>
+
 <div class="nested-numbered-list">
 {% filter numbered_markdown %}
 
