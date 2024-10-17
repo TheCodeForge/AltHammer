@@ -32,7 +32,7 @@
 ### {{ role }}
 
 {% for unit in f.unit_listing[role] %}
-* [{{ unit }}](/faction/{{ f.id }}/unit/{{ unit | snake }}.json)
+* [{{ unit }}](/faction/{{ f.id }}/unit/{{ unit | snake }})
 {% endfor %}
 {% else %}
 *None yet. Stay tuned!*
