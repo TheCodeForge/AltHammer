@@ -1,0 +1,13 @@
+{
+    "name": "Gauss Flayer",
+    "keywords":[
+        "Lethal Hits",
+        "Rapid Fire 1"
+    ],
+    "rng":24,
+    "atk":1,
+    "skl":4,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}

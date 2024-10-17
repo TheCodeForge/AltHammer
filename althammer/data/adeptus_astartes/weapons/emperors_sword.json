@@ -1,0 +1,9 @@
+{
+    "name":"Emperor's Sword",
+    "keywords": ["Devastating Wounds"],
+    "atk":14,
+    "skl":2,
+    "str":8,
+    "ap": 3,
+    "dmg":2
+ }

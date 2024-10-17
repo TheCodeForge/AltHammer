@@ -1,0 +1,12 @@
+{
+    "name": "Gauss Reaper",
+    "keywords":[
+        "Lethal Hits"
+    ],
+    "rng":12,
+    "atk":2,
+    "skl":4,
+    "str":5,
+    "ap": 1,
+    "dmg":1
+}
