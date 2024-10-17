@@ -27,20 +27,24 @@
 
 ## Detachments
 
+<ul>
 {% for d in f.detachments %}
 <li><a href="{{ d.permalink }}">{{ d.name }}</a></li>
 {% else %}
-*None yet. Stay tuned!*
+* None yet. Stay tuned!
 {% endfor %} 
+</ul>
 
 ## Units
 
 {% for role in f.unit_listing %}
 ### {{ role }}
 
+<ul>
 {% for unit in f.unit_listing[role] %}
 <li><a href="/faction/{{ f.id }}/unit/{{ unit | snake }}">{{ unit }}</a></li>
 {% endfor %}
+</ul>
 {% else %}
 *None yet. Stay tuned!*
 {% endfor %}
