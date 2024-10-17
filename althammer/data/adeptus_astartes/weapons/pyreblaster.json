@@ -1,0 +1,13 @@
+{
+    "name":"Pyreblaster",
+    "keywords":[
+        "Ignores Cover",
+        "Incendiary",
+        "Torrent"
+    ],
+    "atk":"d6",
+    "skl":null,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}

@@ -113,14 +113,10 @@ class Faction(Base):
     @cache.memoize()
     def weapon(self, id):
 
-        path=f"althammer/data/{self.id}/_weapons.json"
+        path=f"althammer/data/{self.id}/weapons/{id}.json"
 
         with open(path, "r+") as file:
             data=json.load(file)
-        try:
-            data=data[id]
-        except KeyError:
-            abort(404)
 
         output = Weapon(data)
         output.faction=self
