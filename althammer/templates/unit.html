@@ -81,6 +81,7 @@
 
       <table class="table w-100">
         <tr></tr>
+        {% if u.ranged_weapons %}
         <thead>
           <tr>
             <th scope="col">Ranged Weapons</th>
@@ -103,6 +104,8 @@
           <td class="text-center">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
+
+        {% endif %}
         <thead>
           <tr>
             <th scope="col">Melee Weapons</th>
