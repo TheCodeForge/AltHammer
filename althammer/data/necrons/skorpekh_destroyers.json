@@ -1,0 +1,33 @@
+{    
+    "name": "Skorpekh Destroyers",
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":1,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Destroyer"
+    ],
+    "core_rules": ["Infiltrators", "Stealth"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Whirling Onslaught",
+            "text":"This unit may choose to ignore any or all modifiers to its Melee Skill property and/or Hit rolls."
+        },
+        {
+            "name":"Plasmacyte",
+            "text":"Remove a Plasmacyte token from this unit. Until the end of the Battle Round, this unit's melee weapons have +[Devastating Wounds]+. This ability may be activated once per attached Plasmacyte token per battle."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["hyperphase_blades"],
+    "composition":[
+        "3 Skorpekh Destroyers",
+        "1 Plasmacyte token"
+    ],
+    "default_gear":[
+        "flayer_claws"
+    ]
+}
