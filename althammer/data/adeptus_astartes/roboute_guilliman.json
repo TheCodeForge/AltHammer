@@ -10,12 +10,13 @@
         "Monster",
         "Character",
         "Epic Hero",
+        "Supreme Commander",
         "Imperium",
         "Primarch",
         "Roboute Guilliman"
     ],
     "secondary_faction":"Ultramarines",
-    "core_rules": [],
+    "core_rules": ["Supreme Commander"],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Author of the Codex",
