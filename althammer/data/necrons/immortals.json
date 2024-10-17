@@ -10,7 +10,7 @@
         "Infantry",
         "Battleline"
     ],
-    "core_rules": [],
+    "core_rules": ["Linked Unit"],
     "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [{
             "name":"Implacable Eradication",

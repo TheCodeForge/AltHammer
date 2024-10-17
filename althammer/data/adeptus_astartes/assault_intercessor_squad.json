@@ -12,9 +12,8 @@
         "Grenades",
         "Imperium"
     ],
-    "core_rules": [],
-    "faction_rules": [
-        "Oath of Moment"],
+    "core_rules": ["Linked Unit"],
+    "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Shock Assault",
             "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, you may re-roll all wound rolls instead."
@@ -33,7 +32,7 @@
     ],
     "composition":[
         "1 Assault Intercessor Sergeant",
-        "9 Assault Intercessors"
+        "4 Assault Intercessors"
     ],
     "default_gear":[
         "heavy_bolt_pistol",

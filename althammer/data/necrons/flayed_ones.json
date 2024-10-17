@@ -9,7 +9,7 @@
     "keywords": [
         "Infantry"
     ],
-    "core_rules": ["Infiltrators", "Stealth"],
+    "core_rules": ["Infiltrators", "Linked Unit", "Stealth"],
     "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [{
             "name":"Flesh Hunger",
