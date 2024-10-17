@@ -29,32 +29,33 @@
         }
     ],
     "range_weapons": [
-        "hand_flamer",
-        "heavy_bolt_pistol",
-        "plasma_pistol"
+        "combi_weapon",
+        "storm_bolter"
     ],
     "melee_weapons": [
-        "astartes_chainsword",
+        "chain_fist",
         "power_fist",
-        "power_weapon",
-        "thunder_hammer"
+        "relic_weapon",
+        "thunder_hammer",
+        "twin_lightning_claws"
     ],
     "composition":[
-        "1 Assault Intercessor Sergeant",
-        "9 Assault Intercessors"
+        "1 Terminator Captain"
     ],
     "default_gear":[
         "heavy_bolt_pistol",
         "astartes_chainsword"
     ],
     "replacement_gear":{
-        "Assault Intercessor Sergeant's Heavy Bolt Pistol":[
-            "hand_flamer",
-            "plasma_pistol"
-        ],
-        "Assault Intercessor Sergeant's Astartes Chainsword":[
+        "Storm Bolter":[
+            "combi_weapon",
             "power_fist",
-            "power_weapon",
+            "relic_weapon",
+            "thunder_hammer"
+        ],
+        "Relic Weapon":[
+            "chain_fist",
+            "power_fist",
             "thunder_hammer"
         ]
     }
