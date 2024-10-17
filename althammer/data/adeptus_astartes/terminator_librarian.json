@@ -24,8 +24,8 @@
             "text":"While leading a unit, +Bodyguard+ models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
         },
         {
-            "name":"The Imperium's Sword",
-            "text":"You may re-roll Charge rolls made for this model's unit."
+            "name":"Veil of Time",
+            "text":"While leading a unit, +Bodyguard+ models in the unit have +[Sustained Hits 1]+ on all their equipped weapons."
         }
     ],
     "range_weapons": [
@@ -33,30 +33,18 @@
         "storm_bolter"
     ],
     "melee_weapons": [
-        "chain_fist",
-        "power_fist",
-        "relic_weapon",
-        "thunder_hammer",
-        "twin_lightning_claws"
+        "force_weapon"
     ],
     "composition":[
-        "1 Terminator Captain"
+        "1 Terminator Librarian"
     ],
     "default_gear":[
-        "heavy_bolt_pistol",
-        "astartes_chainsword"
+        "storm_bolter",
+        "force_weapon"
     ],
     "replacement_gear":{
         "Storm Bolter":[
-            "combi_weapon",
-            "power_fist",
-            "relic_weapon",
-            "thunder_hammer"
-        ],
-        "Relic Weapon":[
-            "chain_fist",
-            "power_fist",
-            "thunder_hammer"
+            "combi_weapon"
         ]
     }
 }
