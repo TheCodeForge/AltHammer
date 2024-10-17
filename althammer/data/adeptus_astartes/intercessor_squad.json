@@ -10,8 +10,7 @@
         "Infantry",
         "Battleline",
         "Grenades",
-        "Imperium",
-        "Intercessor Squad"
+        "Imperium"
     ],
     "core_rules": ["Secure Objectives"],
     "faction_rules": ["Oath of Moment"],

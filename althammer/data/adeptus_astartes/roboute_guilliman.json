@@ -12,8 +12,7 @@
         "Epic Hero",
         "Supreme Commander",
         "Imperium",
-        "Primarch",
-        "Roboute Guilliman"
+        "Primarch"
     ],
     "secondary_faction":"Ultramarines",
     "core_rules": ["Supreme Commander"],
