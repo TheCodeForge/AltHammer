@@ -156,7 +156,7 @@
     </div>
     <div class="row">
       <div class="col col-8">
-        <p>KEYWORDS: <span class="keyword">{{ ', '.join(u.keywords) }}</span></p>
+        <p>KEYWORDS: <span class="keyword">{{ ', '.join(u.keywords | sort) }}</span></p>
       </div>
       <div class="col col-4">
         <p>FACTION: <span class="keyword">{{ ', '.join(u.faction_keywords) }}</span></p>
