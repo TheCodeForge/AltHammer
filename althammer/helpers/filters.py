@@ -29,7 +29,7 @@ def app_config(x):
     return app.config[x]
 
 @app.template_filter("listcomp")
-def listcomp(interable, prop):
+def listcomp(iterable, prop):
 
     return [x.__dict__.get(prop) for x in iterable]
 
