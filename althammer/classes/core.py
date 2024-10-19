@@ -14,7 +14,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def ranged_weapons(self):
-        return [self.faction.weapon(x) for x in self.__dict__["range_weapons"]]
+        return [self.faction.weapon(x) for x in self.__dict__.get("range_weapons", [] )]
 
     @property
     @cache.memoize()
@@ -27,7 +27,7 @@ class Unit(Base):
     @property
     def wargear(self):
         if self.__dict__.get("wargear"):
-            return [self.faction.weapon(x) for x in self.__dict__.get("wargear")]
+            return [self.faction.weapon(x) for x in self.__dict__.get("wargear", [] )]
         else:
             return []
     
