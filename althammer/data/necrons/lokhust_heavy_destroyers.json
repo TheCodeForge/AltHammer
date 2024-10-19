@@ -1,0 +1,32 @@
+{    
+    "name": "Lokhust Heavy Destroyers",
+    "move":7,
+    "tough": 6,
+    "save": 3,
+    "hp":4,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Mounted",
+        "Fly"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [],
+    "range_weapons": [
+        "enmitic_exterminator",
+        "gauss_destructor"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1-3 Lokhust Heavy Destroyers"
+    ],
+    "default_gear":[
+        "enmitic_exterminator"
+    ],
+    "replacement_gear":{
+        "Any model's Enmitic Exterminator":[
+            "gauss_destructor"
+        ]
+    }
+}

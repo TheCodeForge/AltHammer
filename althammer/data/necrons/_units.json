@@ -4,7 +4,10 @@
         "Immortals",
         "Necron Warriors",
         "Ophydian Destroyers",
-        "Skorpekh Destroyers",
+        "Skorpekh Destroyers"
+    ],
+    "Mounted":[
+        "Lokhust Heavy Destroyers"
         "Tomb Blades"
     ]
 }

@@ -1,0 +1,13 @@
+{
+    "name": "Gauss Destructor",
+    "keywords":[
+        "Heavy", "Lethal Hits"
+    ],
+    "ability": "Reroll Wound rolls of 1 made against +Monster+ or +Vehicle+ units.",
+    "rng":48,
+    "atk":1,
+    "skl":3,
+    "str":14,
+    "ap": 4,
+    "dmg":6
+}

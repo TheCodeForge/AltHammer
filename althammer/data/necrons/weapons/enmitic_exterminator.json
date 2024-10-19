@@ -1,0 +1,13 @@
+{
+    "name": "Enmitic Exterminator",
+    "keywords":[
+        "Heavy", "Rapid Fire 6", "Sustained Hits 1"
+    ],
+    "ability": "Reroll Wound rolls of 1 made against +Infantry+ units.",
+    "rng":36,
+    "atk":6,
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":1
+}
