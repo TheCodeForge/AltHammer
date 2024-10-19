@@ -15,6 +15,17 @@
     {% endfor %}
     </ul>
     {% endif %}
+
+    {% if [x.__dict__.get('ability') for x in u.weapons] | any %}
+    <p><span class="fw-bold">GEAR ABILITIES</span></p>
+    <ul>
+    {% for weapon in u.weapons if weapon.__dict__.get('ability') %}
+      <li><span class="fw-bold">{{ weapon.name }}</span> - {{ weapon.ability }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endif %}
+
     <span class="fw-bold">UNIT COMPOSITION</span>
     <ul>
       {% for entry in u.composition %}

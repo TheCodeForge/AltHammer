@@ -25,6 +25,11 @@ class Unit(Base):
             return [self.faction.default_melee_weapon]
 
     @property
+    def weapons(self):
+        return self.ranged_weapons+self.melee_weapons
+    
+
+    @property
     @cache.memoize()
     def default_weapons(self):
         output = [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
