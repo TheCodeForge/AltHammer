@@ -19,7 +19,7 @@
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Author of the Codex",
-            "text":"At the start of the Battle Round, do one of the following."
+            "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\"\n* Select an enemy unit; it becomes the Oath of Moment target if the main Oath of Moment target is destroyed this Battle Round.\n* Target a friendly unit within 12\" with a Strategem for 0 CP"
         },
         {
             "name":"Ultramarines Bodyguard",
