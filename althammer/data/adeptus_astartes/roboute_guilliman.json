@@ -6,6 +6,7 @@
     "hp":10,
     "lead": 5,
     "oc": 4,
+    "invuln": 4,
     "keywords": [
         "Monster",
         "Character",
