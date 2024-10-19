@@ -12,7 +12,6 @@ class Base():
 class Unit(Base):
 
     def __repr__(self):
-
         return f"<Unit({self.faction.name} / {self.name})>"
 
     @property
@@ -69,9 +68,14 @@ class Unit(Base):
     
 
 class Weapon(Base):
-    pass
+
+    def __repr__(self):
+        return f"<Weapon({self.faction.name} / {self.name})>"
 
 class Detachment(Base):
+
+    def __repr__(self):
+        return f"<Detachment({self.faction.name} / {self.name})>"
 
     @property
     def permalink(self):
@@ -79,6 +83,9 @@ class Detachment(Base):
 
 
 class Faction(Base):
+
+    def __repr__(self):
+        return f"<Faction({self.faction.name})>"
 
     @property
     def permalink(self):
