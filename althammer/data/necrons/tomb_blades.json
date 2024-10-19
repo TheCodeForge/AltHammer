@@ -1,0 +1,35 @@
+{    
+    "name": "Tomb Blades",
+    "move":12,
+    "tough": 5,
+    "save": 3,
+    "hp":2,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Mounted",
+        "Fly"
+    ],
+    "core_rules": ["Scouts 9\""],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Evasion Engrams",
+            "text": "Enemy attacks targeting this unit have -1 to the Hit roll."
+        }
+    ],
+    "range_weapons": ["particle_beamer", "twin_gauss_blaster", "twin_tesla_carbine"],
+    "melee_weapons": [],
+    "wargear":["nebuloscope", "shadowloom"],
+    "composition":[
+        "3-6 Tomb Blades"
+    ],
+    "default_gear":[
+        "twin_gauss_blaster", "close_combat_weapon"
+    ],
+    "replacement_gear": {
+        "Any model's Twin Guass Blaster":[
+            "particle_beamer",
+            "twin_tesla_carbine"
+        ]
+    }
+}

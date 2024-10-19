@@ -25,8 +25,16 @@ class Unit(Base):
             return [self.faction.default_melee_weapon]
 
     @property
+    def wargear(self):
+        if self.__dict__.get("wargear"):
+            return [self.faction.weapon(x) for x in self.__dict__.get("wargear")]
+        else:
+            return []
+    
+
+    @property
     def weapons(self):
-        return self.ranged_weapons+self.melee_weapons
+        return self.ranged_weapons+self.melee_weapons+self.wargear)
     
 
     @property
