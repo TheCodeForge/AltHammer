@@ -24,12 +24,15 @@
         "3-6 Tomb Blades"
     ],
     "default_gear":[
-        "twin_gauss_blaster", "close_combat_weapon"
+        "twin_gauss_blaster", "close_combat_weapon", "nebuloscope"
     ],
     "replacement_gear": {
         "Any model's Twin Guass Blaster":[
             "particle_beamer",
             "twin_tesla_carbine"
+        ],
+        "Any model's Nebuloscope": [
+            "shadowloom"
         ]
     }
 }
