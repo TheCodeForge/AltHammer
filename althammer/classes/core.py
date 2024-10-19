@@ -28,6 +28,7 @@ class Unit(Base):
             return [self.faction.default_melee_weapon]
 
     @property
+    @cache.memoize()
     def wargear(self):
         if self.__dict__.get("wargear"):
             return [self.faction.weapon(x) for x in self.__dict__.get("wargear", [] )]
@@ -85,7 +86,7 @@ class Detachment(Base):
 class Faction(Base):
 
     def __repr__(self):
-        return f"<Faction({self.faction.name})>"
+        return f"<Faction({self.name})>"
 
     @property
     def permalink(self):
