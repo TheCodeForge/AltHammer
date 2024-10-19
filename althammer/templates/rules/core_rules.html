@@ -296,7 +296,9 @@ Select a target enemy unit that is within Melee Distance and a melee weapon prof
 
 # Combat
 
-All combat is made with a weapon profile listed on the attacking unit's data card. The attacking model makes a number of attacks equal to the Attacks property of the weapon profile.
+All combat is made with a weapon profile listed on the attacking unit's data card. The attacking model makes a number of attacks equal to the <i class="fas fa-fw fa-swords"></i> Attacks property of the weapon profile.
+
+Attacks may only be made against targets that are within the weapon's <i class="fas fa-fw fa-ruler"></i> range
 
 For each attack:
 
@@ -306,7 +308,7 @@ For each attack:
 
 ## Hit Roll
 
-Attacker rolls d6. If the result is greater than or equal to the Skill property of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
+Attacker rolls d6. If the result is greater than or equal to the <i class="fas fa-fw fa-bullseye-target"></i> Skill property of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
 
 Unmodified Hit Rolls of 1 are treated as "Critical Fails", and are always unsuccessful, regardless of any modifiers.
 
@@ -314,7 +316,7 @@ Unmodified Hit Rolls of 6 are treated as "Critical Hits", and are always success
 
 ## Wound Roll
 
-Attacker rolls d6. Compare the attacking weapon profile's Strength property with the targeted unit's Toughness property to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
+Attacker rolls d6. Compare the attacking weapon profile's <i class="fas fa-fw fa-hand-fist"></i> Strength property with the targeted unit's <i class="fas fa-fw fa-block-brick"></i> Toughness property to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
 
 * Strength half of Toughness or less: 6+ required
 * Strength less than Toughness: 5+ required
@@ -332,9 +334,9 @@ The defending player selects a Model in the targeted unit that is within line of
 
 If a wounded Model is a legal option, select that Model. A +Leader+ Model must not be chosen, unless the attacking weapon is +[Precise]+
 
-The defending player rolls d6 and worsens the result by the attacking weapon's Armor Penetration property. If the result is greater than or equal to the Armor Save property of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the Damage property of the attacking weapon.
+The defending player rolls d6 and worsens the result by the attacking weapon's <i class="fas fa-fw fa-bone-break"></i> Armor Penetration property. If the result is greater than or equal to the <i class="fas fa-fw fa-shield"></i> Armor Save property of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the <i class="fas fa-fw fa-heart-crack"></i> Damage property of the attacking weapon.
 
-An unmodified roll of 1 is always a failed save.
+An unmodified roll of 1 is always a failed save, regardless of any modifiers.
 
 ### Benefit of Cover
 
@@ -342,7 +344,7 @@ Some terrain rules and other effects provide a Benefit of Cover to units taking 
 
 ### Invulnerable Save
 
-If the target Model has an Invulnerable Save property, the defending player may choose to take the Saving Roll agianst the model's Invulnerable Save rather than against it's Armor Save. Saving rolls made against the Invulnerable Save property are always unmodified.
+If the target Model has an <i class="fas fa-fw fa-shield-plus"></i> Invulnerable Save property, the defending player may choose to take the Saving Roll agianst the model's Invulnerable Save rather than against it's Armor Save. Saving rolls made against the Invulnerable Save property are always unmodified.
 
 ## Apply Damage
 
