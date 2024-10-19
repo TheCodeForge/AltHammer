@@ -42,7 +42,7 @@
     <p>The following substitutions may be made: </p>
       <ul>
       {% for x in u.replacement_gear %}
-        <li>{{ x }} may be replaced with one of:</li>
+        <li>{{ x }} may be replaced with{% if (u.replacement_gear[x] | length) > 1%} one of{% endif %}:</li>
         <ul>
           {% for y in u.replacement_gear[x] %}
           <li>{{ u.weapon(y).name }}</li>
