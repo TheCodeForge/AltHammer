@@ -16,7 +16,7 @@
         "Primarch"
     ],
     "secondary_faction":"Ultramarines",
-    "core_rules": ["Supreme Commander"],
+    "core_rules": [],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Author of the Codex",
