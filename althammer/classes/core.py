@@ -153,7 +153,7 @@ class Faction(Base):
 
     @property
     @cache.memoize()
-    def default_melee_weapon():
+    def default_melee_weapon(self):
         return self.weapon("close_combat_weapon")
 
     
