@@ -28,6 +28,11 @@ def app_config(x):
         raise ValueError(f"Not permitted to render config key `{x}`")
     return app.config[x]
 
+@app.template_filter("listcomp")
+def listcomp(interable, prop):
+
+    return [x.__dict__.get(prop) for x in iterable]
+
 @app.template_filter('qrcode_img_data')
 def qrcode_filter(x):
   
