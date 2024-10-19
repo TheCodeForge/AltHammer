@@ -7,6 +7,16 @@ from althammer.helpers.get import *
 
 from althammer.__main__ import app
 
+@app.template_filter('all')
+def filter_all(iterable):
+
+    return all(iterable)
+
+@app.template_filter('any')
+def filter_any(iterable):
+
+    return any(iterable)
+
 @app.template_filter('app_config')
 def app_config(x):
     approved_keys=[
