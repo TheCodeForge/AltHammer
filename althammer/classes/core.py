@@ -44,6 +44,10 @@ class Unit(Base):
         if not self.__dict__.get('melee_weapons'):
             output.append(self.faction.default_melee_weapon)
 
+        print(output)
+        for x in output:
+            print(x)
+
         return output
 
 
