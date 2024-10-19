@@ -83,7 +83,7 @@
         <tr>
           <td class="text-center">{{ u.move }}"</td>
           <td class="text-center">{{ u.tough }}</td>
-          <td class="text-center">{{ u.save }}+</td>
+          <td class="text-center">{{ u.save }}+{% if u.__dict__.get("invuln") %}<i class="fas fa-shield-halved"></i>{{ u.invuln }}++{% endif %}</td>
           <td class="text-center">{{ u.hp }}</td>
           <td class="text-center">{{ u.lead }}+</td>
           <td class="text-center">{{ u.oc }}</td>
