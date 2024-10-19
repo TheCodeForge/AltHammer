@@ -70,6 +70,7 @@
   <div class="col col-12 col-xl-8">
     <div class="row g-0">
       <table class="table w-100">
+        <!---
         <thead>
           <tr>
             <th scope="col" class="text-center">M</th>
@@ -88,6 +89,18 @@
           <td class="text-center">{{ u.lead }}+</td>
           <td class="text-center">{{ u.oc }}</td>
         </tr>
+      -->
+
+        <thead>
+          <tr>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-person-running"></i>{{ u.move }}"</th>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-block-brick">{{ u.tough }}</th>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-shield"></i>{{ u.save }}+{% if u.__dict__.get("invuln") %}<i class="fas fa-shield-plus"></i>{{ u.invuln }}++{% endif %}</th>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-heart"></i>{{ u.hp }}</th>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-brain-circuit"></i>{{ u.lead }}+</th>
+            <th scope="col" class="text-center"><i class="fas fa-fw fa-flag"></i>{{ u.oc }}</th>
+          </tr>
+        </thead>
       </table>
 
       <table class="table w-100">
