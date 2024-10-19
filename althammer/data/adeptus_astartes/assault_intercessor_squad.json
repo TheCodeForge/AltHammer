@@ -12,7 +12,7 @@
         "Grenades",
         "Imperium"
     ],
-    "core_rules": ["Linked Unit"],
+    "core_rules": [],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Shock Assault",
@@ -32,7 +32,7 @@
     ],
     "composition":[
         "1 Assault Intercessor Sergeant",
-        "4 Assault Intercessors"
+        "4-9 Assault Intercessors"
     ],
     "default_gear":[
         "heavy_bolt_pistol",

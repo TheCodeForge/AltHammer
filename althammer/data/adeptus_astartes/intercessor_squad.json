@@ -12,7 +12,7 @@
         "Grenades",
         "Imperium"
     ],
-    "core_rules": ["Linked Unit", "Secure Objectives"],
+    "core_rules": ["Secure Objectives"],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [],
     "range_weapons": [
@@ -30,7 +30,7 @@
     ],
     "composition":[
         "1 Intercessor Sergeant",
-        "4 Intercessors"
+        "4-9 Intercessors"
     ],
     "default_gear":[
         "bolt_pistol",

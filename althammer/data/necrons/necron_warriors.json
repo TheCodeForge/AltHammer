@@ -10,7 +10,7 @@
         "Infantry",
         "Battleline"
     ],
-    "core_rules": ["Linked Unit"],
+    "core_rules": [],
     "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [{
             "name":"Their Number is Legion",
@@ -23,7 +23,7 @@
     ],
     "melee_weapons": [],
     "composition":[
-        "10 Necron Warriors"
+        "10-20 Necron Warriors"
     ],
     "default_gear":[
         "gauss_flayer"

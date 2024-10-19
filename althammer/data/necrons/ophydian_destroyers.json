@@ -1,5 +1,5 @@
 {    
-    "name": "Skorpekh Destroyers",
+    "name": "Ophydian Destroyers",
     "move":5,
     "tough": 4,
     "save": 4,
@@ -24,8 +24,8 @@
     "range_weapons": [],
     "melee_weapons": ["hyperphase_blades"],
     "composition":[
-        "3-6 Skorpekh Destroyers",
-        "1 Plasmacyte token per 3 Skorpekh Destroyers"
+        "3-6 Ophydian Destroyers",
+        "1 Plasmacyte token per 3 Ophydian Destroyers"
     ],
     "default_gear":[
         "flayer_claws"
