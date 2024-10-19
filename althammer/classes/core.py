@@ -11,6 +11,10 @@ class Base():
 
 class Unit(Base):
 
+    def __repr__(self):
+
+        return f"<Unit({self.faction.name} / {self.name})>"
+
     @property
     @cache.memoize()
     def ranged_weapons(self):
