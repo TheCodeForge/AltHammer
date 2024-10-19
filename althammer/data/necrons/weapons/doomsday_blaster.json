@@ -1,0 +1,12 @@
+{
+    "name": "Doomsday Blaster",
+    "keywords":[
+        "Heavy", "Blast"
+    ],
+    "rng":48,
+    "atk":"d6 + 1",
+    "skl":4,
+    "str":14,
+    "ap": 3,
+    "dmg":3
+}

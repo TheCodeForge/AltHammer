@@ -1,0 +1,30 @@
+{    
+    "name": "Canoptek Doomstalker",
+    "move":7,
+    "tough": 8,
+    "save": 3,
+    "hp":12,
+    "lead": 8,
+    "oc": 4,
+    "keywords": [
+        "Vehicle",
+        "Walker",
+        "Canoptek"
+    ],
+    "core_rules": ["Deadly Demise D3"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [],
+    "range_weapons": [
+        "doomsday_blaster",
+        "twin_gauss_flayer"
+    ],
+    "melee_weapons": ["walker_limbs"],
+    "composition":[
+        "1 Canoptek Doomstalker"
+    ],
+    "default_gear":[
+        "doomsday_blaster",
+        "twin_gauss_flayer",
+        "walker_limbs"
+    ]
+}
