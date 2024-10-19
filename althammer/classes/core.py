@@ -34,7 +34,7 @@ class Unit(Base):
 
     @property
     def weapons(self):
-        return self.ranged_weapons+self.melee_weapons+self.wargear
+        return self.ranged_weapons + self.melee_weapons #+ self.wargear
     
 
     @property
