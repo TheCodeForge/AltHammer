@@ -7,6 +7,7 @@
     {% if u.faction_rules %}
     <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
     {% endif %}
+
     {% if u.unit_rules %}
     <p><span class="fw-bold">ABILITIES</span></p>
     <ul>
@@ -23,7 +24,6 @@
       <li><span class="fw-bold">{{ weapon.name }}</span> - {{ weapon.ability }}</li>
     {% endfor %}
     </ul>
-    {% endif %}
     {% endif %}
 
     <span class="fw-bold">UNIT COMPOSITION</span>
