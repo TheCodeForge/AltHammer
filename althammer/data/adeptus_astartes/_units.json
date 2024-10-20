@@ -11,5 +11,8 @@
         "Infernus Marines",
         "Intercessor Squad",
         "Terminator Squad"
+    ],
+    "Vehicles": [
+        "Storm Speeder Thunderstrike"
     ]
 }
