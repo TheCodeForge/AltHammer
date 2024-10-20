@@ -67,7 +67,7 @@ class CustomRenderer(HTMLRenderer):
         if kwd=="Error":
             return f'<span class="keyword">{token.target}</span>'
         
-        token.children = tokenize(rule)
+        token.children = tokenize([rule])
 
         rule = self.render_inner(token)
 
