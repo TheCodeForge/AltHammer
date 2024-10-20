@@ -14,7 +14,7 @@
                 "name": "Protocol of the Eternal Guardian",
                 "cost": 1,
                 "when": "Any time",
-                "target": "One +Necrons Infantry Character+ model from your army that was just destroyed.",
+                "target": "One +Necrons+ +Infantry+ +Character+ model from your army that was just destroyed.",
                 "effect": "Set your model back up on the Battlefield as close as possible to where it was destroyed and out of Melee Distance of enemy models, with half its starting Health remaining.",
                 "restriction": "This strategem may not target a given model more than once per battle."
             },
