@@ -28,15 +28,7 @@ def app_config(x):
         raise ValueError(f"Not permitted to render config key `{x}`")
     return app.config[x]
 
-@app.template_filter("keyword")
-def keyword(x):
 
-    if isinstance(x, list):
-        return [keyword(kwd) for kwd in x]
-
-    kwd, text = get_keyword(x)
-
-    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
 
 
 @app.template_filter("listcomp")
@@ -89,3 +81,15 @@ def nonce(x):
 def snake(x):
 
     return "_".join(x.lower().split())
+
+@app.template_filter("keyword")
+def keyword(x):
+
+    if isinstance(x, list):
+        return [keyword(kwd) for kwd in x]
+
+    kwd, text = get_keyword(x)
+
+    text=markdown_filter(text)
+
+    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{escape(text)}">{x}</span>'
