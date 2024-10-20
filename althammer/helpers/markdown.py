@@ -67,8 +67,10 @@ class CustomRenderer(HTMLRenderer):
         if kwd=="Error":
             return f'<span class="keyword">{token.target}</span>'
         
+        token.children = tokenize(rule)
 
-        rule=self.render_inner(rule)
+        rule = self.render_inner(token)
+
         rule=rule.replace('"', '&quot;')
         kwd = kwd.replace('"', '&quot;')
 
