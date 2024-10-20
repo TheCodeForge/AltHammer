@@ -26,7 +26,7 @@
 
 # Detachment: {{ d.name }}
 
-{% if d.__dict__.get('army_restrictions') }
+{% if d.__dict__.get('army_restrictions') %}
 
 ## Restrictions
 
@@ -64,8 +64,6 @@
 
 {% endif %}
 
-{% if d.__dict__.get('spells') %}
-
 ### Strategems
 
 {% for strat in d.strategems %}
@@ -81,8 +79,10 @@
 {% if strat.get('restrictions') %}
 >
 > **Restrictions: * {{ strat['restrictions'] }}
-{% endif %}
 {% endfor %}
+
+
+{% if d.__dict__.get('spells') %}
 
 ## Spells
 
