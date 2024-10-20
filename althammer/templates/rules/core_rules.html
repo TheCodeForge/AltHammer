@@ -138,13 +138,19 @@ The battle consists of five Battle Rounds. Each Battle Round contains the follow
 * [Scoring](#scoring)
 * [Round End](#round_end)
 
-### Round Start
+### Roll Initiative
 
-Any effects or Strategems that happen "at the start of the Battle Round" should be invoked here.
+Each player rolls 2d6 and subtracts the Leadership property of their +Warlord+ (going into negative numbers if necessary). The player with the [greater result](https://en.wikipedia.org/wiki/Negative_number#The_number_line) wins the Initiative roll, and is considered to "have initiative" for the round.
+
+In the event of a tie, both players re-roll.
 
 ### Generate Command Points
 
 Both players recieve 1 Command Point. 
+
+### Round Start
+
+Any effects or Strategems that happen "at the start of the Battle Round" should be invoked here, in alternating turns, beginning with the player who has initiative.
 
 ### Roll Battle-Shock
 
@@ -156,17 +162,11 @@ Battle-Shocked units:
 * Have an Objective Control property of 0
 * Cannot Move (or Advance) out of Melee Distance.
 
-### Roll Initiative
-
-Each player rolls 2d6 and subtracts the Leadership property of their +Warlord+. The player with the greater result wins the Initiative roll.
-
-In the event of a tie, both players re-roll.
-
 ### Deploy Reserves
 
 This phase is skipped during the first Battle Round.
 
-Beginning with the player that won the Initiative roll, alternate deploying units in Reserves to the Battlefield, if so desired. Units must be placed at least 9" away from all enemy units.
+Beginning with the player that has initiative, alternate deploying units in Reserves to the Battlefield, if so desired. Units must be placed at least 9" away from all enemy units.
 
 Units may be placed into different areas of the battlefield, depending on the round:
 
@@ -179,17 +179,13 @@ Units must be placed onto the battlefield in [Unit Coherency](/rules/definitions
 
 ### Alternating Activation
 
-Beginning with the player that won the Initiative roll, alternate selecting a unit to Activate.
+Beginning with the player that has initiative, alternate selecting a unit to Activate.
 
 Units may not be Activated more than once in the Battle Round.
 
 Once one player has Activated all available units, the other player may Activate all of their remaining units.
 
 See the Activation section below.
-
-### Cleanup
-
-Remove all dead models from the Battlefield. The models in any unit with a removed dead model may move 2" to maintain Unit Coherency.
 
 ### Scoring
 
@@ -199,7 +195,7 @@ Each player scores Victory Points based on mission rules and the state of the Ba
 
 Any effects which last "until the end of the Battle Round" end here.
 
-Any effects or Strategems which take place "at the end of the Battle Round" should be invoked here.
+Any abilites which occur at the end of the battle round should be invoked here, in alternating turns, starting with the player who has initiative.
 
 # Activation
 
@@ -221,7 +217,7 @@ Models may use their Movement to move horizontally, or vertically up or down ter
 
 +Fly+ models may move diagonally through the air to go over terrain.
 
-+Aircraft+ models only need to consider horizontal movement; they are not impacted by terrain and can move vertically for free.
++Aircraft+ models must make their movement by rotating up to 90 degrees on the spot, then moving straight forward a minimum distance. +Aircraft+ only need to consider horizontal movement; they are not impacted by terrain and can move vertically for free.
 
 ### Advance
 
@@ -239,11 +235,12 @@ Units which Fall Back may not Advance, Shoot, Magik, or Charge in the same Activ
 
 The following restrictions apply to any form of movement, whether performed as a part of a Move action or for any other reason:
 
-* Units in Melee Distance of an enemy unit may not move through enemy Models.
-* Models may not end their movement on another Model or its base.
+* Units in Melee Distance of an enemy unit may not move through enemy models.
+* Models may not end their movement on another model or its base.
 * Models may not move through enemy models, unless either unit has +Fly+.
 * Models may not end a movement within Melee Distance of enemy units, unless either unit is an +Aircraft+, or unless they started the move within Melee Distance of the same enemy units.
 * Models may not end their movement partially up a wall or other terrain obstacle.
+* Models must end their movement wholly within the Battlefield, except for +Aircraft+. Aircraft which end their movement not wholly within the Battlefield are removed and placed into Reserves; they may be [deployed](#deploy_reserves) during the next Battle Round.
 * Units must end their movement in [Unit Coherency](/rules/definitions#unit_coherency).
 
 ### Unit Coherency
@@ -282,13 +279,18 @@ All +Psyker+ Models know the spell Smite:
 
 ## Shoot
 
-Select a target enemy unit and a Ranged weapon profile to attack it with. The selected unit must not be within Melee Distance, unless the Ranged weapon is a +[Pistol]+
+Select a target enemy unit and a Ranged weapon profile to attack it with.
+
+If the Activated unit is within Melee Distance of an enemy, it cannot Shoot, unless all of the following are true:
+
+* It is targeting an enemy unit in melee distance, and
+* The Activated unit is a +Monster+ or +Vehicle+, or the selected Ranged weapon is a +[Pistol]+
 
 For each Model in your unit with line-of-sight to at least one model in the enemy unit, make attacks. See the [Combat](#combat) section below.
 
 ## Charge
 
-Select a target enemy unit. Roll 2d6 for Charge Movement; if the result is greater than or equal to the distance to the enemy unit (inches, rounded down), move the unit directly towards the enemy unit until they are in Melee Distance. No Model may move a greater distance than the Charge Movement result.
+Select a target enemy unit. Roll 2d6 for Charge Movement; if the result is greater than or equal to the distance to the enemy unit (measured in inches, rounded down), move the unit directly towards the enemy unit until they are in Melee Distance. No Model may move a greater distance than the Charge Movement result.
 
 +Aircraft+ cannot be selected as a Charge target unless all models in the charging unit have +Fly+.
 
@@ -297,6 +299,13 @@ After a Charge, both the unit and its target enemy unit shall perform a Fight ac
 ## Fight
 
 Select a target enemy unit that is within Melee Distance and a melee weapon profile to attack with. Make attacks. See the [Combat](#combat) section below.
+
+To make melee attacks, a model must:
+
+* Be within Melee Distance of an enemy model, or
+* Be within 2" of another model in the unit which is within Melee Distance of an enemy model
+
++Aircraft+ cannot Fight, unless attacking another +Aircraft+.
 
 +Aircraft+ cannot be selected as a Fight target unless all models in the attacking unit have +Fly+.
 
