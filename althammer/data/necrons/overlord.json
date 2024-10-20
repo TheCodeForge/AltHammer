@@ -1,16 +1,16 @@
 {    
     "name": "Overlord",
-    "move":7,
-    "tough": 8,
-    "save": 3,
-    "hp":12,
-    "lead": 8,
-    "oc": 4,
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
     "invuln": 4,
     "keywords": [
-        "Vehicle",
-        "Walker",
-        "Canoptek"
+        "Infantry",
+        "Character",
+        "Noble"
     ],
     "core_rules": ["Leader [Battleline]"],
     "faction_rules": ["Reanimation Protocols"],

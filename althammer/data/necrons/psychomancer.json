@@ -1,0 +1,29 @@
+{    
+    "name": "Psychomancer",
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp": 4,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Cryptek"
+    ],
+    "core_rules": ["Leader [Battleline]", "Second in Command"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+        "Nightmare Shroud": "Enemy units within 9\" of this model have -1 to all Leadership and Battle-Shock rolls.",
+        "Harbinger of Despair": "After this unit moves, select one enemy unit within 18\". That unit must take a Battle-Shock test."
+    }],
+    "range_weapons": ["abyssal_lance_ranged"],
+    "melee_weapons": ["abyssal_lance_melee"],
+    "wargear": [""],
+    "composition":[
+        "1 Psychomancer"
+    ],
+    "default_gear":[
+        "abyssal_lance_melee"
+    ]
+}
