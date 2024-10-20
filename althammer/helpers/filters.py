@@ -81,6 +81,10 @@ def snake(x):
 
     return "_".join(x.lower().split())
 
+@app.template_filter("str")
+def to_str(x):
+    return str(x)
+
 @app.template_filter("keyword")
 def keyword(x):
 
