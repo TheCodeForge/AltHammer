@@ -32,7 +32,7 @@ def get_keyword(keyword):
     with open("althammer/data/weapon_keywords.json", "r+") as file:
         data=json.load(file)
 
-    if keyword in data:
+    if keyword in data.keys():
         return keyword, data[keyword]
 
     elif keyword.startswith("Anti-"):
