@@ -21,10 +21,6 @@
     "unit_rules": [{
             "name":"Psychic Hood",
             "text":"While leading a unit, +Bodyguard+ models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
-        },
-        {
-            "name":"Mental Fortress",
-            "text":"While leading a unit, +Bodyguard+ models in the unit have a 4+ Invulnerable Save."
         }
     ],
     "range_weapons": [

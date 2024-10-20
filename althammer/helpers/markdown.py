@@ -64,7 +64,10 @@ class CustomRenderer(HTMLRenderer):
 
         kwd, rule = get_keyword(token.target)
 
-        return f'<span class="keyword">{token.target}</span>'
+        if kwd=="Error":
+            return f'<span class="keyword">{token.target}</span>'
+        else:
+            return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
 
     def render_keyword_alt(self, *args, **kwargs):
         return self.render_keyword(*args, **kwargs)
