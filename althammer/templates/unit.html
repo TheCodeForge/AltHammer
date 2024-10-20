@@ -121,11 +121,11 @@
         <tr>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td class="text-center">{{ weapon.rng }}"</td>
-          <td class="text-center">{{ weapon.atk }}</td>
+          <td class="text-center text-nowrap">{{ weapon.atk }}</td>
           <td class="text-center">{% if weapon.skl %}{{ weapon.skl }}+{% else %}-{% endif %}</td>
           <td class="text-center">{{ weapon.str }}</td>
           <td class="text-center">-{{ weapon.ap }}</td>
-          <td class="text-center">{{ weapon.dmg }}</td>
+          <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
 
