@@ -36,7 +36,7 @@ def keyword(x):
 
     kwd, text = get_keyword(x)
 
-    return f'<a type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</a>'
+    return f'<a type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</a>'
 
 
 @app.template_filter("listcomp")
