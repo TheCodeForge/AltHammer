@@ -1,0 +1,40 @@
+{    
+    "name": "Ballistus Dreadnaught",
+    "move":8,
+    "tough": 10,
+    "save": 2,
+    "hp":12,
+    "lead": 6,
+    "oc": 4,
+    "keywords": [
+        "Vehicle",
+        "Walker",
+    ],
+    "core_rules": [
+        "Deadly Demise D3"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Ballistus Strike",
+            "text":"This model may re-roll the Hit roll against targets above half strength"
+        }
+    ],
+    "range_weapons": [
+        "ballistus_frag_missile",
+        "twin_storm_bolter",
+        "ballistus_las_cannon"
+    ],
+    "melee_weapons": [
+        "armored_feet"
+    ],
+    "composition":[
+        "1 Ballistus Dreadnaught"
+    ],
+    "default_gear":[
+        "ballistus_frag_missile",
+        "twin_storm_bolter",
+        "ballistus_las_cannon",
+        "armored_feet"
+    ]
+}

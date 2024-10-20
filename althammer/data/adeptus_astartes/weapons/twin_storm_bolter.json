@@ -1,11 +1,12 @@
 {
     "name":"Storm Bolter",
     "keywords":[
+        "Twin-Linked",
         "Rapid Fire 2"
     ],
     "rng":24,
     "atk":2,
-    "skl":2,
+    "skl":3,
     "str":4,
     "ap": 0,
     "dmg":1

@@ -1,0 +1,12 @@
+{
+    "name":"Ballistus Frag Missile",
+    "keywords":[
+        "Blast"
+    ],
+    "rng":48,
+    "atk":"2d6",
+    "skl":3,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}
