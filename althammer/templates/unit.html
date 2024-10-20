@@ -122,7 +122,7 @@
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td class="text-center">{{ weapon.rng }}"</td>
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center">{{ weapon.skl or '-' }}</td>
+          <td class="text-center">{{ weapon.skl+'+' if weapon.skl else '-' }}</td>
           <td class="text-center">{{ weapon.str }}</td>
           <td class="text-center">-{{ weapon.ap }}</td>
           <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
@@ -146,7 +146,7 @@
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td class="text-center">Melee</td>
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center">{{ weapon.skl or '-' }}</td>
+          <td class="text-center">{{ weapon.skl+'+' if weapon.skl else '-' }}</td>
           <td class="text-center">{{ weapon.str }}</td>
           <td class="text-center">-{{ weapon.ap }}</td>
           <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
