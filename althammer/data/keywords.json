@@ -14,7 +14,7 @@
     
     "Ignores Cover": "Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.",
     
-    "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" inches take d3 Mortal Damage; all units within 6 take d6 Mortal Damage instead.",
+    "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" take d3 Mortal Damage; all units within 6\" take d6 Mortal Damage instead.",
     
     "Lethal Hits": "Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.",
     
@@ -32,15 +32,15 @@
 
     "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6\" of the destroyed model suffers X Mortal Damage",
     
-    "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9 inches away from all enemy models.",
+    "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.",
     
     "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
-    "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9 inches from any enemy model.",
+    "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",
 
     "Leader": "This model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+ at the start of the game, becoming a single combined unit. Limit 1 +Leader+ per unit.",
 
-    "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12 inches away.",
+    "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
 
     "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
 
