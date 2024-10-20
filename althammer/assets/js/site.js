@@ -159,6 +159,10 @@ $("#dark-mode-toggle").click(function(){
 })
 
 //Initialize popovers
-$('[data-bs-toggle="popover"]').popover()
+$(document).ready(
+  function() {
+    $('[data-bs-toggle="popover"]').popover()
+  }
+)
 //const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 //const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
