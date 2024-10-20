@@ -1,0 +1,41 @@
+{    
+    "name": "Sternguard Veteran Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Primaris"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Bolter Drill",
+            "text":"Once per battle, after this unit has completed a Shooting action, if one or more enemy units were destroyed as a result of those attacks, this unit can shoot again"
+        }
+    ],
+    "range_weapons": [
+        "combi_weapon",
+        "sternguard_bolt_pistol",
+        "sternguard_bolt_rifle",
+        "sternguard_heavy_bolter"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Sternguard Veteran Sergeant",
+        "4-9 Sternguard Veterans"
+    ],
+    "default_gear":[
+        "sternguard_bolt_pistol", "sternguard_bolt_rifle"
+    ],
+    "replacement_gear":{
+        "Any model's Sternguard Bolt Rifle":[
+            "combi_weapon"
+        ],
+        "Every 5th model's Sternguard Bolt Rifle":["sternguard_heavy_bolter"]
+    }
+}

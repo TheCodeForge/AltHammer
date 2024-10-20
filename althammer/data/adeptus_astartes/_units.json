@@ -12,9 +12,11 @@
     ],
     "Infantry":[
         "Assault Intercessor Squad",
+        "Bladeguard Veteran Squad",
         "Heavy Intercessor Squad",
         "Infernus Marines",
         "Intercessor Squad",
+        "Sternguard Veteran Squad",
         "Terminator Squad"
     ],
     "Vehicles": [
