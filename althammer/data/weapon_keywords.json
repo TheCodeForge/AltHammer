@@ -2,7 +2,7 @@
     "Anti-Keyword X+": "When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of X or higher is considered a Critical Wound, and is successful.",
     "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
     "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
-    "Devastating Woudns": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
+    "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
     "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
     "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
     "Ignores Cover": "Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.",
