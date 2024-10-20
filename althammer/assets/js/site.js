@@ -157,3 +157,8 @@ $("#dark-mode-toggle").click(function(){
       }
     })
 })
+
+//Initialize popovers
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
