@@ -1,0 +1,41 @@
+{    
+    "name": "Apothecary",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":4,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades"
+    ],
+    "core_rules": [
+        "Leader",
+        "Second in Command"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Narthecium",
+            "text":"While leading a unit, at the start of each Battle Round, return one destroyed non-+Character+ model to this unit."
+        },
+        {
+            "name":"Gene-Seed Recovery",
+            "text":"When this model's +Bodyguard+ unit is destroyed, roll a d6. On a 2+, gain 1 CP."
+        }
+    ],
+    "range_weapons": [
+        "absolver_bolt_pistol",
+        "reductor_pistol"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Apothecary"
+    ],
+    "default_gear":[
+        "absolver_bolt_pistol",
+        "reductor_pistol"
+    ]
+}
