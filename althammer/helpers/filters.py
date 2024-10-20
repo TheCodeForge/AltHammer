@@ -92,5 +92,7 @@ def keyword(x):
     text=markdown_filter(text)
 
     text = text.replace('"', r'\"')
+    text = text.replace('<', r'&lt;')
+    text = text.replace('>', r'&gt;')
 
     return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
