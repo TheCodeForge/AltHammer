@@ -36,7 +36,7 @@ def keyword(x):
 
     kwd, text = get_keyword(x)
 
-    return f'<span data-toggle="popover" data-placement="top" data-content="{kwd}: {text}">{x}</span>'
+    return f'<span data-toggle="popover" data-placement="top" data-trigger="hover" data-content="{kwd}: {text}">{x}</span>'
 
 
 @app.template_filter("listcomp")
