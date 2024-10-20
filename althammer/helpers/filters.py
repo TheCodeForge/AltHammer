@@ -93,7 +93,7 @@ def keyword(x):
 
     kwd, text = get_keyword(x)
 
-    text=markdown_filter(text)
+    #text=markdown_filter(text)
 
     kwd = kwd.replace('"', r'&quot;')
     text = text.replace('"', r'&quot;')
