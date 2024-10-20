@@ -16,7 +16,7 @@
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Purge the Foe",
-            "text":"After making a Shoot action, select a targeted enemy unit. It must take a Battle-Shock test."
+            "text":"After making a Shoot action, select a targeted enemy +Infantry+ unit. It must take a Battle-Shock test."
         }
     ],
     "range_weapons": [
