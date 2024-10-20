@@ -1,9 +1,11 @@
 {
     "Characters":[
         "Overlord",
-        "Psychomancer"
+        "Psychomancer",
+        "Royal Warden"
     ],
     "Infantry":[
+        "Deathmarks",
         "Flayed Ones",
         "Immortals",
         "Necron Warriors",

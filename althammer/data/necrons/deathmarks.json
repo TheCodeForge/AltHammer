@@ -1,0 +1,29 @@
+{    
+    "name": "Deathmarks",
+    "move":5,
+    "tough": 5,
+    "save": 3,
+    "hp":1,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Deep Strike"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Hyperspace Hunters",
+            "text":"Once per Battle Round, when an enemy unit is set up on the Battlefield from Reserves within 18\" and visible to this unit, this unit may shoot at that unit, provided that it is an eligible target."
+        }
+    ],
+    "range_weapons": [
+        "synaptic_disintegrator"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "5-10 Deathmarks"
+    ],
+    "default_gear":[
+        "synaptic_disintegrator"
+    ]
+}

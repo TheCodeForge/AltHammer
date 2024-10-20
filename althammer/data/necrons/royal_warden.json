@@ -1,0 +1,35 @@
+{    
+    "name": "Royal Warden",
+    "move":5,
+    "tough": 5,
+    "save": 3,
+    "hp":4,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character"
+    ],
+    "core_rules": ["Leader [Battleline]"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [
+        {
+        "name": "Adaptive Strategy",
+        "text": "While leading a unit, ranged weapons equipped by models in the unit have +[Heavy]+ and +[Assault]+."
+        },
+        {
+        "name": "Engrammatic Logic",
+        "text": "Once per battle, when this unit is Activated, select a friendly Battle-Shocked +Necrons+ unit within 12\" of this model. That unit is no longer Battle-Shocked"
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["voidscythe"],
+    "wargear": ["resurrection_orb"],
+    "composition":[
+        "1 Overlord"
+    ],
+    "default_gear":[
+        "voidscythe",
+        "resurrection_orb"
+    ]
+}
