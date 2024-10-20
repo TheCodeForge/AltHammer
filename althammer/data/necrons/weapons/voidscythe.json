@@ -1,0 +1,9 @@
+{
+    "name": "Voidscythe",
+    "keywords": ["Devastating Wounds"],
+    "atk":3,
+    "skl":3,
+    "str":12,
+    "ap": 3,
+    "dmg":3
+}

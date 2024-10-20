@@ -1,0 +1,30 @@
+{    
+    "name": "Overlord",
+    "move":7,
+    "tough": 8,
+    "save": 3,
+    "hp":12,
+    "lead": 8,
+    "oc": 4,
+    "invuln": 4,
+    "keywords": [
+        "Vehicle",
+        "Walker",
+        "Canoptek"
+    ],
+    "core_rules": ["Leader [Battleline]"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+        "Implacable Resilience": "Subtract 1 from the Damage of all attacks made against this model (to a minimum of 1)."
+    }],
+    "range_weapons": [],
+    "melee_weapons": ["voidscythe"],
+    "wargear": ["resurrection_orb"],
+    "composition":[
+        "1 Overlord"
+    ],
+    "default_gear":[
+        "voidscythe",
+        "resurrection_orb"
+    ]
+}
