@@ -124,7 +124,7 @@
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
           <td class="text-center">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
           <td class="text-center">{{ weapon.str }}</td>
-          <td class="text-center">-{{ weapon.ap }}</td>
+          <td class="text-center">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
           <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
@@ -148,7 +148,7 @@
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
           <td class="text-center">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
           <td class="text-center">{{ weapon.str }}</td>
-          <td class="text-center">-{{ weapon.ap }}</td>
+          <td class="text-center">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
           <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
