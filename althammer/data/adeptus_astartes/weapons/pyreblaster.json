@@ -5,6 +5,7 @@
         "Incendiary",
         "Torrent"
     ],
+    "rng":12,
     "atk":"d6",
     "skl":null,
     "str":5,
