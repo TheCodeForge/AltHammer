@@ -1,0 +1,54 @@
+{
+    "Anti-Keyword X+": "When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of X or higher is considered a Critical Wound, and is successful.",
+
+    "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
+
+    
+    "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
+    
+    "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
+    
+    "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
+    
+    "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
+    
+    "Ignores Cover": "Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.",
+    
+    "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" inches take d3 Mortal Damage; all units within 6 take d6 Mortal Damage instead.",
+    
+    "Lethal Hits": "Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.",
+    
+    "Pistol": "This weapon may target enemy units within Melee Distance",
+
+    "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.",
+    
+    "Rapid Fire X": "If the target unit is within half range, make X additional attacks.",
+    
+    "Sustained Hits X": "Critical Hits trigger an extra X number of attacks. Do not make a Hit Roll for these additional attacks. Instead, treat the additional attacks as if the Hit roll already succeeded.",
+    
+    "Torrent": "Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.",
+    
+    "Twin-Linked": "Failed Wound rollsw may be re-rolled.",
+
+    "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6 of the destroyed model suffers X Mortal Damage",
+    
+    "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9 inches away from all enemy models.",
+    
+    "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
+
+    "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9 inches from any enemy model.",
+
+    "Leader": "During the [Reveal Armies and Formations](/rules/core_rules#reveal_armies_and_formations) step, attach this unit to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+. The leading unit gainst the +Leader+ keyword, and the unit to which it attached gains the +Bodyguard+ keyword.For the rest of the battle, this combined force shall be treated as a single unit with a starting strength of the combined model count. If either the +Leader+ or all +Bodyguard+ models are destroyed, the remaining models lose the +Leader+ or +Bodyguard+ keywords, and make their determination of starting strength based on the original uncombined unit's model count. There is a limitation of one +Leader+ model per +Bodyguard+ unit, unless at least one +Leader+ is also +Second in Command+",
+
+    "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12 inches away.",
+
+    "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
+
+    "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
+
+    "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
+
+    "Stealth": "If every model in a unit has the +Stealth+ ability, then all ranged attacks made against the unit have -1 to hit."
+
+}
+

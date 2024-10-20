@@ -2,7 +2,7 @@
 
 {% macro backside() %}
     {% if u.core_rules %}
-    <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules) }}</span></p>
+    <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules | sort | keyword) | safe }}</span></p>
     {% endif %}
     {% if u.faction_rules %}
     <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
