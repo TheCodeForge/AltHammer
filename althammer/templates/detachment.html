@@ -26,6 +26,8 @@
 
 # Detachment: {{ d.name }}
 
+{% if d.__dict__.get('army_restrictions') }
+
 ## Restrictions
 
 {% for r in d['army_restrictions'] %}
