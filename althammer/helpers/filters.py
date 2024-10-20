@@ -92,13 +92,13 @@ def keyword(x):
     if isinstance(x, list):
         return [keyword(kwd) for kwd in x]
 
-    kwd, text = get_keyword(x)
+    kwd, rule = get_keyword(x)
 
 
     rule=re.sub(r"\+((\[|\b).{3,25}?(\]|\b))\+", r'<span class="keyword">\1</span>', rule)
     rule=re.sub(r"!((\[|\b).{3,25}?(\]|\b))!", r'<span class="keyword">\1</span>', rule)
 
     kwd = kwd.replace('"', r'&quot;')
-    text = text.replace('"', r'&quot;')
+    rule = rule.replace('"', r'&quot;')
 
-    return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
+    return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}">{x}</span>'
