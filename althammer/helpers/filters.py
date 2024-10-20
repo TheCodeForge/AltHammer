@@ -1,6 +1,6 @@
 from .hashes import *
 from .markdown import CustomRenderer, NumberedRenderer
-from flask import escape
+from jinja2 import escape
 import mistletoe
 
 from althammer.helpers.get import *
