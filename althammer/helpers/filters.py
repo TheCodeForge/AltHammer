@@ -1,6 +1,7 @@
 from .hashes import *
 from .markdown import CustomRenderer, NumberedRenderer
 import mistletoe
+import re
 
 from althammer.helpers.get import *
 
@@ -93,7 +94,9 @@ def keyword(x):
 
     kwd, text = get_keyword(x)
 
-    #text=markdown_filter(text)
+
+    rule=re.sub(r"\+((\[|\b).{3,25}?(\]|\b))\+", r'<span class="keyword">\1</span>', rule)
+    rule=re.sub(r"!((\[|\b).{3,25}?(\]|\b))!", r'<span class="keyword">\1</span>', rule)
 
     kwd = kwd.replace('"', r'&quot;')
     text = text.replace('"', r'&quot;')
