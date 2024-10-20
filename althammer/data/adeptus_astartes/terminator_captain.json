@@ -21,7 +21,7 @@
         "Oath of Moment"],
     "unit_rules": [{
             "name":"Rites of Battle",
-            "text":"Once per Battle Round, you may target a friendly +Captain+ unit with a Strategem for 0 CP, even if that Strategem has already been used that turn."
+            "text":"Once per Battle Round, you may target a friendly +Captain+ unit with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
         },
         {
             "name":"The Imperium's Sword",
