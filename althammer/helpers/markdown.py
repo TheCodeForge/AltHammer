@@ -66,8 +66,13 @@ class CustomRenderer(HTMLRenderer):
 
         if kwd=="Error":
             return f'<span class="keyword">{token.target}</span>'
-        else:
-            return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}">{token.target}</span>'
+        
+
+        rule=self.render_inner(rule)
+        rule=rule.replace('"', '&quot;')
+        kwd = kwd.replace('"', '&quot;')
+
+        return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}">{token.target}</span>'
 
     def render_keyword_alt(self, *args, **kwargs):
         return self.render_keyword(*args, **kwargs)
