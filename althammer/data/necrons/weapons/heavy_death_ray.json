@@ -3,7 +3,7 @@
     "keywords":[
         "Sustained Hits D3"
     ],
-    "ability":"+Infantry+ units targed by this weapon must choose to Stand Firm (this weapon scores Critical Hits on unmodified Hit rolls of 5+) or Duck For Cover (Targeted unit has -1 to Hit until the end of the Battle Round)",
+    "ability":"+Infantry+ units targeted by this weapon must choose to Stand Firm (this weapon scores Critical Hits on unmodified Hit rolls of 5+) or Duck For Cover (Targeted unit has -1 to Hit until the end of the Battle Round)",
     "rng":36,
     "atk":3,
     "skl":3,
