@@ -10,11 +10,12 @@
         "Infantry",
         "Character",
         "Psyker",
-        "Grenades"
+        "Grenades",
+        "Primaris"
     ],
     "core_rules": [
         "Deep Strike",
-        "Leader"
+        "Leader [Primaris]"
     ],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{

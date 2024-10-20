@@ -38,13 +38,13 @@
 
     "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",
 
-    "Leader": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, becoming a single combined unit. Limit 1 +Leader+ per unit.",
+    "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified Keyword, becoming a single combined unit. Limit 1 +Leader+ per unit.",
 
     "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
 
     "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
 
-    "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
+    "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+, following the same restrictions as the +Leader+ rule. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
 
     "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 

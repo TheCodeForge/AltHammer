@@ -10,7 +10,8 @@
         "Infantry",
         "Battleline",
         "Grenades",
-        "Imperium"
+        "Imperium",
+        "Primaris"
     ],
     "core_rules": [],
     "faction_rules": ["Oath of Moment"],
