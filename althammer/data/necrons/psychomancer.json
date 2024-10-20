@@ -25,7 +25,7 @@
     ],
     "range_weapons": ["abyssal_lance_ranged"],
     "melee_weapons": ["abyssal_lance_melee"],
-    "wargear": [""],
+    "wargear": [],
     "composition":[
         "1 Psychomancer"
     ],
