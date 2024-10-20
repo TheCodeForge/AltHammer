@@ -91,7 +91,7 @@ def keyword(x):
 
     text=markdown_filter(text)
 
-    text = text.replace('"', r'\"')
+    text = text.replace('"', r'&quot;')
     text = text.replace('<', r'&lt;')
     text = text.replace('>', r'&gt;')
 
