@@ -62,7 +62,7 @@ class CustomRenderer(HTMLRenderer):
 
     def render_keyword(self, token):
 
-        kwd, rule = get_keyword(token.target)
+        kwd, rule = get_keyword(token.target.lstrip('[').rstrip(']'))
 
         if kwd=="Error":
             return f'<span class="keyword">{token.target}</span>'
