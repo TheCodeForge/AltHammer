@@ -21,6 +21,8 @@
     "Pistol": "This weapon may target enemy units within Melee Distance.",
 
     "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.",
+
+    "Psychic": "This keyword has no effect on its own. It's here to allow other rules and effects to interact with psychic weapons.",
     
     "Rapid Fire X": "If the target unit is within half range, make X additional attacks.",
     
