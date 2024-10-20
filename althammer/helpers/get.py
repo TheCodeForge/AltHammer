@@ -32,8 +32,6 @@ def get_keyword(keyword):
     with open("althammer/data/keywords.json", "r+") as file:
         data=json.load(file)
 
-    keyword=keyword.replace('"', '&quot;')
-
     if keyword in data.keys():
         return keyword, data[keyword]
 
