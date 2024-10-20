@@ -67,8 +67,8 @@ class CustomRenderer(HTMLRenderer):
         if kwd=="Error":
             return f'<span class="keyword">{token.target}</span>'
 
-        rule=re.sub(r"\+((\[|\b).{3,25}?(\]|\b))\+", '<span class="keyword">\1</span>', rule)
-        rule=re.sub(r"!((\[|\b).{3,25}?(\]|\b))!", '<span class="keyword">\1</span>', rule)
+        rule=re.sub(r"\+((\[|\b).{3,25}?(\]|\b))\+", r'<span class="keyword">\1</span>', rule)
+        rule=re.sub(r"!((\[|\b).{3,25}?(\]|\b))!", r'<span class="keyword">\1</span>', rule)
         
         rule=rule.replace('"', '&quot;')
         kwd = kwd.replace('"', '&quot;')
