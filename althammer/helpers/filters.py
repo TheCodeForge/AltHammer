@@ -101,4 +101,4 @@ def keyword(x):
     kwd = kwd.replace('"', r'&quot;')
     rule = rule.replace('"', r'&quot;')
 
-    return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}">{x}</span>'
+    return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}" data-bs-custom-class="keyword-popover">{x}</span>'
