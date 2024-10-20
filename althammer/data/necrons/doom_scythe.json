@@ -1,0 +1,29 @@
+{    
+    "name": "Doom Scythe",
+    "move":"20+",
+    "tough": 9,
+    "save": 3,
+    "hp":12,
+    "lead": 7,
+    "oc": 0,
+    "keywords": [
+        "Vehicle",
+        "Fly",
+        "Aircraft"
+    ],
+    "core_rules": ["Deadly Demise D3"
+    ],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [],
+    "range_weapons": [
+        "heavy_death_ray",
+        "twin_tesla_destructor"
+    ],
+    "melee_weapons": ["armored_bulk"],
+    "composition":[
+        "1 Doom Scythe"
+    ],
+    "default_gear":[
+        "heavy_death_ray", "twin_tesla_destructor", "armored_bulk"
+    ]
+}

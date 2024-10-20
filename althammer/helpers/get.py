@@ -38,8 +38,8 @@ def get_keyword(keyword):
     elif keyword.startswith("Anti-"):
         return "Anti-Keyword X+", data["Anti-Keyword X+"]
 
-    elif re.search(r"\d", keyword):
-        keyword=re.sub(r"\d", "X", keyword)
+    elif re.search(r"d?\d", keyword):
+        keyword=re.sub(r"d?\d", "X", keyword)
         return keyword, data[keyword]
 
     else:

@@ -1,0 +1,13 @@
+{
+    "name": "Twin Tesla Destructor",
+    "keywords":[
+        "Sustained Hits 2",
+        "Twin-Linked"
+    ],
+    "rng":36,
+    "atk":6,
+    "skl":3,
+    "str":7,
+    "ap": 0,
+    "dmg":2
+}
