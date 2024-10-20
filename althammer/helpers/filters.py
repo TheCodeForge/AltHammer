@@ -92,4 +92,6 @@ def keyword(x):
 
     text=markdown_filter(text)
 
-    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{escape(text)}">{x}</span>'
+    text = text.replace('"', r'\"')
+
+    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
