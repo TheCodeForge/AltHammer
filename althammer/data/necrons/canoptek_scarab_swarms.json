@@ -1,0 +1,30 @@
+{    
+    "name": "Canoptek Scarab Swarms",
+    "move":9,
+    "tough": 2,
+    "save": 6,
+    "hp":4,
+    "lead": 8,
+    "oc": 0,
+    "keywords": [
+        "Swarm",
+        "Fly",
+        "Canoptek"
+    ],
+    "core_rules": ["Deadly Demise 1"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [
+        {
+            "name":"Self-Destruct",
+            "text": "At the start of the Fight action, you may select one model in this unit to destroy. If you do, do not perform that model's Deadly Demise ability. Instead, select an enemy unit within Melee Distance of model. Roll d6; add 1 if the enemy unit is a +Vehicle+. On a 2-5, the enemy unit suffers d6 mortal damage; on a 6+, the enemy unit suffers d3+3 mortal damage."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["feeder_mandibles"],
+    "composition":[
+        "3-6 Canoptek Scarab Swarms"
+    ],
+    "default_gear":[
+        "feeder_mandibles"
+    ]
+}
