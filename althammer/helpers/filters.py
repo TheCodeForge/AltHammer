@@ -28,6 +28,17 @@ def app_config(x):
         raise ValueError(f"Not permitted to render config key `{x}`")
     return app.config[x]
 
+@app.template_filter("keyword")
+def keyword(x):
+
+    if isinstance(x, list):
+        return [keyword(kwd) for kwd in x]
+
+    kwd, text = get_keyword(x)
+
+    return f'<span data-toggle="popover" data-placement="top" data-content="{kwd}: {text}">{x}</span>'
+
+
 @app.template_filter("listcomp")
 def listcomp(iterable, prop):
 

@@ -4,6 +4,7 @@ from mistletoe.html_renderer import HTMLRenderer
 import re
 from os import environ
 from flask import request
+from .get import get_keyword
 
 SERVER_NAME = environ.get("SERVER_NAME")
 
@@ -60,6 +61,9 @@ class CustomRenderer(HTMLRenderer):
             self.__dict__[i] = kwargs[i]
 
     def render_keyword(self, token):
+
+        kwd, rule = get_keyword(token.target)
+
         return f'<span class="keyword">{token.target}</span>'
 
     def render_keyword_alt(self, *args, **kwargs):

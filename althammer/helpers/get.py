@@ -1,5 +1,6 @@
 from flask import abort
 import json
+import re
 
 from althammer.classes import *
 from althammer.__main__ import app, cache
@@ -24,3 +25,22 @@ def get_factions():
         data=json.load(file)
 
     return sorted([Faction(x) for x in data.values()], key= lambda y: y.name)
+
+@cache.memoize()
+def get_keyword(keyword):
+
+    with open("althammer/data/weapon_keywords.json", "r+") as file:
+        data=json.load(file)
+
+    if keyword in data:
+        return keyword, data[keyword]
+
+    elif keyword.startswith("Anti-"):
+        return "Anti-Keyword X+", data["Anti-Keyword X+"]
+
+    elif re.search(r"\d$", keyword):
+        keyword=re.sub(r"\d$", "X", keyword)
+        return keyword, data[keyword]
+
+    else:
+        return "Error", f"Unknown Keyword `{keyword}`"
