@@ -95,4 +95,4 @@ def keyword(x):
     #text = text.replace('<', r'&lt;')
     #text = text.replace('>', r'&gt;')
 
-    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-html="true" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
+    return f'<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="{kwd}" data-bs-content="{text}">{x}</span>'
