@@ -14,11 +14,6 @@ def get_faction(faction):
     with open(path, "r+") as file:
         data=json.load(file)
 
-    try:
-        data=data[faction]
-    except KeyError:
-        abort(404)
-
     return Faction(data)
 
 @cache.memoize()
