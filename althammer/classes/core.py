@@ -92,7 +92,8 @@ class Faction(Base):
     @property
     @cache.memoize()
     def detachments(self):
-         path=f"althammer/data/{self.id}/_units.json"
+
+        path=f"althammer/data/{self.id}/_detachments.json"
 
         try:
             with open(path, "r+") as file:
@@ -114,29 +115,13 @@ class Faction(Base):
                             "name":d.name
                             })
 
-            with open (path, "w+") as f:
+            with open(path, "w+") as f:
                 f.write(json.dumps(file_output))
 
             return file_output
 
 
         return data
-        =====
-
-        path=f"althammer/data/{self.id}/_detachments.json"
-        try:
-            with open(path, "r+") as file:
-                data=json.load(file)
-        except Exception as e:
-            print(e)
-            return []
-            
-        output = [Detachment(x) for x in data.values()]
-
-        for d in output:
-            d.faction = self
-
-        return output
     
     @cache.memoize()
     def detachment(self, id):
@@ -223,7 +208,7 @@ class Faction(Base):
                         else:
                             raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
-            with open (path, "w+") as f:
+            with open(path, "w+") as f:
                 f.write(json.dumps(file_output))
 
             return file_output
