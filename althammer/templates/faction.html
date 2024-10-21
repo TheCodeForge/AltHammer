@@ -28,7 +28,7 @@
 ## Detachments
 
 <ul>
-{% for entry in f.detachment_listing %}
+{% for entry in f.detachment_listing | sort(attribute="name") %}
 <li><a href="/faction/{{ f.id }}/detachment/{{ entry['id'] }}">{{ entry['name'] }}</a></li>
 {% else %}
 * None yet. Stay tuned!
