@@ -181,7 +181,10 @@ class Faction(Base):
                         u=Unit(json.load(unitfile))
                         for kind in file_output:
                             if kind in u.keywords:
-                                file_output[kind].append(u.name)
+                                file_output[kind].append({
+                                    "id":filename,
+                                    "name":u.name
+                                    })
                                 break
                         else:
                             raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
