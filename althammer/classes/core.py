@@ -179,7 +179,10 @@ class Faction(Base):
             for root, dirs, files in os.walk(f"althammer/data/{self.id}/units"):
                 for filename in files:
                     with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
-                        u=Unit(json.load(unitfile))
+                        try:
+                            u=Unit(json.load(unitfile))
+                        except json.decoder.JSONDecodeError as e:
+                            raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
                         for kind in file_output:
                             if kind in u.keywords:
                                 file_output[kind].append({
