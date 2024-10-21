@@ -28,8 +28,8 @@
 ## Detachments
 
 <ul>
-{% for d in f.detachments %}
-<li><a href="{{ d.permalink }}">{{ d.name }}</a></li>
+{% for entry in f.detachment_listing %}
+<li><a href="/faction/{{ f.id }}/detachment/{{ entry['id'] }}">{{ entry['name'] }}</a></li>
 {% else %}
 * None yet. Stay tuned!
 {% endfor %} 

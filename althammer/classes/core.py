@@ -91,7 +91,7 @@ class Faction(Base):
     
     @property
     @cache.memoize()
-    def detachments(self):
+    def detachment_listing(self):
 
         path=f"althammer/data/{self.id}/_detachments.json"
 
