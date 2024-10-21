@@ -92,6 +92,36 @@ class Faction(Base):
     @property
     @cache.memoize()
     def detachments(self):
+         path=f"althammer/data/{self.id}/_units.json"
+
+        try:
+            with open(path, "r+") as file:
+                data=json.load(file)
+
+        except FileNotFoundError:
+
+            file_output = []
+
+            for root, dirs, files in os.walk(f"althammer/data/{self.id}/detachments"):
+                for filename in files:
+                    with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
+                        try:
+                            d=Detachment(json.load(unitfile))
+                        except json.decoder.JSONDecodeError as e:
+                            raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                        file_output[kind].append({
+                            "id":filename,
+                            "name":d.name
+                            })
+
+            with open (path, "w+") as f:
+                f.write(json.dumps(file_output))
+
+            return file_output
+
+
+        return data
+        =====
 
         path=f"althammer/data/{self.id}/_detachments.json"
         try:
@@ -186,7 +216,7 @@ class Faction(Base):
                         for kind in file_output:
                             if kind in u.keywords:
                                 file_output[kind].append({
-                                    "id":filename,
+                                    "id":filename.split('.')[0],
                                     "name":u.name
                                     })
                                 break
