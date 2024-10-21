@@ -37,8 +37,8 @@
               Factions
             </a>
             <ul class="dropdown-menu mb-3" aria-labelledby="faqDropdown">
-              {% for f in (0|get_factions) %}
-              <li><a class="dropdown-item" href="{{ f.permalink }}">{{ f.name }}</a></li>
+              {% for f in ( 0 | get_factions | sort(attribute=('name')))  %}
+              <li><a class="dropdown-item" href="/faction/{{ f['id'] }}">{{ f['name'] }}</a></li>
               {% endfor %}
             </ul>
           </li>

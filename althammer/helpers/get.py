@@ -21,10 +21,38 @@ def get_faction(faction):
 @cache.memoize()
 def get_factions():
 
-    with open("althammer/data/factions.json", "r+") as file:
-        data=json.load(file)
+    path = "althammer/data/_factions.json"
 
-    return sorted([Faction(x) for x in data.values()], key= lambda y: y.name)
+    try:
+        with open(path, "r+") as file:
+            data=json.load(file)
+
+    except FileNotFoundError:
+        file_output = []
+
+        for root, dirs, files in os.walk(f"althammer/data/"):
+            for directory in dirs:
+
+                with open(f"althammer/data/{directory}/faction.json", "r+") as unitfile:
+                    try:
+                        d=Faction(json.load(unitfile))
+                    except json.decoder.JSONDecodeError as e:
+                        raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                    file_output.append(
+                        {
+                            "id":d.id,
+                            "name":d.name
+                        }
+                    )
+
+        with open(path, "w+") as f:
+            f.write(json.dumps(file_output))
+
+        return file_output
+
+
+
+    return data
 
 @cache.memoize()
 def get_keyword(keyword):
