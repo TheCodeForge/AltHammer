@@ -30,7 +30,7 @@
     "range_weapons": [
         "bolt_pistol",
         "heavy_bolt_pistol",
-        "master_crafted_bolt_rifle",
+        "master_crafted_bolt_rifle"
     ],
     "melee_weapons": [
         "master_crafted_power_weapon"
