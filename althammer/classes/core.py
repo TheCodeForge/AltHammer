@@ -191,7 +191,7 @@ class Faction(Base):
                             raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
             with open (path, "w+") as f:
-                f.write(json.dump(file_output))
+                f.write(json.dumps(file_output))
 
             return file_output
 
