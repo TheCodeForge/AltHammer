@@ -1,6 +1,7 @@
 from flask import abort
 import json
 import re
+from werkzeug.utils import safe_join
 
 from althammer.classes import *
 from althammer.__main__ import app, cache
@@ -8,7 +9,9 @@ from althammer.__main__ import app, cache
 @cache.memoize()
 def get_faction(faction):
 
-    with open("althammer/data/factions.json", "r+") as file:
+    path=safe_join("althammer/data", faction)+"/faction.json"
+
+    with open(path, "r+") as file:
         data=json.load(file)
 
     try:
