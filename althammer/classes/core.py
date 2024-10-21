@@ -112,7 +112,7 @@ class Faction(Base):
                             raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
                         file_output.append(
                             {
-                                "id":filename,
+                                "id":filename.split('.')[0],
                                 "name":d.name
                             }
                         )
