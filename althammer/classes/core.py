@@ -128,19 +128,23 @@ class Faction(Base):
     @cache.memoize()
     def detachment(self, id):
 
-        for x in self.detachments:
-            if x.id==id:
-                output = x
-                output.faction = self
-                return output
+        path = safe_join(f"althammer/data/{self.id}/detachments", f"{id}.json")
 
-        abort(404)
+        try:
+            with open(path, "r+") as file:
+                data=json.load(file)
+        except FileNotFoundError:
+            abort(404)
+        
+        output = Detachment(data)
+
+        output.faction=self
+        return output
 
     @cache.memoize()
     def unit(self, id):
 
         path=safe_join(f"althammer/data/{self.id}/units", f"{id}.json")
-        print(path)
 
         try:
             with open(path, "r+") as file:
