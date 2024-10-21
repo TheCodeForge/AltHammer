@@ -1,4 +1,5 @@
 import json
+import os
 from werkzeug.utils import safe_join
 
 from althammer.__main__ import cache
@@ -159,8 +160,37 @@ class Faction(Base):
 
         path=f"althammer/data/{self.id}/_units.json"
 
-        with open(path, "r+") as file:
-            data=json.load(file)
+        try:
+            with open(path, "r+") as file:
+                data=json.load(file)
+
+        except FileNotFoundError:
+
+            file_output = {
+                "Epic Hero": [],
+                "Character": [],
+                "Infantry": [],
+                "Mounted": [],
+                "Vehicle": [],
+                "Fortification": []
+            }
+
+            for root, dirs, files in os.walk(f"althammer/data/{self.id}/units"):
+                for filename in files:
+                    with open(f"althammer/data/{self.id}/units", "r+") as unitfile:
+                        u=Unit(json.load(unitfile))
+                        for kind in file_output:
+                            if kind in u.keywords:
+                                file_output[kind].append(u.name)
+                                break
+                        else:
+                            raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+
+            with open (path, "w+") as f:
+                f.write(json.dump(file_output))
+
+            return file_output
+
 
         return data
 
