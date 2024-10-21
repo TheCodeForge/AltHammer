@@ -110,10 +110,12 @@ class Faction(Base):
                             d=Detachment(json.load(unitfile))
                         except json.decoder.JSONDecodeError as e:
                             raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
-                        file_output[kind].append({
-                            "id":filename,
-                            "name":d.name
-                            })
+                        file_output.append(
+                            {
+                                "id":filename,
+                                "name":d.name
+                            }
+                        )
 
             with open(path, "w+") as f:
                 f.write(json.dumps(file_output))
