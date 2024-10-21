@@ -41,7 +41,7 @@
 ### {{ role }}
 
 <ul>
-{% for unit in f.unit_listing[role] | sort %}
+{% for unit in f.unit_listing[role] | sort(attribute="name") %}
 <li><a href="/faction/{{ f.id }}/unit/{{ unit['id'] }}">{{ unit['name'] }}</a></li>
 {% endfor %}
 </ul>
