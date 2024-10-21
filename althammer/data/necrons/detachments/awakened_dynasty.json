@@ -1,0 +1,35 @@
+{
+    "id": "awakened_dynasty",
+    "name": "Awakened Dynasty",
+    "rules": [ 
+        {
+            "name": "Command Protocols",
+            "lore": "The Necron nobility make war in a cold and calculated fashion. Their commond protocols crackle out across the battlefield, compelling their semi-sentient warriors into battle, one step at a time.",
+            "text": "Your +Leader+ models and their +Bodyguard+ units have +1 to Hit rolls."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Protocol of the Eternal Guardian",
+            "cost": 1,
+            "when": "Any time",
+            "target": "One +Necrons+ +Infantry+ +Character+ model from your army that was just destroyed.",
+            "effect": "Set your model back up on the Battlefield as close as possible to where it was destroyed and out of Melee Distance of enemy models, with half its starting Health remaining.",
+            "restriction": "This strategem may not target a given model more than once per battle."
+        },
+        {
+            "name": "Protocol of the Vengeful Stars",
+            "cost": 1,
+            "when": "After an enemy Unit has resolved a Shoot action",
+            "target": "A +Necrons+ unit in your army that had one or more of its models killed as a result of the attack.",
+            "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
+        },
+        {
+            "name": "Protocol of the Sudden Storm",
+            "cost": 1,
+            "when": "Upon Activation of a friendly unit",
+            "target": "Your unit being Activated",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
+        }
+    ]
+}
