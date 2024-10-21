@@ -7,6 +7,8 @@
     "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
     
     "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
+
+    "Extra Attacks": "Melee attacks may be made with this weapon in addition to attacks made with the originally selected melee weapon",
     
     "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
     

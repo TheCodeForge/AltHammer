@@ -1,0 +1,41 @@
+{    
+    "name": "Illuminor Szeras",
+    "move":7,
+    "tough": 8,
+    "save": 3,
+    "hp":12,
+    "lead": 8,
+    "oc": 4,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Cryptek"
+    ],
+    "core_rules": ["Feel No Pain 4+"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [
+        {
+            "name":"Illuminor",
+            "text":"While this model is within 3\" of a friendly +Necrons+ unit, this model has the +Lone Operative+ ability."
+        },
+        {
+            "name":"Mechanical Augmentation",
+            "text":"Friendly +Necrons Battleline+ units within 6\" have the Armor Break of their attacks improved by 1. Attacks made against them have their Armor Break worsened by 1 (no worse than 0)."
+        },
+        {
+            "name": "Atomic Energy Manipulator",
+            "text": "After Activation, if this model destroyed one or more enemy models with a melee attack, add 3\" to the range of its Mechanical Augmentation ability, until the end of the battle."
+        }
+    ],
+    "range_weapons": ["eldritch_lance_ranged"],
+    "melee_weapons": ["eldritch_lance_melee", "impaling_legs"],
+    "composition":[
+        "1 Illuminor Szeras"
+    ],
+    "default_gear":[
+        "eldritch_lance_melee",
+        "impaling_legs"
+    ]
+}
