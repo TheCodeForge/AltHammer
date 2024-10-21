@@ -177,7 +177,7 @@ class Faction(Base):
 
             for root, dirs, files in os.walk(f"althammer/data/{self.id}/units"):
                 for filename in files:
-                    with open(f"althammer/data/{self.id}/units", "r+") as unitfile:
+                    with open(f"althammer/data/{self.id}/units/{filename}.json", "r+") as unitfile:
                         u=Unit(json.load(unitfile))
                         for kind in file_output:
                             if kind in u.keywords:
