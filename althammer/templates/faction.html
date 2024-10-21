@@ -37,7 +37,7 @@
 
 ## Units
 
-{% for role in f.unit_listing %}
+{% for role in f.unit_listing if f.unit_listing[role] %}
 ### {{ role }}
 
 <ul>
