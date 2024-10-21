@@ -29,6 +29,7 @@ def get_factions():
         file_output = []
 
         for root, dirs, files in os.walk(f"althammer/data/"):
+            print(root, dirs, files)
             for directory in dirs:
 
                 with open(f"althammer/data/{directory}/faction.json", "r+") as unitfile:
