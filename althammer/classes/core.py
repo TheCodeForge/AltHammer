@@ -122,7 +122,7 @@ class Faction(Base):
     @cache.memoize()
     def unit(self, id):
 
-        path=safe_join(f"althammer/data/{self.id}", f"{id}.json")
+        path=safe_join(f"althammer/data/{self.id}/units", f"{id}.json")
         print(path)
 
         try:
