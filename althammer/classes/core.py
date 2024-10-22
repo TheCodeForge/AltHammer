@@ -18,7 +18,7 @@ class Unit(Base):
     @property
     def permalink(self):
         print('enter permalink')
-        output= f"/faction/{self.faction.id}/unit/{self.id}"
+        output= f"{self.faction.permalink}/unit/{self.id}"
         print(output)
         return output
 
