@@ -16,6 +16,10 @@ class Unit(Base):
         return f"<Unit({self.faction.name} / {self.display_name})>"
 
     @property
+    def permalink(self):
+        return f"{self.faction.permalink}/unit/{self.id}"
+
+    @property
     def display_name(self):
         if not self.__dict__.get("subtitle"):
             return self.name
@@ -185,6 +189,7 @@ class Faction(Base):
             with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
                 try:
                     u=Unit(json.load(unitfile))
+                    u.faction=self
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
                 for kind in output:
