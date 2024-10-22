@@ -20,6 +20,29 @@ class Unit(Base):
         return f"{self.faction.permalink}/unit/{self.id}"
 
     @property
+    def min_models(self):
+
+        if self.__dict__.get('models_min'):
+            return self.models_min
+        elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
+            return 1
+
+        else:
+            return 0
+
+    @property
+    def max_models(self):
+
+        if self.__dict__.get('models_max'):
+            return self.models_min
+        elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
+            return 1
+
+        else:
+            return 100
+    
+
+    @property
     def display_name(self):
         if not self.__dict__.get("subtitle"):
             return self.name
