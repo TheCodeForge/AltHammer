@@ -73,10 +73,8 @@
 ## Strategems
 
 {% for strat in d.strategems %}
-### {{ strat['name'] }}
+### [{{ strat['cost'] }} CP] {{ strat['name'] }}
 
->**[{{ strat['cost'] }} CP] {{ strat['name'] }}**
->
 >**When:** {{ strat['when'] }}
 >
 >**Target:** {{ strat['target'] }}
@@ -94,10 +92,8 @@
 ## Spells
 
 {% for spell in d.spells %}
-### {{ spell['name'] }}
+### [{{ spell['difficulty'] }}] {{ spell['name'] }}
 
->**[{{ spell['difficulty'] }}] {{ spell['name'] }}**
->
 >{{ spell['effect'] }}
 
 {% endfor %}
