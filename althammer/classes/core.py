@@ -184,52 +184,38 @@ class Faction(Base):
     
     @property
     @cache.memoize()
-    def unit_listing(self):
+    def units(self):
 
-        path=f"althammer/data/{self.id}/_units.json"
-
-        try:
-            with open(path, "r+") as file:
-                data=json.load(file)
-
-        except FileNotFoundError:
-
-            file_output = {
-                "Epic Hero": [],
-                "Character": [],
-                "Infantry": [],
-                "Mounted": [],
-                "Vehicle": [],
-                "Swarm": [],
-                "Fortification": []
-            }
+        output = {
+            "Epic Hero": [],
+            "Character": [],
+            "Infantry": [],
+            "Mounted": [],
+            "Vehicle": [],
+            "Swarm": [],
+            "Fortification": []
+        }
 
 
-            root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
-            for filename in files:
-                with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
-                    try:
-                        u=Unit(json.load(unitfile))
-                    except json.decoder.JSONDecodeError as e:
-                        raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
-                    for kind in file_output:
-                        if kind in u.keywords:
-                            file_output[kind].append({
-                                "id":filename.split('.')[0],
-                                "name":u.name,
-                                "subtitle": u.__dict__.get("subtitle")
-                                })
-                            break
-                    else:
-                        raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+        root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
+        for filename in files:
+            with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+                try:
+                    u=Unit(json.load(unitfile))
+                except json.decoder.JSONDecodeError as e:
+                    raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
+                for kind in file_output:
+                    if kind in u.keywords:
+                        output[kind].append(u)
+                        break
+                else:
+                    raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
-            with open(path, "w+") as f:
-                f.write(json.dumps(file_output))
+        for kind in output:
+            output[kind] = sorted(output[kind], key=lambda x: x.display_name)
 
-            return file_output
+        return output
 
-
-        return data
 
     @property
     def color(self):
