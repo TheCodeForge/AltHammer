@@ -50,7 +50,7 @@
 {{ rule['text'] }}
 
 {% for option in rule['options'] %}
-### {{ option['name'] }}
+## {{ option['name'] }}
 
 {% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
 
@@ -70,7 +70,7 @@
 
 {% endif %}
 
-### Strategems
+## Strategems
 
 {% for strat in d.strategems %}
 ### {{ strat['name'] }}

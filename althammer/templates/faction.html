@@ -28,7 +28,7 @@
 
 {% endfor %}
 
-## Detachments
+# Detachments
 
 <ul>
 {% for entry in f.detachment_listing | sort(attribute="name") %}
@@ -38,10 +38,10 @@
 {% endfor %} 
 </ul>
 
-## Units
+# Units
 
 {% for role in f.unit_listing if f.unit_listing[role] %}
-### {{ role }}
+## {{ role }}
 
 <ul>
 {% for unit in f.unit_listing[role] | sort(attribute="name") %}
