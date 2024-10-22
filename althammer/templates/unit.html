@@ -68,9 +68,9 @@
   </ol>
 </nav>
 
-<h1>{{ u.name }}</h1>
+<h1 class="small-caps">{{ u.name }}</h1>
 {% if u.__dict__.get("subtitle") %}
-<h2 class="h5">{{ u.subtitle }}</h2>
+<h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
 {% endif %}
 
 <div class="row">

@@ -14,15 +14,17 @@
   </ol>
 </nav>
 
+
+<h1 class="small-caps">{{ f.name }}</h1>
+
 <div class="nested-numbered-list">
 {% filter numbered_markdown %}
 
-# {{ f.name }}
 
 *{{f.lore}}*
 
 {% for rule in f.rules %}
-## {{ rule }}
+# {{ rule }}
 
 {{ f.rules[rule] }}
 
