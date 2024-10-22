@@ -54,7 +54,7 @@
   {% for unit in f.unit_listing[role] | sort(attribute="name") %}
   <tr>
     <td>{{ unit['name'] }}{{ ' ('+unit['subtitle']+')' if unit['subtitle'] else '' }}</td>
-    <td>{{ unit.__dict__.get('ppm', '') }}</td>
+    <td>{{ unit.get('ppm', '') }}</td>
     <td></td>
     <td></td>
   </tr>
