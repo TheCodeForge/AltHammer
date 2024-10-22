@@ -160,7 +160,7 @@ $("#dark-mode-toggle").click(function(){
 
 $('.list-qty').on('input',
   function(){
-    var output = Number($('#ppm_'+$(this).data('unit-id')).value()) * Number($(this).value())
+    var output = Number($('#ppm_'+$(this).data('unit-id')).val()) * Number($(this).val())
     $('#total_'+$(this).data('unit-id')).text(output)
   }
 )
