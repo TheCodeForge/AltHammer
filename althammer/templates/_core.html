@@ -8,7 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--FontAwesome-->
   <link href="/assets/fontawesome/css/all.min.css" rel="stylesheet">
-  <meta name="description" content="{% block meta %}Tabletop Wargaming Done Right{% endblock %}">
+
+  {% block metadata %}
+  {% block title %}<title>Althammer</title>{% endblock %}
+  {% block meta %}<meta name="description" content="Tabletop Wargaming Done Right">{% endblock %}
+  {% endblock %}
+
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light px-2 px-md-5">

@@ -13,7 +13,14 @@ class Base():
 class Unit(Base):
 
     def __repr__(self):
-        return f"<Unit({self.faction.name} / {self.name})>"
+        return f"<Unit({self.faction.name} / {self.display_name})>"
+
+    @property
+    def display_name(self):
+        if not self.__dict__.get("subtitle"):
+            return self.name
+
+        return f"{self.name} ({self.subtitle})"
 
     @property
     @cache.memoize()

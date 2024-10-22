@@ -1,5 +1,9 @@
 {% extends "_core_centered.html" %}
 
+{% block title %}
+<title>Unit: {{ u.faction.name }} / {{ u.display_name }}</title>
+{% endblock %}
+
 {% macro backside() %}
     {% if u.core_rules %}
     <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules | sort | keyword) | safe }}</span></p>
