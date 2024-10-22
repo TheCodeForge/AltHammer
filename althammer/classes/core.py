@@ -111,6 +111,8 @@ class Faction(Base):
                     raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
                 output.append(d)
 
+        output = sorted(output, key= lambda x: x.name)
+
         return output
     
     @cache.memoize()
@@ -185,7 +187,7 @@ class Faction(Base):
                     u=Unit(json.load(unitfile))
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
-                for kind in file_output:
+                for kind in output:
                     if kind in u.keywords:
                         output[kind].append(u)
                         break
