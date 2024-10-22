@@ -5,7 +5,7 @@ import re
 
 from althammer.helpers.get import *
 
-from althammer.__main__ import app
+from althammer.__main__ import app, cache
 
 @app.template_filter('all')
 def filter_all(iterable):
@@ -60,6 +60,7 @@ def full_link(x):
     return urlunparse(urlparse(x)._replace(scheme=f"http{ 's' if app.config['FORCE_HTTPS'] else '' }", netloc=app.config['SERVER_NAME']))
 
 @app.template_filter('get_factions')
+@cache.memoize()
 def filter_get_factions(x):
     return get_factions()
 
