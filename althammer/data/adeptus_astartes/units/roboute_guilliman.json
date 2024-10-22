@@ -1,5 +1,6 @@
 {    
     "name": "Roboute Guilliman",
+    "ppm": 285,
     "move":8,
     "tough": 9,
     "save": 2,
