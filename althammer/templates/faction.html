@@ -31,8 +31,8 @@
 # Detachments
 
 <ul>
-{% for entry in f.detachment_listing | sort(attribute="name") %}
-<li><a href="/faction/{{ f.id }}/detachment/{{ entry['id'] }}">{{ entry['name'] }}</a></li>
+{% for entry in f.detachments %}
+<li><a href="{{ entry.permalink }}">{{ entry.name }}</a></li>
 {% else %}
 * None yet. Stay tuned!
 {% endfor %} 
@@ -53,7 +53,7 @@
   </thead>
   {% for unit in f.unit_listing[role] | sort(attribute="name") %}
   <tr>
-    <td>{{ unit.display_name }}</td>
+    <td><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td>{{ unit.ppm or '' }}</td>
     <td></td>
     <td></td>
