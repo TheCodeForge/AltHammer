@@ -111,6 +111,7 @@ class Faction(Base):
             with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
                 try:
                     d=Detachment(json.load(unitfile))
+                    d.faction=self
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
                 output.append(d)
