@@ -34,12 +34,19 @@ class Unit(Base):
     def max_models(self):
 
         if self.__dict__.get('models_max'):
-            return self.models_min
+            max_unit_size= self.models_min
         elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
-            return 1
+            max_unit_size= 1
 
         else:
-            return 100
+            max_unit_size = 100
+
+        if "Battleline" in self.keywords:
+            return max_unit_size * 6
+        elif "Character" in self.keywords:
+            return max_unit_size
+        else:
+            return max_unit_size * 3
     
 
     @property
