@@ -103,19 +103,19 @@ class Faction(Base):
 
             file_output = []
 
-            for root, dirs, files in os.walk(f"althammer/data/{self.id}/detachments"):
-                for filename in files:
-                    with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
-                        try:
-                            d=Detachment(json.load(unitfile))
-                        except json.decoder.JSONDecodeError as e:
-                            raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
-                        file_output.append(
-                            {
-                                "id":filename.split('.')[0],
-                                "name":d.name
-                            }
-                        )
+            root, dirs, files = next(os.walk(f"althammer/data/{self.id}/detachments"))
+            for filename in files:
+                with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
+                    try:
+                        d=Detachment(json.load(unitfile))
+                    except json.decoder.JSONDecodeError as e:
+                        raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                    file_output.append(
+                        {
+                            "id":filename.split('.')[0],
+                            "name":d.name
+                        }
+                    )
 
             with open(path, "w+") as f:
                 f.write(json.dumps(file_output))
@@ -197,22 +197,23 @@ class Faction(Base):
                 "Fortification": []
             }
 
-            for root, dirs, files in os.walk(f"althammer/data/{self.id}/units"):
-                for filename in files:
-                    with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
-                        try:
-                            u=Unit(json.load(unitfile))
-                        except json.decoder.JSONDecodeError as e:
-                            raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
-                        for kind in file_output:
-                            if kind in u.keywords:
-                                file_output[kind].append({
-                                    "id":filename.split('.')[0],
-                                    "name":u.name
-                                    })
-                                break
-                        else:
-                            raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+
+            root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
+            for filename in files:
+                with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+                    try:
+                        u=Unit(json.load(unitfile))
+                    except json.decoder.JSONDecodeError as e:
+                        raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
+                    for kind in file_output:
+                        if kind in u.keywords:
+                            file_output[kind].append({
+                                "id":filename.split('.')[0],
+                                "name":u.name
+                                })
+                            break
+                    else:
+                        raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
             with open(path, "w+") as f:
                 f.write(json.dumps(file_output))
