@@ -17,10 +17,7 @@ class Unit(Base):
 
     @property
     def permalink(self):
-        print('enter permalink', self, self.faction, self.faction.permalink)
-        output= f"{self.faction.permalink}/unit/{self.id}"
-        print(output)
-        return output
+        return f"{self.faction.permalink}/unit/{self.id}"
 
     @property
     def display_name(self):
@@ -193,6 +190,7 @@ class Faction(Base):
             with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
                 try:
                     u=Unit(json.load(unitfile))
+                    u.id=unitfile.split('.')[0]
                     u.faction=self
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
