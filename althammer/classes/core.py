@@ -100,37 +100,18 @@ class Faction(Base):
     @cache.memoize()
     def detachment_listing(self):
 
-        path=f"althammer/data/{self.id}/_detachments.json"
+        output = []
 
-        try:
-            with open(path, "r+") as file:
-                data=json.load(file)
+        root, dirs, files = next(os.walk(f"althammer/data/{self.id}/detachments"))
+        for filename in files:
+            with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
+                try:
+                    d=Detachment(json.load(unitfile))
+                except json.decoder.JSONDecodeError as e:
+                    raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                output.append(d)
 
-        except FileNotFoundError:
-
-            file_output = []
-
-            root, dirs, files = next(os.walk(f"althammer/data/{self.id}/detachments"))
-            for filename in files:
-                with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
-                    try:
-                        d=Detachment(json.load(unitfile))
-                    except json.decoder.JSONDecodeError as e:
-                        raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
-                    file_output.append(
-                        {
-                            "id":filename.split('.')[0],
-                            "name":d.name
-                        }
-                    )
-
-            with open(path, "w+") as f:
-                f.write(json.dumps(file_output))
-
-            return file_output
-
-
-        return data
+        return output
     
     @cache.memoize()
     def detachment(self, id):
