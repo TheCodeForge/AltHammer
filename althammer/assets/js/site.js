@@ -160,7 +160,7 @@ $("#dark-mode-toggle").click(function(){
 
 $('.list-qty').on('input',
   function(){
-    $('#total_'+this.data('unit-id')).value($('#ppm_'+this.data('unit-id')).value() * this.value())
+    $('#total_'+$(this).data('unit-id')).value($('#ppm_'+$(this).data('unit-id')).value() * $(this).value())
   }
 )
 
