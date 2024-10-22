@@ -158,6 +158,12 @@ $("#dark-mode-toggle").click(function(){
     })
 })
 
+$('.list-qty').input(
+  function(){
+    $('#total_'+this.data('unit-id')).value($('#ppm_'+this.data('unit-id')).value() * this.value())
+  }
+)
+
 //Initialize popovers
 $(document).ready(
   function() {
