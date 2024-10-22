@@ -98,7 +98,7 @@ class Faction(Base):
     
     @property
     @cache.memoize()
-    def detachment_listing(self):
+    def detachments(self):
 
         output = []
 
