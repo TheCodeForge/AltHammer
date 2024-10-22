@@ -55,7 +55,7 @@
   <tr>
     <td><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td>{{ unit.ppm }}</td>
-    <td><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty" min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" placeholder="{{ unit.min_models }}-{{ unit.max_models }}">
+    <td><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty" min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" placeholder="{{ unit.min_models +' - '+ unit.max_models if unit.max_models>1 else 'Max 1'}}">
       <input id="ppm_{{ unit.id }}" type="hidden" class="form-control disabled" disabled value="{{ unit.ppm or '' }}"></td>
     <td><span id="total_{{ unit.id }}"></span></td>
   </tr>
