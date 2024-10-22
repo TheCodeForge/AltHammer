@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% macro backside() %}
+  <div class="backside">
     {% if u.core_rules %}
     <p>CORE RULES: <span class="fw-bold">{{ ', '.join(u.core_rules | sort | keyword) | safe }}</span></p>
     {% endif %}
@@ -55,6 +56,7 @@
       {% endfor %}
       </ul>
     {% endif %}
+  </div>
 {% endmacro %}
 
 
@@ -90,7 +92,7 @@
         </thead>
       </table>
     </div>
-    
+
     <div class="row g-0 overflow-auto">
       <table class="table w-100">
         <tr></tr>
