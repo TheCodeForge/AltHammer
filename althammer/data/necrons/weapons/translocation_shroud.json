@@ -1,0 +1,4 @@
+{
+    "name": "Translocation Shroud",
+    "ability": "Whenever this model's unit Advances, do not make an Advance roll; instead add 6\" to the Movement property of the unit. In addition, whenever this model's unit makes a Normal, Advance, or Fall Back movement, it may move horizontally through models and terrain features."
+}

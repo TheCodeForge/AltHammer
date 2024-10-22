@@ -65,6 +65,9 @@
 </nav>
 
 <h1>{{ u.name }}</h1>
+{% if u.__dict__.get("subtitle") %}
+<h2 class="h5">{{ u.subtitle }}</h2>
+{% endif %}
 
 <div class="row">
   <div class="col col-12 col-xl-8">

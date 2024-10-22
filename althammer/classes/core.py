@@ -209,7 +209,8 @@ class Faction(Base):
                         if kind in u.keywords:
                             file_output[kind].append({
                                 "id":filename.split('.')[0],
-                                "name":u.name
+                                "name":u.name,
+                                "subtitle": u.__dict__.get("subtitle")
                                 })
                             break
                     else:

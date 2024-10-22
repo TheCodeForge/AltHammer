@@ -1,0 +1,34 @@
+{    
+    "name": "Overlord",
+    "subtitle": "with Translocation Shroud",
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Noble"
+    ],
+    "core_rules": ["Leader [Battleline]"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [
+        {
+        "name": "Implacable Resilience",
+        "text": "Subtract 1 from the Damage of all attacks made against this model (to a minimum of 1)."
+        }
+    ],
+    "range_weapons": ["tachyon_arrow"],
+    "melee_weapons": ["overlords_blade"],
+    "wargear": ["translocation_shroud"],
+    "composition":[
+        "1 Overlord"
+    ],
+    "default_gear":[
+        "voidscythe",
+        "resurrection_orb"
+    ]
+}
