@@ -120,7 +120,7 @@
         <thead>
           <tr>
             <th scope="col">Melee Weapons</th>
-            <!--th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th-->
+            <th></th><!--th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th-->
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Melee Skill"><i class="fas fa-fw fa-sword"></i></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
@@ -131,7 +131,7 @@
         {% for weapon in u.melee_weapons %}
         <tr>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-          <!--td class="text-center">Melee</td-->
+          <td></td><!--td class="text-center">Melee</td-->
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
           <td class="text-center">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
           <td class="text-center">{{ weapon.str }}</td>
