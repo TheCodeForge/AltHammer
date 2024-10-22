@@ -55,8 +55,8 @@
   <tr>
     <td><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td><input id="ppm_{{ unit.id }}" type="number" class="form-control disabled" disabled value="{{ unit.ppm or '' }}"></td>
-    <td><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty" min="0" max="80"></td>
-    <td><input id="total_{{ unit.id }}" type="number" class="form-control disabled" disabled data-unit-id="{{ unit.id }}"></td>
+    <td><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty" min="0" max="80" data-unit-id="{{ unit.id }}"></td>
+    <td><input id="total_{{ unit.id }}" type="number" class="form-control disabled list-totals" disabled ></td>
   </tr>
   {% endfor %}
   {% else %}
