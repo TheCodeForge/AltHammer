@@ -40,17 +40,37 @@
 
 # Units
 
-{% for role in f.unit_listing if f.unit_listing[role] %}
-## {{ role }}
-
-<ul>
-{% for unit in f.unit_listing[role] | sort(attribute="name") %}
-<li><a href="/faction/{{ f.id }}/unit/{{ unit['id'] }}">{{ unit['name'] }}{{ ' ('+unit['subtitle']+')' if unit['subtitle'] else '' }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-*None yet. Stay tuned!*
-{% endfor %}
+<table>
+  <tr></tr>
+  {% for role in f.unit_listing if f.unit_listing[role] %}
+  <thead>
+    <tr>
+      <td scope="col">{{ role }}</td>
+      <td scope="col"><i class="fas fa-fw fa-tag"></i></td>
+      <td scope="col"><i class="fas fa-fw fa-tally"></i></td>
+      <td scope="col"><i class="fas fa-fw fa-sigma"></i></td>
+    </tr>
+  </thead>
+  {% for unit in f.unit_listing[role] | sort(attribute="name") %}
+  {% endfor %}
+  <tr>
+    <td>{{ unit['name'] }}{{ ' ('+unit['subtitle']+')' if unit['subtitle'] else '' }}</td>
+    <td>{{ unit.__dict__.get('ppm', '') }}</td>
+    <td></td>
+    <td></td>
+  </tr>
+  {% else %}
+  
+  <thead>
+    <tr>
+      <td scope="col">None yet. Stay tuned!</td>
+      <td scope="col"></td>
+      <td scope="col"></td>
+      <td scope="col"></td>
+    </tr>
+  </thead>
+  {% endfor %}
+</table>
 
 {% endfilter %}
 
