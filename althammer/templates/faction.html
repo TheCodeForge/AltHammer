@@ -51,7 +51,7 @@
       <td scope="col"><i class="fas fa-fw fa-sigma"></i></td>
     </tr>
   </thead>
-  {% for unit in f.unit_listing[role] | sort(attribute="name") %}
+  {% for unit in f.units[role] %}
   <tr>
     <td><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td>{{ unit.ppm or '' }}</td>
