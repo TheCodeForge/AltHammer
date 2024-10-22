@@ -28,21 +28,20 @@ def get_factions():
     except FileNotFoundError:
         file_output = []
 
-        for root, dirs, files in os.walk(f"althammer/data/"):
-            print(root, dirs, files)
-            for directory in dirs:
+        root, dirs, files = next(os.walk(f"althammer/data/"))
+        for directory in dirs:
 
-                with open(f"althammer/data/{directory}/faction.json", "r+") as unitfile:
-                    try:
-                        d=Faction(json.load(unitfile))
-                    except json.decoder.JSONDecodeError as e:
-                        raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
-                    file_output.append(
-                        {
-                            "id":d.id,
-                            "name":d.name
-                        }
-                    )
+            with open(f"althammer/data/{directory}/faction.json", "r+") as unitfile:
+                try:
+                    d=Faction(json.load(unitfile))
+                except json.decoder.JSONDecodeError as e:
+                    raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                file_output.append(
+                    {
+                        "id":d.id,
+                        "name":d.name
+                    }
+                )
 
         with open(path, "w+") as f:
             f.write(json.dumps(file_output))
