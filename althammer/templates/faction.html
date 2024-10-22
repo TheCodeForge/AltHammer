@@ -42,7 +42,7 @@
 
 <table>
   <tr></tr>
-  {% for role in f.unit_listing if f.unit_listing[role] %}
+  {% for role in f.units if f.units[role] %}
   <thead>
     <tr>
       <td scope="col">{{ role }}</td>
@@ -53,8 +53,8 @@
   </thead>
   {% for unit in f.unit_listing[role] | sort(attribute="name") %}
   <tr>
-    <td>{{ unit['name'] }}{{ ' ('+unit['subtitle']+')' if unit['subtitle'] else '' }}</td>
-    <td>{{ unit.get('ppm', '') }}</td>
+    <td>{{ unit.display_name }}</td>
+    <td>{{ unit.ppm or '' }}</td>
     <td></td>
     <td></td>
   </tr>
