@@ -1,0 +1,38 @@
+{    
+    "name": "Winged Prime",
+    "ppm": 65,
+    "move":12,
+    "tough": 5,
+    "save": 4,
+    "hp":6,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Fly",
+        "Synapse"
+    ],
+    "core_rules": ["Leader [Infantry]"],
+    "faction_rules": ["Shadow in the Warp", "Synapse"],
+    "unit_rules": [
+        {
+        "name": "Alpha Warrior",
+        "text": "While leading a unit, all weapons equipped by models in the unit have +[Sustained Hits 1]+."
+        },
+        {
+        "name": "Death Blow",
+        "text": "If this model is destroyed by a melee attack, and it has not yet been Activated this Battle Round, roll d6. On a 4+, it fights back before being removed from play."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["voidscythe"],
+    "wargear": ["resurrection_orb"],
+    "composition":[
+        "1 Overlord"
+    ],
+    "default_gear":[
+        "voidscythe",
+        "resurrection_orb"
+    ]
+}
