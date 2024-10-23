@@ -1,0 +1,67 @@
+{
+    "id": "invasion_fleet",
+    "name": "Invasion Fleet",
+    "army_restrictions":[],
+    "rules": [ 
+        {
+            "name": "Hyper-Adaptations",
+            "lore": "Every warrior organism in the Tyranid race is fashioned by the ineffable alien will of the Hive Mind. Their flesh and chitin is endlessly mutable, honed into whatever form will prove most lethal to the prey.",
+            "text": "At the start of the first Battle Round, select one of the following Hyper-Adaptations to be active for your +Tyranids+ units until the end of the battle.",
+            "options": [
+                {
+                    "name": "Swarming Instincts",
+                    "text": "Attacks made against enemy +Infantry+ or +Swarm+ units have +[Sustained Hits 1]+."
+                },
+                {
+                    "name": "Hyper-Aggression",
+                    "text": "Attacks made against enemy +Monster+ or +Vehicle+ units have +[Lethal Hits]+."
+                },
+                {
+                    "name": "Hive Predators",
+                    "text": "Attacks that score Critical Hits have +[Precision]+."
+                }
+            ]
+        }
+    ],
+    "spells": [
+        {
+            "name": "Scion of the Codex",
+            "difficulty": 7,
+            "effect": "Select one friendly unit with in 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
+        },
+        {
+            "name": "Fury of the Ancients",
+            "difficulty": 7,
+            "effect": "Select one visible enemy Model within 18\". Draw a line between any part of this model's base and any part of the selected model's base (or hull). The selected model's unit, and every other enemy unit that this line passes over or through, suffers 1 Mortal Damage"
+        },
+        {
+            "name": "Psychic Fortress",
+            "difficulty": 7,
+            "effect": "Until the end of the Battle Round, friendly units within 6\" have a 5++ Invulnerable Save."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Rapid Regeneration",
+            "cost": 1,
+            "when": "Just after an enemy unit has selected Shoot or Fight targets.",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, the selected unit has !Feel No Pain 6+!. While the selected unit is within Synapse Range, it has !Feel No Pain 5+! instead."
+        },
+        {
+            "name": "Synaptic Insight",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "One friendly +Tyranids+ unit, or two friendly +Tyranids+ units within Synapse Range",
+            "effect": "Select a Hyper-Adaptation different to the one chosen at the start of the battle. Selected units gain that Hyper-Adaptation effect, in addition to any other Hyper-Adaptation effect already active.",
+            "restriction": "A unit may not be given a particular Hyper-Adaptation more than once."
+        },
+        {
+            "name": "Endless Swarm",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "One friendly +Endless Multitude+ unit, or two friendly +Endless Multitude+ units within Synapse Range.",
+            "effect": "Return up to d3 + 3 destroyed models to each selected unit."
+        }
+    ]
+}
