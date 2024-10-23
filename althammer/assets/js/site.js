@@ -162,7 +162,13 @@ $('.list-qty').on('input',
   function(){
     var output = Number($('#ppm_'+$(this).data('unit-id')).val()) * Number($(this).val())
     $('#total_'+$(this).data('unit-id')).text(output)
-    $('#row_total_'+$(this).data('unit-id')).text(output)
+    $('#row_total_'+$(this).data('unit-id')).val(output)
+
+    var totalPoints=0;
+    $('.row_totals').each(function(){
+      totalPoints += parseInt($(this).val())
+    })
+    $('#points-total').text(totalPoints)
   }
 )
 
