@@ -24,6 +24,8 @@
     "composition":[
         "3-6 Tomb Blades"
     ],
+    "models_min": 3,
+    "models_max": 6,
     "default_gear":[
         "twin_gauss_blaster", "nebuloscope"
     ],

@@ -25,6 +25,8 @@
     "composition":[
         "3-6 Canoptek Scarab Swarms"
     ],
+    "models_min": 3,
+    "models_max": 6,
     "default_gear":[
         "feeder_mandibles"
     ]

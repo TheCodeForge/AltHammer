@@ -26,6 +26,8 @@
     "composition":[
         "5-10 Immortals"
     ],
+    "models_min": 5,
+    "models_max": 10,
     "default_gear":[
         "gauss_blaster"
     ],

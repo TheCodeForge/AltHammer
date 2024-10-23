@@ -23,6 +23,8 @@
     "composition":[
         "1-3 Lokhust Heavy Destroyers"
     ],
+    "models_min": 1,
+    "models_max": 3,
     "default_gear":[
         "enmitic_exterminator"
     ],

@@ -26,6 +26,8 @@
     "composition":[
         "10-20 Necron Warriors"
     ],
+    "models_min": 10,
+    "models_max": 20,
     "default_gear":[
         "gauss_flayer"
     ],

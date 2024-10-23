@@ -28,6 +28,8 @@
         "3-6 Ophydian Destroyers",
         "1 Plasmacyte token per 3 Ophydian Destroyers"
     ],
+    "models_min": 3,
+    "models_max": 6,
     "default_gear":[
         "hyperphase_blades"
     ]

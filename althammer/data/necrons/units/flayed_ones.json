@@ -20,8 +20,10 @@
     "range_weapons": [],
     "melee_weapons": ["flayer_claws"],
     "composition":[
-        "5 Flayed Ones"
+        "5-10 Flayed Ones"
     ],
+    "models_min": 5,
+    "models_max": 10,
     "default_gear":[
         "flayer_claws"
     ]
