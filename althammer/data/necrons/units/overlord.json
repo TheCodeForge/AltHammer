@@ -1,5 +1,6 @@
 {    
     "name": "Overlord",
+    "ppm": 85,
     "move":5,
     "tough": 5,
     "save": 2,

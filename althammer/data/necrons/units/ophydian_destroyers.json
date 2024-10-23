@@ -1,5 +1,6 @@
 {    
     "name": "Ophydian Destroyers",
+    "ppm": 30,
     "move":5,
     "tough": 4,
     "save": 4,

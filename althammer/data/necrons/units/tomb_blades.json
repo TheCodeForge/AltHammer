@@ -1,5 +1,6 @@
 {    
     "name": "Tomb Blades",
+    "ppm": 25,
     "move":12,
     "tough": 5,
     "save": 3,

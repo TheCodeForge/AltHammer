@@ -1,5 +1,6 @@
 {    
     "name": "Lokhust Heavy Destroyers",
+    "ppm": 30,
     "move":7,
     "tough": 6,
     "save": 3,

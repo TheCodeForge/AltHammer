@@ -1,5 +1,6 @@
 {    
     "name": "Doom Scythe",
+    "ppm": 230,
     "move":"20+",
     "tough": 9,
     "save": 3,

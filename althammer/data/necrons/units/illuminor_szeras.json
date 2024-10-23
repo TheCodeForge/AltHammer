@@ -1,5 +1,6 @@
 {    
     "name": "Illuminor Szeras",
+    "ppm": 175,
     "move":7,
     "tough": 8,
     "save": 3,

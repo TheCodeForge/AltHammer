@@ -1,5 +1,6 @@
 {    
     "name": "Deathmarks",
+    "ppm": 13,
     "move":5,
     "tough": 5,
     "save": 3,

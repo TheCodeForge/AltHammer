@@ -1,5 +1,6 @@
 {    
     "name": "Canoptek Scarab Swarms",
+    "ppm": 13,
     "move":9,
     "tough": 2,
     "save": 6,

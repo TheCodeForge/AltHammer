@@ -1,5 +1,6 @@
 {    
     "name": "Canoptek Doomstalker",
+    "ppm": 145,
     "move":7,
     "tough": 8,
     "save": 3,

@@ -1,5 +1,6 @@
 {    
     "name": "Royal Warden",
+    "ppm": 40,
     "move":5,
     "tough": 5,
     "save": 3,

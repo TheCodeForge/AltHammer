@@ -1,5 +1,6 @@
 {    
     "name": "Flayed Ones",
+    "ppm": 12,
     "move":5,
     "tough": 4,
     "save": 4,
