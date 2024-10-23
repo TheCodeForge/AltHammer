@@ -45,7 +45,7 @@
         "1 Teleport Homer token"
     ],
     "models_min": 5,
-    "models-max": 5,
+    "models_max": 5,
     "default_gear":[
         "storm_bolter",
         "power_fist"

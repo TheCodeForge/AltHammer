@@ -33,7 +33,7 @@
         "2-5 Bladeguard Veterans"
     ],
     "models_min": 3,
-    "models-max": 6,
+    "models_max": 6,
     "default_gear":[
         "heavy_bolt_pistol", "master_crafted_power_weapon"
     ],

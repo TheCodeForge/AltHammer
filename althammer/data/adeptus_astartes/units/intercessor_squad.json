@@ -35,7 +35,7 @@
         "4-9 Intercessors"
     ],
     "models_min": 5,
-    "models-max": 10,
+    "models_max": 10,
     "default_gear":[
         "bolt_pistol",
         "bolt_rifle",

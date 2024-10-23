@@ -35,6 +35,8 @@
         "1 Assault Intercessor Sergeant",
         "4-9 Assault Intercessors"
     ],
+    "models_min": 5,
+    "models_max": 10,
     "default_gear":[
         "heavy_bolt_pistol",
         "astartes_chainsword"
