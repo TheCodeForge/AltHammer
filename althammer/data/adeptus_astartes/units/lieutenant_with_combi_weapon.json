@@ -1,0 +1,47 @@
+{    
+    "name": "Lieutenant",
+    "subtitle": "with Combi-Weapon",
+    "ppm":70,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":4,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Phobos"
+    ],
+    "core_rules": [
+        "Feel No Pain 5+",
+        "Infiltrators",
+        "Lone Operative",
+        "Stealth"
+    ],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Priority Objective",
+            "text":"At the start of the first Battle Round, select an objective. Until the end of the battle, friendly +Adeptus Astartes+ units within 6\" may re-roll Wound rolls of 1 against enemy units within range of that objective."
+        },
+        {
+            "name":"Evade and Survive",
+            "text":"Once per Battle Round, when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this unit, if this unit is not within Melee Distance, it can make a Normal move."
+        }
+    ],
+    "range_weapons": [
+        "combi_weapon"
+    ],
+    "melee_weapons": [
+        "paired_combat_blades"
+    ],
+    "composition":[
+        "1 Lieutenent with Combi-Weapon"
+    ],
+    "default_gear":[
+        "combi_weapon",
+        "paired_combat_blades"
+    ]
+}
