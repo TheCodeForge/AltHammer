@@ -18,7 +18,7 @@
                 },
                 {
                     "name": "Hive Predators",
-                    "text": "Attacks that score Critical Hits have +[Precision]+."
+                    "text": "Attacks that score Critical Hits are +[Precise]+."
                 }
             ]
         }
