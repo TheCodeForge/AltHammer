@@ -1,5 +1,6 @@
 {    
     "name": "Apothecary Biologis",
+    "ppm":70,
     "move":5,
     "tough": 6,
     "save": 3,

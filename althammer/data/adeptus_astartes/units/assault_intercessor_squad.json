@@ -1,5 +1,6 @@
 {    
     "name": "Assault Intercessor Squad",
+    "ppm":15,
     "move":6,
     "tough": 4,
     "save": 3,

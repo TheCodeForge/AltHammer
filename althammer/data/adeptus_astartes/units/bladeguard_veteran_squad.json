@@ -1,5 +1,6 @@
 {    
     "name": "Bladeguard Veteran Squad",
+    "ppm":30,
     "move":6,
     "tough": 4,
     "save": 3,
@@ -31,6 +32,8 @@
         "1 Bladeguard Veteran Sergeant",
         "2-5 Bladeguard Veterans"
     ],
+    "models_min": 3,
+    "models-max": 6,
     "default_gear":[
         "heavy_bolt_pistol", "master_crafted_power_weapon"
     ],

@@ -1,5 +1,6 @@
 {    
     "name": "Intercessor Squad",
+    "ppm":16,
     "move":6,
     "tough": 4,
     "save": 3,
@@ -33,6 +34,8 @@
         "1 Intercessor Sergeant",
         "4-9 Intercessors"
     ],
+    "models_min": 5,
+    "models-max": 10,
     "default_gear":[
         "bolt_pistol",
         "bolt_rifle",

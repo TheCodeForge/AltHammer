@@ -1,5 +1,6 @@
 {    
     "name": "Heavy Intercessor Squad",
+    "ppm":19,
     "move":5,
     "tough": 6,
     "save": 3,
@@ -29,6 +30,8 @@
         "1 Heavy Intercessor Sergeant",
         "4-9 Heavy Intercessors"
     ],
+    "models_min": 5,
+    "models-max": 10,
     "default_gear":[
         "heavy_bolt_rifle"
     ],

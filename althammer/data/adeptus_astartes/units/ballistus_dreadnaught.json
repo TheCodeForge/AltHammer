@@ -1,5 +1,6 @@
 {    
     "name": "Ballistus Dreadnaught",
+    "ppm":130,
     "move":8,
     "tough": 10,
     "save": 2,

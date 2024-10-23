@@ -1,5 +1,6 @@
 {    
     "name": "Librarian",
+    "ppm":65,
     "move":5,
     "tough": 5,
     "save": 2,

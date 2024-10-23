@@ -1,5 +1,6 @@
 {    
     "name": "Infernus Marine Squad",
+    "ppm":16,
     "move":6,
     "tough": 4,
     "save": 3,
@@ -29,6 +30,8 @@
         "1 Infernus Sergeant",
         "4-9 Infernus Marines"
     ],
+    "models_min": 5,
+    "models-max": 10,
     "default_gear":[
         "bolt_pistol",
         "pyreblaster"

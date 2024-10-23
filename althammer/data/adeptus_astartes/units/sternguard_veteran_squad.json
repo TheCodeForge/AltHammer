@@ -1,5 +1,6 @@
 {    
     "name": "Sternguard Veteran Squad",
+    "ppm":18,
     "move":6,
     "tough": 4,
     "save": 3,

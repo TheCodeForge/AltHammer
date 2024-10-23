@@ -1,5 +1,6 @@
 {    
     "name": "Storm Speeder Thunderstrike",
+    "ppm":150,
     "move":14,
     "tough": 9,
     "save": 3,

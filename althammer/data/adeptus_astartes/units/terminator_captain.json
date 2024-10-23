@@ -1,5 +1,6 @@
 {    
     "name": "Terminator Captain",
+    "ppm":95,
     "move":5,
     "tough": 5,
     "save": 2,
