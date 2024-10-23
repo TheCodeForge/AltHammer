@@ -1,0 +1,10 @@
+{
+    "name": "Psychic Scream",
+    "keywords":["Ignores Cover", "Psychic", "Torrent"],
+    "rng": 18,
+    "atk":"2d6",
+    "skl":null,
+    "str":5,
+    "ap": 1,
+    "dmg":2
+}

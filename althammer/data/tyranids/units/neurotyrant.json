@@ -1,0 +1,45 @@
+{    
+    "name": "Neurotyrant",
+    "ppm": 105,
+    "move":6,
+    "tough": 8,
+    "save": 4,
+    "hp":9,
+    "lead": 7,
+    "oc": 3,
+    "invuln": 4,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Fly",
+        "Synapse",
+        "Psyker"
+    ],
+    "core_rules": ["Leader [Synapse]"],
+    "faction_rules": ["Shadow in the Warp", "Synapse"],
+    "unit_rules": [
+        {
+        "name": "Node Lash",
+        "text": "While leading a unit, all models in the unit have +1 to Hit rolls. If the target is Battle-Shocked, all models in the unit also have +1 to Wound rolls."
+        },
+        {
+        "name": "Psychic Terror",
+        "text": "All enemy units have -1 to the Battle-Shock tests that they must take as a result of unleashing the Shadow in the Warp. (This effect does not stack with multiple Neurotyrants)."
+        },
+        {
+        "name": "Synaptic Relay",
+        "text": "At the start of the Battle Round, select up to two friendly +Tyranids+ units within 12\". Place a Neuraloid token with them. Until the end of the Battle Round, the selected units are always considered to be in Synapse Range."
+        }
+    ],
+    "range_weapons": ["psychic_scream"],
+    "melee_weapons": ["neural_tentacles"],
+    "wargear": [],
+    "composition":[
+        "1 Neurotyrant",
+        "2 Neuraloid tokens"
+    ],
+    "default_gear":[
+        "voidscythe",
+        "resurrection_orb"
+    ]
+}
