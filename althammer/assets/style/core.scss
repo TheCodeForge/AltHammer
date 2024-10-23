@@ -145,3 +145,9 @@ blockquote {
 .backside ul > li > ul {
     padding-bottom: 1rem;
 }
+
+/*Faction unit list */
+
+#faction-units input.form-control {
+    max-width: 100px;
+}
