@@ -172,6 +172,31 @@ $('.list-qty').on('input',
   }
 )
 
+$('.list-qty').change(function(){
+  var form_id=$(this).data('form')
+  var xhr = new XMLHttpRequest();
+  url=$('#'+form_id).prop('action');
+  xhr.open("POST", $('#'+form_id).prop('action'), true);
+  xhr.withCredentials=true;
+  xhr.onerror=function() { 
+      $('#toast-error .toast-text').text("Something went wrong. Please try again later.");
+      $('#toast-error').toast('show')
+  };
+  xhr.onload = function() {
+    data=JSON.parse(xhr.response);
+    if (xhr.status >= 200 && xhr.status < 300) {
+      $('#toast-success .toast-text').text(data['message']);
+      $('#toast-success').toast('show')
+    } else if (xhr.status >= 300 && xhr.status < 400 ) {
+      window.location.href=data['redirect']
+    } else {
+      $('#toast-error .toast-text').text(data['error']);
+      $('#toast-error').toast('show')
+    }
+  };
+  xhr.send(form);
+})
+
 //Initialize popovers
 $(document).ready(
   function() {

@@ -47,6 +47,13 @@ def before_request():
     #script nonce
     g.nonce=generate_hash(f"{session.get('session_id')}+{g.time}")
 
+    #csrf
+    g.csrf_token=generate_hash(session.get('session_id'))
+
+    #anti-csrf
+    if request.method in ["POST", "PUT", "DELETE"] and request.form.get("csrf_token") != g.csrf_token:
+        abort(401)
+
 
 @app.after_request
 def after_request(resp):
