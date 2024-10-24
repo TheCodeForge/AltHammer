@@ -160,6 +160,15 @@ $("#dark-mode-toggle").click(function(){
 
 $('.list-qty').on('input',
   function(){
+    //skip from 0 to acceptable min value and back
+    if ($(this).val()>0 && $(this).val()<Number($(this).data('min')) ){
+      if ($(this).val()==1){
+        $(this).val(Number($(this).data('min')))
+      }
+      else {
+        $(this).val(0)
+      }
+    }
     var output = Number($('#ppm_'+$(this).data('unit-id')).val()) * Number($(this).val())
     $('#total_'+$(this).data('unit-id')).text(output)
     $('#row_total_'+$(this).data('unit-id')).val(output)
