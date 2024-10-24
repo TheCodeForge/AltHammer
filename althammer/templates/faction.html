@@ -40,7 +40,7 @@
 
 # Units
 
-{% set total=0 %}
+{% set ns=namespace(total=0) %}
 
 <table id="faction-units" class="table">
   <tr></tr>
@@ -68,7 +68,7 @@
     </td>
     <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}">{{ session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm }}</span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="{{session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm}}"></td>
 
-    {% set total = total + session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm %}
+    {% set ns.total = ns.total + session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm %}
   </tr>
   {% endfor %}
   {% else %}
@@ -88,7 +88,7 @@
       <td><b>Total</b></td>
       <td></td>
       <td></td>
-      <td class="text-center"><span id="points-total">{{ total }}</span></td>
+      <td class="text-center"><span id="points-total">{{ ns.total }}</span></td>
     </tr>
   </thead>
 </table>
