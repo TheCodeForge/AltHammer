@@ -1,0 +1,32 @@
+{    
+    "name": "Screamer-Killer",
+    "ppm": 145,
+    "move":6,
+    "tough": 8,
+    "save": 4,
+    "hp":9,
+    "lead": 7,
+    "oc": 3,
+    "invuln": 4,
+    "keywords": [
+        "Monster"
+    ],
+    "core_rules": ["Deadly Demise 1"],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [
+        {
+        "name": "Death Scream",
+        "text": "After this model performs a Shoot action, select a unit hit by those attacks. The selected unit must take a Battle-Shock test, with -1 to that test."
+        }
+    ],
+    "range_weapons": ["bio_plasmic_scream"],
+    "melee_weapons": ["screamer_killer_talons"],
+    "wargear": [],
+    "composition":[
+        "1 Screamer-Killer"
+    ],
+    "default_gear":[
+        "bio_plasmic_scream",
+        "screamer_killer_talons"
+    ]
+}

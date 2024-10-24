@@ -1,0 +1,9 @@
+{
+    "name": "Bio-Plasmic Scream",
+    "keywords":["Assault","Blast"],
+    "atk":"d6 + 3",
+    "skl":4,
+    "str":8,
+    "ap": 2,
+    "dmg":1
+}
