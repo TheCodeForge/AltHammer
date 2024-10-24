@@ -32,7 +32,7 @@
 
 # Detachment: {{ d.name }}
 
-{% if d.__dict__.get('army_restrictions') %}
+{% if d.army_restrictions %}
 
 ## Restrictions
 
@@ -60,7 +60,7 @@
 
 {% endfor %}
 
-{% if d.__dict__.get('restrictions') %}
+{% if d.restrictions %}
 
 ## Restrictions
 
@@ -87,7 +87,7 @@
 {% endfor %}
 
 
-{% if d.__dict__.get('spells') %}
+{% if d.spells %}
 
 ## Spells
 

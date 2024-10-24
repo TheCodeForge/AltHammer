@@ -25,7 +25,7 @@
     {% if u.weapons | listcomp("ability") | any %}
     <p><span class="fw-bold">GEAR ABILITIES</span></p>
     <ul>
-    {% for weapon in u.weapons if weapon.__dict__.get('ability') %}
+    {% for weapon in u.weapons if weapon.ability %}
       <li><span class="fw-bold">{{ weapon.name }}</span> - {{ weapon.ability | markdown | safe }}</li>
     {% endfor %}
     </ul>
@@ -71,7 +71,7 @@
 </nav>
 
 <h1 class="small-caps">{{ u.name }}</h1>
-{% if u.__dict__.get("subtitle") %}
+{% if u.subtitle %}
 <h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
 {% endif %}
 {% if u.ppm %}
@@ -86,7 +86,7 @@
           <tr>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.move }}"</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ u.tough }}</span></th>
-            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.save }}+</span>{% if u.__dict__.get("invuln") %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.invuln }}+</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.save }}+</span>{% if u.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.invuln }}+</span>{% endif %}</th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.hp }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.oc }}</span></th>
