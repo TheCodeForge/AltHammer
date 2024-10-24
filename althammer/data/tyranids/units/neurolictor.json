@@ -1,0 +1,39 @@
+{    
+    "name": "Neurolictor",
+    "ppm": 90,
+    "move":8,
+    "tough": 5,
+    "save": 4,
+    "hp":7,
+    "lead": 7,
+    "oc": 1,
+    "invuln":4,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Infiltrators", "Lone Operative", "Stealth"],
+    "faction_rules": ["Shadow in the Warp", "Synapse"],
+    "unit_rules": [
+        {
+        "name": "Feeder Tendrils",
+        "text": "Whenever this model destroys an enemy +Character+, gain 1 CP."
+        },
+        {
+        "name": "Neural Disruption",
+        "text": "Upon Activation, select one enemy unit within 12\". That unit must take a Battle-Shock test."
+        },
+        {
+        "name": "Psychological Sabotage",
+        "text": "Enemy units within 12\" have -1 to their Hit rolls. Additionally, attacks against those enemy units have +1 to their Wound rolls."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["piercing_claws_and_talons"],
+    "wargear": [],
+    "composition":[
+        "1 Neurolictor"
+    ],
+    "default_gear":[
+        "piercing_claws_and_talons"
+    ]
+}
