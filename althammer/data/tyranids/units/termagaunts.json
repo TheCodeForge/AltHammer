@@ -1,0 +1,40 @@
+{    
+    "name": "Termagaunts",
+    "ppm": 4,
+    "move":6,
+    "tough": 3,
+    "save": 6,
+    "hp":1,
+    "lead": 8,
+    "oc": 1,
+    "keywords": [
+        "Infantry", "Endless Multitude"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [{
+        "name":"Skulking Horrors",
+        "text":"Once per Battle Round, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Melee Distance, it can make a Normal move up to d6 inches."
+    }],
+    "range_weapons": [
+        "fleshborer",
+        "termagaunt_devourer",
+        "termagaunt_spinefists"
+    ],
+    "melee_weapons": [],
+    "wargear": [],
+    "composition":[
+        "10-20 Termagaunts"
+    ],
+    "models_min": 10,
+    "models_max": 20,
+    "default_gear":[
+        "fleshborer"
+    ],
+    "replacement_gear":{
+        "Any model's Fleshborer":[
+            "termagaunt_devourer",
+            "termagaunt_spinefists"            
+        ]
+    }
+}

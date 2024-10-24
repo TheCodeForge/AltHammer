@@ -1,0 +1,10 @@
+{
+    "name": "Fleshborer",
+    "keywords": ["Assault"],
+    "rng": 18,
+    "atk":1,
+    "skl":4,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}

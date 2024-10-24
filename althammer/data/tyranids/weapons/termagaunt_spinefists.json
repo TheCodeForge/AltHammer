@@ -1,0 +1,10 @@
+{
+    "name": "Termagaunt Spinefists",
+    "keywords": ["Assault", "Pistol", "Twin-Linked"],
+    "rng": 12,
+    "atk":2,
+    "skl":4,
+    "str":3,
+    "ap": 0,
+    "dmg":1
+}
