@@ -1,0 +1,35 @@
+{    
+    "name": "Psychophage",
+    "ppm": 95,
+    "move":8,
+    "tough": 9,
+    "save": 3,
+    "hp":10,
+    "lead": 8,
+    "oc": 3,
+    "keywords": [
+        "Monster"
+    ],
+    "core_rules": ["Deadly Demise 1", "Feel No Pain 5+"],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [
+        {
+        "name": "Bio-Stimulus",
+        "text": "Friendly +Tyranids+ units within 6\" have !Feel No Pain 6+!."
+        },
+        {
+        "name": "Feeding Frenzy",
+        "text": "Melee attacks against units below starting strength have +1 to the Hit roll. Melee attacks against units below half strength also have +1 to the Wound roll."
+        }
+    ],
+    "range_weapons": ["psychoclastic_torrent"],
+    "melee_weapons": ["talons_and_betentacled_maw"],
+    "wargear": [],
+    "composition":[
+        "1 Psychophage"
+    ],
+    "default_gear":[
+        "psychoclastic_torrent",
+        "talons_and_betentacled_maw"
+    ]
+}

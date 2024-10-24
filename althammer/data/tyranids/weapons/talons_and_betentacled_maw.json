@@ -1,0 +1,9 @@
+{
+    "name": "Talons and Betentacled Maw",
+    "keywords":["Anti-Psyker 2+","Devastating Wounds"],
+    "atk":"d6 + 1",
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":2
+}
