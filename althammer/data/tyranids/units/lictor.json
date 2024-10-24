@@ -1,0 +1,37 @@
+{    
+    "name": "Lictor",
+    "ppm": 60,
+    "move":8,
+    "tough": 6,
+    "save": 4,
+    "hp":6,
+    "lead": 7,
+    "oc": 1,
+    "invuln":5,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Infiltrators", "Lone Operative", "Stealth"],
+    "faction_rules": ["Shadow in the Warp", "Synapse"],
+    "unit_rules": [
+        {
+        "name": "Feeder Tendrils",
+        "text": "Whenever this model destroys an enemy +Character+, gain 1 CP."
+        },
+        {
+        "name": "Pheromone Trail",
+        "text": "Once per battle, this model may be deployed from Reserves anywhere on the battlefield at least 9\" away from enemy models."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["lictors_claws_and_talons"],
+    "wargear": [],
+    "composition":[
+        "1 Lictor"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "lictors_claws_and_talons"
+    ]
+}

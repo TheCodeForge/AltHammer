@@ -33,6 +33,8 @@
     "composition":[
         "1 Neurolictor"
     ],
+    "models_min": 1,
+    "models_max": 1,
     "default_gear":[
         "piercing_claws_and_talons"
     ]
