@@ -1,0 +1,31 @@
+{    
+    "name": "Neurogaunts",
+    "ppm": 4,
+    "move":6,
+    "tough": 3,
+    "save": 6,
+    "hp":1,
+    "lead": 8,
+    "oc": 1,
+    "keywords": [
+        "Infantry", "Endless Multitude"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [{
+        "name":"Neurocytes",
+        "text":"While this unit is within Synapse Range, it has +Synapse+."
+    }],
+    "range_weapons": [],
+    "melee_weapons": [],
+    "wargear": [],
+    "composition":[
+        "10-20 Neurogaunts",
+        "1-2 Neurogaunt Nodebeasts (1 per 10 Neurogaunts)"
+    ],
+    "models_min": 11,
+    "models_max": 22,
+    "default_gear":[
+        "bio_cannon"
+    ]
+}
