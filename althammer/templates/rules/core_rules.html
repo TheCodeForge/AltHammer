@@ -141,7 +141,7 @@ The battle consists of five Battle Rounds. Each Battle Round contains the follow
 
 ### Roll Initiative
 
-Each player rolls 2d6 and subtracts the Leadership property of their +Warlord+ (going into negative numbers if necessary). The player with the [greater result](https://en.wikipedia.org/wiki/Negative_number#The_number_line) wins the Initiative roll, and is considered to "have initiative" for the round.
+Each player rolls 2d6 and subtracts the Leadership trait of their +Warlord+ (going into negative numbers if necessary). The player with the [greater result](https://en.wikipedia.org/wiki/Negative_number#The_number_line) wins the Initiative roll, and is considered to "have initiative" for the round.
 
 In the event of a tie, both players re-roll.
 
@@ -155,12 +155,12 @@ Any effects or Strategems that happen "at the start of the Battle Round" should 
 
 ### Roll Battle-Shock
 
-For each unit that is at or below Half Strength, roll 2d6. If the result is less than the greatest Leadership property in the unit, the unit is Battle-shocked until the end of the Battle Round.
+For each unit that is at or below Half Strength, roll 2d6. If the result is less than the greatest Leadership trait in the unit, the unit is Battle-shocked until the end of the Battle Round.
 
 Battle-Shocked units:
 
 * Cannot be selected by Strategems.
-* Have an Objective Control property of 0
+* Have an Objective Control trait of 0
 * Cannot Move (or Advance) out of Melee Distance.
 
 ### Deploy Reserves
@@ -210,7 +210,7 @@ When Activated, a unit may do up to two of the following actions, in this order:
 
 ## Move
 
-Each Model in the unit may move up to the number of inches indicated by its Movement property. 
+Each Model in the unit may move up to the number of inches indicated by its Movement trait. 
 
 Models may use their Movement to move horizontally, or vertically up or down terrain.
 
@@ -222,7 +222,7 @@ Models may use their Movement to move horizontally, or vertically up or down ter
 
 ### Advance
 
-Units that are Moving may choose to Advance instead. When Advancing, roll d6 and add the result in inches to the unit's Movement property.
+Units that are Moving may choose to Advance instead. When Advancing, roll d6 and add the result in inches to the unit's Movement trait.
 
 Units which Advance may not Shoot, Magik, or Charge in the same Activation, unless performing a Shoot action with an +[Assault]+ weapon.
 
@@ -313,7 +313,7 @@ Only one melee weapon may be used.
 
 # Combat
 
-All combat is made with a weapon profile listed on the attacking unit's data card. The attacking model makes a number of attacks equal to the <i class="fas fa-fw fa-swords"></i> Attacks property of the weapon profile.
+All combat is made with a weapon profile listed on the attacking unit's data card. The attacking model makes a number of attacks equal to the <i class="fas fa-fw fa-swords"></i> Attacks trait of the weapon profile.
 
 Attacks may only be made against targets that are within the weapon's <i class="fas fa-fw fa-ruler"></i> range, measured in inches.
 
@@ -325,7 +325,7 @@ For each attack:
 
 ## Hit Roll
 
-Attacker rolls d6. If the result is greater than or equal to the <i class="fas fa-fw fa-gun"></i> <i class="fas fa-fw fa-sword"></i> Skill property of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
+Attacker rolls d6. If the result is greater than or equal to the <i class="fas fa-fw fa-gun"></i> <i class="fas fa-fw fa-sword"></i> Skill trait of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
 
 Unmodified Hit Rolls of 1 are treated as "Critical Fails", and are always unsuccessful, regardless of any modifiers.
 
@@ -333,7 +333,7 @@ Unmodified Hit Rolls of 6 are treated as "Critical Hits", and are always success
 
 ## Wound Roll
 
-Attacker rolls d6. Compare the attacking weapon profile's <i class="fas fa-fw fa-hand-fist"></i> Strength property with the targeted unit's <i class="fas fa-fw fa-block-brick"></i> Toughness property to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
+Attacker rolls d6. Compare the attacking weapon profile's <i class="fas fa-fw fa-hand-fist"></i> Strength trait with the targeted unit's <i class="fas fa-fw fa-block-brick"></i> Toughness trait to determine the required dice roll. If successfull, the attack hits solidly, and the attack sequence continues. Otherwise, the attack glances off, and the attack sequence ends here.
 
 * Strength half of Toughness or less: 6+ required
 * Strength less than Toughness: 5+ required
@@ -351,7 +351,7 @@ The defending player selects a Model in the targeted unit that is within line of
 
 If a wounded Model is a legal option, select that Model. A +Leader+ Model must not be chosen, unless the attacking weapon is +[Precise]+
 
-The defending player rolls d6 and worsens the result by the attacking weapon's <i class="fas fa-fw fa-bone-break"></i> Armor Break property. If the result is greater than or equal to the <i class="fas fa-fw fa-shield"></i> Armor Save property of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the <i class="fas fa-fw fa-droplet"></i> Damage property of the attacking weapon.
+The defending player rolls d6 and worsens the result by the attacking weapon's <i class="fas fa-fw fa-bone-break"></i> Armor Break trait. If the result is greater than or equal to the <i class="fas fa-fw fa-shield"></i> Armor Save trait of the selected Model, then the target's armor absorbs the attack without consequence. Otherwise, the target Model is injured for a number of hitpoints equal to the <i class="fas fa-fw fa-droplet"></i> Damage trait of the attacking weapon.
 
 An unmodified roll of 1 is always a failed save, regardless of any modifiers.
 
@@ -361,7 +361,7 @@ An unmodified roll of 1 is always a failed save, regardless of any modifiers.
 
 ### Invulnerable Save
 
-If the target Model has an <i class="fas fa-fw fa-shield-plus"></i> Invulnerable Save property, an unmodified Saving roll greater than or equal to the Invulnerable Save property is always a success, and the attack sequence ends.
+If the target Model has an <i class="fas fa-fw fa-shield-plus"></i> Invulnerable Save trait, an unmodified Saving roll greater than or equal to the Invulnerable Save trait is always a success, and the attack sequence ends.
 
 ## Apply Damage
 
