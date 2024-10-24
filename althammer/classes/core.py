@@ -211,6 +211,7 @@ class Faction(Base):
             "Infantry": [],
             "Mounted": [],
             "Vehicle": [],
+            "Monster": [],
             "Swarm": [],
             "Fortification": []
         }
