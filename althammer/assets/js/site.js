@@ -175,6 +175,7 @@ $('.list-qty').on('input',
 
     var totalPoints=0;
     $('.row_totals').each(function(){
+      console.log(parseInt($(this).val()));
       totalPoints += parseInt($(this).val());
       console.log(totalPoints);
     })
