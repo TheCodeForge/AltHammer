@@ -52,7 +52,7 @@
       <td scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></td>
     </tr>
   </thead>
-  {% for unit in f.units[role] %}
+  {% for unit in f.units[role] %}{% set ns.total = ns.total + session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm %}
   <tr>
     <td class="align-middle"><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td class="text-center align-middle">{{ unit.ppm }}</td>
@@ -66,8 +66,6 @@
       </form>
     </td>
     <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}">{{ session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm }}</span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="{{session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm}}"></td>
-
-    {% set ns.total = ns.total + session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm %}
   </tr>
   {% endfor %}
   {% else %}
