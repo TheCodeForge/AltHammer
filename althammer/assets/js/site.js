@@ -161,7 +161,7 @@ $("#dark-mode-toggle").click(function(){
 $('.list-qty').on('input',
   function(){
     //skip from 0 to acceptable min value and back
-    if ($(this).val()>0 && $(this).val()<Number($(this).data('min')) ){
+    if ($(this).val()<Number($(this).data('min')) ){
       if ($(this).val()==1){
         $(this).val(Number($(this).data('min')))
       }
