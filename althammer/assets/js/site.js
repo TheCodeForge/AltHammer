@@ -169,13 +169,14 @@ $('.list-qty').on('input',
         $(this).val('')
       }
     }
-    var output = (parseInt($('#ppm_'+$(this).data('unit-id')).val()) || 0) * parseInt($(this).val())
+    var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * (parseInt($(this).val()) || 0)
     $('#total_'+$(this).data('unit-id')).text(output)
     $('#row_total_'+$(this).data('unit-id')).val(output)
 
     var totalPoints=0;
     $('.row_totals').each(function(){
-      totalPoints += parseInt($(this).val())
+      totalPoints += parseInt($(this).val());
+      console.log(totalPoints);
     })
     $('#points-total').text(totalPoints)
   }
