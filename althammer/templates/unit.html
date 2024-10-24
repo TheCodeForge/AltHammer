@@ -74,7 +74,7 @@
 {% if u.__dict__.get("subtitle") %}
 <h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
 {% endif %}
-{% if u.__dict__.get("ppm") %}
+{% if u.ppm %}
 <h3 class="h6"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i> {{ u.ppm }}</span></h3>
 {% endif %}
 <div class="row">
@@ -90,6 +90,9 @@
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.hp }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.oc }}</span></th>
+            {% if u.psyker %}
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bolt"></i> {{ u.psyker }}</span></th>
+            {% endif %}
           </tr>
         </thead>
       </table>
