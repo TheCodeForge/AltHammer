@@ -166,7 +166,7 @@ $('.list-qty').on('input',
         $(this).val(Number($(this).data('min')))
       }
       else {
-        $(this).val(0)
+        $(this).val('')
       }
     }
     var output = Number($('#ppm_'+$(this).data('unit-id')).val()) * Number($(this).val())
