@@ -169,7 +169,7 @@ $('.list-qty').on('input',
         $(this).val('')
       }
     }
-    var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * parseInt($(this).val())
+    var output = (parseInt($('#ppm_'+$(this).data('unit-id')).val()) || 0) * parseInt($(this).val())
     $('#total_'+$(this).data('unit-id')).text(output)
     $('#row_total_'+$(this).data('unit-id')).val(output)
 
