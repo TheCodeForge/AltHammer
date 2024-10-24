@@ -1,0 +1,10 @@
+{
+    "name": "Spinemaws",
+    "keywords": ["Pistol"],
+    "rng": 6,
+    "atk":4,
+    "skl":5,
+    "str":3,
+    "ap": 0,
+    "dmg":1
+}

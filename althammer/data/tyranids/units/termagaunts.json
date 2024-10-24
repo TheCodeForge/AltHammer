@@ -1,6 +1,6 @@
 {    
     "name": "Termagaunts",
-    "ppm": 4,
+    "ppm": 6,
     "move":6,
     "tough": 3,
     "save": 6,
@@ -8,7 +8,7 @@
     "lead": 8,
     "oc": 1,
     "keywords": [
-        "Infantry", "Endless Multitude"
+        "Infantry", "Battleline", "Endless Multitude"
     ],
     "core_rules": [],
     "faction_rules": ["Synapse"],
