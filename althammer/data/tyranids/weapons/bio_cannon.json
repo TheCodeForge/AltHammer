@@ -1,0 +1,11 @@
+{
+    "name": "Bio-Cannon",
+    "keywords": ["Blast", "Heavy"],
+    "ability": "Enemy +Infantry+ units hit by this weapon have -2\" to movement, -2 to Advance rolls, and -2 to Charge rolls until the end of the Battle Round.",
+    "rng": 24,
+    "atk":"d6",
+    "skl":4,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}

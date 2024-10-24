@@ -1,0 +1,27 @@
+{    
+    "name": "Barbgaunts",
+    "ppm": 11,
+    "move":6,
+    "tough": 4,
+    "save": 4,
+    "hp":2,
+    "lead": 8,
+    "oc": 1,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Infiltrators", "Stealth"],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [],
+    "range_weapons": ["bio_cannon"],
+    "melee_weapons": [],
+    "wargear": [],
+    "composition":[
+        "5-10 Von Ryan's Leapers"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "bio_cannon"
+    ]
+}
