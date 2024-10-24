@@ -10,7 +10,7 @@ def post_armylist():
 
     faction=request.form.get('faction')
     unit_id=request.form.get('unit_id')
-    qty=request.form.get('qty')
+    qty=request.form.get('qty', '')
 
     session[f"qty_{faction}_{unit_id}"] = int(qty)
 
