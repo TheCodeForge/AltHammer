@@ -26,13 +26,12 @@
         }
     ],
     "range_weapons": [],
-    "melee_weapons": ["voidscythe"],
-    "wargear": ["resurrection_orb"],
+    "melee_weapons": ["prime_talons"],
+    "wargear": [],
     "composition":[
-        "1 Overlord"
+        "1 Winged Prime"
     ],
     "default_gear":[
-        "voidscythe",
-        "resurrection_orb"
+        "prime_talons"
     ]
 }
