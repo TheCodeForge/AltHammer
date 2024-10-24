@@ -55,7 +55,7 @@
   <tr>
     <td class="align-middle"><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td class="text-center align-middle">{{ unit.ppm }}</td>
-    <td class="text-center align-middle"><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" placeholder="{{ (unit.min_models|str) +' - '+ (unit.max_models|str) if unit.max_models>1 else 'Max 1'}}">
+    <td class="text-center align-middle"><input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" placeholder="{{ (unit.min_models|str) +' - '+ (unit.max_models|str) if unit.max_models>1 else 'Max 1'}}" value="{{ session.get('qty_'+unit.id,'') }}">
       <input id="ppm_{{ unit.id }}" type="hidden" class="form-control disabled" disabled value="{{ unit.ppm or '' }}"></td>
     <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}"></span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="0"></td>
   </tr>
@@ -77,7 +77,7 @@
       <td><b>Total</b></td>
       <td></td>
       <td></td>
-      <td><span id="points-total"></span></td>
+      <td class="text-center"><span id="points-total"></span></td>
     </tr>
   </thead>
 </table>
