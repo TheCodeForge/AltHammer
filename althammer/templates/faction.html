@@ -6,6 +6,7 @@
 
 {% block pagecontent %}
 
+{% set ns=namespace(total=0) %}
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -39,8 +40,6 @@
 </ul>
 
 # Units
-
-{% set ns=namespace(total=0) %}
 
 <table id="faction-units" class="table">
   <tr></tr>
