@@ -24,7 +24,7 @@
     "range_weapons": [
         "ballistus_frag_missile",
         "twin_storm_bolter",
-        "ballistus_las_cannon"
+        "ballistus_lascannon"
     ],
     "melee_weapons": [
         "armored_feet"
@@ -35,7 +35,7 @@
     "default_gear":[
         "ballistus_frag_missile",
         "twin_storm_bolter",
-        "ballistus_las_cannon",
+        "ballistus_lascannon",
         "armored_feet"
     ]
 }
