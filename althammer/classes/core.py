@@ -37,9 +37,6 @@ class Unit(Base):
             max_unit_size= self.models_max
         elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
             max_unit_size= 1
-        elif self.profiles:
-            for p in self.profiles:
-                if any([x in p.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]])
 
         else:
             max_unit_size = 100
@@ -48,6 +45,12 @@ class Unit(Base):
             return max_unit_size * 6
         elif "Epic Hero" in self.keywords:
             return max_unit_size
+
+        elif self.profiles:
+            for p in self.profiles:
+                if any([x in p.keywords for x in ["Epic Hero"]]):
+                    return max_unit_size
+
         else:
             return max_unit_size * 3
 
