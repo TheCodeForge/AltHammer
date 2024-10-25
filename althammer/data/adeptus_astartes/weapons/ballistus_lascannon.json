@@ -1,5 +1,6 @@
 {
     "name":"Ballistus Lascannon",
+    "keywords": ["Incendiary"],
     "rng":48,
     "atk":2,
     "skl":3,
