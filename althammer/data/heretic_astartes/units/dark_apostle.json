@@ -1,6 +1,6 @@
 {    
     "name": "Legionaries",
-    "ppm": 25,
+    "ppm": 75,
     "profiles":{
         "dark_apostle":{
             "move":6,
@@ -59,8 +59,8 @@
         "1 Dark Apostle",
         "2 Dark Disciples"
     ],
-    "models_min": 3,
-    "models_max": 3,
+    "models_min": 1,
+    "models_max": 1,
     "replacement_gear":{
         "Aspiring Champion's Bolt Pistol":[
             "plasma_pistol"
