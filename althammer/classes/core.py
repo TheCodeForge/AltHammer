@@ -16,10 +16,12 @@ class Unit(Base):
         return f"<Unit({self.faction.name} / {self.display_name})>"
 
     @property
+    @cache.memoize()
     def permalink(self):
         return f"{self.faction.permalink}/unit/{self.id}"
 
     @property
+    @cache.memoize()
     def min_models(self):
 
         if self.__dict__.get('models_min'):
@@ -31,6 +33,7 @@ class Unit(Base):
             return 0
 
     @property
+    @cache.memoize()
     def max_models(self):
 
         print(f"max models for {self}")
@@ -62,12 +65,14 @@ class Unit(Base):
             return max_unit_size * 3
 
     @property
+    @cache.memoize()
     def profiles(self):
         return [Unit(x) for x in self.__dict__.get('profiles', [])]
     
     
 
     @property
+    @cache.memoize()
     def display_name(self):
         if not self.__dict__.get("subtitle"):
             return self.name
