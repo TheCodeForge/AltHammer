@@ -27,9 +27,7 @@
     ],
     "melee_weapons": [
         "astartes_chainsword",
-        "power_fist",
-        "power_weapon",
-        "thunder_hammer"
+        "close_combat_weapon"
     ],
     "wargear":[
         "chaos_icon"
