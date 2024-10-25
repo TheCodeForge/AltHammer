@@ -37,6 +37,9 @@ class Unit(Base):
             max_unit_size= self.models_max
         elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
             max_unit_size= 1
+        elif self.profiles:
+            for p in self.profiles:
+                if any([x in p.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]])
 
         else:
             max_unit_size = 100
@@ -47,6 +50,11 @@ class Unit(Base):
             return max_unit_size
         else:
             return max_unit_size * 3
+
+    @property
+    def profiles(self):
+        return [Unit(x) for x in self.__dict__.get('profiles', [])]
+    
     
 
     @property
@@ -77,12 +85,10 @@ class Unit(Base):
         else:
             return []
     
-
     @property
     def weapons(self):
         return self.ranged_weapons + self.melee_weapons + self.wargear
     
-
     @property
     @cache.memoize()
     def default_weapons(self):
@@ -91,7 +97,6 @@ class Unit(Base):
             output.append(self.faction.default_melee_weapon)
 
         return output
-
 
     @property
     def faction_keywords(self):
