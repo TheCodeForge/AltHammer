@@ -151,3 +151,10 @@ blockquote {
 #faction-units input.form-control {
     max-width: 90px;
 }
+
+
+#row_hide_container:hover::after {
+    content: "toggle hiding unused rows";
+    font-size: $small-font-size;
+    color: lightgray;
+}
