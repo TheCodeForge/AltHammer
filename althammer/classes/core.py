@@ -36,7 +36,7 @@ class Unit(Base):
             return 0
 
     @property
-    @cache.memoize
+    @cache.memoize()
     def keywords(self):
         return self.__dict__.get("keywords", [])
     
