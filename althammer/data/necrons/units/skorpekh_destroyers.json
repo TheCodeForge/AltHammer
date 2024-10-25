@@ -19,7 +19,7 @@
         },
         {
             "name":"Plasmacyte",
-            "text":"Remove a Plasmacyte token from this unit. Until the end of the Battle Round, this unit's melee weapons have +[Devastating Wounds]+. This ability may be activated once per attached Plasmacyte token per battle."
+            "text":"When declaring a Fight target, you may destroy one Plasmacyte token. If you do, until the end of the Battle Round, this unit's melee weapons have +[Devastating Wounds]+."
         }
     ],
     "range_weapons": [],
