@@ -65,7 +65,7 @@
         <input id="ppm_{{ unit.id }}" type="hidden" class="form-control disabled" disabled value="{{ unit.ppm or '' }}">
       </form>
     </td>
-    <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}">{{ (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int)*unit.ppm }}</span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="{{session.get('qty_'+unit.faction.id+'_'+unit.id,0)*unit.ppm}}"></td>
+    <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}">{{ (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int)*unit.ppm }}</span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="{{(session.get('qty_'+unit.faction.id+'_'+unit.id,0)|int)*unit.ppm}}"></td>
   </tr>
   {% endfor %}
   {% else %}
