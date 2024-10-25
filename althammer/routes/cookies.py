@@ -20,8 +20,8 @@ def post_armylist():
 @app.post('/toggle_hide_rows/<x>')
 def post_toggle_hide_rows_x(x):
 
-    if x not in ['0','1']:
-        abort(404)
+    # if x not in ['0','1']:
+    #     abort(404)
 
     session['hide_rows']=bool(int(x))
 
