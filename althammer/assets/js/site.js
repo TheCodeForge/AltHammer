@@ -169,10 +169,13 @@ $('.list-qty').change(function(){
       $(this).val('')
     }
   }
+
+  //compute row total points
   var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * (parseInt($(this).val()) || 0)
   $('#total_'+$(this).data('unit-id')).text(output)
   $('#row_total_'+$(this).data('unit-id')).val(output)
 
+  //compute army total points
   var totalPoints=0;
   $('.row_totals').each(function(){
     //console.log(parseInt($(this).val()));
@@ -181,6 +184,7 @@ $('.list-qty').change(function(){
   })
   $('#points-total').text(totalPoints)
 
+  //update the session cookie
   var form_id=$(this).data('form')
   var xhr = new XMLHttpRequest();
   url=$('#'+form_id).prop('action');
