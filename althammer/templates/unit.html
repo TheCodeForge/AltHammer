@@ -37,14 +37,25 @@
       <li>{{ entry }}</li>
       {% endfor %}
     </ul>
-    <p>Every model is equipped with: </p>
+    {% if u.profiles %}
+    {% for profile in u.profiles %}
+    <p>Each {{ profile.name }} is equipped with:</p>
+      <ul>
+      {% for weapon in profile.default_gear %}
+        <li>{{ weapon.name }}</li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+    {% else %}
+    <p>Every model is equipped with:</p>
       <ul>
       {% for weapon in u.default_weapons %}
         <li>{{ weapon.name }}</li>
       {% endfor %}
       </ul>
+    {% endif %}
     {% if u.replacement_gear %}
-    <p>The following substitutions may be made: </p>
+    <p>The following substitutions may be made:</p>
       <ul>
       {% for x in u.replacement_gear %}
         <li>{{ x }} may be replaced with{% if (u.replacement_gear[x] | length) > 1%} one of{% endif %}:</li>
@@ -82,6 +93,24 @@
     <div class="row g-0">
       <table class="table w-100">
       <tr></tr>
+        {% if u.profiles %}
+        {% for profile in u.profiles %}
+        <thead>
+          <tr>
+            <th scope="col" class="text-center align-top">{{ profile.name }} {% if profile.keywords %}<span class="keyword">{{ ', '.join(profile.keywords) }}</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ profile.move }}"</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ profile.tough }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ profile.save }}+</span>{% if profile.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ profile.invuln }}+</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ profile.hp }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ profile.lead }}+</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ profile.oc }}</span></th>
+            {% if profile.psyker %}
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if profile.psyker >= 1 else '' }}{{ profile.psyker }}</span></th>
+            {% endif %}
+          </tr>
+        </thead>
+        {% endfor %}
+        {% else %}
         <thead>
           <tr>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.move }}"</span></th>
@@ -95,6 +124,7 @@
             {% endif %}
           </tr>
         </thead>
+        {% endif %}
       </table>
     </div>
 

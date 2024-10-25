@@ -1,0 +1,49 @@
+{    
+    "name": "Havocs",
+    "ppm":25,
+    "move":5,
+    "tough": 5,
+    "save": 3,
+    "hp":1,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [{
+            "name":"Stabilization Talons",
+            "text":"Ranged attacks made by this unit may ignore any or all modifieers to the Hit roll or to the Skill trait of the weapon."
+        }
+    ],
+    "range_weapons": [
+        "flamer",
+        "havoc_autocannon"
+        "heavy_bolt_rifle",
+        "heavy_bolter"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Havoc Champion",
+        "4 Havocs"
+    ],
+    "models_min": 5,
+    "models_max": 5,
+    "default_gear":[
+        "heavy_bolt_rifle"
+    ],
+    "replacement_gear":{
+        "Havoc Champion's Havoc Autocannon":[
+            "flamer",
+            "heavy_bolt_rifle",
+            "heavy_bolter"
+        ],
+        "Havoc Champion's Close Combat Knives":[
+            "astartes_chainsword"
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{    
+    "name": "Legionaries",
+    "ppm": 25,
+    "profiles":{
+        "dark_apostle":{
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":4,
+            "lead": 5,
+            "oc": 1,
+            "invuln": 4,
+            "keywords": ["Character"],
+            "default_gear":[
+                "bolt_pistol",
+                "accursed_crozius"
+            ]
+        },
+        "dark_disciples": {
+            "move":6,
+            "tough": 4,
+            "save": 6,
+            "hp":1,
+            "lead": 7,
+            "oc": 1,
+            "invuln": 4,
+            "default_gear": [
+                "close_combat_weapon"
+            ]
+        }
+    },
+    "keywords": [
+        "Infantry",
+        "Grenades"
+    ],
+    "core_rules": ["Leader"],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [{
+            "name":"Dark Zealotry",
+            "text":"While leading a unit, if the unit contains the Dark Apostle, melee attacks made by models in that unit have +1 to the Wound roll."
+        },
+        {
+            "name":"Demogogue",
+            "text":"Once per battle, when Activated, select a friendly Battle-Shocked +Heretic Astartes+ unit within 9\". That unit is no longer Battle-Shocked."
+        },
+        {
+            "name":"Malign Sacrifice",
+            "text":"When declaring a Fight target, you may destroy one Dark Disciple model. If you do, roll a d6. One a 2-5, the declared target suffers 1 Mortal Damage. On a 6+, the declared target suffers d3 Mortal Damage instead."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol"
+    ],
+    "melee_weapons": [
+        "accursed_crozius",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Dark Apostle",
+        "2 Dark Disciples"
+    ],
+    "models_min": 3,
+    "models_max": 3,
+    "replacement_gear":{
+        "Aspiring Champion's Bolt Pistol":[
+            "plasma_pistol"
+        ],
+        "Any model's Boltgun":[
+            "astartes_chainsword"
+        ],
+        "One model's Close Combat Knives":[
+            "chaos_icon"
+        ]
+    }
+}
