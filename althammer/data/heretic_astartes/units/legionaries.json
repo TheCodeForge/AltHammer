@@ -1,0 +1,59 @@
+{    
+    "name": "Legionaries",
+    "ppm":17,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [{
+            "name":"Veterans of the Long War",
+            "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, you may re-roll all wound rolls instead."
+        }
+    ],
+    "range_weapons": [
+        "hand_flamer",
+        "heavy_bolt_pistol",
+        "plasma_pistol",
+        "boltgun"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
+    ],
+    "wargear":[
+        "chaos_icon"
+    ],
+    "composition":[
+        "1 Aspiring Champion",
+        "4-9 Legionaries"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "bolt_pistol",
+        "boltgun",
+        "close_combat_weapon"
+    ],
+    "replacement_gear":{
+        "Aspiring Champion's Bolt Pistol":[
+            "plasma_pistol"
+        ],
+        "Any model's Boltgun":[
+            "astartes_chainsword"
+        ],
+        "One model's Close Combat Knives":[
+            "chaos_icon"
+        ]
+    }
+}
