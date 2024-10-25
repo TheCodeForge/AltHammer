@@ -33,6 +33,12 @@ class Unit(Base):
             return 0
 
     @property
+    @cache.memoize
+    def keywords(self):
+        return self.__dict__.get("keywords", [])
+    
+
+    @property
     @cache.memoize()
     def max_models(self):
 
