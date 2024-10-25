@@ -19,9 +19,7 @@
     ],
     "range_weapons": [
         "flamer",
-        "havoc_autocannon",
-        "heavy_bolt_rifle",
-        "heavy_bolter"
+        "havoc_autocannon"
     ],
     "melee_weapons": [
         "astartes_chainsword",
@@ -34,7 +32,8 @@
     "models_min": 5,
     "models_max": 5,
     "default_gear":[
-        "heavy_bolt_rifle"
+        "havoc_autocannon",
+        "close_combat_weapon"
     ],
     "replacement_gear":{
         "Havoc Champion's Havoc Autocannon":[
@@ -44,6 +43,9 @@
         ],
         "Havoc Champion's Close Combat Knives":[
             "astartes_chainsword"
+        ],
+        "Any Havoc's Havoc Autocannon":[
+            "havoc_lascannon"
         ]
     }
 }
