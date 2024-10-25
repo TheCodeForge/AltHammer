@@ -61,7 +61,7 @@
         <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
         <input type="hidden" name="faction" value="{{ unit.faction.id }}">
         <input type="hidden" name="unit_id" value="{{ unit.id }}">
-        <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" data-min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}" placeholder="{{ (unit.min_models|str) +' - '+ (unit.max_models|str) if unit.max_models>1 else 'Max 1'}}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id,'') }}" name="qty">
+        <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" data-min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}" placeholder="{{ (unit.min_models|str) +' - '+ (unit.max_models|str) if unit.max_models>1 else 'Max 1'}}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id,'') }}" name="qty" {%  %} step="{{ unit.models_min if unit.models_min and unit.models_min==unit.models_max and unit.models_min>1 else 1 }}">
         <input id="ppm_{{ unit.id }}" type="hidden" class="form-control disabled" disabled value="{{ unit.ppm or '' }}">
       </form>
     </td>
