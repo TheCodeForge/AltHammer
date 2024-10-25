@@ -158,32 +158,29 @@ $("#dark-mode-toggle").click(function(){
     })
 })
 
-$('.list-qty').on('input',
-  function(){
-    //skip from 0 to acceptable min value and back
-    if ($(this).val()<parseInt($(this).data('min')) ){
-      if ($(this).val()==1){
-        $(this).val(parseInt($(this).data('min')))
-      }
-      else {
-        $(this).val('')
-      }
-    }
-    var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * (parseInt($(this).val()) || 0)
-    $('#total_'+$(this).data('unit-id')).text(output)
-    $('#row_total_'+$(this).data('unit-id')).val(output)
-
-    var totalPoints=0;
-    $('.row_totals').each(function(){
-      //console.log(parseInt($(this).val()));
-      totalPoints += parseInt($(this).val());
-      //console.log(totalPoints);
-    })
-    $('#points-total').text(totalPoints)
-  }
-)
-
 $('.list-qty').change(function(){
+
+  //skip from 0 to acceptable min value and back
+  if ($(this).val()<parseInt($(this).data('min')) ){
+    if ($(this).val()==1){
+      $(this).val(parseInt($(this).data('min')))
+    }
+    else {
+      $(this).val('')
+    }
+  }
+  var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * (parseInt($(this).val()) || 0)
+  $('#total_'+$(this).data('unit-id')).text(output)
+  $('#row_total_'+$(this).data('unit-id')).val(output)
+
+  var totalPoints=0;
+  $('.row_totals').each(function(){
+    //console.log(parseInt($(this).val()));
+    totalPoints += parseInt($(this).val());
+    //console.log(totalPoints);
+  })
+  $('#points-total').text(totalPoints)
+
   var form_id=$(this).data('form')
   var xhr = new XMLHttpRequest();
   url=$('#'+form_id).prop('action');
