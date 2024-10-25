@@ -3,7 +3,6 @@
 
     "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
 
-    
     "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
     
     "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
@@ -36,10 +35,14 @@
     
     "Twin-Linked": "Failed Wound rolls may be re-rolled.",
 
+
+
     "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6\" of the destroyed model suffers X Mortal Damage",
     
     "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.",
     
+    "Entourage": "When creating your army list, only the primary model in this unit costs points.",
+
     "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
     "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",

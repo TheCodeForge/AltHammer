@@ -35,7 +35,7 @@
         "Infantry",
         "Grenades"
     ],
-    "core_rules": ["Leader"],
+    "core_rules": ["Leader", "Entourage"],
     "faction_rules": ["Dark Pacts"],
     "unit_rules": [{
             "name":"Dark Zealotry",
