@@ -10,9 +10,6 @@ class Base():
         self.__dict__.update(data)
         self.__dict__.update(kwargs)
 
-    # def __getattr__(self, name):
-    #     return self.__dict__.get(name)
-
 class Unit(Base):
 
     def __repr__(self):
@@ -80,7 +77,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return [Unit(x) for x in self.__dict__.get('profiles', [])]
+        return [Unit(x, faction=self.faction) for x in self.__dict__.get('profiles', [])]
     
     
 
