@@ -94,13 +94,13 @@ class Unit(Base):
     @property
     @cache.memoize()
     def ranged_weapons(self):
-        return [self.faction.weapon(x) for x in self.__dict__.get("range_weapons", [] )]
+        return sorted([self.faction.weapon(x) for x in self.__dict__.get("range_weapons", [] )], key=lambda x: x.name)
 
     @property
     @cache.memoize()
     def melee_weapons(self):
         if self.__dict__.get("melee_weapons"):
-            return [self.faction.weapon(x) for x in self.__dict__.get("melee_weapons")]
+            return sorted([self.faction.weapon(x) for x in self.__dict__.get("melee_weapons")], key=lambda x: x.name)
         else:
             return [self.faction.default_melee_weapon]
 
@@ -108,7 +108,7 @@ class Unit(Base):
     @cache.memoize()
     def wargear(self):
         if self.__dict__.get("wargear"):
-            return [self.faction.weapon(x) for x in self.__dict__.get("wargear", [] )]
+            return sorted([self.faction.weapon(x) for x in self.__dict__.get("wargear", [] )], key=lambda x: x.name)
         else:
             return []
     
@@ -119,7 +119,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def default_weapons(self):
-        output = [self.faction.weapon(x) for x in self.__dict__["default_gear"]]
+        output = sorted([self.faction.weapon(x) for x in self.__dict__["default_gear"]], key=lambda x: x.name)
         if not self.__dict__.get('melee_weapons'):
             output.append(self.faction.default_melee_weapon)
 
