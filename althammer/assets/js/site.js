@@ -170,6 +170,11 @@ $('.list-qty').change(function(){
     }
   }
 
+  //upper bound
+  if ($(this).val()>parseInt($(this).data('max')) ){
+    $(this).val(parseInt($(this).data('max')))
+  }
+
   //compute row total points
   var output = parseInt($('#ppm_'+$(this).data('unit-id')).val()) * (parseInt($(this).val()) || 0)
   $('#total_'+$(this).data('unit-id')).text(output)
