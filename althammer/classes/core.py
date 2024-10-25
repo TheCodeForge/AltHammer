@@ -42,45 +42,32 @@ class Unit(Base):
     @cache.memoize()
     def max_models(self):
 
-        print(f"max models for {self}")
-
         try:
             if self.__dict__.get('models_max'):
-                print(f"hard set models max {self.__dict__.get('models_max')}")
                 max_unit_size= self.models_max
             elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
-                print('keyword set max 1')
                 max_unit_size= 1
 
             elif self.profiles:
-                print('profiles detected')
                 for p in self.profiles:
-                    print(f'profile: {p.name}')
                     if any([x in p.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
-                        print('profile keyword set max 1')
                         max_unit_size=1
 
             else:
-                print('default max 100')
                 max_unit_size = 100
 
             if "Battleline" in self.keywords:
-                print(f'Battleline: max 6x')
                 return max_unit_size * 6
             elif "Epic Hero" in self.keywords:
-                print(f'Epic Hero: max 1x')
                 return max_unit_size
 
             elif self.profiles:
-                print('profiles detected')
                 for p in self.profiles:
-                    print(f'profile: {p.name}')
                     if any([x in p.keywords for x in ["Epic Hero"]]):
-                        print('profile epic hero max 1')
                         return max_unit_size
+                return max_unit_size * 3
 
             else:
-                print('default max 3x')
                 return max_unit_size * 3
 
         except Exception as e:
@@ -89,7 +76,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}") for x in self.__dict__.get('profiles', [])]
+        return [Unit(x, faction=self.faction, name=f"{self.name} / Profile: {x['name']}") for x in self.__dict__.get('profiles', [])]
     
     
 
