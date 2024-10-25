@@ -82,6 +82,10 @@ class Unit(Base):
 
     @property
     def display_name(self):
+
+        if self.__dict__.get('display_name'):
+            return self.__dict__['display_name']
+            
         if not self.__dict__.get("subtitle"):
             return self.name
 
