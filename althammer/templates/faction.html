@@ -41,6 +41,11 @@
 
 # Units
 
+<p class="my-0">
+  <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-eye"></i></a>
+  <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-eye-slash"></i></a>
+</p>
+
 <table id="faction-units" class="table">
   <tr></tr>
   {% for role in f.units if f.units[role] %}
@@ -53,7 +58,7 @@
     </tr>
   </thead>
   {% for unit in f.units[role] %}{% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
-  <tr>
+  <tr id="unit_row_{{ unit.id }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
     <td class="align-middle"><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td class="text-center align-middle">{{ unit.ppm }}</td>
     <td class="text-center align-middle">

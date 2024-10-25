@@ -175,9 +175,9 @@ $('.list-qty').on('input',
 
     var totalPoints=0;
     $('.row_totals').each(function(){
-      console.log(parseInt($(this).val()));
+      //console.log(parseInt($(this).val()));
       totalPoints += parseInt($(this).val());
-      console.log(totalPoints);
+      //console.log(totalPoints);
     })
     $('#points-total').text(totalPoints)
   }
@@ -209,6 +209,24 @@ $('.list-qty').change(function(){
     }
   };
   xhr.send(form);
+})
+
+$('#rows_hide_button').click(function(){
+  $('.list-qty').each(function(){
+    if ($(this).val()==''){
+      $('#unit_row_'+$(this).data('unit-id')).addClass('d-none');
+    }
+  });
+  $('#rows_hide_button').addClass('d-none');
+  $('#rows_show_button').removeClass('d-none');
+  post('/hide_rows/1')
+})
+
+$('#rows_show_button').click(function(){
+  $('.unit-row').removeClass('d-none')
+  $('#rows_show_button').addClass('d-none');
+  $('#rows_hide_button').removeClass('d-none');
+  post('/hide_rows/0')
 })
 
 //Initialize popovers
