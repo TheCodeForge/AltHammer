@@ -10,8 +10,8 @@ class Base():
         self.__dict__.update(data)
         self.__dict__.update(kwargs)
 
-    def __getattr__(self, name):
-        return self.__dict__.get(name)
+    # def __getattr__(self, name):
+    #     return self.__dict__.get(name)
 
 class Unit(Base):
 
