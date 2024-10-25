@@ -1,8 +1,9 @@
 {    
     "name": "Legionaries",
     "ppm": 75,
-    "profiles":{
-        "dark_apostle":{
+    "profiles":[
+        {
+            "name": "Dark Apostle",
             "move":6,
             "tough": 4,
             "save": 3,
@@ -16,7 +17,8 @@
                 "accursed_crozius"
             ]
         },
-        "dark_disciples": {
+        {
+            "name": "Dark Disciple",
             "move":6,
             "tough": 4,
             "save": 6,
@@ -28,7 +30,7 @@
                 "close_combat_weapon"
             ]
         }
-    },
+    ],
     "keywords": [
         "Infantry",
         "Grenades"
