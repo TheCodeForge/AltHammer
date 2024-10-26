@@ -223,7 +223,7 @@ class Faction(Base):
         with open(path, "r+") as file:
             data=json.load(file)
 
-        output = Weapon(data)
+        output = Weapon(data, id=id)
         output.faction=self
         return output
 
