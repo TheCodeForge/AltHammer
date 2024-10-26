@@ -18,7 +18,7 @@ def post_armylist():
 
 
 @app.post('/weapon_qty')
-def post_toggle_hide_rows_x(x):
+def post_weapon_qty():
 
     faction=request.form.get('faction')
     unit_id=request.form.get('unit_id')
