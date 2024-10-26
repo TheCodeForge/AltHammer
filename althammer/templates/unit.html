@@ -146,12 +146,12 @@
         {% for weapon in u.ranged_weapons %}
         <tr>
           <td class="text-center align-middle">
-            <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
               <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
-              <input type="hidden" name="faction" value="{{ unit.faction.id }}">
-              <input type="hidden" name="unit_id" value="{{ unit.id }}">
+              <input type="hidden" name="faction" value="{{ u.faction.id }}">
+              <input type="hidden" name="unit_id" value="{{ u.id }}">
               <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ unit.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+              <input id="qty_{{ u.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" placeholder="Max {{ u.max_models }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
@@ -180,12 +180,12 @@
         {% for weapon in u.melee_weapons %}
         <tr>
           <td class="text-center align-middle">
-            <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
               <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
-              <input type="hidden" name="faction" value="{{ unit.faction.id }}">
-              <input type="hidden" name="unit_id" value="{{ unit.id }}">
+              <input type="hidden" name="faction" value="{{ u.faction.id }}">
+              <input type="hidden" name="unit_id" value="{{ u.id }}">
               <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ unit.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+              <input id="qty_{{ u.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" placeholder="Max {{ u.max_models }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
