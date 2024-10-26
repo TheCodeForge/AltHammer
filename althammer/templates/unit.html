@@ -146,7 +146,7 @@
         {% for weapon in u.ranged_weapons %}
         <tr>
           <td class="text-center align-middle">
-            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
               <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
               <input type="hidden" name="faction" value="{{ u.faction.id }}">
               <input type="hidden" name="unit_id" value="{{ u.id }}">
@@ -180,7 +180,7 @@
         {% for weapon in u.melee_weapons %}
         <tr>
           <td class="text-center align-middle">
-            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
               <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
               <input type="hidden" name="faction" value="{{ u.faction.id }}">
               <input type="hidden" name="unit_id" value="{{ u.id }}">
