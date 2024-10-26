@@ -112,7 +112,6 @@
         {% endfor %}
         {% else %}
         <thead>
-          <tr>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.move }}"</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ u.tough }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.save }}+</span>{% if u.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.invuln }}+</span>{% endif %}</th>
@@ -134,6 +133,7 @@
         {% if u.ranged_weapons %}
         <thead>
           <tr>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
             <th scope="col">Ranged Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
@@ -145,6 +145,15 @@
         </thead>
         {% for weapon in u.ranged_weapons %}
         <tr>
+          <td class="text-center align-middle">
+            <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+              <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+              <input type="hidden" name="faction" value="{{ unit.faction.id }}">
+              <input type="hidden" name="unit_id" value="{{ unit.id }}">
+              <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+              <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+            </form>
+          </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td class="text-center">{{ weapon.rng }}"</td>
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
@@ -158,6 +167,7 @@
         {% endif %}
         <thead>
           <tr>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
             <th scope="col">Melee Weapons</th>
             <th></th><!--th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th-->
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
@@ -169,6 +179,15 @@
         </thead>
         {% for weapon in u.melee_weapons %}
         <tr>
+          <td class="text-center align-middle">
+            <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" method="post" action="/armylist/" class="my-0 mx-0">
+              <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+              <input type="hidden" name="faction" value="{{ unit.faction.id }}">
+              <input type="hidden" name="unit_id" value="{{ unit.id }}">
+              <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+              <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+            </form>
+          </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td></td><!--td class="text-center">Melee</td-->
           <td class="text-center text-nowrap">{{ weapon.atk }}</td>
