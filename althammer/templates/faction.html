@@ -39,7 +39,7 @@
 {% endfor %} 
 </ul>
 
-# Units
+{% endfilter %}
 
 <p id="row_hide_container">
   <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
@@ -94,8 +94,6 @@
     </tr>
   </thead>
 </table>
-
-{% endfilter %}
 
 </div>
 
