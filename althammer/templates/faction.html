@@ -46,7 +46,7 @@
   <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
 </p>
 
-<table id="faction-units" class="table">
+<table id="faction-units" class="table table-faction">
   <tr></tr>
   {% for role in f.units if f.units[role] %}
   <thead>
