@@ -76,7 +76,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}") for x in self.__dict__.get('profiles', [])]
+        return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}", is_profile=True) for x in self.__dict__.get('profiles', [])]
     
     
 
@@ -120,7 +120,7 @@ class Unit(Base):
     @cache.memoize()
     def default_weapons(self):
         output = sorted([self.faction.weapon(x) for x in self.__dict__["default_gear"]], key=lambda x: x.name)
-        if not self.__dict__.get('melee_weapons'):
+        if not self.__dict__.get('melee_weapons') and not self.__dict__.get('is_profile'):
             output.append(self.faction.default_melee_weapon)
 
         return output
