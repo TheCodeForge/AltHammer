@@ -5,5 +5,6 @@
     "rules": {
         "Synapse": "Each time a +Tyranids+ unit from your army takes a Battle-Shock test, if it is within 6\" of a friendly +Synapse+ model (\"Synapse Range\"), take that test on 3D6 instead of 2D6.",
         "Shadow in the Warp": "Once per battle, at the start of the Battle-Round, if a model with this ability is on the Battlefield, you may force each enemy unit on the Battlefield to take a Battle-Shock test."
-    }
+    },
+    "color":"630330"
 }
