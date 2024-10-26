@@ -154,13 +154,13 @@
               <input id="qty_{{ u.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
-          <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-          <td class="text-center">{{ weapon.rng }}"</td>
-          <td class="text-center text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
-          <td class="text-center">{{ weapon.str }}</td>
-          <td class="text-center">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
-          <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
+          <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+          <td class="text-center align-middle">{{ weapon.rng }}"</td>
+          <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
+          <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
+          <td class="text-center align-middle">{{ weapon.str }}</td>
+          <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
+          <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
 
@@ -188,13 +188,13 @@
               <input id="qty_{{ u.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
-          <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+          <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
           <td></td><!--td class="text-center">Melee</td-->
-          <td class="text-center text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
-          <td class="text-center">{{ weapon.str }}</td>
-          <td class="text-center">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
-          <td class="text-center text-nowrap">{{ weapon.dmg }}</td>
+          <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
+          <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
+          <td class="text-center align-middle">{{ weapon.str }}</td>
+          <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
+          <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
         </tr>
         {% endfor %}
       </table>
