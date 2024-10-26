@@ -95,29 +95,29 @@
         {% for profile in u.profiles %}
         <thead>
           <tr>
-            <th scope="col" class="text-faction align-top">{{ profile.name }} {% if profile.keywords %}<span class="keyword">({{ ', '.join(profile.keywords) }})</span>{% endif %}</th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ profile.move }}"</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ profile.tough }}</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ profile.save }}+</span>{% if profile.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ profile.invuln }}+</span>{% endif %}</th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ profile.hp }}</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ profile.lead }}+</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ profile.oc }}</span></th>
+            <th scope="col" class="align-top">{{ profile.name }} {% if profile.keywords %}<span class="keyword">({{ ', '.join(profile.keywords) }})</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ profile.move }}"</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ profile.tough }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ profile.save }}+</span>{% if profile.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ profile.invuln }}+</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ profile.hp }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ profile.lead }}+</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ profile.oc }}</span></th>
             {% if profile.psyker %}
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if profile.psyker >= 1 else '' }}{{ profile.psyker }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if profile.psyker >= 1 else '' }}{{ profile.psyker }}</span></th>
             {% endif %}
           </tr>
         </thead>
         {% endfor %}
         {% else %}
         <thead>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.move }}"</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ u.tough }}</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.save }}+</span>{% if u.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.invuln }}+</span>{% endif %}</th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.hp }}</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.lead }}+</span></th>
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.oc }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.move }}"</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ u.tough }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.save }}+</span>{% if u.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.invuln }}+</span>{% endif %}</th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.hp }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.lead }}+</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.oc }}</span></th>
             {% if u.psyker %}
-            <th scope="col" class="text-faction text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.psyker >= 1 else '' }}{{ u.psyker }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.psyker >= 1 else '' }}{{ u.psyker }}</span></th>
             {% endif %}
           </tr>
         </thead>
@@ -131,14 +131,14 @@
         {% if u.ranged_weapons %}
         <thead>
           <tr>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
             <th scope="col" class="text-faction">Ranged Weapons</th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Ranged Skill"><i class="fas fa-fw fa-gun"></i></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-bone-break"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Ranged Skill"><i class="fas fa-fw fa-gun"></i></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-bone-break"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
           </tr>
         </thead>
         {% for weapon in u.ranged_weapons %}
@@ -165,14 +165,14 @@
         {% endif %}
         <thead>
           <tr>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-tally"></i></span></th>
             <th scope="col" class="text-faction">Melee Weapons</th>
             <th></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Melee Skill"><i class="fas fa-fw fa-sword"></i></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-bone-break"></i></span></th>
-            <th scope="col" class="text-faction text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Melee Skill"><i class="fas fa-fw fa-sword"></i></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-bone-break"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
           </tr>
         </thead>
         {% for weapon in u.melee_weapons %}
