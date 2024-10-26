@@ -151,7 +151,7 @@
               <input type="hidden" name="faction" value="{{ unit.faction.id }}">
               <input type="hidden" name="unit_id" value="{{ unit.id }}">
               <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+              <input id="qty_{{ unit.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
@@ -185,7 +185,7 @@
               <input type="hidden" name="faction" value="{{ unit.faction.id }}">
               <input type="hidden" name="unit_id" value="{{ unit.id }}">
               <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
+              <input id="qty_{{ unit.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ unit.max_models }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}_{{ weapon.id }}" placeholder="Max {{ unit.max_models }}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id+'_'+weapon.id,'') }}" name="qty">
             </form>
           </td>
           <td>{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>

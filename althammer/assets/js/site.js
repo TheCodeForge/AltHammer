@@ -52,6 +52,33 @@ function post_toast(url, callback=function(xhr){}) {
 
   }
 
+function post_form(form_id){
+  var xhr = new XMLHttpRequest();
+  url=$('#'+form_id).prop('action');
+  xhr.open("POST", $('#'+form_id).prop('action'), true);
+  var form = new FormData(document.querySelector('#'+form_id));
+  xhr.withCredentials=true;
+  xhr.onerror=function() { 
+      $('#toast-error .toast-text').text("Something went wrong. Please try again later.");
+      $('#toast-error').toast('show')
+  };
+  xhr.onload = function() {
+    if (xhr.status != 204){
+      data=JSON.parse(xhr.response);
+      if (xhr.status == 200 ) {
+        $('#toast-success .toast-text').text(data['message']);
+        $('#toast-success').toast('show')
+      } else if (xhr.status >= 300 && xhr.status < 400 ) {
+        window.location.href=data['redirect']
+      } else {
+        $('#toast-error .toast-text').text(data['error']);
+        $('#toast-error').toast('show')
+      }
+    }
+  };
+  xhr.send(form);
+}
+
 function post_reload(url) {
   var xhr = new XMLHttpRequest();
   xhr.open("POST", url, true);
@@ -190,31 +217,11 @@ $('.list-qty').change(function(){
   $('#points-total').text(totalPoints)
 
   //update the session cookie
-  var form_id=$(this).data('form')
-  var xhr = new XMLHttpRequest();
-  url=$('#'+form_id).prop('action');
-  xhr.open("POST", $('#'+form_id).prop('action'), true);
-  var form = new FormData(document.querySelector('#'+form_id));
-  xhr.withCredentials=true;
-  xhr.onerror=function() { 
-      $('#toast-error .toast-text').text("Something went wrong. Please try again later.");
-      $('#toast-error').toast('show')
-  };
-  xhr.onload = function() {
-    if (xhr.status != 204){
-      data=JSON.parse(xhr.response);
-      if (xhr.status == 200 ) {
-        $('#toast-success .toast-text').text(data['message']);
-        $('#toast-success').toast('show')
-      } else if (xhr.status >= 300 && xhr.status < 400 ) {
-        window.location.href=data['redirect']
-      } else {
-        $('#toast-error .toast-text').text(data['error']);
-        $('#toast-error').toast('show')
-      }
-    }
-  };
-  xhr.send(form);
+  post_form($(this).data('form'))
+})
+
+$('.wep-qty').change(function(){
+  post_form($(this).data('form'))
 })
 
 $('#rows_hide_button').click(function(){

@@ -5,7 +5,7 @@ from flask import *
 from althammer.__main__ import app
 
 
-@app.post('/armylist/')
+@app.post('/armylist')
 def post_armylist():
 
     faction=request.form.get('faction')
@@ -15,6 +15,19 @@ def post_armylist():
     session[f"qty_{faction}_{unit_id}"] = qty
 
     return "",204
+
+
+@app.post('/weapon_qty')
+def post_toggle_hide_rows_x(x):
+
+    faction=request.form.get('faction')
+    unit_id=request.form.get('unit_id')
+    unit_id=request.form.get('weapon_id')
+    qty=request.form.get('qty')
+
+    session[f"qty_{faction}_{unit_id}_{weapon_id}"] = qty
+
+    return "", 204
 
 
 @app.post('/hide_rows/<x>')
