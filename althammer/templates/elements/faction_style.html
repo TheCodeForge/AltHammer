@@ -3,7 +3,15 @@
     color: {{ f.color }};
   }
 
-  .bg-faction {
+  table.color-faction > thead {
     background-color: {{ f.color }};
+  }
+
+  table.color-faction > thead > tr > td {
+    color:white;
+  }
+
+  table.color-faction > thead, table > tbody {
+    border-color: {{ f.color }};
   }
 </style>
