@@ -62,16 +62,5 @@
         "2 Dark Disciples"
     ],
     "models_min": 1,
-    "models_max": 1,
-    "replacement_gear":{
-        "Aspiring Champion's Bolt Pistol":[
-            "plasma_pistol"
-        ],
-        "Any model's Boltgun":[
-            "astartes_chainsword"
-        ],
-        "One model's Close Combat Knives":[
-            "chaos_icon"
-        ]
-    }
+    "models_max": 1
 }
