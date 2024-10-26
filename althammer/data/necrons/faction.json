@@ -5,5 +5,5 @@
     "rules": {
         "Reanimation Protocols": "At the start of each Battle Round, each unit from your army restores d3 Health. Each time such a unit restores a point of Health:\n* If the unit contains one or more models below their starting Health, select one of those models; that model regains one point of Health\n* If all models in that unit are at their starting Health, but the unit is below its starting strength, return one destroyed model to the unit with one point of Health remaining.\n* If all models in the unit are at their starting Health and the unit is at its starting strength, nothing happens."
     },
-    "color":"55ff55"
+    "color":"00aa00"
 }
