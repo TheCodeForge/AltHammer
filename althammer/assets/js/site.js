@@ -221,7 +221,10 @@ $('.list-qty').change(function(){
 })
 
 $('.wep-qty').change(function(){
-  post_form($(this).data('form'))
+  post_form($(this).data('form'));
+  if ($(this).val()==0){
+    $(this).val('')
+  }
 })
 
 $('#rows_hide_button').click(function(){
