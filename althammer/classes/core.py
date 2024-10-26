@@ -273,5 +273,5 @@ class Faction(Base):
 
     @property
     def color(self):
-        return self.__dict__.get("color", "ADD8E6")
+        return self.__dict__.get("color", "000000")
     
