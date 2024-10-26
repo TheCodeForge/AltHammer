@@ -22,7 +22,7 @@ def post_weapon_qty():
 
     faction=request.form.get('faction')
     unit_id=request.form.get('unit_id')
-    unit_id=request.form.get('weapon_id')
+    weapon_id=request.form.get('weapon_id')
     qty=request.form.get('qty')
 
     session[f"qty_{faction}_{unit_id}_{weapon_id}"] = qty
