@@ -14,7 +14,7 @@
     {% endif %}
 
     {% if u.unit_rules %}
-    <p><span class="fw-bold">ABILITIES</span></p>
+    <p><span class="fw-bold text-faction">ABILITIES</span></p>
     <ul>
     {% for rule in u.unit_rules %}
       <li><span class="fw-bold">{{ rule['name'] }}</span> - {{ rule['text'] | markdown | safe }}</li>
