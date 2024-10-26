@@ -51,10 +51,10 @@
   {% for role in f.units if f.units[role] %}
   <thead>
     <tr>
-      <td scope="col"><b>{{ role }}</b></td>
-      <td scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></td>
-      <td scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Number of models in army list"><i class="fas fa-fw fa-helmet-battle"></i></span></td>
-      <td scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></td>
+      <th scope="col">{{ role }}</th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Number of models in army list"><i class="fas fa-fw fa-helmet-battle"></i></span></th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></th>
     </tr>
   </thead>
   {% for unit in f.units[role] %}{% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
