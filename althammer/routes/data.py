@@ -26,6 +26,6 @@ def faction_faction_unit_unit(faction, unit):
 
     f=get_faction(faction)
 
-    u = f.unit(unit, id=unit)
+    u = f.unit(unit)
 
     return render_template("unit.html", f=f, u=u)

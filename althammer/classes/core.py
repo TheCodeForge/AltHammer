@@ -210,7 +210,7 @@ class Faction(Base):
         except FileNotFoundError:
             abort(404)
         
-        output = Unit(data)
+        output = Unit(data, id=id)
 
         output.faction=self
         return output
