@@ -40,6 +40,14 @@ The following pages are also part of the Core Rules, but have been separated out
 
 See [Keyword Rules](/rules/keyword_rules)
 
+# Alternation
+
+Throughout the rules, players are instructed to alternate certain tasks, such as deploying or activating units. Often, players do not have the same number of tasks to perform. Therefore, whenever one player has exhausted all necessary alternating tasks, the other player may perform all of his or her remaining tasks in sequence.
+
+# Roll Off
+
+See [Roll Off](/rules/definitions#roll_off)
+
 # Order of Play
 
 ## Determine Points Limit
@@ -78,9 +86,11 @@ The chosen model gains the +Warlord+ keyword.
 
 *We recommend using the tools on this site to create your army list and select your units' weapons loadouts.*
 
-## Determine Mission
+## Determine Mission and Layout
 
-Determine the deployment zone layout and place objective markers.
+Determine the Battlefield layout and place objective markers. Objective markers are 40mm or 1.5" diameter circles.
+
+Determine the Mission rules for scoring.
 
 ## Set Up Battlefield
 
@@ -123,11 +133,15 @@ If the Sideboard Option is enabled:
 
 ## Deploy Armies
 
-Roll Off. Beginning with the player to win the Roll Off, alternate placing one unit onto the battlefield within your deployment zone. Once one player has deployed all available units, the other player may deploy all of their remaining units at once.
+Roll Off. Beginning with the player to win the Roll Off, alternate placing one unit in your army onto the battlefield within your deployment zone.
 
 Units must be placed onto the battlefield in [Unit Coherency](/rules/definitions#unit_coherency).
 
-## The Battle Round
+## Battle Start
+
+Roll Off. Beginning with the player to win the Roll Off, invoke any "at the start of the battle" rules, such as +Scouts X"+
+
+## Battle
 
 The battle consists of five Battle Rounds. Each Battle Round contains the following steps:
 
@@ -137,9 +151,12 @@ The battle consists of five Battle Rounds. Each Battle Round contains the follow
 * [Roll Initiative](#roll_initiative)
 * [Deploy Reserves](#deploy_reserves) (Round 2+)
 * [Alternating Activation](#alternating_activation)
-* [Cleanup](#cleanup)
 * [Scoring](#scoring)
 * [Round End](#round_end)
+
+## Conclusion
+
+After the fifth Battle Round, 
 
 ### Roll Initiative
 
@@ -149,7 +166,7 @@ In the event of a tie, both players re-roll.
 
 ### Generate Command Points
 
-Both players recieve 1 Command Point. 
+Both players gain 1 Command Point. 
 
 ### Round Start
 
@@ -188,11 +205,17 @@ Units may not be Activated more than once in the Battle Round.
 
 Once one player has Activated all available units, the other player may Activate all of their remaining units.
 
-See the Activation section below.
+See the [Activation](#activation) section below.
 
 ### Scoring
 
 Each player scores Victory Points based on mission rules and the state of the Battlefield.
+
+#### Objective Control
+
+To control an objective marker, a player must have one or more models with a non-zero <i class="fas fa-fw fa-target"></i> Objective Control trait within 3" of the objective marker.
+
+If both players have one or more models within 3" of an objective marker, both players sum the Objective Control traits of their models within 3" of the objective marker. The player with the greater total is the player that controls it. If both players have the same total Objective Control, then neither player controls the objective marker.
 
 ### Round End
 
@@ -200,12 +223,32 @@ Any effects which last "until the end of the Battle Round" end here.
 
 Any abilites which occur at the end of the battle round should be invoked here, in alternating turns, starting with the player who has initiative.
 
+## Determine Victor
+
+After the end of the fifth Battle Round, apply the following bonuses and penalties. The player with more Victory Points 
+
+### Battle-Ready Paint Job
+
+A player scores 10 bonus Victory Points if all models in his or her mustered army are painted to a Battle-Ready standard. To be considered "Battle-Ready", a model must have at least three different colors of paint applied. The plastic's native color does not count, nor does color from spray primer.
+
+### Grey Plastic Penalty
+
+A player loses 5 Victory Points if any of the models in his or her mustered army are completely devoid of paint. Spray primer does not count as paint.
+
+### Win by Tabling
+
+In the event that one player's entire army is destroyed during the battle, the other player is immediately the victor, provided that their army is painted to Battle-Ready standard.
+
+## Cleanup
+
+Return your dice, models and terrain pieces back to their proper storage places.
+
 # Activation
 
-When Activated, a unit may do up to two of the following actions, in this order:
+When Activated, a unit may perform the following actions, in this order:
 
 * [Move](#move)
-* [Magik](#magik) (+Psyker+ units only)
+* [Magik](#magik) (+Psyker+ models only)
 * [Shoot](#shoot)
 * [Charge](#charge)
 * [Fight](#fight)
@@ -222,26 +265,28 @@ Models may use their Movement to move horizontally, or vertically up or down ter
 
 +Aircraft+ models must make their movement by rotating up to 90 degrees on the spot, then moving straight forward a minimum distance. +Aircraft+ only need to consider horizontal movement; they are not impacted by terrain and can move vertically for free.
 
+Units which have just [deployed](#deploy_reserves) may not move.
+
 ### Advance
 
 Units that are Moving may choose to Advance instead. When Advancing, roll d6 and add the result in inches to the unit's Movement trait.
 
-Units which Advance may not Shoot, Magik, or Charge in the same Activation, unless performing a Shoot action with an +[Assault]+ weapon.
+Units which Advance may not Magik, Shoot, or Charge in the same Activation, unless performing a Shoot action with an +[Assault]+ weapon.
 
 ### Fall Back
 
 Units that are in Melee Distance of an enemy unit cannot move out of Melee Distance unless they choose to Fall Back.
 
-Units which Fall Back may not Advance, Shoot, Magik, or Charge in the same Activation.
+Units which Fall Back may not Shoot, Magik, or Charge in the same Activation.
 
 ### Restrictions
 
 The following restrictions apply to any form of movement, whether performed as a part of a Move action or for any other reason:
 
-* Units in Melee Distance of an enemy unit may not move through enemy models.
 * Models may not end their movement on another model or its base.
-* Models may not move through enemy models, unless either unit has +Fly+.
-* Models may not end a movement within Melee Distance of enemy units, unless either unit is an +Aircraft+, or unless they started the move within Melee Distance of the same enemy units.
+* Models may not move through enemy models, unless either model has +Fly+.
+* Models may not end their movement on an objective marker, unless objective markers with an integrated 3" ring are being used.
+* Models may not end a movement within Melee Distance of enemy unit(s), unless either unit is an +Aircraft+, or unless they started the move within Melee Distance of the same enemy unit(s).
 * Models may not end their movement partially up a wall or other terrain obstacle.
 * Models must end their movement wholly within the Battlefield, except for +Aircraft+.
      * +Aircraft+ which end their movement not wholly within the Battlefield are removed and placed into Reserves; they may be [deployed](#deploy_reserves) during the next Battle Round.
@@ -249,7 +294,7 @@ The following restrictions apply to any form of movement, whether performed as a
 
 ### Unit Coherency
 
-At any point in the game (except during a Unit's movement), if a Unit is found to *not* be in [Unit Coherency](/rules/definitions#unit_coherency), the player controlling that unit must immediately remove Models from the Unit until Unit Coherency is achieved. When removing Models to achieve Unit Coherency, do not activate On Death rules for the removed Models.
+At any point in the game (except during a Unit's movement), if a Unit is found to *not* be in [Unit Coherency](/rules/definitions#unit_coherency), the player controlling that unit must immediately remove models from the Unit until Unit Coherency is achieved. When removing models to achieve Unit Coherency, do not activate +Deadly Demise X+ or any other on-death rules for the removed models.
 
 ## Magik
 
@@ -263,21 +308,21 @@ If the result of the Psychic test is greater than or equal to the spell's Diffic
 
 ### Perils of Power
 
-If the result of the Psychic test was an unmodified 2 or unmodified 12, then the Model suffers Perils of Power: The Model's unit suffers d3 Mortal Damage.
+If the result of the Psychic test was an unmodified 2 or unmodified 12, then the Model suffers Perils of Power: The model suffers d3 Mortal Damage.
 
 If the Psychic test was passed, resolve the spell's effects first before applying damage from Perils of Power.
 
 ### Deny the Psychic
 
-If the Psychic test is passed, the opposing player may attempt to Deny the Psychic before the spell effects are resolved. The opposing player selects a +Psyker+ Model within 18" of the Activated +Psyker+ Model, and makes a Psychic test, modifying the result by its <i class="fas fa-fw fa-hat-wizard"></i> Psychic Power trait. If the result of the opposing Psychic test is greater than the Activated Model's Psychic test, then the spell is blocked and does not take effect.
+If the Psychic test is passed, the opposing player may attempt to Deny the Psychic before the spell effects are resolved. The opposing player selects a +Psyker+ Model within 18" of the Activated +Psyker+ Model, and makes a Psychic test, modifying the result by its own <i class="fas fa-fw fa-hat-wizard"></i> Psychic Power trait. If the result of the opposing Psychic test is greater than the Activated Model's Psychic test, then the spell is blocked and does not take effect.
 
 ### Smite
 
 All +Psyker+ Models know the spell Smite:
 
-> **[6] Smite**
+> **[6+] Smite**
 > 
-> Select a target within 18". It suffers d6 Mortal Damage. Until the end of the Battle Round, increase the Difficulty of this spell by 1.
+> Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. For the remainder of the battle, increase the Difficulty of this spell for your army by 1.
 
 ## Shoot
 
@@ -371,9 +416,11 @@ If the target Model has an <i class="fas fa-fw fa-shield-plus"></i> Invulnerable
 
 Apply the resulting damage to the Model selected in the saving Roll step.
 
-If the model is now at zero (or less) Health, the model is now dead. Remove it from the battlefield.
+If the model is now at zero (or less) Health, the model is now destroyed. Remove it from the battlefield.
 
 If no remaining models in the targeted unit would be legal targets (due to being out of range or not visible), then the damage from any remaining attacks is lost, unless the attacking weapon has +[Blast]+ or +[Torrent]+. Remaining models that would no longer be legal targets on their own always have the Benefit of Cover.
+
+Whenever models are destroyed, remaining models in the unit may move up to 2" if required to maintain Unit Coherency.
 
 ## Weapon Keywords
 
