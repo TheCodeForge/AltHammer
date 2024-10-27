@@ -83,12 +83,15 @@
     <li class="breadcrumb-item active" aria-current="page">{{ u.name }}</li>
   </ol>
 </nav>
-
-<h1 class="small-caps">{{ u.name }}</h1>
-{% if u.subtitle %}
-<h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
-{% endif %}
-<p class="h6"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i> {{ u.ppm }}</span></p>
+<div class="row">
+  <div class="col">
+    <h1 class="small-caps">{{ u.name }}</h1>
+    {% if u.subtitle %}
+    <h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
+    {% endif %}
+    <p class="h6"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i> {{ u.ppm }}</span></p>
+  </div>
+</div>
 <div class="row">
   <div class="col col-12 col-xxl-8">
     <div class="row g-0 overflow-auto">
