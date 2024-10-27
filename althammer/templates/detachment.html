@@ -36,12 +36,14 @@
 
 ## Army Muster Restrictions
 
+<ul>
 {% if d.secondary_faction %}
-* Your units may not have a secondary faction keyword other than <span class="keyword">{{ d.secondary_faction }}</span>
+<li>Your units may not have a secondary faction keyword other than <span class="keyword">{{ d.secondary_faction }}</span></li>
 {% endif %}
 {% if d.banned_keywords %}
-* Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', '.join(d.banned_keywords) }}</span>
+<li>Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', '.join(d.banned_keywords) }}</span></li>
 {% endif %}
+</ul>
 
 {% endif %}
 
