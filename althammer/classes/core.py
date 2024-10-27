@@ -147,6 +147,17 @@ class Detachment(Base):
     def permalink(self):
         return f"/faction/{self.faction.id}/detachment/{self.id}"
 
+    @cache.memoize()
+    def is_legal(self, unit):
+
+        if self.__dict__.get('secondary_faction') and unit.__dict__.get('secondary_faction') and self.secondary_faction != unit.secondary_faction:
+            return False
+
+        if any([x in unit.keywords for x in self.__dict__.get('banned_keywords', [])])
+            return False
+
+        return True
+
     @property
     @cache.memoize()
     def unit_listing(self):
@@ -157,17 +168,15 @@ class Detachment(Base):
 
         for cat in unit_listing:
             for unit in unit_listing[cat]:
-                if self.__dict__.get('secondary_faction'):
-                    if unit.__dict__.get('secondary_faction') and unit.secondary_faction != self.secondary_faction:
-                        continue
-                if any([x in unit.keywords for x in self.__dict__.get('banned_keywords', [])]):
+                if not self.is_legal(unit):
                     continue
+                    
                 output[cat].append(unit)
 
         return output
 
     @property
-    @cache.memoize
+    @cache.memoize()
     def color(self):
         return self.__dict__.get('color', self.faction.color)
     
