@@ -95,7 +95,7 @@
 </div>
 <div class="row g-0">
   <div class="col col-12 col-xxl-8 px-2">
-    <div class="row overflow-auto">
+    <div class="row g-0 overflow-auto">
       <table class="table w-100 table-faction">
       <tr></tr>
         {% if u.profiles %}
@@ -146,7 +146,7 @@
       </table>
     </div>
 
-    <div class="row overflow-auto">
+    <div class="row g-0 overflow-auto">
       <table class="table w-100 table-faction">
         {% if u.ranged_weapons %}
         <thead>
@@ -218,7 +218,7 @@
       </table>
     </div>
 
-    <div class="row">
+    <div class="row g-0">
       <div class="px-2 col col-8 bg-secondary">
         <p>KEYWORDS: <span class="keyword">{{ ', '.join(u.keywords | sort) }}</span></p>
       </div>
