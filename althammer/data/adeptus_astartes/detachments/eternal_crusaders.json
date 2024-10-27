@@ -1,0 +1,54 @@
+{
+    "id": "eternal_crusaders",
+    "name": "Eternal Crusaders",
+    "secondary_faction":"Black Templars",
+    "banned_keywords": ["Psyker"],
+    "rules": [ 
+        {
+            "name": "Templar Vows",
+            "lore": "On the eve of battle, the warriors of a Black Templars crusade gather together to be led in prayer and contemplation by their Chaplains. In their righteous zeal, united in their hatred of the foe, they swear a mighty vow to uphold in the battle ahead.",
+            "text": "At the start of the first battle round, select one of the four Templar Vows belwo to be active for your +Adeptus Astartes+ units until the end of the battle.",
+            "options": [
+                {
+                    "name": "Suffer Not the Unclean to Live",
+                    "text": "Your melee weapons have +[Lethal Hits]+."
+                },
+                {
+                    "name": "Uphold the Honor of the Emperor",
+                    "text": "Your units have !Feel No Pain 6+! and a 5+ Leadership trait."
+                },
+                {
+                    "name": "Abhor the Witch",
+                    "text": "Your units have a 4+ Invulnerable Save against +[Psychic]+ attacks, and your melee weapons have ![Anti-Psyker 4+]!."
+                },
+                {
+                    "name": "Accept Any Challenge",
+                    "text": "Your melee weapons have +[Sustained Hits 1]+."
+                }
+            ]
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Fervent Acclamation",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "One +Character Leader+ model from your army",
+            "effect": "Select one Templar Vow that is not active for yoru army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
+        },
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "No Escape",
+            "cost": 1,
+            "when": "Immediately after an enemy unit is selected to Fall Back (excluding +Vehicle+ and +Monster+ units)",
+            "target": "The Active enemy unit",
+            "effect": "Roll d6. On a 4+, the enemy unit may not Fall Back, and must instead remain stationary. The opponent may use the Desperate Breakout strategem to move anyways; if they do, all models in the enemy unit will be considered to have \"moved through an enemy model\" for the purposes of that strategem."
+        }
+    ]
+}
