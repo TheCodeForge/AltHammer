@@ -6,5 +6,22 @@
         "Synapse": "Each time a +Tyranids+ unit from your army takes a Battle-Shock test, if it is within 6\" of a friendly +Synapse+ model (\"Synapse Range\"), take that test on 3D6 instead of 2D6.",
         "Shadow in the Warp": "Once per battle, at the start of the Battle-Round, if a model with this ability is on the Battlefield, you may force each enemy unit on the Battlefield to take a Battle-Shock test."
     },
+    "upgrades":[
+        {
+            "name":"Turbulance in the Warp",
+            "cost":10,
+            "text":"All models in both armies have -1 to Psychic tests."
+        },
+        {
+            "name":"",
+            "cost":20,
+            "text":"Your army's Synapse range is 7\" instead of 6\"."
+        },
+        {
+            "name":"Fear the Shadow",
+            "cost":40,
+            "text":"All enemy units have -1 to Battle-Shock tests taken due to the Shadow in the Warp ability. Enemy units with one or more +Psyker+ models have -2 instead."
+        }
+    ],
     "color":"630330"
 }
