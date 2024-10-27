@@ -117,7 +117,7 @@ $small-font-size: 12px;
 .nested-numbered-list h4:hover::after,
 .nested-numbered-list h5:hover::after,
 .nested-numbered-list h6:hover::after {
-    content: "click to copy";
+    content: " click to copy";
     font-size: $small-font-size;
     color: lightgray;
 }
