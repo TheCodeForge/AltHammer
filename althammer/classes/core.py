@@ -52,36 +52,21 @@ class Unit(Base):
     @cache.memoize()
     def max_models(self):
 
-        try:
-            if self.__dict__.get('models_max'):
-                max_unit_size= self.models_max
-            elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
-                max_unit_size= 1
+        if any([x in self.keywords_all for x in ["Character","Monster","Vehicle","Epic Hero"]]):
+            max_unit_size= 1
+        elif self.__dict__.get('models_max'):
+            max_unit_size= self.models_max
 
-            elif self.profiles:
-                for p in self.profiles:
-                    if any([x in p.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
-                        max_unit_size=1
+        else:
+            max_unit_size = 100
 
-            else:
-                max_unit_size = 100
+        if "Battleline" in self.keywords_all:
+            return max_unit_size * 6
+        elif "Epic Hero" in self.keywords_all:
+            return max_unit_size
 
-            if "Battleline" in self.keywords:
-                return max_unit_size * 6
-            elif "Epic Hero" in self.keywords:
-                return max_unit_size
-
-            elif self.profiles:
-                for p in self.profiles:
-                    if any([x in p.keywords for x in ["Epic Hero"]]):
-                        return max_unit_size
-                return max_unit_size * 3
-
-            else:
-                return max_unit_size * 3
-
-        except Exception as e:
-            print(e)
+        else:
+            return max_unit_size * 3
 
     @property
     @cache.memoize()
