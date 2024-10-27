@@ -152,6 +152,25 @@ class Detachment(Base):
     def permalink(self):
         return f"/faction/{self.faction.id}/detachment/{self.id}"
 
+    @property
+    @cache.memoize()
+    def unit_listing(self):
+        #get faction unit listing and then filter by detachment rules
+        unit_listing = self.faction.unit_listing
+
+        output={x:[] for x in unit_listing}
+
+        for cat in unit_listing:
+            for unit in unit_listing[cat]:
+                if self.__dict__.get('secondary_faction'):
+                    if unit.__dict__.get('secondary_faction') and unit.secondary_faction != self.secondary_faction:
+                        continue
+                if any([x in unit.keywords for x in self.__dict__.get('banned_keywords', [])]):
+                    continue
+                output[cat].append(unit)
+
+        return output
+
 
 class Faction(Base):
 
@@ -235,7 +254,7 @@ class Faction(Base):
     
     @property
     @cache.memoize()
-    def units(self):
+    def unit_listing(self):
 
         output = {
             "Epic Hero": [],

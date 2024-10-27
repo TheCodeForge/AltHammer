@@ -41,61 +41,9 @@
 
 {% endfilter %}
 
-<p id="row_hide_container">
-  <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
-  <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
-</p>
-
-<table id="faction-units" class="table table-faction">
-  <tr></tr>
-  {% for role in f.units if f.units[role] %}
-  <thead>
-    <tr>
-      <th scope="col">{{ role }}</th>
-      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
-      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Number of models in army list"><i class="fas fa-fw fa-helmet-battle"></i></span></th>
-      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></th>
-    </tr>
-  </thead>
-  {% for unit in f.units[role] %}{% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
-  <tr id="unit_row_{{ unit.id }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
-    <td class="align-middle"><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
-    <td class="text-center align-middle">{{ unit.ppm }}</td>
-    <td class="text-center align-middle">
-      <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}" method="post" action="/armylist" class="my-0 mx-0">
-        <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
-        <input type="hidden" name="faction" value="{{ unit.faction.id }}">
-        <input type="hidden" name="unit_id" value="{{ unit.id }}">
-        <input id="qty_{{ unit.id }}" type="number" class="form-control list-qty mx-auto" min="0" data-min="{{ unit.min_models }}" max="{{ unit.max_models }}" data-max="{{ unit.max_models }}" data-unit-id="{{ unit.id }}" data-form="form_qty_{{ unit.faction.id }}_{{ unit.id }}" placeholder="{{ (unit.min_models|str) +' - '+ (unit.max_models|str) if unit.max_models>1 else 'Max 1'}}" value="{{ session.get('qty_'+unit.faction.id+'_'+unit.id,'') }}" name="qty">
-        <input id="ppm_{{ unit.id }}" type="hidden" class="form-control disabled" disabled value="{{ unit.ppm or '' }}">
-      </form>
-    </td>
-    <td class="text-center align-middle"><span id="total_{{ unit.id }}" class="total_{{ unit.id }}">{{ (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int)*unit.ppm }}</span><input type="hidden" id="row_total_{{ unit.id }}" class="row_totals" value="{{(session.get('qty_'+unit.faction.id+'_'+unit.id,0)|int)*unit.ppm}}"></td>
-  </tr>
-  {% endfor %}
-  {% else %}
-  
-  <thead>
-    <tr>
-      <td scope="col">None yet. Stay tuned!</td>
-      <td scope="col"></td>
-      <td scope="col"></td>
-      <td scope="col"></td>
-    </tr>
-  </thead>
-  {% endfor %}
-
-  <thead>
-    <tr>
-      <th>Total</th>
-      <th></th>
-      <th></th>
-      <th class="text-center"><span id="points-total">{{ ns.total }}</span></th>
-    </tr>
-  </thead>
-</table>
-
-</div>
+{% with f.unit_listing as unit_listing %}
+{% include "elements/unit_listing.html" %}
+{% endwith %}
 
 {% include "elements/faction_style.html" %}
 

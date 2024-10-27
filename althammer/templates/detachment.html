@@ -32,13 +32,16 @@
 
 # Detachment: {{ d.name }}
 
-{% if d.army_restrictions %}
+{% if d.secondary_faction or d.banned_keywords %}
 
-## Restrictions
+## Army Muster Restrictions
 
-{% for r in d['army_restrictions'] %}
-* {{ r }}
-{% endfor %}
+{% if d.secondary_faction %}
+* Your units' secondary faction keyword, if present, must be {{ d.secondary_faction }}
+{% endif %}
+{% if d.banned_keywords %}
+* Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', ' | join(d.banned_keywords) }}</span>
+{% endif %}
 
 {% endif %}
 
