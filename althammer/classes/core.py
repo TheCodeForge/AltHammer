@@ -303,3 +303,8 @@ class Faction(Base):
     def color(self):
         return self.__dict__.get("color", "000000")
     
+    @property
+    @cache.memoize()
+    def upgrades(self):
+        return [Base(x) for x in self.__dict__.get('upgrades', [])]
+    
