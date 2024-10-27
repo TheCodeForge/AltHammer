@@ -32,6 +32,8 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
 
     if detachment:
         d=f.detachment(detachment)
+        if not d.is_legal(u):
+            abort(404)
         color=d.color
     else:
         d=None

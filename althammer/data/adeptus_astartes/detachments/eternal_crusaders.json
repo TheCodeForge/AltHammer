@@ -1,6 +1,7 @@
 {
     "id": "eternal_crusaders",
     "name": "Eternal Crusaders",
+    "color": "363d42",
     "secondary_faction":"Black Templar",
     "banned_keywords": ["Psyker"],
     "rules": [ 
