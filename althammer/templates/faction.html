@@ -41,7 +41,7 @@
 
 {% endfilter %}
 
-{% with f.unit_listing as unit_listing %}
+{% with unit_listing = f.unit_listing %}
 {% include "elements/unit_listing.html" %}
 {% endwith %}
 

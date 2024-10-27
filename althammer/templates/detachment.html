@@ -105,7 +105,7 @@
 {% endfilter %}
 </div>
 
-{% with d.unit_listing as unit_listing %}
+{% with unit_listing = d.unit_listing %}
 {% include "elements/unit_listing.html" %}
 {% endwith %}
 
