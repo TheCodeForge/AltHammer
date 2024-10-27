@@ -1,7 +1,9 @@
-<p id="row_hide_container">
-  <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
-  <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
-</p>
+<div class="px-2 px-sm-0">
+  <p id="row_hide_container">
+    <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
+    <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
+  </p>  
+</div>
 
 {% set ns=namespace(total=0) %}
 
