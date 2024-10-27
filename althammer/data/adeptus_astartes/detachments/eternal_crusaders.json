@@ -1,7 +1,7 @@
 {
     "id": "eternal_crusaders",
     "name": "Eternal Crusaders",
-    "secondary_faction":"Black Templars",
+    "secondary_faction":"Black Templar",
     "banned_keywords": ["Psyker"],
     "rules": [ 
         {
