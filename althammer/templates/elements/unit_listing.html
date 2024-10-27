@@ -40,6 +40,37 @@
   </tr>
   {% endfor %}
   {% else %}
+
+  {% if f.upgrades %}
+  <thead>
+    <tr>
+      <th scope="col">Army Upgrades</th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Number of models in army list"><i class="fas fa-fw fa-helmet-battle"></i></span></th>
+      <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></th>
+    </tr>
+  </thead>
+  {% for upgrade in f.upgrades %}
+    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
+    <td class="align-middle">
+      <p><b>{{ upgrade.name }}</b></p>
+      <p>{{ upgrade.text }}</p>
+    </td>
+    <td class="text-center align-middle">{{ upgrade.cost }}</td>
+    <td class="text-center align-middle">
+      <form id="form_qty_{{ upgrade.faction.id }}_{{ upgrade.id }}" method="post" action="/armylist" class="my-0 mx-0">
+        <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+        <input type="hidden" name="faction" value="{{ upgrade.faction.id }}">
+        <input type="hidden" name="unit_id" value="{{ upgrade.id }}">
+        <input id="qty_{{ upgrade.id }}" type="number" class="form-control list-qty mx-auto" min="0" data-min="1" max="1" data-max="1" data-unit-id="{{ upgrade.name | snake }}" data-form="form_qty_{{ upgrade.faction.id }}_{{ upgrade.id }}" placeholder="Max 1" value="{{ session.get('qty_'+upgrade.faction.id+'_'+upgrade.id,'') }}" name="qty">
+        <input id="ppm_{{ upgrade.id }}" type="hidden" class="form-control disabled" disabled value="{{ upgrade.cost }}">
+      </form>
+    </td>
+    <td class="text-center align-middle"><span id="total_{{ upgrade.id }}" class="total_{{ upgrade.id }}">{{ (session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) | int)*upgrade.cost }}</span><input type="hidden" id="row_total_{{ upgrade.id }}" class="row_totals" value="{{(session.get('qty_'+upgrade.faction.id+'_'+upgrade.id,0)|int)*upgrade.cost}}"></td>
+  </tr>
+  {% endfor %}
+  {% endif %}
+
   
   <thead>
     <tr>
