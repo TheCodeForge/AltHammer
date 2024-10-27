@@ -27,8 +27,8 @@ app.config['FORCE_HTTPS']                   = bool(int(environ.get("FORCE_HTTPS"
 app.config['SESSION_COOKIE_SECURE']         = True
 
 #===STYLE===
-app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY", "$blue").lstrip().rstrip()
-app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "$gray-600").lstrip().rstrip()
+app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY", "0d6efd").lstrip().rstrip()
+app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "6c757d").lstrip().rstrip()
 
 
 @app.before_request
