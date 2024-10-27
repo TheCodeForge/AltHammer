@@ -36,6 +36,16 @@ class Unit(Base):
     @cache.memoize()
     def keywords(self):
         return self.__dict__.get("keywords", [])
+
+    @property
+    def keywords_all(self):
+        output = self.keywords
+        if self.profiles:
+            for profile in self.profiles:
+                output += profile.keywords
+
+        return output
+    
     
 
     @property
@@ -278,7 +288,7 @@ class Faction(Base):
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
                 for kind in output:
-                    if kind in u.keywords:
+                    if kind in u.keywords_all:
                         output[kind].append(u)
                         break
                 else:

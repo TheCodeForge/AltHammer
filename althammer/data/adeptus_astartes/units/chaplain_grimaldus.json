@@ -3,7 +3,7 @@
     "ppm": 130,
     "profiles":[
         {
-            "name": "Grimaldus",
+            "name": "Chaplain Grimaldus",
             "move":6,
             "tough": 4,
             "save": 3,
@@ -54,12 +54,9 @@
         "close_combat_weapon"
     ],
     "composition":[
-        "1 Roboute Guilliman"
+        "1 Chaplain Grimaldus",
+        "3 Cenobyte Servitors"
     ],
     "models_min":1,
-    "models_max":1,
-    "default_gear":[
-        "hand_of_dominion_ranged",
-        "emperors_sword"
-    ]
+    "models_max":1
 }
