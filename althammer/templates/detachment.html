@@ -5,110 +5,112 @@
 {% endblock %}
 
 {% block pagecontent %}
+<div class="px-2 px-sm-0">
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item"><a href="{{ f.permalink }}">{{ f.name }}</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{ d.name }}</li>
-  </ol>
-</nav>
-
-
-<h1 class="small-caps">{{ f.name }}</h1>
-
-<div class="nested-numbered-list">
-{% filter numbered_markdown %}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ f.permalink }}">{{ f.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ d.name }}</li>
+    </ol>
+  </nav>
 
 
-*{{f.lore}}*
+  <h1 class="small-caps">{{ f.name }}</h1>
 
-{% for rule in f.rules %}
-# {{ rule }}
-
-{{ f.rules[rule] }}
-
-{% endfor %}
-
-# Detachment: {{ d.name }}
-
-{% if d.secondary_faction or d.banned_keywords %}
-
-## Army Muster Restrictions
-
-<ul>
-{% if d.secondary_faction %}
-<li>Your units may not have a secondary faction keyword other than <span class="keyword">{{ d.secondary_faction }}</span></li>
-{% endif %}
-{% if d.banned_keywords %}
-<li>Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', '.join(d.banned_keywords) }}</span></li>
-{% endif %}
-</ul>
-
-{% endif %}
-
-{% for rule in d.rules %}
-## {{ rule['name'] }}
-
-*{{ rule['lore'] }}*
-
-{{ rule['text'] }}
-
-{% for option in rule['options'] %}
-### {{ option['name'] }}
-
-{% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
-
-{{ option['text'] }}
-
-{% endfor %}
-
-{% endfor %}
-
-{% if d.restrictions %}
-
-## Restrictions
-
-{% for r in d['restrictions'] %}
-* {{ r }}
-{% endfor %}
-
-{% endif %}
-
-## Strategems
-
-{% for strat in d.strategems %}
-### [{{ strat['cost'] }} CP] {{ strat['name'] }}
-
->**When:** {{ strat['when'] }}
->
->**Target:** {{ strat['target'] }}
->
->**Effect:** {{ strat['effect'] }}
-{% if strat.get('restrictions') %}
->
-> **Restrictions: * {{ strat['restrictions'] }}
-{% endif %}
-{% endfor %}
+  <div class="nested-numbered-list">
+  {% filter numbered_markdown %}
 
 
-{% if d.spells %}
+  *{{f.lore}}*
 
-## Spells
+  {% for rule in f.rules %}
+  # {{ rule }}
 
-### [6+] Smite
+  {{ f.rules[rule] }}
 
-> Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. For the remainder of the battle, increase the Difficulty of this spell for your army by 1.
+  {% endfor %}
 
-{% for spell in d.spells %}
-### [{{ spell['difficulty'] }}+] {{ spell['name'] }}
+  # Detachment: {{ d.name }}
 
->{{ spell['effect'] }}
+  {% if d.secondary_faction or d.banned_keywords %}
 
-{% endfor %}
-{% endif %}
+  ## Army Muster Restrictions
 
-{% endfilter %}
+  <ul>
+  {% if d.secondary_faction %}
+  <li>Your units may not have a secondary faction keyword other than <span class="keyword">{{ d.secondary_faction }}</span></li>
+  {% endif %}
+  {% if d.banned_keywords %}
+  <li>Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', '.join(d.banned_keywords) }}</span></li>
+  {% endif %}
+  </ul>
+
+  {% endif %}
+
+  {% for rule in d.rules %}
+  ## {{ rule['name'] }}
+
+  *{{ rule['lore'] }}*
+
+  {{ rule['text'] }}
+
+  {% for option in rule['options'] %}
+  ### {{ option['name'] }}
+
+  {% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
+
+  {{ option['text'] }}
+
+  {% endfor %}
+
+  {% endfor %}
+
+  {% if d.restrictions %}
+
+  ## Restrictions
+
+  {% for r in d['restrictions'] %}
+  * {{ r }}
+  {% endfor %}
+
+  {% endif %}
+
+  ## Strategems
+
+  {% for strat in d.strategems %}
+  ### [{{ strat['cost'] }} CP] {{ strat['name'] }}
+
+  >**When:** {{ strat['when'] }}
+  >
+  >**Target:** {{ strat['target'] }}
+  >
+  >**Effect:** {{ strat['effect'] }}
+  {% if strat.get('restrictions') %}
+  >
+  > **Restrictions: * {{ strat['restrictions'] }}
+  {% endif %}
+  {% endfor %}
+
+
+  {% if d.spells %}
+
+  ## Spells
+
+  ### [6+] Smite
+
+  > Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. For the remainder of the battle, increase the Difficulty of this spell for your army by 1.
+
+  {% for spell in d.spells %}
+  ### [{{ spell['difficulty'] }}+] {{ spell['name'] }}
+
+  >{{ spell['effect'] }}
+
+  {% endfor %}
+  {% endif %}
+
+  {% endfilter %}
+  </div>
 </div>
 
 {% with unit_listing = d.unit_listing %}
