@@ -77,6 +77,9 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item"><a href="{{ u.faction.permalink }}">{{ u.faction.name }}</a></li>
+    {% if d %}
+    <li class="breadcrumb-item"><a href="{{ d.permalink }}">{{ d.name }}</a></li>
+    {% endif %}
     <li class="breadcrumb-item active" aria-current="page">{{ u.name }}</li>
   </ol>
 </nav>
