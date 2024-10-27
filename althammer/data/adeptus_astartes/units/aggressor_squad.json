@@ -1,0 +1,37 @@
+{    
+    "name": "Aggressor Squad",
+    "ppm":40,
+    "move":5,
+    "tough": 6,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Gravis"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Close-Quarters Firepower",
+            "text":"Models in this unit making ranged attacks that target the closest eligible unit have the Armor Break trait of that attack improved by 1."
+        }
+    ],
+    "range_weapons": [
+        "flamestorm_gauntlets",
+    ],
+    "melee_weapons": [
+        "dual_power_fist"
+    ],
+    "composition":[
+        "1 Aggressor Sergeant",
+        "2-5 Aggressors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "flamestorm_gauntlets",
+        "dual_power_fist"
+    ]
+}
