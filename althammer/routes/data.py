@@ -33,5 +33,12 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
     if detachment:
         d=f.detachment(detachment)
         color=d.color
+    else:
+        d=None
 
-    return render_template("unit.html", f=f, u=u, color=color)
+    return render_template(
+        "unit.html", 
+        f=f, 
+        u=u, 
+        d=d, 
+        color=color)
