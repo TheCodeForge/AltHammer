@@ -9,12 +9,12 @@
         {
             "name":"Student of the Codex",
             "cost":10,
-            "text":"At the start of the battle, gain 1 CP"
+            "text":"At the start of the battle, gain 1 CP."
         },
         {
             "name":"The Emperor Protects",
             "cost":20,
-            "text":"Select a unit; it gains !Feel No Pain 6+!"
+            "text":"Select a unit; it gains !Feel No Pain 6+!."
         },
         {
             "name":"Sworn Fury",
