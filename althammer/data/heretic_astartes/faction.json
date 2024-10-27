@@ -5,5 +5,22 @@
     "rules": {
         "Dark Pacts": "Each time a +Heretic Astartes+ unit is selected to shoot or fight, it can make a Dark Pact. If it does, select one of the following abilities for that unit’s weapons to gain until the end of the phase:\n* +[Lethal Hits]+\n* +[Sustained Hits 1]+\n\nEach time a unit makes a Dark Pact, after it has resolved its attacks, it must take a leadership test; if that test is failed, that unit suffers D3 mortal damage."
     },
+    "upgrades":[
+        {
+            "name":"Student of Chaos",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"Corruption of the Dark Gods",
+            "cost":20,
+            "text":"Attacks made against your opponent's +Warlord+ (or its +Bodyguard+ unit) have +1 Strength"
+        },
+        {
+            "name":"Power of the Dark Gods",
+            "cost":40,
+            "text":"Whenever your +Warlord+ makes a Dark Pact, its weapons gain both +[Lethal Hits]+ and +[Sustained Hits 1]+ instead of just one."
+        }
+    ],
     "color":"620104"
 }   
