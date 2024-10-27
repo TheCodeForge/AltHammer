@@ -20,7 +20,8 @@
     ],
     "faction_rules": [
         "Oath of Moment"],
-    "unit_rules": [{
+    "unit_rules": [
+        {
             "name":"Rites of Battle",
             "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
         },
