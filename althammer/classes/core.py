@@ -306,5 +306,9 @@ class Faction(Base):
     @property
     @cache.memoize()
     def upgrades(self):
-        return [Base(x, faction=self, id='_'.join(x.name.split())) for x in self.__dict__.get('upgrades', [])]
+        print(f'gettin upgrades for {self}')
+        try:
+            return [Base(x, faction=self, id='_'.join(x.name.split())) for x in self.__dict__.get('upgrades', [])]
+        except Exception as e:
+            print(e)
     
