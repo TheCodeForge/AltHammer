@@ -5,40 +5,43 @@
 {% endblock %}
 
 {% block pagecontent %}
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{ f.name }}</li>
-  </ol>
-</nav>
+<div class="px-2 px-sm-0">
 
-<h1 class="small-caps">{{ f.name }}</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ f.name }}</li>
+    </ol>
+  </nav>
 
-<div class="nested-numbered-list">
+  <h1 class="small-caps">{{ f.name }}</h1>
 
-{% filter numbered_markdown %}
+  <div class="nested-numbered-list">
 
-*{{f.lore}}*
+  {% filter numbered_markdown %}
 
-{% for rule in f.rules %}
-# {{ rule }}
+  *{{f.lore}}*
 
-{{ f.rules[rule] }}
+  {% for rule in f.rules %}
+  # {{ rule }}
 
-{% endfor %}
+  {{ f.rules[rule] }}
 
-# Detachments
+  {% endfor %}
 
-<ul>
-{% for entry in f.detachments %}
-<li><a href="{{ entry.permalink }}">{{ entry.name }}</a></li>
-{% else %}
-* None yet. Stay tuned!
-{% endfor %} 
-</ul>
+  # Detachments
 
-{% endfilter %}
+  <ul>
+  {% for entry in f.detachments %}
+  <li><a href="{{ entry.permalink }}">{{ entry.name }}</a></li>
+  {% else %}
+  * None yet. Stay tuned!
+  {% endfor %} 
+  </ul>
 
+  {% endfilter %}
+
+  </div>
 </div>
 
 {% with unit_listing = f.unit_listing %}
