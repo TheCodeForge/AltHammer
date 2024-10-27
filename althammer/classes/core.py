@@ -166,6 +166,11 @@ class Detachment(Base):
 
         return output
 
+    @property
+    @cache.memoize
+    def color(self):
+        return self.__dict__.get('color', self.faction.color)
+    
 
 class Faction(Base):
 
