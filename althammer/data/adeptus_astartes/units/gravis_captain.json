@@ -1,5 +1,5 @@
 {    
-    "name": "Captain",
+    "name": "Gravis Captain",
     "ppm":80,
     "move":6,
     "tough": 4,
@@ -7,15 +7,16 @@
     "hp":5,
     "lead": 6,
     "oc": 1,
+    "invuln": 4,
     "keywords": [
         "Infantry",
         "Character",
         "Grenades",
-        "Primaris",
+        "Gravis",
         "Captain"
     ],
     "core_rules": [
-        "Leader [Primaris]"
+        "Leader [Gravis]"
     ],
     "faction_rules": [
         "Oath of Moment"],
@@ -24,14 +25,12 @@
             "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
         },
         {
-            "name":"Finest Hour",
-            "text":"This ability may be activated once per battle. Until the end of the phase, this model's melee weapons have +3 Attacks and +[Devastating Wounds]+."
+            "name":"Refuse to Yield",
+            "text":"Halve the Damage trait (rounded up) of attacks allocated to this model"
         }
     ],
     "range_weapons": [
-        "bolt_pistol",
-        "heavy_bolt_pistol",
-        "master_crafted_bolt_rifle"
+        "master_crafted_heavy_bolt_rifle"
     ],
     "melee_weapons": [
         "master_crafted_power_weapon"
@@ -40,8 +39,7 @@
         "1 Captain"
     ],
     "default_gear":[
-        "bolt_pistol",
-        "master_crafted_bolt_rifle",
+        "master_crafted_heavy_bolt_rifle",
         "master_crafted_power_weapon"
     ]
 }
