@@ -306,6 +306,6 @@ class Faction(Base):
     @property
     @cache.memoize()
     def upgrades(self):
-        return [Base(x, faction=self, id='_'.join(x['name'].split())) for x in self.__dict__.get('upgrades', [])]
+        return [Base(x, faction=self, id='_'.join(x['name'].lower().split())) for x in self.__dict__.get('upgrades', [])]
 
     
