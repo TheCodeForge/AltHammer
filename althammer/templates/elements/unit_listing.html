@@ -16,7 +16,8 @@
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></th>
     </tr>
   </thead>
-  {% for unit in unit_listing[role] %}{% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
+  {% for unit in unit_listing[role] %}
+  {% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
   <tr id="unit_row_{{ unit.id }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
     <td class="align-middle"><a href="{{ unit.permalink }}">{{ unit.display_name }}</a></td>
     <td class="text-center align-middle">{{ unit.ppm }}</td>
