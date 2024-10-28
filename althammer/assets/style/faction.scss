@@ -11,6 +11,10 @@ $faction: {faction};
   color: $faction;
 }
 
+.text-faction-dark {
+  color: shade-color($faction, 50%);
+}
+
 table.table-faction > thead,
 .bg-faction {
   background-color: $faction;
