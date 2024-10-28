@@ -21,5 +21,5 @@ table.table-faction > thead > tr > th {
 }
 
 table.table-faction > thead, table > tbody {
-  border-color: $faction;
+  border-color: $faction !important;
 }
