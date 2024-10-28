@@ -1,0 +1,25 @@
+$faction: {faction}
+
+#page-center h1,
+#page-center h2,
+#page-center h3,
+#page-center h4,
+#page-center h5,
+#page-center h6,
+#page-center a,
+.text-faction {
+  color: $faction;
+}
+
+table.table-faction > thead,
+.bg-faction {
+  background-color: $faction;
+}
+
+table.table-faction > thead > tr > th {
+  color:white;
+}
+
+table.table-faction > thead, table > tbody {
+  border-color: $faction;
+}

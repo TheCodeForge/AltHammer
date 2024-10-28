@@ -2,6 +2,7 @@
 
 {% block title %}
 <title>{{ f.name }} </title>
+<link id="mainstyle" href="/assets/style/faction.css?color={{ color }}" rel="stylesheet">
 {% endblock %}
 
 {% block pagecontent %}
@@ -46,10 +47,6 @@
 
 {% with unit_listing = f.unit_listing %}
 {% include "elements/unit_listing.html" %}
-{% endwith %}
-
-{% with color=f.color %}
-{% include "elements/faction_style.html" %}
 {% endwith %}
 
 {% endblock %}

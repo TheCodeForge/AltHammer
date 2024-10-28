@@ -25,26 +25,27 @@ def light_css(stylefile):
         scss=stylesheet.read()
         scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
         scss=scss.replace('{secondary}', app.config['COLOR_SECONDARY'])
+        scss=scss.replace('{faction}', request.args.get('color'))
 
         css=sass.compile(string=scss)
 
 
-    #pseudo rtlcss postprocessing
-    #==EXPERIMENTAL==
-    if request.args.get('rtl'):
+    # #pseudo rtlcss postprocessing
+    # #==EXPERIMENTAL==
+    # if request.args.get('rtl'):
 
-        cssutils.ser.prefs.resolveVariables=False
+    #     cssutils.ser.prefs.resolveVariables=False
 
-        sheet = cssutils.parseString(css)
+    #     sheet = cssutils.parseString(css)
 
-        for rule in sheet:
+    #     for rule in sheet:
 
-            if not isinstance(rule, cssutils.css.CSSStyleRule):
-                continue
+    #         if not isinstance(rule, cssutils.css.CSSStyleRule):
+    #             continue
 
-            rule.selectorText = rule.selectorText.replace("left","right").replace("Left", "Right").replace("LEFT","RIGHT")
+    #         rule.selectorText = rule.selectorText.replace("left","right").replace("Left", "Right").replace("LEFT","RIGHT")
 
-        css=sheet.cssText
+    #     css=sheet.cssText
 
     return Response(
         css,

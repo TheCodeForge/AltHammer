@@ -2,6 +2,7 @@
 
 {% block title %}
 <title>{{ u.display_name }}</title>
+<link id="mainstyle" href="/assets/style/faction.css?color={{ color }}" rel="stylesheet">
 {% endblock %}
 
 {% macro backside() %}
@@ -236,7 +237,5 @@
     {{ backside() }}
   </div>
 </div>
-
-{% include "elements/faction_style.html" %}
 
 {% endblock %}
