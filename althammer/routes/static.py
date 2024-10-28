@@ -25,7 +25,7 @@ def light_css(stylefile):
         scss=stylesheet.read()
         scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
         scss=scss.replace('{secondary}', app.config['COLOR_SECONDARY'])
-        scss=scss.replace('{faction}', request.args.get('color'))
+        scss=scss.replace('{faction}', request.args.get('color',''))
 
         css=sass.compile(string=scss)
 
