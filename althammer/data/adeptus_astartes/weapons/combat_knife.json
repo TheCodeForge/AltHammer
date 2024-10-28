@@ -1,0 +1,8 @@
+{
+    "name":"Combat Knife",
+    "atk":6,
+    "skl":2,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}

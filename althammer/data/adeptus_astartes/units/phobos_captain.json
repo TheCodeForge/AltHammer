@@ -1,0 +1,46 @@
+{    
+    "name": "Phobos Captain",
+    "ppm":70,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":5,
+    "lead": 6,
+    "oc": 1,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Gravis",
+        "Captain"
+    ],
+    "core_rules": [
+        "Leader [Gravis]"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Rites of Battle",
+            "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
+        },
+        {
+            "name":"Master of Deceit",
+            "text":"At the start of the battle, you may redeploy up to three +Adeptus Astartes+ +Phobos+ units, or move them into Reserves."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol"
+    ],
+    "melee_weapons": [
+        "combat_knife"
+    ],
+    "composition":[
+        "1 Phobos Captain"
+    ],
+    "default_gear":[
+        "bolt_pistol",
+        "combat_knife"
+    ]
+}
