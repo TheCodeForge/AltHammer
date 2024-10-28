@@ -1,5 +1,4 @@
 $faction: {faction};
-$faction-dark: shade-color($faction, 50%);
 
 #page-center h1,
 #page-center h2,
@@ -12,17 +11,9 @@ $faction-dark: shade-color($faction, 50%);
   color: $faction;
 }
 
-.text-faction-dark {
-  color: $faction-dark;
-}
-
 table.table-faction > thead,
 .bg-faction {
   background-color: $faction;
-}
-
-.bg-faction-dark {
-  background-color: $faction-dark;
 }
 
 table.table-faction > thead > tr > th {
