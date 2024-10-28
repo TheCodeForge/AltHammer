@@ -4,7 +4,7 @@ import jinja2
 from flask import *
 from werkzeug.utils import safe_join
 
-from althammer.__main__ import app
+from althammer.__main__ import app, cache
 
 @app.get('/')
 def home():
@@ -20,6 +20,7 @@ def rules_x(x):
         abort(404)
 
 @app.get("/assets/style/<stylefile>.css")
+@cache.memoize()
 def light_css(stylefile):
     with open(safe_join("althammer/assets/style/", stylefile)+'.scss') as stylesheet:
         scss=stylesheet.read()
