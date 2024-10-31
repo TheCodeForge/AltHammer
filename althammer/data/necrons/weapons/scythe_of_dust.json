@@ -1,0 +1,9 @@
+{
+    "name": "Scythe of Dust",
+    "keywords": ["Lethal Hits"],
+    "atk":12,
+    "skl":2,
+    "str":8,
+    "ap": 3,
+    "dmg":2
+}
