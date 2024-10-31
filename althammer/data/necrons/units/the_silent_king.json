@@ -1,0 +1,61 @@
+{    
+    "name": "The Silent King",
+    "ppm": 420,
+    "profiles":[
+        {
+            "name": "Szarekh",
+            "move": 7,
+            "tough": 10,
+            "save": 2,
+            "hp": 16,
+            "lead": 5,
+            "oc": 6,
+            "invuln": 4,
+            "keywords": ["Character", "Epic Hero"],
+            "default_gear":[
+                "sceptre_of_eternal_glory",
+                "staff_of_stars",
+                "scythe_of_dust"
+            ]
+        },
+        {
+            "name": "Triarchal Menhir",
+            "move": 7,
+            "tough": 10,
+            "save": 2,
+            "hp": 5,
+            "lead": 5,
+            "oc": 1,
+            "invuln": 4,
+            "default_gear": [
+                "annihilator_beam"
+            ]
+        }
+    ],
+    "keywords": [
+        "Vehicle",
+        "Fly"
+    ],
+    "core_rules": ["Entourage"],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [
+        {
+            "name":"The Silent King",
+            "text":"At the end of each Battle-Round, select a friendly Battle-Shocked +Necrons+ unit within 12\" of this unit's Szarekh model. That unit is no longer Battle-Shocked."
+        }
+    ],
+    "range_weapons": [
+        "annihilator_beam",
+        "sceptre_of_eternal_glory",
+        "staff_of_stars"
+    ],
+    "melee_weapons": [
+        "scythe_of_dust"
+    ],
+    "composition":[
+        "1 Szarekh",
+        "2 Triarchal Menhirs"
+    ],
+    "models_min": 1,
+    "models_max": 3
+}
