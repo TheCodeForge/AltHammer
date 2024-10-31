@@ -36,12 +36,20 @@
         "Vehicle",
         "Fly"
     ],
-    "core_rules": ["Entourage"],
+    "core_rules": ["Entourage", "Supreme Commander"],
     "faction_rules": ["Dark Pacts"],
     "unit_rules": [
         {
+            "name":"Voice of the Triarch",
+            "text":"At the start of each Battle-Round, select one of the following effects that apply to friendly +Necrons+ units within 6\" of this unit's Szarekh model:\n* Ranged attacks may reroll Hit rolls of 1 and Wound rolls of 1.\n* Charge rolls may be re-rolled.\n* Ignore any or all modifiers to the unit's traits (excluding modifiers to saving rolls)."
+        },
+        {
             "name":"The Silent King",
             "text":"At the end of each Battle-Round, select a friendly Battle-Shocked +Necrons+ unit within 12\" of this unit's Szarekh model. That unit is no longer Battle-Shocked."
+        },
+        {
+            "name":"Triarchal Menhirs",
+            "text":"If this unit's Szarekh model is destroyed, any remaining Triarchal Menhir models are also destroyed."
         }
     ],
     "range_weapons": [
