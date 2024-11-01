@@ -1,0 +1,36 @@
+{
+    "name": "Sons of Sanguinius",
+    "color": "9a1115",
+    "secondary_faction":"Blood Angels",
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "The Red Thirst",
+            "lore": "Though they strive to restrain it, the murderous ferocity of the Blood Angels simmers beneath the surface of their thoughts. In battle, this rage drives them towards the foe and lends great strength to their blows.",
+            "text": "Whenever a friendly +Adeptus Astartes+ makes a Charge move, all of its melee weapons gain +1 Attacks and +2 Strength until the end of its Activation."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Angel's Sacrifice",
+            "cost": 1,
+            "when": "Whenever one of your +Adeptus Astartes+ +Character+ units is destroyed",
+            "target": "The enemy unit that just destroyed your +Character+ unit.",
+            "effect": "For the rest of the battle, your units may re-roll their Hit roll against the target enemy unit."
+        },
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "Red Rampage",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "The target unit's melee weapons gain +[Lance]+ and +[Lethal Hits]+ until the end of its Activation."
+        }
+    ]
+}

@@ -200,8 +200,7 @@ class Faction(Base):
         for filename in files:
             with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
                 try:
-                    d=Detachment(json.load(unitfile))
-                    d.id=filename.split('.')[0]
+                    d=Detachment(json.load(unitfile), id=filename.split('.')[0])
                     d.faction=self
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
@@ -222,7 +221,8 @@ class Faction(Base):
         except FileNotFoundError:
             abort(404)
         
-        output = Detachment(data)
+        output = Detachment(data, id=id)
+
 
         output.faction=self
         return output
