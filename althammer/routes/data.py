@@ -19,7 +19,7 @@ def faction_faction_detachment_detachment(faction, detachment):
 
     d = f.detachment(detachment)
 
-    return render_template("detachment.html", f=f, d=d, color=d.color)
+    return render_template("detachment.html", f=f, d=d)
 
 @app.get("/faction/<faction>/unit/<unit>")
 @app.get("/faction/<faction>/detachment/<detachment>/unit/<unit>")
