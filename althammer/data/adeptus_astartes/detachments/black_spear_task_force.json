@@ -1,22 +1,44 @@
 {
     "name": "Black Spear Task Force",
     "color": "383e42",
-    "secondary_faction":"Dark Angels",
-    "banned_keywords": [],
-    "rules": [ 
+    "secondary_faction":"Deathwatch",
+    "banned_keywords": ["Jump Pack", "Mounted"],
+    "rules": [
         {
-            "name": "The Red Thirst",
-            "lore": "Though they strive to restrain it, the murderous ferocity of the Blood Angels simmers beneath the surface of their thoughts. In battle, this rage drives them towards the foe and lends great strength to their blows.",
-            "text": "Whenever a friendly +Adeptus Astartes+ is Battle-Shocked, the Objective Control trait of models in that unit is 1, instead of 0."
+            "name": "Mission Tactics",
+            "lore": "Thousands of years of collated strategic data and hard-won combat experience have provided the Deathwatch with the ultimate battlefield tactics to combat almost any foe.",
+            "text": "At the start of each Battle Round, select one of the following Mission Tactics to be active for your army until the end of the Battle Round.",
+            "options": [
+                {
+                    "name": "Furor Tactics",
+                    "lore": "When the enemy horde grows close, the Deathwatch will be tasked with the decimation of their core. ",
+                    "text": "Your units' weapons have +[Sustained Hits 1]+."
+                },
+                {
+                    "name": "Malleus Tactics",
+                    "lore": "Even the largest behemoth has a weak point, and the archives of the Deathwatch number them all.",
+                    "text": "Your units' weapons have +[Lethal Hits]+."
+                },
+                {
+                    "name": "Purgatus Tactics",
+                    "lore": "The Deathwatch focus their deadly ire upon the commanders of the enemy host, assassinating them one after another.",
+                    "text": "Your units' weapons have +[Precise]+."
+                }
+            ]
+        },
+        {
+            "name": "Kill Teams",
+            "lore": "When faced with an array of missions to complete and varying enemies to lay low, the Deathwatch are highly adept at forming effective kill teams that mesh starkly diverse armour and equipment.",
+            "text": "Attacks which target your +Kill Team+ units use the Toughness trait of the majority of models in the unit. If two or more Toughness traits are tied, use the better Toughness trait."
         }
     ],
     "strategems": [
         {
-            "name": "Unforgiven Fury",
+            "name": "Teleportarium",
             "cost": 1,
-            "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
-            "effect": "Weapons equipped by models in the unit gain +[Lethal Hits]+. Additionally, if any of your units are Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
+            "when": "At the end of a Battle Round",
+            "target": "Up to two +Kill Team+ units from your army, or one +Adeptus Astartes+ unit from your army.",
+            "effect": "Remove the selected units and place them in Reserves. They may be deployed during the next Battle Round."
         },
         {
             "name": "Armor of Contempt",
@@ -26,11 +48,11 @@
             "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
         },
         {
-            "name": "Grim Retribution",
+            "name": "Adoptive Tactics",
             "cost": 1,
-            "when": "After an enemy Unit has resolved a Shoot action",
-            "target": "A friendly +Adeptus Astartes+ unit in your army that had one or more of its models killed as a result of the attack.",
-            "effect": "Your targeted unit may Shoot at the enemy unit that just resolved its Shoot action."
+            "when": "At the start of a Battle Round",
+            "target": "Up to two +Kill Team+ units from your army, or one +Adeptus Astartes+ unit from your army.",
+            "effect": "Select a Mission Tactic. That Mission Tactic is active for the selected units until the end of the Battle Round, instead of the Mission tactic active for the rest of your army."
         }
     ]
 }
