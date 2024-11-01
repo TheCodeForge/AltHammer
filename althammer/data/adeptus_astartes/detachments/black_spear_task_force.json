@@ -1,6 +1,6 @@
 {
     "name": "Black Spear Task Force",
-    "color": "383e42",
+    "color": "383f42",
     "secondary_faction":"Deathwatch",
     "banned_keywords": ["Mounted"],
     "rules": [
