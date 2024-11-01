@@ -2,7 +2,7 @@
     "name": "Black Spear Task Force",
     "color": "383e42",
     "secondary_faction":"Deathwatch",
-    "banned_keywords": ["Jump Pack", "Mounted"],
+    "banned_keywords": ["Mounted"],
     "rules": [
         {
             "name": "Mission Tactics",
