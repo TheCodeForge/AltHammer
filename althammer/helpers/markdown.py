@@ -10,7 +10,7 @@ SERVER_NAME = environ.get("SERVER_NAME")
 
 class Keyword(SpanToken):
 
-    pattern = re.compile(r"\+((\[|\b).{3,25}?(\]|\b))\+")
+    pattern = re.compile(r"\+((\[|\b).{3,25}?(\]|\b|\"))\+")
     parse_inner = False
 
     def __init__(self, match_obj):
@@ -18,7 +18,7 @@ class Keyword(SpanToken):
 
 class KeywordAlt(SpanToken):
 
-    pattern = re.compile(r"!((\[|\b).{3,25}?(\]|\b|\+))!")
+    pattern = re.compile(r"!((\[|\b).{3,25}?(\]|\b|\+|\"))!")
     parse_inner = False
 
     def __init__(self, match_obj):
