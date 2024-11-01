@@ -14,7 +14,7 @@
         {
             "name":"Defensive Shield Matrix",
             "cost":20,
-            "text":"Each Battle Round, the first time a friendly +Necrons+ unit is attacked, it gains a 3+ Invulnerable Save trait against that attack."
+            "text":"Each Battle Round, the first time a friendly +Necrons+ unit is attacked with a ranged weapon, the unit being attacked gains a 3+ Invulnerable Save trait against all attacks from that weapon."
         },
         {
             "name":"Optimized Reanimation",
