@@ -20,13 +20,14 @@ def rules_x(x):
         abort(404)
 
 @app.get("/assets/style/<stylefile>.css")
+@app.get("/assets/style/<stylefile>/<color>.css")
 @cache.memoize()
-def light_css(stylefile):
+def light_css(stylefile, color=None):
     with open(safe_join("althammer/assets/style/", stylefile)+'.scss') as stylesheet:
         scss=stylesheet.read()
         scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
         scss=scss.replace('{secondary}', app.config['COLOR_SECONDARY'])
-        scss=scss.replace('{faction}', request.args.get('color',''))
+        scss=scss.replace('{faction}', color or request.args.get('color') or '')
 
         css=sass.compile(string=scss)
 
