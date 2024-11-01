@@ -1,0 +1,36 @@
+{
+    "name": "Unforgiven Task Force",
+    "color": "005221",
+    "secondary_faction":"Dark Angels",
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "The Red Thirst",
+            "lore": "Though they strive to restrain it, the murderous ferocity of the Blood Angels simmers beneath the surface of their thoughts. In battle, this rage drives them towards the foe and lends great strength to their blows.",
+            "text": "Whenever a friendly +Adeptus Astartes+ is Battle-Shocked, the Objective Control trait of models in that unit is 1, instead of 0."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Unforgiven Fury",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "Weapons equipped by models in the unit gain +[Lethal Hits]+. Additionally, if any of your units are Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
+        },
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "Grim Retribution",
+            "cost": 1,
+            "when": "After an enemy Unit has resolved a Shoot action",
+            "target": "A friendly +Adeptus Astartes+ unit in your army that had one or more of its models killed as a result of the attack.",
+            "effect": "Your targeted unit may Shoot at the enemy unit that just resolved its Shoot action."
+        }
+    ]
+}

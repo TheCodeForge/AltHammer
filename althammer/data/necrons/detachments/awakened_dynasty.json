@@ -1,5 +1,4 @@
 {
-    "id": "awakened_dynasty",
     "name": "Awakened Dynasty",
     "rules": [ 
         {
@@ -21,7 +20,7 @@
             "name": "Protocol of the Vengeful Stars",
             "cost": 1,
             "when": "After an enemy Unit has resolved a Shoot action",
-            "target": "A +Necrons+ unit in your army that had one or more of its models killed as a result of the attack.",
+            "target": "A friendly +Necrons+ unit in your army that had one or more of its models killed as a result of the attack.",
             "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
         },
         {
