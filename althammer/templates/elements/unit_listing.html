@@ -65,7 +65,7 @@
   </thead>
   {% for upgrade in f.upgrades %}
   {% set ns.total = ns.total + (session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) | int )*upgrade.cost %}
-    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
+    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
     <td class="align-middle">
       <p class="mb-0"><b>{{ upgrade.name }}</b></p>
       {{ upgrade.text | markdown | safe }}
