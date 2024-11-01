@@ -34,9 +34,10 @@
     ],
     "keywords": [
         "Vehicle",
-        "Fly"
+        "Fly",
+        "Supreme Commander"
     ],
-    "core_rules": ["Entourage", "Supreme Commander"],
+    "core_rules": ["Entourage"],
     "faction_rules": ["Dark Pacts"],
     "unit_rules": [
         {
