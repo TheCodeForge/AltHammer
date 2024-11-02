@@ -30,6 +30,6 @@
             "when": "Your unit's Activation",
             "target": "Your unit being Activated",
             "effect": "Until the end of the Battle Round, your unit may re-roll Wound rolls for attacks made against a +Monster+ or +Vehicle+."
-        },
+        }
     ]
 }
