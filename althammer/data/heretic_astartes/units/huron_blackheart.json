@@ -8,6 +8,7 @@
     "lead": 6,
     "oc": 1,
     "invuln":4,
+    "base":25,
     "secondary_faction":"Red Corsairs",
     "keywords": [
         "Infantry",

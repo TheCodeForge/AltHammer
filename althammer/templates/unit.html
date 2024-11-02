@@ -71,6 +71,27 @@
   </div>
 {% endmacro %}
 
+{% macro weapon_line %}
+<tr>
+  <td class="text-center align-middle">
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.__dict__.get('models_max', 1) }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+  </td>
+  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle">{{ weapon.rng }}"</td>
+  <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
+  <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
+  <td class="text-center align-middle">{{ weapon.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
+</tr>
+{% endmacro %}
+
 {% block pagecontent %}
 
 <div class="row g-0">
@@ -163,24 +184,7 @@
           </tr>
         </thead>
         {% for weapon in u.ranged_weapons %}
-        <tr>
-          <td class="text-center align-middle">
-            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
-              <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
-              <input type="hidden" name="faction" value="{{ u.faction.id }}">
-              <input type="hidden" name="unit_id" value="{{ u.id }}">
-              <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.__dict__.get('models_max', 1) }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
-            </form>
-          </td>
-          <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-          <td class="text-center align-middle">{{ weapon.rng }}"</td>
-          <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
-          <td class="text-center align-middle">{{ weapon.str }}</td>
-          <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
-          <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
-        </tr>
+        {{ weapon_line(weapon) }}
         {% endfor %}
 
         {% endif %}
@@ -197,24 +201,7 @@
           </tr>
         </thead>
         {% for weapon in u.melee_weapons %}
-        <tr>
-          <td class="text-center align-middle">
-            <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
-              <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
-              <input type="hidden" name="faction" value="{{ u.faction.id }}">
-              <input type="hidden" name="unit_id" value="{{ u.id }}">
-              <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
-              <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.__dict__.get('models_max', 1) }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
-            </form>
-          </td>
-          <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-          <td></td><!--td class="text-center">Melee</td-->
-          <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
-          <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
-          <td class="text-center align-middle">{{ weapon.str }}</td>
-          <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
-          <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
-        </tr>
+        {{ weapon_line(weapon) }}
         {% endfor %}
       </table>
     </div>
