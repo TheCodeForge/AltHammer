@@ -110,6 +110,9 @@ def keyword(x):
 @app.template_filter("hide_cat")
 def hide_cat(unit_listing, faction, role):
 
+    if not session.get('hide_rows'):
+        return False
+
     if role=="Upgrades":
         return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in faction.upgrades])
 
