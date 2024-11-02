@@ -108,6 +108,9 @@ def keyword(x):
     return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}" data-bs-custom-class="keyword-popover">{x}</span>'
 
 @app.template_filter("hide_cat")
-def hide_cat(unit_listing, role):
+def hide_cat(unit_listing, faction, role):
+
+    if role=="Army Upgrades":
+        return not any([session.get(f"qty_{unit.faction.id}_{upgrade.id}") for upgrade in faction.upgrades])
 
     return not any([session.get(f"qty_{unit.faction.id}_{unit.id}") for unit in unit_listing[role]])
