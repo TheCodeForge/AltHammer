@@ -38,7 +38,12 @@
     ],
     "range_weapons": [
         "boltgun",
-        "plasma_pistol"
+        "plasma_pistol",
+        "inferno_pistol",
+        "hand_flamer",
+        "bolt_pistol",
+        "combi_weapon",
+        "storm_bolter"
     ],
     "melee_weapons": [
         "astartes_chainsword",
@@ -56,5 +61,25 @@
         "bolt_pistol"
     ],
     "models_min":5,
-    "models_max":20
+    "models_max":20,
+    "replacement_gear":{
+        "The Sword Brother's Bolt Pistol, or his Boltgun": [
+          "astartes_chainsword",
+          "boltgun",
+          "bolt_pistol",
+          "combi_weapon",
+          "hand_flamer",
+          "inferno_pistol",
+          "power_fist",
+          "power_weapon",
+          "storm_bolter",
+          "thunder_hammer"
+        ],
+        "Any Initiate's Boltgun":[
+            "astartes_chainsword"
+        ],
+        "Any Neophyte's Boltgun":[
+            "astartes_shotgun"
+        ]
+    }
 }
