@@ -1,0 +1,43 @@
+{    
+    "name": "Cultist Mob",
+    "ppm":5,
+    "move":6,
+    "tough": 3,
+    "save": 6,
+    "hp":1,
+    "lead": 7,
+    "oc": 1,
+    "base":25,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Damned"
+    ],
+    "core_rules": ["Secure Objectives"],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [],
+    "range_weapons": [
+        "autopistol",
+        "bolt_pistol"
+    ],
+    "melee_weapons": [
+        "brutish_weapon"
+    ],
+    "wargear":[],
+    "composition":[
+        "1 Cultist Champion",
+        "9-19 Chaos Cultists"
+    ],
+    "models_min": 10,
+    "models_max": 20,
+    "default_gear":[
+        "autopistol",
+        "brutish_weapon"
+    ],
+    "replacement_gear":{
+        "Cultist Champion's Autopistol":[
+            "bolt_pistol"
+        ]
+    }
+}
