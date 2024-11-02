@@ -55,6 +55,14 @@
       {% endfor %}
       </ul>
     {% endif %}
+    {% if u.additional_gear %}
+    <p>Additionally:</p>
+      <ul>
+      {% for entry in u.additional_gear %}
+        <li>{{ entry }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
     {% if u.replacement_gear %}
     <p>The following substitutions may be made:</p>
       <ul>

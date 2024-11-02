@@ -1,0 +1,52 @@
+{    
+    "name": "Possessed",
+    "ppm":   25,
+    "move":  9,
+    "tough": 6,
+    "save":  3,
+    "hp":    3,
+    "lead":  6,
+    "oc":    1,
+    "invuln":5,
+    "base":  40,
+    "keywords": [
+        "Infantry", "Demon"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [{
+            "name":"Unholy Bloodshed",
+            "text":"Once per battle, when this unit makes a Dark Pact, its weapons also gain +[Devastating Wounds]+ until the end of the Activation."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": [
+        "hideous_mutations"
+    ],
+    "wargear": ["chaos_icon"],
+    "composition":[
+        "1 Possessed Champion",
+        "4-9 Possessed"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "hideous_mutations"
+    ],
+    "replacement_gear":{
+        "Havoc Champion's Havoc Autocannon":[
+            "flamer",
+            "heavy_bolt_rifle",
+            "heavy_bolter"
+        ],
+        "Havoc Champion's Close Combat Knives":[
+            "astartes_chainsword"
+        ],
+        "Any Havoc's Havoc Autocannon":[
+            "havoc_lascannon"
+        ]
+    },
+    "additional_gear":[
+        "1 model can be equipped with 1 Chaos Icon"
+    ]
+}
