@@ -41,8 +41,10 @@
         "plasma_pistol"
     ],
     "melee_weapons": [
-        "artificer_crozius",
-        "close_combat_weapon"
+        "astartes_chainsword",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
     ],
     "composition":[
         "1 Sword Brother",
