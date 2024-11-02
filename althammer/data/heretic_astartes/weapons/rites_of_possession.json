@@ -14,6 +14,7 @@
         {
             "name":"Focused",
             "keywords":["Anti-Psyker 2+", "Pistol","Precise", "Psychic", "Hazardous"],
+            "rng":18,
             "atk":2,
             "skl":3,
             "str":6,
