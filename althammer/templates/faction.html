@@ -21,15 +21,12 @@
 
   <div class="nested-numbered-list">
   {% filter numbered_markdown %}
-
-
   {% for rule in f.rules %}
   # {{ rule }}
 
   {{ f.rules[rule] }}
 
   {% endfor %}
-
   # Detachments
 
   <ul>
