@@ -15,7 +15,7 @@
         "Character",
         "Psyker"
     ],
-    "core_rules": ["Leader [Possessed]"],
+    "core_rules": ["Leader [Infantry]"],
     "faction_rules": ["Dark Pacts"],
     "unit_rules": [
         {
