@@ -145,6 +145,11 @@ class Weapon(Base):
     def __repr__(self):
         return f"<Weapon({self.faction.name} / {self.name})>"
 
+    @property
+    @cache.memoize()
+    def profiles(self):
+        return sorted([Weapon(x, faction=self.faction, is_profile=True) for x in self.__dict__.get('profiles', [])], key=lambda x: x.name)
+
 class Detachment(Base):
 
     def __repr__(self):
