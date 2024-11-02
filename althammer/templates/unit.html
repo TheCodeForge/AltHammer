@@ -71,7 +71,7 @@
   </div>
 {% endmacro %}
 
-{% macro weapon_line %}
+{% macro weapon_line(weapon) %}
 <tr>
   <td class="text-center align-middle">
     <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
