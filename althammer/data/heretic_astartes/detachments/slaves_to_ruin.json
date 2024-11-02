@@ -37,19 +37,19 @@
     ],
     "spells": [
         {
-            "name": "Veil of Time",
-            "difficulty": 7,
-            "effect": "Select one friendly unit with in 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
+            "name": "Infernal Gaze",
+            "difficulty": 8,
+            "effect": "Select an enemy unit within 18\". Roll 3d6. If the Psychic Test roll was an unmodified 10+, roll 6d6 instead. For each unmodified 4+, the selected enemy unit suffers 1 mortal damage."
         },
         {
-            "name": "Fury of the Ancients",
-            "difficulty": 7,
-            "effect": "Select one visible enemy Model within 18\". Draw a line between any part of this model's base and any part of the selected model's base (or hull). The selected model's unit, and every other enemy unit that this line passes over or through, suffers 1 Mortal Damage"
+            "name": "Pact of Flesh",
+            "difficulty": 6,
+            "effect": "Select a friendly +Heretic Astartes+ unit within 18\". It regains d3 Health, resurrecting destroyed models as needed."
         },
         {
-            "name": "Psychic Fortress",
-            "difficulty": 7,
-            "effect": "Until the end of the Battle Round, friendly units within 6\" have a 5++ Invulnerable Save."
+            "name": "Cursed Earth",
+            "difficulty": 6,
+            "effect": "Friendly +Heretic Astartes+ +Vehicle+ units within 6\" have a 4+ Invulnerable Save trait. Units that charge such +Vehicle+ units suffer d3 mortal damage."
         }
     ],
     "strategems": [
