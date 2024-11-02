@@ -86,7 +86,7 @@
     </form>
     {% endif %}
   </td>
-  <td class="align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="When attacking, select one of this weapon's profiles to use."><i class="fas fa-fw fa-option"></i></span>{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %} <span class="keyword">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="When attacking, select one of this weapon's profiles to use."><i class="fas fa-fw fa-option"></i></span> {{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
   <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
@@ -106,7 +106,7 @@
       <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.__dict__.get('models_max', 1) }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
     </form>
   </td>
-  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
   <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
