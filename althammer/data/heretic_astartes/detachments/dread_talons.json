@@ -1,0 +1,53 @@
+{
+    "name": "Dread Talons",
+    "secondary_faction":"Night Lords",
+    "color": "191970",
+    "rules": [ 
+        {
+            "name": "Terror Descends",
+            "lore": "Bedecked in the flayed skins and leering skulls of former victims, their armour flecked with blood and gore, these reavers descend in a howling gale of enraged screams and soul-piercing shrieks. To look upon their ghastly visages is to feel a terrible and paralysing fear.",
+            "text": "Enemy units below starting strength that are within 12\" of your units must always take a Battle-Shock test during the [Roll Battle-Shock](/rules/core_rules#roll_battle-shock) step. Additionally, enemy units within 12\" of your units have -1 to all Battle-Shock tests."
+        }
+    ],
+    "restrictions":[],
+    "spells": [
+        {
+            "name": "Eater of Dread",
+            "difficulty": 8,
+            "effect": "Roll d6, adding 1 to the result for each Battle-Shocked enemy unit on the battlefield. On a 5+, gain 1CP."
+        },
+        {
+            "name": "Night Shroud",
+            "difficulty": 7,
+            "effect": "Select a friendly +Heretic Astartes+ unit within 18\". Until the end of the Battle Round, it has +Stealth+."
+        },
+        {
+            "name": "Willbreak",
+            "difficulty": 8,
+            "effect": "Select a enemy unit within 18\". That unit must take a Battle-Shock test. If the unit is within Melee Distance, it must take a second Battle-Shock test."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Depthless Cruelty",
+            "cost": 1,
+            "when": "Your unit Activation",
+            "target": "Your unit being activated",
+            "effect": "Until the end of the Activation, attacks targeting units that are below half strength or Battle-Shocked have their Armor Break trait improved by 1."
+        },
+        {
+            "name": "Bloody Example",
+            "cost": 1,
+            "when": "After you destroy an enemy +Character+ unit",
+            "target": "Your Activated unit.",
+            "effect": "Enemy units within 12\" of, and visible to, your Activated unit must take a Battle-Shock test."
+        },
+        {
+            "name": "Relentless Terror",
+            "cost": 1,
+            "when": "Your unit Activation",
+            "target": "Your unit being activated",
+            "effect": "Until the end of the Activation, you may re-roll Advance rolls, and your unit is eligible to Charge after making a Fall Back move."
+        }
+    ]
+}
