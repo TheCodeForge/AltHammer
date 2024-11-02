@@ -85,7 +85,7 @@ class NumberedRenderer(CustomRenderer):
 
     def render_h_block(self, token):
 
-        header = token.lines[0]
+        header = token.lines[0].lstrip()
 
         print(f"rendering h block `{header.rstrip()}`")
 
