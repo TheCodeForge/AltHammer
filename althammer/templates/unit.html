@@ -47,7 +47,8 @@
       {% endfor %}
       </ul>
     {% endfor %}
-    {% else %}
+    {% endif %}
+    {% if u.default_gear %}
     <p>Every model is equipped with:</p>
       <ul>
       {% for weapon in u.default_weapons %}
