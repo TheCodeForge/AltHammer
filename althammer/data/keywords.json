@@ -12,8 +12,10 @@
     "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
     
     "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
+
+    "Ignores Cover": "Terrain does not grant the Benefit of Cover against attacks made with this weapon. (Benefit of Cover may still be obtained from other sources.)",
     
-    "Ignores Cover": "Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.",
+    "Indirect Fire": "Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.",
     
     "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" take d3 Mortal Damage; all units within 6\" take d6 Mortal Damage instead.",
     
