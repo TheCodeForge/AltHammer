@@ -10,7 +10,7 @@
     "invuln":5,
     "base":  40,
     "keywords": [
-        "Infantry", "Demon"
+        "Infantry", "Demon", "Possessed"
     ],
     "core_rules": [],
     "faction_rules": ["Dark Pacts"],
