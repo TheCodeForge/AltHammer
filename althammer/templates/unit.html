@@ -90,7 +90,7 @@
     <h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
     {% endif %}
 
-    <p class="h6"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i> {{ u.ppm }}</span>{% if u.base %}<i class="fas fa-fw fa-arrow-up-right-and-arrow-down-left-from-center ms-3"></i> {{ u.base }}{% endif %}</p>
+    <p class="h6"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i> {{ u.ppm }}</span>{% if u.base %}<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Model base size (mm)"><i class="fas fa-fw fa-arrow-up-right-and-arrow-down-left-from-center ms-3"></i> {{ u.base }}</span>{% endif %}</p>
 
   </div>
 </div>
@@ -102,7 +102,7 @@
         {% if u.profiles %}
         <thead>
           <tr>
-            <th scope="col" class="align-top">{{ u.profiles[0].name }} {% if u.profiles[0].keywords %}<span class="keyword">({{ ', '.join(u.profiles[0].keywords) }})</span>{% endif %}</th>
+            <th scope="col" class="align-top">{{ u.profiles[0].name }} {% if u.profiles[0].base %}<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Model base size (mm)">(<i class="fas fa-fw fa-arrow-up-right-and-arrow-down-left-from-center ms-3"></i> {{ u.profiles[0].base }})</span>{% endif %}{% if u.profiles[0].keywords %}<span class="keyword">({{ ', '.join(u.profiles[0].keywords) }})</span>{% endif %}</th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ u.profiles[0].move }}"</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ u.profiles[0].tough }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ u.profiles[0].save }}+</span>{% if u.profiles[0].invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ u.profiles[0].invuln }}+</span>{% endif %}</th>
@@ -117,7 +117,7 @@
         {% for profile in u.profiles[1:] %}
         <tbody>
           <tr>
-            <td scope="col" class="align-top">{{ profile.name }} {% if profile.keywords %}<span class="keyword">({{ ', '.join(profile.keywords) }})</span>{% endif %}</td>
+            <td scope="col" class="align-top">{{ profile.name }} {% if profile.base %}<span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Model base size (mm)">(<i class="fas fa-fw fa-arrow-up-right-and-arrow-down-left-from-center ms-3"></i> {{ profile.base }})</span>{% endif %}{% if profile.keywords %}<span class="keyword">({{ ', '.join(profile.keywords) }})</span>{% endif %}</td>
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Movement"><i class="fas fa-fw fa-person-running"></i> {{ profile.move }}"</span></td>
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Toughness"><i class="fas fa-fw fa-block-brick"></i> {{ profile.tough }}</span></td>
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Save"><i class="fas fa-fw fa-shield"></i> {{ profile.save }}+</span>{% if profile.invuln %}<br><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Invulnerable Save"><i class="fas fa-shield-plus"></i> {{ profile.invuln }}+</span>{% endif %}</td>
