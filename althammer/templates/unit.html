@@ -72,6 +72,30 @@
 {% endmacro %}
 
 {% macro weapon_line(weapon) %}
+{% if weapon.profiles %}
+{% for profile in weapon.profiles %}
+<tr>
+  <td class="text-center align-middle">
+    {% if not loop.index0 %}
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.__dict__.get('models_max', 1) }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+    {% endif %}
+  </td>
+  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %} <span class="keyword">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle">{{ profile.rng }}"</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
+  <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
+  <td class="text-center align-middle">{{ profile.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
+</tr>
+{% endfor %}
+{% else %}
 <tr>
   <td class="text-center align-middle">
     <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="my-0 mx-0">
@@ -90,6 +114,7 @@
   <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
 </tr>
+{% endif %}
 {% endmacro %}
 
 {% block pagecontent %}
