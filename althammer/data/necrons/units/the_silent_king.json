@@ -11,6 +11,7 @@
             "lead": 5,
             "oc": 6,
             "invuln": 4,
+            "base":100,
             "keywords": ["Character", "Epic Hero"],
             "default_gear":[
                 "sceptre_of_eternal_glory",
@@ -27,6 +28,7 @@
             "lead": 5,
             "oc": 1,
             "invuln": 4,
+            "base":50,
             "default_gear": [
                 "annihilator_beam"
             ]
