@@ -1,0 +1,10 @@
+{
+    "name":"Twin Ironhail Autocannon",
+    "keywords":["Twin-Linked"],
+    "rng":48,
+    "atk":3,
+    "skl":3,
+    "str":9,
+    "ap": 1,
+    "dmg":3
+}

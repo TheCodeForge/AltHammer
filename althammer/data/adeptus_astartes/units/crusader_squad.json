@@ -1,5 +1,6 @@
 {    
     "name": "Crusader Squad",
+    "secondary_faction":"Black Templar",
     "ppm": 16,
     "profiles":[
         {
@@ -28,7 +29,6 @@
         "Battleline",
         "Grenades"
     ],
-    "secondary_faction":"Black Templar",
     "core_rules": [],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
