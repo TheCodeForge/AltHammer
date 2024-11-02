@@ -1,6 +1,6 @@
 {
     "name": "Sons of Russ",
-    "color": "717378",
+    "color": "848f93",
     "secondary_faction":"Space Wolves",
     "banned_keywords": ["Jump Pack", "Apothecary"],
     "rules": [
