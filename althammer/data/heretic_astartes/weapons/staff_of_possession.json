@@ -1,0 +1,9 @@
+{
+    "name":"Staff of Possession",
+    "keywords":["Anti-Psyker 2+", "Psychic"],
+    "atk":4,
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":"d3"
+}

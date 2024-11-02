@@ -1,0 +1,24 @@
+{
+    "name":"Rites of Possession",
+    "profiles":[
+        {
+            "name":"Standard",
+            "keywords":["Anti-Psyker 2+", "Pistol","Precise", "Psychic"],
+            "rng":18,
+            "atk":2,
+            "skl":3,
+            "str":4,
+            "ap": 3,
+            "dmg":2
+        },
+        {
+            "name":"Focused",
+            "keywords":["Anti-Psyker 2+", "Pistol","Precise", "Psychic", "Hazardous"],
+            "atk":2,
+            "skl":3,
+            "str":6,
+            "ap": 3,
+            "dmg":3
+        }
+    ]
+}
