@@ -26,7 +26,7 @@ class KeywordAlt(SpanToken):
 
 class HBlock(BlockToken):
 
-    start_pattern = re.compile(r"^#{1,6} ")
+    start_pattern = re.compile(r"^\s*#{1,6} ")
 
     def __init__(self, lines):
         self.lines = lines
@@ -42,7 +42,7 @@ class HBlock(BlockToken):
         #Reads lines until encountering an equal or higher heading
         child_lines=[next(lines)]
         hash_count = str(len(child_lines[0].split()[0]))
-        end_pattern = re.compile(r"^#{1,"+hash_count+r"} ")
+        end_pattern = re.compile(r"^\s*#{1,"+hash_count+r"} ")
 
         for line in lines:
             if re.match(end_pattern, line):
