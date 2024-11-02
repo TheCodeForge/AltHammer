@@ -228,6 +228,7 @@ $('.wep-qty').change(function(){
 })
 
 $('#rows_hide_button').click(function(){
+  //hide rows
   $('.list-qty').each(function(){
     if ($(this).val()==''){
       $('#unit_row_'+$(this).data('unit-id')).addClass('d-none');
@@ -236,10 +237,17 @@ $('#rows_hide_button').click(function(){
   $('#rows_hide_button').addClass('d-none');
   $('#rows_show_button').removeClass('d-none');
   post('/hide_rows/1', callback=function(){})
+  //hide headers if there are no rows shown
+  $('.unit-cat').each(function(){
+    if ($('.unit_cat_'+$(this).data('cat')).not('.d-none').length==0){
+      $(this).addClass('d-none');
+    }
+  })
 })
 
 $('#rows_show_button').click(function(){
   $('.unit-row').removeClass('d-none')
+  $('.unit-cat').removeClass('d-none')
   $('#rows_show_button').addClass('d-none');
   $('#rows_hide_button').removeClass('d-none');
   post('/hide_rows/0', callback=function(){})
