@@ -6,7 +6,7 @@
     "rules": [ 
         {
             "name": "Shield of the Imperium",
-            "text": "All ranged weapons equipped by models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, it also gains +1 to the Wound Roll."
+            "text": "All ranged weapons equipped by models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, the weapon also gains +1 to the Wound Roll."
         }
     ],
     "strategems": [
