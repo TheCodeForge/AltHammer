@@ -1,12 +1,27 @@
 {
-    "name":"Ballistus Frag Missile",
-    "keywords":[
-        "Blast"
-    ],
-    "rng":48,
-    "atk":"2d6",
-    "skl":3,
-    "str":5,
-    "ap": 0,
-    "dmg":1
+    "name":"Ballistus Missile Launcher",
+    "profiles":[
+        {
+            "name": "Frag",
+            "keywords":[
+                "Blast"
+            ],
+            "rng":48,
+            "atk":"2d6",
+            "skl":3,
+            "str":5,
+            "ap": 0,
+            "dmg":1
+        },
+        {
+            "name": "Krak",
+            "keywords":[],
+            "rng":48,
+            "atk":2,
+            "skl":3,
+            "str":10,
+            "ap": 2,
+            "dmg":"d6"
+        }
+    ]
 }
