@@ -47,6 +47,7 @@
         }
     ],
     "range_weapons": [
+        "boltgun",
         "plasma_pistol"
     ],
     "melee_weapons": [
