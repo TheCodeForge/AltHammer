@@ -1,6 +1,6 @@
 {    
     "name": "Sanguinary Guard",
-    "secondary_faction":"Blood Angels"
+    "secondary_faction":"Blood Angels",
     "ppm":50,
     "move":12,
     "tough": 4,
@@ -33,11 +33,10 @@
     ],
     "melee_weapons": [],
     "composition":[
-        "1 Heavy Intercessor Sergeant",
-        "4-9 Heavy Intercessors"
+        "3-6 Sanguinary Guard"
     ],
-    "models_min": 5,
-    "models_max": 10,
+    "models_min": 3,
+    "models_max": 6,
     "default_gear":[
         "angelus_boltgun",
         "encarmine_blade"
