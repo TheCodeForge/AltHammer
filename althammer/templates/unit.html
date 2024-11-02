@@ -18,7 +18,7 @@
     <p><span class="fw-bold text-faction">ABILITIES</span></p>
     <ul>
     {% for rule in u.unit_rules %}
-      <li><span class="fw-bold">{{ rule['name'] }}</span>: {{ rule['text'] | markdown | safe }}</li>
+      <li><span class="fw-bold">{{ rule['name'] }}:</span> {{ rule['text'] | markdown | safe }}</li>
     {% endfor %}
     </ul>
     {% endif %}
@@ -27,7 +27,7 @@
     <p><span class="fw-bold text-faction">GEAR ABILITIES</span></p>
     <ul>
     {% for weapon in u.weapons if weapon.ability %}
-      <li><span class="fw-bold">{{ weapon.name }}</span>:{{ weapon.ability | markdown | safe }}</li>
+      <li><span class="fw-bold">{{ weapon.name }}:</span> {{ weapon.ability | markdown | safe }}</li>
     {% endfor %}
     </ul>
     {% endif %}
