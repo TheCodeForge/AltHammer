@@ -1,7 +1,7 @@
 {
     "id": "tyranids",
     "name": "Tyranids",
-    "keywords": "Hive Devourer",
+    "keywords": ["Hive Devourer"],
     "lore": "Some Tyranids serve as synaptic conduits or nodal relays through which a portion of the Hive Mind’s iron will flows, overriding the natural instincts of the swarm to direct the teeming warrior-beasts to function as a single, gestalt organism on the battlefield.",
     "rules": {
         "Synapse": "Each time a +Tyranids+ unit from your army takes a Battle-Shock test, if it is within 6\" of a friendly +Synapse+ model (\"Synapse Range\"), take that test on 3D6 instead of 2D6.",
