@@ -1,0 +1,9 @@
+{
+    "name":"Encarmine Spear",
+    "keywords": ["Lance"],
+    "atk":3,
+    "skl":3,
+    "str":6,
+    "ap": 2,
+    "dmg":2
+}
