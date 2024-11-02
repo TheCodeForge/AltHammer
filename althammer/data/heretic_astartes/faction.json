@@ -15,7 +15,7 @@
         {
             "name":"Corruption of the Dark Gods",
             "cost":20,
-            "text":"Attacks made against your opponent's +Warlord+ (or its +Bodyguard+ unit) have +1 Strength"
+            "text":"Attacks made against your opponent's +Warlord+ (or its attached +Bodyguard+ models) have +1 Strength"
         },
         {
             "name":"Power of the Dark Gods",
