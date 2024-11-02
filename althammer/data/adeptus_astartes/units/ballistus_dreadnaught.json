@@ -23,7 +23,7 @@
         }
     ],
     "range_weapons": [
-        "ballistus_frag_missile",
+        "ballistus_missile_launcher",
         "twin_storm_bolter",
         "ballistus_lascannon"
     ],
@@ -34,7 +34,7 @@
         "1 Ballistus Dreadnaught"
     ],
     "default_gear":[
-        "ballistus_frag_missile",
+        "ballistus_missile_launcher",
         "twin_storm_bolter",
         "ballistus_lascannon",
         "armored_feet"
