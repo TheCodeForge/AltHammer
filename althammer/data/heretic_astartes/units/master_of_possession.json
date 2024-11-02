@@ -16,7 +16,8 @@
     ],
     "core_rules": ["Leader [Infantry]"],
     "faction_rules": ["Dark Pacts"],
-    "unit_rules": [{
+    "unit_rules": [
+        {
             "name":"Daemonkin",
             "text":"While this model is leading a unit, the unit has +1 to Advance and Charge rolls."
         },
