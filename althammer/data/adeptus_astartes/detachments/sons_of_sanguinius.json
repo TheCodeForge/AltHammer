@@ -12,18 +12,18 @@
     ],
     "strategems": [
         {
-            "name": "Angel's Sacrifice",
-            "cost": 1,
-            "when": "Whenever one of your +Adeptus Astartes+ +Character+ units is destroyed",
-            "target": "The enemy unit that just destroyed your +Character+ unit.",
-            "effect": "For the rest of the battle, your units may re-roll their Hit roll against the target enemy unit."
-        },
-        {
             "name": "Armor of Contempt",
             "cost": 1,
             "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
             "target": "Your unit being attacked",
             "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "Angel's Sacrifice",
+            "cost": 1,
+            "when": "Whenever one of your +Adeptus Astartes+ +Character+ units is destroyed",
+            "target": "The enemy unit that just destroyed your +Character+ unit.",
+            "effect": "For the rest of the battle, your units may re-roll their Hit roll against the target enemy unit."
         },
         {
             "name": "Red Rampage",

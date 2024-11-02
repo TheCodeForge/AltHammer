@@ -30,18 +30,18 @@
     ],
     "strategems": [
         {
-            "name": "Fervent Acclamation",
-            "cost": 1,
-            "when": "At the start of a Battle Round",
-            "target": "One +Character Leader+ model from your army",
-            "effect": "Select one Templar Vow that is not active for yoru army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
-        },
-        {
             "name": "Armor of Contempt",
             "cost": 1,
             "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
             "target": "Your unit being attacked",
             "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "Fervent Acclamation",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "One +Character Leader+ model from your army",
+            "effect": "Select one Templar Vow that is not active for yoru army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
         },
         {
             "name": "No Escape",

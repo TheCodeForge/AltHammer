@@ -1,0 +1,61 @@
+{
+    "name": "Sons of Russ",
+    "color": "717378",
+    "secondary_faction":"Space Wolves",
+    "banned_keywords": ["Jump Pack", "Apothecary"],
+    "rules": [
+        {
+            "name": "Deeds Worthy of Saga",
+            "lore": "Legendary deeds in the midst of battle are an intoxicating mead. Those who witness them are inspired to greater feats of daring and valour, determined to prove themselves worthy of their champions.",
+            "text": "At the end of each Battle Round, select a Saga listed below. If the Saga was completed by by your army during that turn, gain the associated reward until the end of the battle.\n\nAt the start of the battle, you may select one Saga (excluding the Saga of Majesty) to be completed and gain its reward immediately.\n\nEach Saga may only be completed once per battle.",
+            "options": [
+                {
+                    "name": "Saga of the Warrior",
+                    "text": "*Completion Requirement:* One of your +Adeptus Astartes+ +Character+ models destroyed an enemy +Character+ model.\n\n*Reward*: All melee weapons equipped by your +Adeptus Astartes+ models have +[Sustained Hits 1]+."
+                },
+                {
+                    "name": "Saga of the Bear",
+                    "text": "*Completion Requirement:* One of your +Adeptus Astartes+ +Character+ models was reduced to below half its starting Health, but was not destroyed.\n\n*Reward*: Your +Adeptus Astartes+ units have !Feel No Pain 6+!."
+                },
+                {
+                    "name": "Saga of the Beastslayer",
+                    "text": "*Completion Requirement:* One of your +Adeptus Astartes+ +Character+ models destroyed an enemy +Monster+ or +Vehicle+ model.\n\n*Reward*: All melee weapons equipped by your +Adeptus Astartes+ models have +[Lethal Hits]+."
+                },
+                {
+                    "name": "Saga of Majesty",
+                    "text": "*Completion Requirement:* One or more objective markers in your opponent's deployment zone was under your control during Scoring.\n\n*Reward*: Improve the Objective Control trait of all +Adeptus Astartes+ models in your army by 1."
+                }
+            ]
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "Go for the Throat",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "Until the end of the Activation, your unit's melee weapons have their Armor Break trait improved by 1. If the Saga of the Beastslayer has been completed by your army, such weapons also gain +[Lance]+."
+        },
+        {
+            "name": "Relentless Assault",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "Until the end of the Activation, your unit is eligible Shoot even if it performs a Fall Back or Advance movement. If the Saga of the Warrior has been completed by your army, your unit is also eligible to Charge."
+        },
+        {
+            "name": "Runic Wards",
+            "cost": 1,
+            "when": "Your opponent's Activation, after an enemy unit declares its Shooting or Fight targets",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has !Feel No Pain 5+! against Mortal Damage and +Psychic+ attacks. If Saga of the Bear has been completed, your unit has !Feel No Pain 4+! against Mortal Damage and +Psychic+ attacks instead."
+        }
+    ]
+}
