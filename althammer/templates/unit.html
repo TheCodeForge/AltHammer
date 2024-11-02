@@ -39,7 +39,7 @@
       {% endfor %}
     </ul>
     {% if u.profiles %}
-    {% for profile in u.profiles %}
+    {% for profile in u.profiles if profile.default_gear %}
     <p>Each {{ profile.name }} is equipped with:</p>
       <ul>
       {% for weapon in profile.default_weapons %}
