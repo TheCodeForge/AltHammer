@@ -19,9 +19,7 @@
 
   <h1 class="small-caps">{{ f.name }}</h1>
 
-  <div class="nested-numbered-list">
   {% filter numbered_markdown %}
-
 
   {% if f.lore %}*{{f.lore}}*{% endif %}
 
@@ -111,7 +109,7 @@
   {% endif %}
 
   {% endfilter %}
-  </div>
+  
 </div>
 
 {% with unit_listing = d.unit_listing %}

@@ -1,11 +1,9 @@
 {% extends "_core_centered.html" %}
 
 {% block pagecontent %}
-{% filter numbered_markdown %}
 
 <h1>Strategems</h1>
-
-<div class="nested-numbered-list">
+{% filter numbered_markdown %}
 
 All factions and Detachments may use the following Strategems. The Command Point cost of a Strategem is indicated in brackets next to its name.
 
@@ -68,8 +66,6 @@ All factions and Detachments may use the following Strategems. The Command Point
 > Target: A friendly +Infantry+ Unit that was declared as the target of that Shoot action.
 >
 > Effect: All Models in that Unit have a 6+ Invulnerable Save and the Benefit of Cover. This lasts until the end of the Battle Round, or until the Unit performs a Move or Charge action, whichever occurs first.
-
-</div>
 
 {% endfilter %}
 {% endblock %}

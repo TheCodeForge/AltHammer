@@ -1,11 +1,12 @@
 {% extends "_core_centered.html" %}
 
 {% block pagecontent %}
+
+<h1>Weapon Reference</h1>
+
 {% filter markdown %}
 
 # Weapon Reference
-
-<div class="nested-numbered-list">
 
 !Anti-Keyword X+! - When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of "X" or higher is considered a Critical Wound, and is successful.
 
@@ -36,8 +37,6 @@
 +Torrent+ - Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.
 
 +Twin-Linked+ - Failed Wound Rolls may be re-rolled.
-
-</div>
 
 {% endfilter %}
 {% endblock %}
