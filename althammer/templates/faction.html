@@ -29,13 +29,11 @@
   {% endfor %}
   # Detachments
 
-  <ul>
   {% for entry in f.detachments %}
-  <li><a href="{{ entry.permalink }}">{{ entry.name }}</a></li>
+  * [{{ entry.name }}]({{ entry.permalink }})
   {% else %}
   * None yet. Stay tuned!
   {% endfor %} 
-  </ul>
 
   {% endfilter %}
   </div>
