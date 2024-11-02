@@ -1,0 +1,35 @@
+{
+    "name": "Anvil Siege Defenders",
+    "color": "005221",
+    "secondary_faction":"Imperial Fists",
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "Shield of the Imperium",
+            "text": "All ranged weapons equipped by models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, it also gains +1 to the Wound Roll."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Battle Drill",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "Until the end of the Battle Round, ranged weapons equipped by models in the unit gain +[Sustained Hits 1]+. Additionally, if the unit Remains Stationary, unmodified Hit rolls of 5+ score a Critical Hit."
+        },
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        },
+        {
+            "name": "No Threat Too Great",
+            "cost": 2,
+            "when": "Your unit's Activation",
+            "target": "Your unit being Activated",
+            "effect": "Until the end of the Battle Round, your unit may re-roll Wound rolls for attacks made against a +Monster+ or +Vehicle+."
+        },
+    ]
+}
