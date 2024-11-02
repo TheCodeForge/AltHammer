@@ -23,6 +23,8 @@
 
     "Lethal Hits": "Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.",
     
+    "Melta X": "Attacks made with this weapon against targets within half range have their Damage trait increased by X.",
+
     "One-Shot": "This weapon may only be used once per battle.",
     
     "Pistol": "This weapon may target enemy units within Melee Distance.",

@@ -1,6 +1,7 @@
 {    
-    "name": "Captain",
-    "ppm":80,
+    "name": "Blood Angels Captain",
+    "secondary_faction": "Blood Angels",
+    "ppm":75,
     "move":6,
     "tough": 4,
     "save": 3,
@@ -30,19 +31,28 @@
         }
     ],
     "range_weapons": [
-        "bolt_pistol",
         "heavy_bolt_pistol",
-        "master_crafted_bolt_rifle"
+        "inferno_pistol"
     ],
     "melee_weapons": [
-        "master_crafted_power_weapon"
+        "master_crafted_chainsword",
+        "power_fist",
+        "relic_weapon"
     ],
     "composition":[
-        "1 Captain"
+        "1 Blood Angels Captain"
     ],
     "default_gear":[
-        "bolt_pistol",
-        "master_crafted_bolt_rifle",
-        "master_crafted_power_weapon"
-    ]
+        "heavy_bolt_pistol",
+        "master_crafted_chainsword",
+    ],
+    "replacement_gear":{
+        "This model's Heavy Bolt Pistol":[
+            "inferno_pistol"
+        ],
+        "This model's Master Crafted Chainsword":[
+            "power_fist",
+            "relic_weapon"
+        ]
+    }
 }
