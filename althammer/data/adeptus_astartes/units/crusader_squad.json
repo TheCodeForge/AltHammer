@@ -1,0 +1,67 @@
+{    
+    "name": "Crusader Squad",
+    "ppm": 15,
+    "profiles":[
+        {
+            "name": "Sword Brother",
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":2,
+            "lead": 6,
+            "oc": 2,
+            "base":32
+        },
+        {
+            "name": "Initiates",
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":2,
+            "lead": 6,
+            "oc": 2,
+            "base":32
+        },
+        {
+            "name": "Neophytes",
+            "move":6,
+            "tough": 4,
+            "save": 4,
+            "hp":2,
+            "lead": 6,
+            "oc": 2,
+            "base":32
+        }
+    ],
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades"
+    ],
+    "secondary_faction":"Black Templar",
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Righteous Zeal",
+            "text":"This unit may re-roll Advance and Charge rolls."
+        }
+    ],
+    "range_weapons": [
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "artificer_crozius",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Sword Brother",
+        "4-9 Initiates",
+        "0-10 Neophytes"
+    ],
+    "default_gear":[
+        "boltgun",
+        "bolt_pistol"
+    ],
+    "models_min":5,
+    "models_max":20
+}
