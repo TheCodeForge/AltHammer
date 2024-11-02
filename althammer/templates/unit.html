@@ -208,10 +208,11 @@
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
           </tr>
         </thead>
-        {% for weapon in u.ranged_weapons %}
-        {{ weapon_line(weapon) }}
-        {% endfor %}
-
+        <tbody>
+          {% for weapon in u.ranged_weapons %}
+          {{ weapon_line(weapon) }}
+          {% endfor %}
+        </tbody>
         {% endif %}
         <thead>
           <tr>
@@ -225,9 +226,11 @@
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
           </tr>
         </thead>
-        {% for weapon in u.melee_weapons %}
-        {{ weapon_line(weapon) }}
-        {% endfor %}
+        <tbody>
+          {% for weapon in u.melee_weapons %}
+          {{ weapon_line(weapon) }}
+          {% endfor %}
+        </tbody>
       </table>
     </div>
 
