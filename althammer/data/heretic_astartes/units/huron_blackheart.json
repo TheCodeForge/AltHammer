@@ -1,0 +1,41 @@
+{    
+    "name": "Huron Blackheart",
+    "ppm":80,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":5,
+    "lead": 6,
+    "oc": 1,
+    "invuln":4,
+    "secondary_faction":"Red Corsairs",
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero"
+    ],
+    "core_rules": ["Leader [Infantry]"],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [{
+            "name":"Tyrant of Badab",
+            "text":"While this model is leading a unit, its +Bodyguard+ modes have +1 to their Objective Control trait."
+        }
+    ],
+    "range_weapons": [
+        "tyrants_claw_ranged"
+    ],
+    "melee_weapons": [
+        "tyrants_claw_melee",
+        "exalted_weapon"
+    ],
+    "composition":[
+        "1 Huron Blackheart"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "tyrants_claw_ranged",
+        "exalted_weapon"
+    ],
+    "replacement_gear":{}
+}
