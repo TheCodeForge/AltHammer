@@ -235,14 +235,14 @@ $('#rows_hide_button').click(function(){
   });
   $('#rows_hide_button').addClass('d-none');
   $('#rows_show_button').removeClass('d-none');
-  post('/hide_rows/1')
+  post('/hide_rows/1', callback=function(){})
 })
 
 $('#rows_show_button').click(function(){
   $('.unit-row').removeClass('d-none')
   $('#rows_show_button').addClass('d-none');
   $('#rows_hide_button').removeClass('d-none');
-  post('/hide_rows/0')
+  post('/hide_rows/0', callback=function(){})
 })
 
 //Initialize popovers

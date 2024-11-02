@@ -10,7 +10,7 @@
 <table id="faction-units" class="table table-faction">
   <tr></tr>
   {% for role in unit_listing if unit_listing[role] %}
-  <thead id="header_{{ role | snake }}" class="unit-cat">
+  <thead id="header_{{ role | snake }}" class="unit-cat" data-cat="{{ role | snake }}">
     <tr>
       <th scope="col">{{ role }}</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
@@ -55,7 +55,7 @@
   {% endfor %}
 
   {% if f.upgrades %}
-  <thead>
+  <thead id="header_upgrades" class="unit-cat" data-cat="upgrades">
     <tr>
       <th scope="col">Army Upgrades</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost for upgrade"><i class="fas fa-fw fa-tag"></i></span></th>
@@ -65,7 +65,7 @@
   </thead>
   {% for upgrade in f.upgrades %}
   {% set ns.total = ns.total + (session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) | int )*upgrade.cost %}
-    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
+    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row unit_cat_upgrades" {% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
     <td class="align-middle">
       <p class="mb-0"><b>{{ upgrade.name }}</b></p>
       {{ upgrade.text | markdown | safe }}
