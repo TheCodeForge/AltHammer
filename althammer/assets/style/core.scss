@@ -160,3 +160,10 @@ blockquote {
     font-weight: bold;
 }
 
+span.fa-stack.fa-stack-inline {
+    font-size: 0.5em;
+}
+.fa-stack-inline .fa-stack-1x,
+.fa-stack-inline .fa-stack-2x {
+    vertical-align: middle;
+}
