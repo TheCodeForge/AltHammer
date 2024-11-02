@@ -43,7 +43,8 @@
         "hand_flamer",
         "bolt_pistol",
         "combi_weapon",
-        "storm_bolter"
+        "storm_bolter",
+        "astartes_shotgun"
     ],
     "melee_weapons": [
         "astartes_chainsword",
