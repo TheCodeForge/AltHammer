@@ -11,7 +11,8 @@
     "keywords": [
         "Infantry",
         "Battleline",
-        "Grenades"
+        "Grenades",
+        "Possessable"
     ],
     "core_rules": [],
     "faction_rules": ["Dark Pacts"],
