@@ -19,14 +19,13 @@
 
   {% if f.lore %}<p><i>{{f.lore}}</i></p>{% endif %}
 
-  <div class="nested-numbered-list">
   {% filter numbered_markdown %}
   {% for rule in f.rules %}
   # {{ rule }}
 
   {{ f.rules[rule] }}
-
   {% endfor %}
+
   # Detachments
 
   {% for entry in f.detachments %}
@@ -34,7 +33,6 @@
   {% endfor %} 
 
   {% endfilter %}
-  </div>
 
 </div>
 

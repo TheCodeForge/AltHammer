@@ -73,7 +73,9 @@ def markdown_filter(x):
 def markdown_filter(x):
     print(f'number marking down {x[0:min(100, len(x))]}')
     with NumberedRenderer() as renderer:
-        return renderer.render(mistletoe.Document(x))
+        output = renderer.render(mistletoe.Document(x))
+
+    return f'<div class="nested-numbered-list">{output}</div>'
 
 @app.template_filter('nonce')
 def nonce(x):
