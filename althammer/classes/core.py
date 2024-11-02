@@ -2,6 +2,8 @@ import json
 import os
 from werkzeug.utils import safe_join
 
+from flask import abort
+
 from althammer.__main__ import cache
 
 class Base():
