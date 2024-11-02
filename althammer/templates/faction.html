@@ -21,7 +21,7 @@
 
   {% filter numbered_markdown %}
 
-  *{{f.lore}}*
+  {% if f.lore %}*{{f.lore}}*{% endif %}
 
   {% for rule in f.rules %}
   # {{ rule }}
