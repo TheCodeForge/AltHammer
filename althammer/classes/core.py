@@ -148,7 +148,7 @@ class Weapon(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return sorted([Weapon(x, faction=self.faction, is_profile=True) for x in self.__dict__.get('profiles', [])], key=lambda x: x.name)
+        return [Weapon(x, faction=self.faction, is_profile=True) for x in self.__dict__.get('profiles', [])]
 
 class Detachment(Base):
 
