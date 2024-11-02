@@ -21,5 +21,12 @@ table.table-faction > thead > tr > th {
 }
 
 table.table-faction > thead, table > tbody {
-  border:0px !important;
+  border: 0px !important; }
+
+table.table-faction tr {
+  border-color: $faction;
+}
+
+table.table-faction tr.weapon-profile {
+  border-color:transparent;
 }
