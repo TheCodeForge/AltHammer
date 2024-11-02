@@ -17,11 +17,11 @@
 
   <h1 class="small-caps">{{ f.name }}</h1>
 
+  {% if f.lore %}<p><i>{{f.lore}}</i></p>{% endif %}
 
   <div class="nested-numbered-list">
   {% filter numbered_markdown %}
 
-  {% if f.lore %}*{{f.lore}}*{% endif %}
 
   {% for rule in f.rules %}
   # {{ rule }}
