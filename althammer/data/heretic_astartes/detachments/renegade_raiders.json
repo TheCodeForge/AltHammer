@@ -1,6 +1,7 @@
 {
     "name": "Renegade Raiders",
     "secondary_faction":"Red Corsairs",
+    "color": "9a1115",
     "rules": [ 
         {
             "name": "Raiders and Reavers",
