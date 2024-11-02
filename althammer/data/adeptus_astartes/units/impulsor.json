@@ -48,5 +48,8 @@
             "orbital_comms_array",
             "shield_dome"
         ]
-    }
+    },
+    "transport_qty": 7,
+    "transport_type": ["Phobos", "Infantry"],
+    "transport_banned": ["Jump Pack"]
 }

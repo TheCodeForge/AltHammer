@@ -78,6 +78,15 @@
       </ul>
     {% endif %}
   </div>
+  {% if "Transport" in u.keywords %}
+  <p><span class="fw-bold text-faction">Transport</span></p>
+  <ul>
+    <li>Capacity: {{ u.transport_qty }} models</li>
+    <li>Required Keywords: <span class="keyword-group">{{ ', '.join(u.transport_type) }}</span></li>
+    {% if u.transport_banned %}<li>Banned Keywords: <span class="keyword-group">{{ ', '.join(u.transport_banned) }}</span></li>{% endif %}
+  </ul>
+  {% endif %}
+
 {% endmacro %}
 
 {% macro weapon_line(weapon) %}
