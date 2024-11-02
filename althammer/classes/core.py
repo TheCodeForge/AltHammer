@@ -35,7 +35,11 @@ class Unit(Base):
     @property
     @cache.memoize()
     def keywords(self):
-        output = self.__dict__.get("keywords", []) + self.faction.__dict__.get("keywords", [])
+        output = self.__dict__.get("keywords", [])
+
+        if not self.is_profile:
+            output += self.faction.__dict__.get("keywords", [])
+
         output = sorted(output)
         return output
 
@@ -47,8 +51,6 @@ class Unit(Base):
                 output += profile.keywords
 
         return output
-    
-    
 
     @property
     @cache.memoize()
@@ -74,8 +76,6 @@ class Unit(Base):
     @cache.memoize()
     def profiles(self):
         return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}", is_profile=True) for x in self.__dict__.get('profiles', [])]
-    
-    
 
     @property
     def display_name(self):
@@ -134,6 +134,9 @@ class Unit(Base):
     def weapon(self, name):
         return self.faction.weapon(name)
     
+    @property
+    def is_profile(self):
+        return self.__dict__.get('is_profile', False)
 
 class Weapon(Base):
 
