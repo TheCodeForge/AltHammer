@@ -82,7 +82,7 @@
 {% macro weapon_line(weapon) %}
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
-<tr class="weapon-profile{% if loop.index<len(weapon.profiles) %} border-bottom-0{% endif %}">
+<tr class="weapon-profile{% if loop.index<(weapon.profiles|length) %} border-bottom-0{% endif %}">
   <td class="text-center align-middle">
     {% if loop.index0 %}
     <span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="Multiple Profile Weapon" data-bs-content="When attacking, select one of this weapon's profiles to use."><i class="fas fa-fw fa-option"></i></span>
