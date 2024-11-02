@@ -24,7 +24,7 @@
         },
         {
             "name":"Sacrificial Dagger",
-            "text":"Once per Battle Round, when this model is selected to shoot or fight, it may suffer 1 mortal damage. If it does, until the end of the Battle ROund, it gains +1 to the Hit roll and +1 to the Wound roll."
+            "text":"Once per Battle Round, when this model is selected to shoot or fight, it may suffer 1 mortal damage. If it does, until the end of the Battle Round, it gains +1 to the Hit roll and +1 to the Wound roll."
         }
     ],
     "range_weapons": [
