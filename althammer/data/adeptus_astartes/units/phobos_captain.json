@@ -8,6 +8,7 @@
     "lead": 6,
     "oc": 1,
     "invuln": 4,
+    "base":32,
     "keywords": [
         "Infantry",
         "Character",

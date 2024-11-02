@@ -8,6 +8,7 @@
     "lead": 5,
     "oc": 4,
     "invuln": 4,
+    "base":60,
     "keywords": [
         "Monster",
         "Character",

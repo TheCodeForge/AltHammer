@@ -7,6 +7,7 @@
     "hp":11,
     "lead": 6,
     "oc": 3,
+    "base":90,
     "keywords": [
         "Vehicle",
         "Fly"
