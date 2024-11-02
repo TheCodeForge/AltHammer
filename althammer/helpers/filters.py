@@ -71,6 +71,7 @@ def markdown_filter(x):
 
 @app.template_filter('numbered_markdown')
 def markdown_filter(x):
+    print(f'number marking down {x[0:min(100, len(x))]}')
     with NumberedRenderer() as renderer:
         return renderer.render(mistletoe.Document(x))
 
