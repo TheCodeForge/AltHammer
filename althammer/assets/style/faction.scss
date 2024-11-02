@@ -24,7 +24,7 @@ table.table-faction > thead, table > tbody {
   border: 0px !important; }
 
 table.table-faction tbody tr:not(.border-bottom-0) {
-  border-bottom: 1px solid #004488;
+  border-bottom: 1px solid $faction;
   }
 
 table.table-faction tbody tr.border-bottom-0 {
