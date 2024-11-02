@@ -87,7 +87,7 @@
     {% endif %}
   </td>
   <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %} <span class="keyword">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-  <td class="text-center align-middle">{{ profile.rng }}"</td>
+  <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
   <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
   <td class="text-center align-middle">{{ profile.str }}</td>
@@ -107,7 +107,7 @@
     </form>
   </td>
   <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %} <span class="keyword">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-  <td class="text-center align-middle">{{ weapon.rng }}"</td>
+  <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
   <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
   <td class="text-center align-middle">{{ weapon.str }}</td>
