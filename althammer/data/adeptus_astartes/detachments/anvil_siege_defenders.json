@@ -9,6 +9,18 @@
             "text": "All ranged weapons equipped by models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, the weapon also gains +1 to the Wound Roll."
         }
     ],
+    "spells": [
+        {
+            "name": "Armor of the Machine",
+            "difficulty": 9,
+            "effect": "Select one friendly +Vehicle+ within 18\". Until the end of the Battle Round, it has !Feel No Pain 6+!."
+        },
+        {
+            "name": "Defenders of Man",
+            "difficulty": 8,
+            "effect": "Select one friendly unit within 18\". Until the end of the Battle Round, its Toughness trait is improved by 2. If the unit is a +Vehicle+, its Toughness is improved by 3 instead."
+        }
+    ],
     "strategems": [
         {
             "name": "Battle Drill",

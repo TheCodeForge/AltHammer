@@ -1,40 +1,14 @@
 {
-    "name": "Slaves to Ruin",
-    "secondary_faction":"Black Legion",
+    "name": "Renegade Raiders",
+    "secondary_faction":"Red Corsairs",
     "rules": [ 
         {
-            "name": "Marks of Chaos",
-            "lore": "The traiterous warriors of the Heretic Astartes call on the Ruinous Powers, attempting to draw their favor.",
-            "text": "When mustering your army, select one of the options below for each unit mustered. You may not select a keyword for any unit which already has any of the following keywords: +Epic Hero+, +Khorne+, +Tzeentch+, +Nurgle+, +Slaanesh+, +Chaos Undivided+",
-            "options": [
-                {
-                    "name": "Khorne - Blood Fury",
-                    "text": "Gain the +Khorne+ keyword. Melee weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
-                },
-                {
-                    "name": "Tzeentch - Warpfire",
-                    "text": "Gain the +Tzeentch+ keyword. Ranged weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
-                },
-                {
-                    "name": "Nurgle - Spreading Sickness",
-                    "text": "Gain the +Nurgle+ keyword. Ranged weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
-                },
-                {
-                    "name": "Slaanesh - Excessive Cruelty",
-                    "text": "Gain the +Slaanesh+ keyword. Melee weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
-                },
-                {
-                    "name": "Chaos Undivided - Blood Fury",
-                    "text": "Gain the +Chaos Undivided+ keyword. Re-roll Hit rolls of 1."
-                }
-            ]
+            "name": "Raiders and Reavers",
+            "lore": "Some Heretic Astartes warbands are piratical by nature, launching swift attacks focused on destroying their foes in a storm of bloody violence, seizing territory and spoils bnefore the enemy can bring reinforcements to bear.",
+            "text": "Ranged weapons equipped by +Heretic Astartes+ models in your army have +[Assault]+. All attacks made against enemy units within range of an objective marker have their Armor Break trait improved by 1."
         }
     ],
-    "restrictions":[
-        "+Psyker+ units may not be given the +Khorne+ option.",
-        "+Character+ units with the Leader ability can only be attached to a Unit which shares the same keyword from the list above.",
-        "A unit may only embark within (or start the battle embarked within) a +Transport+ if both units share the same keyword from the list above."
-    ],
+    "restrictions":[],
     "spells": [
         {
             "name": "Veil of Time",
