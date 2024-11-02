@@ -35,7 +35,9 @@ class Unit(Base):
     @property
     @cache.memoize()
     def keywords(self):
-        return self.__dict__.get("keywords", [])
+        output = self.__dict__.get("keywords", []) + self.faction.__dict__.get("keywords", [])
+        output = sorted(output)
+        return output
 
     @property
     def keywords_all(self):
