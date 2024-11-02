@@ -11,6 +11,7 @@
             "lead": 5,
             "oc": 1,
             "invuln": 4,
+            "base":40,
             "keywords": ["Character"],
             "default_gear":[
                 "bolt_pistol",
@@ -26,6 +27,7 @@
             "lead": 7,
             "oc": 1,
             "invuln": 4,
+            "base":25,
             "default_gear": [
                 "close_combat_weapon"
             ]
