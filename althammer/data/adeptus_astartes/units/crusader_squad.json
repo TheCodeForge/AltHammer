@@ -3,17 +3,7 @@
     "ppm": 16,
     "profiles":[
         {
-            "name": "Sword Brother",
-            "move":6,
-            "tough": 4,
-            "save": 3,
-            "hp":2,
-            "lead": 6,
-            "oc": 2,
-            "base":32
-        },
-        {
-            "name": "Initiates",
+            "name": "Sword Brother, Initiates",
             "move":6,
             "tough": 4,
             "save": 3,
