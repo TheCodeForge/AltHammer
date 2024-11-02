@@ -10,7 +10,7 @@
 <table id="faction-units" class="table table-faction">
   <tr></tr>
   {% for role in unit_listing if unit_listing[role] %}
-  <thead>
+  <thead id="header_{{ role | snake }}">
     <tr>
       <th scope="col">{{ role }}</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
@@ -20,7 +20,7 @@
   </thead>
   {% for unit in unit_listing[role] %}
   {% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
-  <tr id="unit_row_{{ unit.id }}" class="unit-row {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
+  <tr id="unit_row_{{ unit.id }}" class="unit-row unit_cat_{{ role | snake }} {% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
     <td class="align-middle">
       {% if d %}
       <a href="{{ d.permalink }}/unit/{{ unit.id }}">{{ unit.display_name }}</a>
