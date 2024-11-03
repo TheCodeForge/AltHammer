@@ -1,0 +1,11 @@
+{
+    "name": "Squighog Teef",
+    "keywords":[
+        "Extra Attacks"
+    ],
+    "atk":3,
+    "skl":4,
+    "str":6,
+    "ap": 1,
+    "dmg":2
+}

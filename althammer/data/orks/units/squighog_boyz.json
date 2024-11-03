@@ -1,0 +1,69 @@
+{    
+    "name": "Squighog Boyz",
+    "ppm": 40,
+    "profiles":[
+        {
+            "name": "Nob on Smasha Squig",
+            "move":  10,
+            "tough": 7,
+            "save":  4,
+            "hp":    4,
+            "lead":  7,
+            "oc":    2,
+            "base":  52,
+            "default_gear":[
+                "slugga",
+                "big_choppa",
+                "squighog_teef"
+            ]
+        },
+        {
+            "name": "Squighog Boyz",
+            "move":  10,
+            "tough": 7,
+            "save":  4,
+            "hp":    3,
+            "lead":  7,
+            "oc":    2,
+            "base":  42,
+            "default_gear":[
+                "saddlegit_gunz",
+                "stikka",
+                "squighog_teef"
+            ]
+        }
+    ],
+    "keywords": [
+        "Mounted",
+        "Grenades",
+        "Beast Snagga"
+    ],
+    "core_rules": ["Feel No Pain 5+"],
+    "faction_rules": ["WAAAAGH!"],
+    "unit_rules": [{
+            "name":"Wild Ride",
+            "text":"This unit may ignore any or all modifiers to its Move trait and to its Advance and Charge rolls."
+        },
+        {
+            "name":"Bomb Squig",
+            "text":"After this unit makes a Normal movement, you may destroy a Bomb Squig token. If you do, select an enemy unit within 12\". Roll d6; on a 2+, the selected enemy unit suffers d3 mortal damage."
+        }
+    ],
+    "range_weapons": [
+        "saddlegit_gunz",
+        "stikka_range",
+        "slugga"
+    ],
+    "melee_weapons": [
+        "big_choppa",
+        "stikka_melee",
+        "squighog_teef"
+    ],
+    "composition":[
+        "1-2 Nob on Smasha Squig",
+        "3-6 Squighog Boyz",
+        "1 Bomb Squig token per 3 models"
+    ],
+    "models_min":10,
+    "models_max":20,
+}

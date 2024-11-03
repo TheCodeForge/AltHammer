@@ -39,7 +39,7 @@ class Unit(Base):
     def keywords(self):
         output = self.__dict__.get("keywords", [])
 
-        if not self.is_profile:
+        if not self.__dict__.get('is_profile'):
             output += self.faction.__dict__.get("keywords", [])
 
         output = sorted(output)
@@ -149,6 +149,11 @@ class Weapon(Base):
     @cache.memoize()
     def profiles(self):
         return [Weapon(x, faction=self.faction, is_profile=True) for x in self.__dict__.get('profiles', [])]
+
+    @property
+    @cache.memoize()
+    def keywords(self):
+        return sorted(self.__dict__.get("keywords", []))
 
 class Detachment(Base):
 

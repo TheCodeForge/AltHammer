@@ -1,0 +1,13 @@
+{
+    "name": "Stikka",
+    "keywords":[
+        "Lance",
+        "Anti-Monster 4+",
+        "Anti-Vehicle 4+"
+    ],
+    "atk":3,
+    "skl":3,
+    "str":5,
+    "ap": 1,
+    "dmg":2
+}

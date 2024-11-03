@@ -1,0 +1,12 @@
+{
+    "name": "Big Choppa",
+    "keywords":[
+        "Anti-Monster 4+",
+        "Anti-Vehicle 4+"
+    ],
+    "atk":4,
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":2
+}
