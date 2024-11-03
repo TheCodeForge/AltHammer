@@ -7,5 +7,28 @@
             "lore": "Once an Ork gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
             "text": "Melee weapons equipped by your +Orks+ have +[Sustained Hits 1]+"
         }
+    ],
+    "strategems":[
+        {
+            "name": "Ere We Go",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Orks Infantry+ unit being Activated",
+            "effect": "Until the end of the Activation, the target unit has +2 to Advance and Charge rolls."
+        },
+        {
+            "name": "Careen!",
+            "cost": 1,
+            "when": "When an +Orks Vehicle+ unit from your army with the +Deadly Demise X+ ability is destroyed, after rolling for its +Deadly Demise X+ ability.",
+            "target": "The destroyed +Vehicle+ unit.",
+            "effect": "The target +Vehicle+ can make a Normal or Fall Back movement before its +Deadly Demise X+ ability is resolved, and before any embarked units perform an Emergency Disembarkation. When making this movement, the target +Vehicle+ may move through enemy units (excluding +Monsters+ and +Vehicles+ as if they were not there."
+        },
+        {
+            "name": "Unbridled Carnage",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Orks+ unit being Activated",
+            "effect": "Until the end of the Activation, the target unit's melee attacks score Critical Hits on unmodified Hit rolls of 5+."
+        }
     ]
 }
