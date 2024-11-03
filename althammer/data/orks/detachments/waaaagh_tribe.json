@@ -8,6 +8,23 @@
             "text": "Melee weapons equipped by your +Orks+ have +[Sustained Hits 1]+"
         }
     ],
+    "spells": [
+        {
+            "name": "Roar of Mork",
+            "difficulty": 7,
+            "effect": "Enemy units within 15\" must take a Battle-Shock test, with -1 to the Battle-Shock test roll."
+        },
+        {
+            "name": "Spirit of Gork",
+            "difficulty": 7,
+            "effect": "Select a friendly +Infantry+ unit within 12\". Until the end of the Battle Round, its equipped melee weapons have +[Devastating Wounds]+"
+        },
+        {
+            "name": "Da Jump",
+            "difficulty": 6,
+            "effect": "Move this model's unit to anywhere on the battlefield that is at least 9\" away from all enemy models."
+        }
+    ],
     "strategems":[
         {
             "name": "Ere We Go",
