@@ -28,6 +28,23 @@
             ]
         }
     ],
+    "spells": [
+        {
+            "name": "Jaws of the World Wolf",
+            "difficulty": 9,
+            "effect": "Draw a straight line 24\" in any direction from the caster. Enemy units touching the line must take a Leadership test; units that fail suffer d6 mortal damage."
+        },
+        {
+            "name": "Thunderclap",
+            "difficulty": 7,
+            "effect": "All enemy units within 6\" take d6 damage, with an Armor Break trait of -1."
+        },
+        {
+            "name": "Storm Caller",
+            "difficulty": 6,
+            "effect": "Until the end of the Battle Round, the casting model and all models in its unit have +Stealth+."
+        }
+    ],
     "strategems": [
         {
             "name": "Armor of Contempt",
