@@ -1,0 +1,68 @@
+{    
+    "name": "Beast Snagga Boyz",
+    "ppm": 10,
+    "profiles":[
+        {
+            "name": "Beast Snagga Nob",
+            "move":6,
+            "tough": 5,
+            "save": 5,
+            "hp":2,
+            "lead": 7,
+            "oc": 2,
+            "base":32,
+            "default_gear":[
+                "slugga",
+                "power_snappa"
+            ]
+        },
+        {
+            "name": "Beast Snagga Boy",
+            "move":6,
+            "tough": 5,
+            "save": 5,
+            "hp":1,
+            "lead": 7,
+            "oc": 2,
+            "base":32,
+            "default_gear": [
+                "slugga",
+                "choppa",
+                "close_combat_weapon"
+            ]
+        }
+    ],
+    "keywords": [
+        "Infantry",
+        "Mob",
+        "Battleline",
+        "Beast Snagga"
+    ],
+    "core_rules": ["Feel No Pain 6+"],
+    "faction_rules": ["WAAAAGH!"],
+    "unit_rules": [{
+            "name":"Monster Hunters",
+            "text":"This unit may re-roll its Hit roll when attacking a +Monster+ or +Vehicle+."
+        }
+    ],
+    "range_weapons": [
+        "slugga",
+        "thump_gun"
+    ],
+    "melee_weapons": [
+        "choppa",
+        "power_snappa"
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Beast Snagga Nob",
+        "9-19 Beast Snagga Boyz"
+    ],
+    "models_min":10,
+    "models_max":20,
+    "replacement_gear":{
+        "Every 10th model's Slugga and Choppa":[
+            "thump_gun"
+        ]
+    }
+}
