@@ -23,5 +23,14 @@
             "text":"Once during the battle, you may select two enemy units for Oath of Moment instead of one."
         }
     ],
+    "strategems": [
+        {
+            "name": "Armor of Contempt",
+            "cost": 1,
+            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
+            "target": "Your unit being attacked",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
+        }
+    ],
     "color":"004488"
 }
