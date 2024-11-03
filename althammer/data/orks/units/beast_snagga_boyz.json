@@ -51,7 +51,7 @@
     ],
     "melee_weapons": [
         "choppa",
-        "power_snappa"
+        "power_snappa",
         "close_combat_weapon"
     ],
     "composition":[
