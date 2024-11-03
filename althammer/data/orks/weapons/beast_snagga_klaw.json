@@ -1,0 +1,12 @@
+{
+    "name": "Beast Snagga Klaw",
+    "keywords":[
+        "Anti-Monster 4+",
+        "Anti-Vehicle 4+"
+    ],
+    "atk":4,
+    "skl":3,
+    "str":10,
+    "ap": 2,
+    "dmg":2
+}
