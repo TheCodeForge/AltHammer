@@ -10,6 +10,23 @@
             "text": "Whenever a friendly +Adeptus Astartes+ makes a Charge move, all of its melee weapons gain +1 Attacks and +2 Strength until the end of its Activation."
         }
     ],
+    "spells": [
+        {
+            "name": "Rage-Fuelled Warrior",
+            "difficulty": 9,
+            "effect": "Until the end of the Battle Round, melee weapons by models in the unit have +[Sustained Hits 3]+"
+        },
+        {
+            "name": "Spirit of Gork",
+            "difficulty": 7,
+            "effect": "Select a friendly +Infantry+ unit within 12\". Until the end of the Battle Round, its equipped melee weapons have +[Devastating Wounds]+"
+        },
+        {
+            "name": "Da Jump",
+            "difficulty": 6,
+            "effect": "Move this model's unit to anywhere on the battlefield that is at least 9\" away from all enemy models."
+        }
+    ],
     "strategems": [
         {
             "name": "Armor of Contempt",

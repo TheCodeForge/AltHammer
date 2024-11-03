@@ -17,7 +17,7 @@
         "Jump Pack"
     ],
     "secondary_faction":"Blood Angels",
-    "core_rules": ["Deep Strike", "Fights First", "Lone Operative"],
+    "core_rules": ["Deep Strike", "Lone Operative"],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [
         {
@@ -26,7 +26,7 @@
         },
         {
             "name":"Miraculous Savior",
-            "text":"Once per battle, after an enemy unit finishes a Charge, this model may be deployed from Reserves to the battlefield within Melee Distance of the enemy unit."
+            "text":"Once per battle, after an enemy unit finishes a Charge, this model may be deployed from Reserves to the battlefield within Melee Distance of that enemy unit. This model then Fights that enemy unit, and counts as having been Activated this Battle Round"
         }
     ],
     "range_weapons": [],
