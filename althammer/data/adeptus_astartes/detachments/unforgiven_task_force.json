@@ -10,6 +10,23 @@
             "text": "Whenever a friendly +Adeptus Astartes+ is Battle-Shocked, the Objective Control trait of models in that unit is 1, instead of 0."
         }
     ],
+    "spells": [
+        {
+            "name": "Unforgiven Rage",
+            "difficulty": 8,
+            "effect": "Select a friendly +Adeptus Astartes+ unit within 18\". Until the end of the Battle Round, weapons equipped by that unit have +[Lethal Hits]+. If the unit is Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
+        },
+        {
+            "name": "Disciplined Fire",
+            "difficulty": 7,
+            "effect": "Select a friendly +Adeptus Astartes+ unit within 18\". Until the end of the Battle Round, weapons equipped by that unit have +[Assault]+, +[Heavy]+, and +[Ignores Cover]+ abilities."
+        },
+        {
+            "name": "Stubborn Tenacity",
+            "difficulty": 6,
+            "effect": "Until the end of the Battle Round, this unit has +1 to all Hit rolls if it is below starting strength, and +1 to all Wound rolls if it is Battle-Shocked and below starting strength."
+        }
+    ],
     "strategems": [
         {
             "name": "Unforgiven Fury",

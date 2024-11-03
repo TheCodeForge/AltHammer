@@ -45,7 +45,7 @@
             "cost": 1,
             "when": "Your unit's Activation",
             "target": "Your +Orks+ unit being Activated",
-            "effect": "Until the end of the Activation, the target unit's melee attacks score Critical Hits on unmodified Hit rolls of 5+."
+            "effect": "Until the end of the Activation, unmodified Hit rolls of 5+ score a Critical Hit."
         }
     ]
 }
