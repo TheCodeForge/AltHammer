@@ -36,13 +36,6 @@
             "effect": "Weapons equipped by models in the unit gain +[Lethal Hits]+. Additionally, if any of your units are Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
         },
         {
-            "name": "Armor of Contempt",
-            "cost": 1,
-            "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
-            "target": "Your unit being attacked",
-            "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
-        },
-        {
             "name": "Grim Retribution",
             "cost": 1,
             "when": "After an enemy Unit has resolved a Shoot action",
