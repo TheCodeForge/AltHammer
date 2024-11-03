@@ -198,7 +198,7 @@ class Detachment(Base):
         return self.__dict__.get('color', self.faction.color)
 
     @property
-    @cahce.memoize()
+    @cache.memoize()
     def strategems(self):
         return self.faction.__dict__.get("strategems", []) + self.__dict__.get('strategems',[])
     
