@@ -1,0 +1,45 @@
+{
+    "name": "Wings of Darkness",
+    "color": "404040",
+    "secondary_faction":"Raven Guard",
+    "rules": [
+        {
+            "name": "Lightning Assault",
+            "lore": "Thousands of years of collated strategic data and hard-won combat experience have provided the Deathwatch with the ultimate battlefield tactics to combat almost any foe.",
+            "text": "Your units may Charge after making an Advance or Fall Back movement."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Shock Assault",
+            "cost": 1,
+            "when": "Your unit's Activation, before it has made a Charge",
+            "target": "The +Mounted+ unit being Activated",
+            "effect": "Until the end of the Activation, your unit can re-roll its Charge roll, and its equipped melee weapons have +[Lance]+."
+        },
+        {
+            "name": "Ride Hard, Ride Fast",
+            "cost": 1,
+            "when": "Your opponent's Activation, after the Activated unit has declared Shoot targets.",
+            "target": "The friendly +Mounted+ or +Fly+ +Vehicle+ unit being attacked.",
+            "effect": "Until the end of the Battle Round, attacks made against the selected unit have -1 to the Hit roll and -1 to the Wound roll."
+        }
+    ],
+    "spells": [
+        {
+            "name": "Umbral Form",
+            "difficulty": 6,
+            "effect": "Gain an Invulnerable Save trait of 4+ until the end of the Battle Round."
+        },
+        {
+            "name": "Enveloping Darkness",
+            "difficulty": 8,
+            "effect": "Select a visible enemy unit within 18\". Until the end of the Battle Round, that unit cannot use the Fire Overwatch stratgem, and it has -1 to all Hit rolls."
+        },
+        {
+            "name": "Shadowstep",
+            "difficulty": 8,
+            "effect": "Select a friendly +Raven Guard+ +Character+ unit within 18\". Move it anywhere on the battlefield at least 9\" away from enemy models."
+        }
+    ]
+}
