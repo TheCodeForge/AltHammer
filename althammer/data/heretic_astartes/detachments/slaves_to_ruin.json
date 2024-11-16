@@ -5,27 +5,27 @@
         {
             "name": "Marks of Chaos",
             "lore": "The traiterous warriors of the Heretic Astartes call on the Ruinous Powers, attempting to draw their favor.",
-            "text": "When mustering your army, select one of the options below for each unit mustered. You may not select a keyword for any unit which already has any of the following keywords: +Epic Hero+, +Khorne+, +Tzeentch+, +Nurgle+, +Slaanesh+, +Chaos Undivided+",
+            "text": "When mustering your army, apply one of the following keywords to each unit (unless it already has one of these keywords, or it is an +Epic Hero+): +Khorne+, +Tzeentch+, +Nurgle+, +Slaanesh+, or +Chaos Undivided+.\n\nYour units with these keywords (including pre-existing keywords) gain the following effects:",
             "options": [
                 {
                     "name": "Khorne - Blood Fury",
-                    "text": "Gain the +Khorne+ keyword. Melee weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
+                    "text": "Melee weapons equipped  by +Khorne+ units which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                 },
                 {
                     "name": "Tzeentch - Warpfire",
-                    "text": "Gain the +Tzeentch+ keyword. Ranged weapons which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
+                    "text": "Ranged weapons equipped by +Tzeentch+ units which gain +[Lethal Hits]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                 },
                 {
                     "name": "Nurgle - Spreading Sickness",
-                    "text": "Gain the +Nurgle+ keyword. Ranged weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
+                    "text": "Ranged weapons equipped by +Nurgle+ units which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                 },
                 {
                     "name": "Slaanesh - Excessive Cruelty",
-                    "text": "Gain the +Slaanesh+ keyword. Melee weapons which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
+                    "text": "Melee weapons equipped by +Slaanesh+ units which gain +[Sustained Hits 1]+ as the result of a Dark Pact score Critical Hits on an unmodified 5+."
                 },
                 {
-                    "name": "Chaos Undivided - Blood Fury",
-                    "text": "Gain the +Chaos Undivided+ keyword. Re-roll Hit rolls of 1."
+                    "name": "Chaos Undivided - Dark Power",
+                    "text": "All attacks made by +Chaos Undivided+ units may re-roll Hit rolls of 1."
                 }
             ]
         }
