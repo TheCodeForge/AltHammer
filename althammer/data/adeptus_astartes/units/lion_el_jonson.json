@@ -16,7 +16,7 @@
         "Supreme Commander",
         "Primarch"
     ],
-    "secondary_faction":"Dark angels",
+    "secondary_faction":"Dark Angels",
     "core_rules": ["Deep Strike", "Fights First"],
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [
