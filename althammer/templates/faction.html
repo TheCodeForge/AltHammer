@@ -17,22 +17,22 @@
 
   <h1 class="small-caps">{{ f.name }}</h1>
 
-  {% if f.lore %}<p><i>{{f.lore}}</i></p>{% endif %}
-
   {% filter numbered_markdown %}
 
   # {{ f.name }} Faction Rules
 
   {% for rule in f.rules %}
-  ## {{ rule }}
+  ## {{ rule['name'] }}
 
-  {{ f.rules[rule] }}
+  {% if rule.get('lore') %}<p><i>{{ rule['lore'] }}</i></p>{% endif %}
+
+  {{ rule['text'] }}
   {% endfor %}
 
   # {{ f.name }} Detachments
 
   {% for entry in f.detachments %}
-  ## [{{ entry.name }}]({{ entry.permalink }}){% else %}* None yet. Stay tuned!
+  * [{{ entry.name }}]({{ entry.permalink }}){% else %}* None yet. Stay tuned!
   {% endfor %} 
 
   # Units

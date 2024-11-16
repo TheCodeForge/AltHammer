@@ -1,10 +1,13 @@
 {
     "id": "orks",
     "name": "Orks",
-    "lore": "The infamous war cry of the Ork is known and feared throughout the galaxy. When it echoes across the battlefield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
-    "rules": {
-        "WAAAAGH!": "Once per battle, at the start of a battle round, call a WAAAAGH. If you do, until the start of the next battle round:\n* Your +Orks+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orks+ models.\n* Your +Orks+ models have a 5++ Invulnerable Save."
-    },
+    "rules": [
+        {
+            "name": "WAAAAGH!",
+            "lore": "The infamous war cry of the Ork is known and feared throughout the galaxy. When it echoes across the battlefield, bellowed from thousands of barbaric mouths, even the most stoic warriors fear the onslaught to come.",
+            "text": "Once per battle, at the start of a battle round, call a WAAAAGH. If you do, until the start of the next battle round:\n* Your +Orks+ units are eligible to both Advance and Charge in the same turn.\n* Add 1 to the Attacks and Strength properties of melee weapons equipped by your +Orks+ models.\n* Your +Orks+ models have a 5++ Invulnerable Save."
+        }
+    ],
     "upgrades":[
         {
             "name":"Kunnin But Brutal",

@@ -2,11 +2,18 @@
     "id": "tyranids",
     "name": "Tyranids",
     "keywords": ["Hive Devourer"],
-    "lore": "Some Tyranids serve as synaptic conduits or nodal relays through which a portion of the Hive Mind’s iron will flows, overriding the natural instincts of the swarm to direct the teeming warrior-beasts to function as a single, gestalt organism on the battlefield.",
-    "rules": {
-        "Synapse": "Each time a +Tyranids+ unit from your army takes a Battle-Shock test, if it is within 6\" of a friendly +Synapse+ model (\"Synapse Range\"), take that test on 3D6 instead of 2D6.",
-        "Shadow in the Warp": "Once per battle, at the start of the Battle-Round, if a model with this ability is on the Battlefield, you may force each enemy unit on the Battlefield to take a Battle-Shock test."
-    },
+        "rules": [
+        {
+            "name":"Synapse",
+            "lore": "Some Tyranids serve as synaptic conduits or nodal relays through which a portion of the Hive Mind’s iron will flows, overriding the natural instincts of the swarm to direct the teeming warrior-beasts to function as a single, gestalt organism on the battlefield.",
+            "text": "Each time a +Tyranids+ unit from your army takes a Battle-Shock test, if it is within 6\" of a friendly +Synapse+ model (\"Synapse Range\"), take that test on 3D6 instead of 2D6."
+        },
+        {
+            "name": "Shadow in the Warp",
+            "lore": "The oncoming Tyranid swarm brings an aura of dread, cutting its enemies off from their natural connections to the Sea of Souls",
+            "text": "Once per battle, at the start of the Battle-Round, if a model with this ability is on the Battlefield, you may force each enemy unit on the Battlefield to take a Battle-Shock test."
+        }
+    ],
     "upgrades":[
         {
             "name":"Turbulance in the Warp",
