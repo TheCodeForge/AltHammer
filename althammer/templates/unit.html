@@ -24,7 +24,7 @@
     {% endif %}
 
     {% if u.weapons | listcomp("ability") | any %}
-    <p><span class="fw-bold text-faction">GEAR ABILITIES</span></p>
+    <p><span class="fw-bold text-faction">WARGEAR ABILITIES</span></p>
     <ul>
     {% for weapon in u.weapons if weapon.ability %}
       <li><span class="fw-bold">{{ weapon.name }}:</span> {{ weapon.ability | markdown | safe }}</li>
