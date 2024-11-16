@@ -22,11 +22,12 @@
 
   {% filter numbered_markdown %}
 
+  # {{ f.name }} Faction Rules
+
   {% for rule in f.rules %}
-  # {{ rule }}
+  ## {{ rule }}
 
   {{ f.rules[rule] }}
-
   {% endfor %}
 
   # Detachment: {{ d.name }}
