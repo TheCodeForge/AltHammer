@@ -25,11 +25,10 @@
   # {{ f.name }} Faction Rules
 
   {% for rule in f.rules %}
-  ## {{ rule }}
+  ## {{ rule['name'] }}
 
-  {{ f.rules[rule] }}
+  {{ rule['text'] }}
   {% endfor %}
-
   # Detachment: {{ d.name }}
 
   {% if d.secondary_faction or d.banned_keywords %}
