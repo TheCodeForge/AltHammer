@@ -1,0 +1,50 @@
+{    
+    "name": "C'tan Shard of the Void Dragon",
+    "ppm": 290,
+    "move":6,
+    "tough": 11,
+    "save": 4,
+    "hp":12,
+    "lead": 6,
+    "oc": 4,
+    "invuln": 4,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Fly",
+        "Epic Hero",
+        "C'tan Shard"
+    ],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [
+        {
+            "name": "Matter Absorption",
+            "text": "Before this model Shoots, select one enemy +Vehicle+ unit within 12\". Roll d6. On a 2+, that enemy unit suffers d3 mortal damage, and this model regains the same amount of lost Health."
+        },
+        {
+            "name": "Necrodermis",
+            "text": "Attacks made against this model have their Damage trait halved (rounding up)."
+        },
+        {
+            "name": "Enslaved Star God",
+            "text": "This model cannot be your +Warlord+."
+        }        
+    ],
+    "range_weapons": [
+        "spear_of_the_void_dragon_range",
+        "voltaic_storm"
+    ],
+    "melee_weapons": [
+        "spear_of_the_void_dragon_melee",
+        "canoptek_tail_blades"
+    ],
+    "composition":[
+        "1 C'tan Shard of the Void Dragon"
+    ],
+    "default_gear":[
+        "spear_of_the_void_dragon_range",
+        "voltaic_storm",
+        "canoptek_tail_blades"
+    ]
+}

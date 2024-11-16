@@ -1,0 +1,23 @@
+{
+    "name":"Spear of the Void Dragon",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":["Anti-Vehicle 2+"],
+            "atk":5,
+            "skl":2,
+            "str":12,
+            "ap": 3,
+            "dmg":"d6 + 2"
+        },
+        {
+            "name": "Sweep",
+            "keywords":[],
+            "atk":10,
+            "skl":2,
+            "str":8,
+            "ap": 1,
+            "dmg":2
+        }
+    ]
+}
