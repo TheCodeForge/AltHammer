@@ -19,7 +19,8 @@
     "secondary_faction":"Dark angels",
     "core_rules": ["Deep Strike", "Fights First"],
     "faction_rules": ["Oath of Moment"],
-    "unit_rules": [{
+    "unit_rules": [
+        {
             "name":"Primarch of the First Legion",
             "text":"At the start of the Battle Round, select one effect to be active until the end of the Battle Round:\n* Melee attacks made by friendly +Adeptus Astartes+ +Infantry+ units within 6\" have +1 to the hit roll.\n* Friendly +Adeptus Astartes+ units within 6\" have !Feel No Pain 4+! against mortal damage.\n* When your opponent targets their unit within 12\" with a Strategem, gain 1 CP and the targeted unit must take a Battle-Shock test before resolving the Strategem. If failed, the unit is Battle-Shocked and the Strategem has no effect.\n"
         },
