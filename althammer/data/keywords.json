@@ -49,6 +49,8 @@
     
     "Entourage": "When mustering your army, only the primary model in this unit costs points. (This is taken into consideration in the on-site list builder)",
 
+    "Fights First": "When this unit is selected as the target of a melee attack, if this unit has not yet Activated this Battle Round, it Fights as if it was Activated before the original melee attack is resolved.",
+
     "Firing Deck X": "After this unit Shoots, up to X models embarked within it may also Shoot.",
 
     "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
