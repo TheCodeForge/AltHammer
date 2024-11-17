@@ -56,12 +56,12 @@ def get_factions():
 def get_keyword(keyword):
 
     with open("althammer/data/keywords.json", "r+") as file:
-        data=json.load(file)
+        raw_data=json.load(file)
 
     print(data)
-    data = data['weapon_keywords']
+    data = raw_data['weapon_keywords']
     print(data)
-    data.update(data['unit_keywords'])
+    data.update(raw_data['unit_keywords'])
     print(data)
 
     if keyword in data.keys():
