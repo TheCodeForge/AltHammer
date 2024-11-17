@@ -7,65 +7,13 @@
 
 All factions and Detachments may use the following Strategems. The Command Point cost of a Strategem is indicated in brackets next to its name.
 
-# Command Re-Roll
+{% for strat in (0|core_strategems) %}
 
-> **[1 CP] Command Re-Roll**
->
-> When: Immediately after making a Hit roll, Wound roll, Save roll, Battle-shock test, Psychic test, or when rolling to determine the number of attacks or amount of damage in a weapon profile
->
-> Target: The friendly Unit or Model making that roll.
->
-> Effect: Reroll that roll. For rolls of more than one die (Battle-Shock and Psychic tests), all dice must be rerolled. Modifiers to the original roll also apply to the reroll.
+# {{ strat['name'] }}
 
-# Desperate Breakout
+{% include "elements/strategem.html" %}
 
-> **[1 CP] Command Re-Roll**
->
-> When: Your unit Activation
->
-> Target: An Activated friendly unit that is Falling Back.
->
-> Effect: Until the end of the movement, the friendly unit may move through enemy models. Each model that moves through an enemy model suffers 1 Mortal Damage. After moving, take a Battle-Shock test, subtracting the number of models that moved through an enemy model from the result.
-
-# Grenades
-
-> **[1 CP] Grenades**
->
-> When: Your unit Activation
->
-> Target: An Activated friendly +Grenades+ unit that has not yet performed a Shoot or Fight action.
->
-> Effect: One model in the Activated unit may not Shoot or Fight this Activation. Select an enemy unit within 6" of the Activated unit. Roll six d6. Roll an additional d6 for every four models in the enemy unit, rounded down. For each 4+, the enemy unit suffers 1 Mortal Damage.
-
-# Insane Bravery
-
-> **[1 CP] Insane Bravery**
->
-> When: Immediately after failing a Battle-Shock test
->
-> Target: The friendly Unit that test was taken for (even though Battle-Shocked units cannot normally be affected by Strategems)
->
-> Effect: Your Unit is treated as having passed the Battle-Shock test instead.
-
-# Overwatch
-
-> **[1 CP] Overwatch**
->
-> When: Immediately after an enemy Unit Moves, Charges, or is deployed from Reserves
->
-> Target: A friendly Unit.
->
-> Effect: Your Unit may perform a Shoot action, targeting the enemy Unit that just Moved.
-
-# Hit the Ground
-
-> **[1 CP] Hit the Ground**
->
-> When: Immediately after an enemy Unit declares a Shoot action.
->
-> Target: A friendly +Infantry+ Unit that was declared as the target of that Shoot action.
->
-> Effect: All Models in that Unit have a 6+ Invulnerable Save and the Benefit of Cover. This lasts until the end of the Battle Round, or until the Unit performs a Move or Charge action, whichever occurs first.
+{% endfor %}
 
 {% endfilter %}
 {% endblock %}
