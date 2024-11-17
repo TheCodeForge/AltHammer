@@ -5,42 +5,42 @@
             "cost": 1,
             "when": "Immediately after making a Hit roll, Wound roll, Save roll, Battle-shock test, Psychic test, or when rolling to determine the number of attacks or amount of damage in a weapon profile",
             "target": "The friendly Unit or Model making that roll",
-            "Effect": "Reroll that roll. For rolls of more than one die (Battle-Shock and Psychic tests), all dice must be rerolled. Modifiers to the original roll also apply to the reroll."
+            "effect": "Reroll that roll. For rolls of more than one die (Battle-Shock and Psychic tests), all dice must be rerolled. Modifiers to the original roll also apply to the reroll."
         },
         {
             "name": "Desperate Breakout",
             "cost": 1,
             "when": "Your unit Activation, before its Move action",
             "target": "Your Activated unit",
-            "Effect": "Until the end of the movement, the friendly unit may move through enemy models. Each model that moves through an enemy model suffers 1 Mortal Damage. After moving, take a Battle-Shock test, subtracting the number of models that moved through an enemy model from the result."
+            "effect": "Until the end of the movement, the friendly unit may move through enemy models. Each model that moves through an enemy model suffers 1 Mortal Damage. After moving, take a Battle-Shock test, subtracting the number of models that moved through an enemy model from the result."
         },
         {
             "name": "Grenades",
             "cost": 1,
-            "when": "Your unit Activation, immediately before it Shoots or Fights",
-            "target": "Your Activated unit",
-            "Effect": "One model in the Activated unit may not Shoot or Fight this Activation. Select an enemy unit within 6\" of the Activated unit. Roll six d6. Roll an additional d6 for every four models in the enemy unit, rounded down. For each 4+, the enemy unit suffers 1 Mortal Damage."
+            "when": "Your unit Activation, before its Shoot action",
+            "target": "Your Activated +Grenades+ unit",
+            "effect": "One model in the Activated unit may not Shoot or Fight this Activation. Select an enemy unit within 6\" of the Activated unit. Roll six d6. Roll an additional d6 for every four models in the enemy unit, rounded down. For each 4+, the enemy unit suffers 1 Mortal Damage."
         },
         {
             "name": "Insane Bravery",
             "cost": 1,
             "when": "Immediately after failing a Battle-Shock test",
             "target": "Your unit that just failed the Battle-Shock test (even though Battle-Shocked units cannot normally be targeted by Strategems)",
-            "Effect": "Your unit is treated as having passed the Battle-Shock test instead."
+            "effect": "Your unit is treated as having passed the Battle-Shock test instead."
         },
         {
             "name": "Fire Overwatch",
             "cost": 1,
             "when": "Immediately before or after an enemy unit Moves, Charges, or is deployed from Reserves",
             "target": "A friendly unit",
-            "Effect": "Your unit may perform a Shoot action, targeting the enemy unit that is moving. When Shooting with this Strategem, all weapon have a <i class=\"fas fa-fw fa-target-arrow\"></i> Ranged Skill trait of 6+"
+            "effect": "Your unit may perform a Shoot action, targeting the enemy unit that is moving. When Shooting with this Strategem, all weapon have a <i class=\"fas fa-fw fa-target-arrow\"></i> Ranged Skill trait of 6+"
         },
         {
             "name": "Hit the Ground",
             "cost": 1,
             "when": "Immediately after an enemy unit declares a Shoot action",
             "target": "A friendly +Infantry+ unit that was declared as the target of that Shoot action",
-            "Effect": "All Models in that Unit have a 6+ Invulnerable Save and the Benefit of Cover. This lasts until the end of the Battle Round, or until the Unit performs a Move or Charge action, whichever occurs first."
+            "effect": "All Models in that Unit have a 6+ Invulnerable Save and the Benefit of Cover. This lasts until the end of the Battle Round, or until the Unit performs a Move or Charge action, whichever occurs first."
         }
     ]
 }
