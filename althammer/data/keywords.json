@@ -61,7 +61,7 @@
 
         "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
-        "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
+        "Lone Operative": "This unit cannot be selected as the target of a ranged attack from over 12\" away. This rule does not apply while part of an attached unit.",
 
         "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
 
