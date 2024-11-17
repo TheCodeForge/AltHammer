@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 from mistletoe.span_token import SpanToken
 from mistletoe.block_token import BlockToken, tokenize
 from mistletoe.html_renderer import HTMLRenderer
@@ -88,11 +89,13 @@ class NumberedRenderer(CustomRenderer):
         header = token.lines[0].lstrip()
 
         tier = len(header.split()[0])
-        header = header.lstrip("#")
-        header = header.lstrip()
+        header_raw = header.lstrip("#")
+        header_raw = header.lstrip()
 
-        snake = "_".join(header.lower().split())
+        header_name = BeautifulSoup(header_raw, "html.parser").string
 
-        output = f'<h{tier} id="{snake}" class="clipboard-copy" data-clipboard-text="https://{SERVER_NAME}{request.path}#{snake}">{header}</h{tier}><div class="h-block">{self.render_inner(token)}</div>'
+        snake = "_".join(header_name.lower().split())
+
+        output = f'<h{tier} id="{snake}" class="clipboard-copy" data-clipboard-text="https://{SERVER_NAME}{request.path}#{snake}">{header_raw}</h{tier}><div class="h-block">{self.render_inner(token)}</div>'
 
         return output
