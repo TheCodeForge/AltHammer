@@ -12,19 +12,19 @@
     ],
     "upgrades":[
         {
-            "name":"Student of the Codex",
+            "name":"Death Mask",
             "cost":10,
-            "text":"At the start of the battle, gain 1 CP."
+            "text":"Units led by an +Officer+ which are Battle-Shocked have their Objective Control trait reduced by 1 instead of set to 0."
         },
         {
-            "name":"The Emperor Protects",
+            "name":"Drill Commander",
             "cost":20,
-            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+            "text":"Units led by an +Officer+ which Remain Stationary score Critical Hits for their ranged attacks on an unmodified Hit roll of 5+."
         },
         {
-            "name":"Sworn Fury",
+            "name":"Kurov's Aquila",
             "cost":40,
-            "text":"Once during the battle, you may select two enemy units for Oath of Moment instead of one."
+            "text":"Enemy Strategems cost 1 CP more when targeted at enemy units within 12\" of your +Warlord+."
         }
     ],
     "strategems": [
