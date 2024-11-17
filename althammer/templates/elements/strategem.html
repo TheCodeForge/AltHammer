@@ -3,4 +3,7 @@
 <p><b>When:</b> {{ strat['when'] }}</p>
 <p><b>Target:</b> {{ strat['target'] }}</p>
 <p><b>Effect:</b> {{ strat['effect'] }}</p>
+{% if strat.get('restrictions') %}
+<p><b>Restrictions:</b> {{ strat['restrictions'] }}</p>
+{% endif %}
 </blockquote>
