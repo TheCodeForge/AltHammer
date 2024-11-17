@@ -26,7 +26,10 @@
             "hp":1,
             "lead": 7,
             "oc": 1,
-            "default_gear": ["laspistol"]
+            "default_gear": [
+                "laspistol",
+                "close_combat_weapon"
+            ]
         }
     ],
     "keywords": [
