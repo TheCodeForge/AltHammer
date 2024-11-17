@@ -115,6 +115,14 @@ def all_keywords(x):
 
     return data
 
+@app.template_filter('core_strategems')
+def core_strategems(x):
+
+    with open("althammer/data/strategems.json", "r+") as file:
+        data=json.load(file)
+
+    return data["data"]
+
 @app.template_filter("hide_cat")
 def hide_cat(unit_listing, faction, role):
 
