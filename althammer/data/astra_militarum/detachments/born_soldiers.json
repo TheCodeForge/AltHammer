@@ -39,6 +39,14 @@
             "when": "After a friendly +Regiment+ or +Squadron+ unit has finished its Shoot action",
             "target": "The enemy unit that was hit by those attacks",
             "effect": "Until the end of the Battle Round, attacks made by friendly +Regiment+ or +Squadron+ units against the selected enemy unit have their Armor Break trait improved by 1 (unless the attacking unit is Battle-Shocked)."
+        },
+        {
+            "name": "Inspired Command",
+            "cost": 1,
+            "when": "After an enemy unit has been Activated, but before it has performed any actions",
+            "target": "One friendly +Astra Militarum+ +Officer+ unit",
+            "effect": "The +Officer+ can issue one Order as if it were the beginning of the Battle Round.",
+            "restrictions": "The Order may not be issued to a Battle-Shocked unit."
         }
     ]
 }
