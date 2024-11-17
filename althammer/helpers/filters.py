@@ -79,7 +79,8 @@ def markdown_inline_filter(x):
     soup=BeautifulSoup(x, 'html.parser')
     print(f'SOUP {soup}')
 
-    soup = soup.p.unwrap()
+    soup.p.unwrap()
+    
     print(f'UNWRAPPED {soup}')
     return str(soup)
 
