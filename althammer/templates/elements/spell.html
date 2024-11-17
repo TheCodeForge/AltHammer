@@ -1,4 +1,4 @@
 <blockquote>
 <p><b>[{{ spell['difficulty'] }}+] {{ spell['name'] }}</b></p>
-<p><b>Effect:</b> {{ spell['effect'] }}</p>
+<p><b>Effect:</b> {{ spell['effect'] | markdown_inline | safe }}</p>
 </blockquote>
