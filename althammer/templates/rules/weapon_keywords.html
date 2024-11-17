@@ -4,39 +4,15 @@
 
 <h1>Weapon Reference</h1>
 
-{% filter markdown %}
+{% set data = (0|all_keywords)['weapon_keywords'] %}
 
-# Weapon Reference
+{% filter numbered_markdown %}
 
-!Anti-Keyword X+! - When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of "X" or higher is considered a Critical Wound, and is successful.
+{% for entry in data.keys()|sort %}
 
-+Assault+ - This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.
+# {{ entry }}
 
-+Blast+ - For every five Models in the target unit, rounded down, increase the number of attacks by 1.
-
-+Devestating Wounds+ - Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.
-
-+Hazardous+ - On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.
-
-+Heavy+ - Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.
-
-+Ignores Cover+ - Attacks do not require line of sight to the target, however, targets have Benefit of Cover against attacks made without line of sight.
-
-+Incendiary+ - If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12" take d3 Mortal Damage; all units within 6" take d6 Mortal Damage instead.
-
-+Lethal Hits+ - Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.
-
-+One-Shot+ - This weapon may only be used once per battle.
-
-+Precise+ - Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.
-
-+Rapid Fire X+ - If the target unit is within half range, make "X" additional attacks.
-
-+Sustained Hits X+ - Critical Hits trigger an extra "X" number of attacks. Do not make a Hit Roll for these additional attacks. Instead, treat the additional attacks as if the Hit roll already succeeded.
-
-+Torrent+ - Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.
-
-+Twin-Linked+ - Failed Wound Rolls may be re-rolled.
+{{ data[entry] }}
 
 {% endfilter %}
 {% endblock %}

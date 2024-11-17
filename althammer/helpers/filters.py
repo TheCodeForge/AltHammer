@@ -107,6 +107,14 @@ def keyword(x):
 
     return f'<span type="button" class="keyword text-nowrap" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-title="{kwd}" data-bs-content="{rule}" data-bs-custom-class="keyword-popover">{x}</span>'
 
+@app.template_filter('all_keywords')
+def all_keywords(x):
+
+    with open("althammer/data/keywords.json", "r+") as file:
+        data=json.load(file)
+
+    return data
+
 @app.template_filter("hide_cat")
 def hide_cat(unit_listing, faction, role):
 
