@@ -426,6 +426,10 @@ Count the number of models in all friendly and enemy units in the melee-distance
 * Quantity of enemy models greater than the quantity of friendly models: 3+ required
 * Quantity of enemy models double (or more) than the quantity of friendly models: 2+ required
 
+Effects which modify the number of attacks, such as +[Blast]+ or +[Rapid Fire X]+ are evaluated against the original target.
+
+Effects which modify attack strength or damage, such as ![Anti-Keyword X+]! or +[Melta X]+ are evaluated against the friendly redirected target.
+
 ## Hit Roll
 
 Attacker rolls d6. If the result is greater than or equal to the <i class="fas fa-fw fa-gun"></i> <i class="fas fa-fw fa-sword"></i> Skill trait of the weapon profile, the attack hits and the attack sequence continues. Otherwise, the attack misses, and the attack sequence ends here.
