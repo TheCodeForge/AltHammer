@@ -59,7 +59,9 @@ def get_keyword(keyword):
         data=json.load(file)
 
     print(data)
-    data = data['weapon_keywords'].update(data['unit_keywords'])
+    data = data['weapon_keywords']
+    print(data)
+    data.update(data['unit_keywords'])
     print(data)
 
     if keyword in data.keys():
