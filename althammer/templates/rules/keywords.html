@@ -14,6 +14,8 @@
 
 {{ data['weapon_keywords'][entry] }}
 
+{% endfor %}
+
 # Unit Keywords
 
 {% for entry in data['unit_keywords'].keys()|sort %}
@@ -21,6 +23,8 @@
 ## {{ entry }}
 
 {{ data['unit_keywords'][entry] }}
+
+{% endfor %}
 
 {% endfilter %}
 {% endblock %}
