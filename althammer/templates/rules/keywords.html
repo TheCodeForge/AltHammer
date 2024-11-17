@@ -10,7 +10,7 @@
 
 {% for entry in data['unit_keywords'].keys()|sort %}
 
-## {{ entry }}
+## <span class="keyword">{{ entry }}</span>
 
 {{ data['unit_keywords'][entry] }}
 
@@ -20,7 +20,7 @@
 
 {% for entry in data['weapon_keywords'].keys()|sort %}
 
-## {{ entry }}
+## <span class="keyword">{{ entry }}</span>
 
 {{ data['weapon_keywords'][entry] }}
 
