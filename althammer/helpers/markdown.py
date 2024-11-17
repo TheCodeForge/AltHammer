@@ -90,10 +90,9 @@ class NumberedRenderer(CustomRenderer):
 
         tier = len(header.split()[0])
         header_raw = header.lstrip("#")
-        header_raw = header.lstrip()
+        header_raw = header_raw.lstrip()
 
         soup = BeautifulSoup(header_raw, "html.parser")
-        print(soup.text)
         header_name=soup.text
 
         snake = "_".join(header_name.lower().split())
