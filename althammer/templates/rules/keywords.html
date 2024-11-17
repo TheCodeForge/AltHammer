@@ -6,16 +6,6 @@
 
 {% filter numbered_markdown %}
 
-# Weapon Keywords
-
-{% for entry in data['weapon_keywords'].keys()|sort %}
-
-## {{ entry }}
-
-{{ data['weapon_keywords'][entry] }}
-
-{% endfor %}
-
 # Unit Keywords
 
 {% for entry in data['unit_keywords'].keys()|sort %}
@@ -23,6 +13,16 @@
 ## {{ entry }}
 
 {{ data['unit_keywords'][entry] }}
+
+{% endfor %}
+
+# Weapon Keywords
+
+{% for entry in data['weapon_keywords'].keys()|sort %}
+
+## {{ entry }}
+
+{{ data['weapon_keywords'][entry] }}
 
 {% endfor %}
 
