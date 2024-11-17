@@ -1,0 +1,13 @@
+{
+    "name":"Laspistol",
+    "keywords":[
+        "Pistol",
+        "Incendiary"
+    ],
+    "rng":12,
+    "atk":1,
+    "skl":4,
+    "str":3,
+    "ap": 0,
+    "dmg":1
+}

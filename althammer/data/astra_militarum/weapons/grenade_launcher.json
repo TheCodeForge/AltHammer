@@ -1,0 +1,27 @@
+{
+    "name":"Grenade Launcher",
+    "profiles":[
+        {
+            "name": "Frag",
+            "keywords":[
+                "Blast"
+            ],
+            "rng":24,
+            "atk":"d3",
+            "skl":4,
+            "str":4,
+            "ap": 0,
+            "dmg":1
+        },
+        {
+            "name": "Krak",
+            "keywords":[],
+            "rng":24,
+            "atk":1,
+            "skl":4,
+            "str":9,
+            "ap": 2,
+            "dmg":"d3"
+        }
+    ]
+}

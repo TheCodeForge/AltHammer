@@ -1,0 +1,14 @@
+{
+    "name":"Flamer",
+    "keywords":[
+        "Ignores Cover",
+        "Incendiary",
+        "Torrent"
+    ],
+    "rng":12,
+    "atk":"d6",
+    "skl":null,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}

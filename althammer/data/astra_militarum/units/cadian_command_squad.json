@@ -1,55 +1,74 @@
 {    
-    "name": "Assault Intercessor Squad",
-    "ppm":15,
-    "move":6,
-    "tough": 4,
-    "save": 3,
-    "hp":2,
-    "lead": 6,
-    "oc": 2,
+    "name": "Cadian Command Squad",
+
+    "profiles": [
+        {
+            "name": "Cadian Commander",
+            "ppm":13,
+            "base": 28,
+            "move":6,
+            "tough": 3,
+            "save": 5,
+            "hp":3,
+            "lead": 7,
+            "oc": 1,
+            "keywords": ["Character", "Officer"],
+            "default_gear":[
+                "laspistol",
+                "chainsword"
+            ]
+        },
+        {
+            "name": "Cadian Veteran Guardsman",
+            "ppm":13,
+            "base": 28,
+            "move":6,
+            "tough": 3,
+            "save": 5,
+            "hp":1,
+            "lead": 7,
+            "oc": 1,
+            "default_gear": ["laspistol"]
+        }
+    ],
     "keywords": [
         "Infantry",
-        "Battleline",
         "Grenades",
-        "Primaris"
+        "Cadian"
     ],
-    "core_rules": [],
-    "faction_rules": ["Oath of Moment"],
+    "core_rules": ["Leader [Cadian]"],
+    "faction_rules": ["Voice of Command"],
     "unit_rules": [{
-            "name":"Shock Assault",
-            "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, you may re-roll all wound rolls instead."
+            "name":"Cadia Stands!",
+            "text":"While this unit contains a +Cadian Officer+ model, this unit may ignore any or all modifiers to this unit's traits and to any roll or test made for models in the unit (excluding modifiers to Save rolls)."
+        },
+        {
+            "name":"Orders",
+            "text":"This unit's +Officer+ can issue 1 Order to a +Regiment+ unit."
         }
     ],
     "range_weapons": [
-        "hand_flamer",
-        "heavy_bolt_pistol",
-        "plasma_pistol"
+        "laspistol"
     ],
     "melee_weapons": [
-        "astartes_chainsword",
-        "power_fist",
-        "power_weapon",
-        "thunder_hammer"
+        "chainsword",
+        "close_combat_weapon"
+    ],
+    "wargear":[
+        "master_vox",
+        "medi_pack",
+        "regimental_standard"
     ],
     "composition":[
-        "1 Assault Intercessor Sergeant",
-        "4-9 Assault Intercessors"
+        "1 Cadian Commander",
+        "4-9 Cadian Veteran Guardsmen"
     ],
     "models_min": 5,
-    "models_max": 10,
-    "default_gear":[
-        "heavy_bolt_pistol",
-        "astartes_chainsword"
-    ],
-    "replacement_gear":{
-        "Assault Intercessor Sergeant's Heavy Bolt Pistol":[
-            "hand_flamer",
-            "plasma_pistol"
-        ],
-        "Assault Intercessor Sergeant's Astartes Chainsword":[
-            "power_fist",
-            "power_weapon",
-            "thunder_hammer"
-        ]
-    }
+    "models_max": 5,
+    "additional_gear":[
+        "1 Cadian Veteran Guardsman has a Chainsword",
+        "1 other Cadian Veteran Guardsman has a Master Vox",
+        "1 other Cadian Veteran Guardsman has a Medi-pack",
+        "1 other Cadian Veteran Guardsman has a Regimental Standard"
+    ]
 }
