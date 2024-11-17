@@ -94,7 +94,7 @@ class NumberedRenderer(CustomRenderer):
 
         soup = BeautifulSoup(header_raw, "html.parser")
         print(soup)
-        header_raw=soup.string
+        header_name=soup.string
 
         snake = "_".join(header_name.lower().split())
 
