@@ -10,19 +10,19 @@
     ],
     "spells": [
         {
-            "name": "Scion of the Codex",
+            "name": "Nightshroud",
             "difficulty": 7,
-            "effect": "Select one friendly unit within 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
+            "effect": "Enemy ranged attacks against this psyker's unit have -2 to their hit roll."
         },
         {
-            "name": "Fury of the Ancients",
+            "name": "Mental Shackles",
             "difficulty": 7,
-            "effect": "Select one visible enemy Model within 18\". Draw a line between any part of this model's base and any part of the selected model's base (or hull). The selected model's unit, and every other enemy unit that this line passes over or through, suffers 1 Mortal Damage"
+            "effect": "Select an enemy unit within 18\". Until the end of the Battle Round, its Movement trait is reduced by 2\", and it has -2 to its Advance and Charge rolls."
         },
         {
-            "name": "Psychic Fortress",
-            "difficulty": 7,
-            "effect": "Until the end of the Battle Round, friendly units within 6\" have a 5++ Invulnerable Save."
+            "name": "Psychic Barrier",
+            "difficulty": 6,
+            "effect": "Until the end of the Battle Round, models in this psyker's unit have an Invulnerable Save trait of 4+."
         }
     ],
     "strategems": [
