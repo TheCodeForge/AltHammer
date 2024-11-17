@@ -4,7 +4,7 @@
 
         "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
 
-        "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
+        "Blast": "For every five Models in the target unit (rounded down) increase the number of attacks by 1",
         
         "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
 
@@ -12,11 +12,11 @@
         
         "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
         
-        "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
+        "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit did not move during the movement step of its Activation.",
 
         "Ignores Cover": "Terrain does not grant the Benefit of Cover against attacks made with this weapon. (Benefit of Cover may still be obtained from other sources.)",
         
-        "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target.",
+        "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target. All models within range are \"visible to\" this weapon, regardless of terrain.",
         
         "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" take d3 Mortal Damage; all units within 6\" take d6 Mortal Damage instead.",
         
@@ -30,7 +30,7 @@
         
         "Pistol": "This weapon may target enemy units within Melee Distance.",
 
-        "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.",
+        "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must allocate the attack to that Model during the Saving Throw step.",
 
         "Psychic": "This keyword has no effect on its own. It's here to allow other rules and effects to interact with psychic weapons.",
         
