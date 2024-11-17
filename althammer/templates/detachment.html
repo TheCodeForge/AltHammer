@@ -78,14 +78,8 @@
   {% for strat in d.strategems %}
   ### [{{ strat['cost'] }} CP] {{ strat['name'] }}
 
-  >**When:** {{ strat['when'] }}
-  >
-  >**Target:** {{ strat['target'] }}
-  >
-  >**Effect:** {{ strat['effect'] }}
-  {% if strat.get('restrictions') %}
-  >
-  > **Restrictions: * {{ strat['restrictions'] }}
+  {% include "elements/strategem.html" %}
+
   {% endif %}
   {% endfor %}
 
