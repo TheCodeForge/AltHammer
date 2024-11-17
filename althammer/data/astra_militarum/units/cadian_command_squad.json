@@ -1,10 +1,9 @@
 {    
     "name": "Cadian Command Squad",
-
+    "ppm": 13,
     "profiles": [
         {
             "name": "Cadian Commander",
-            "ppm":13,
             "base": 28,
             "move":6,
             "tough": 3,
@@ -20,7 +19,6 @@
         },
         {
             "name": "Cadian Veteran Guardsman",
-            "ppm":13,
             "base": 28,
             "move":6,
             "tough": 3,

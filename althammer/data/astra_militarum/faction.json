@@ -24,7 +24,7 @@
         {
             "name":"Kurov's Aquila",
             "cost":40,
-            "text":"Enemy Strategems cost 1 CP more when targeted at enemy units within 12\" of your +Warlord+."
+            "text":"Enemy Strategems cost 1 CP more when targeted at units within 12\" of your +Warlord+."
         }
     ],
     "strategems": [
