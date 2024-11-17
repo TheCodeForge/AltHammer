@@ -92,9 +92,9 @@
   > Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. Until the end of the battle, increase the Difficulty of this spell for your army by 1.
 
   {% for spell in d.spells %}
-  ### [{{ spell['difficulty'] }}+] {{ spell['name'] }}
+  ### {{ spell['name'] }}
 
-  >{{ spell['effect'] }}
+  {% include "elements/spell.html" %}
 
   {% endfor %}
   {% endif %}
