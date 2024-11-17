@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 from .hashes import *
 from .markdown import CustomRenderer, NumberedRenderer
 import mistletoe
@@ -68,6 +69,15 @@ def filter_get_factions(x):
 def markdown_filter(x):
     with CustomRenderer() as renderer:
         return renderer.render(mistletoe.Document(x))
+
+@app.template_filter('markdown_inline')
+def markdown_inline_filter(x):
+
+    x = markdown_filter(x)
+    soup=BeautifulSoup(x, 'html.parser')
+
+    soup = soup.p.unwrap()
+    return str(soup)
 
 @app.template_filter('numbered_markdown')
 def markdown_filter(x):

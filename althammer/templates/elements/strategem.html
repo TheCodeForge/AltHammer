@@ -1,9 +1,9 @@
 <blockquote>
 <p><b>[{{ strat['cost'] }} CP] {{ strat['name'] }}</b></p>
-<p><b>When:</b> {{ strat['when'] | markdown | safe }}</p>
-<p><b>Target:</b> {{ strat['target'] | markdown | safe}}</p>
-<p><b>Effect:</b> {{ strat['effect'] | markdown | safe}}</p>
+<p><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</p>
+<p><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</p>
+<p><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</p>
 {% if strat.get('restrictions') %}
-<p><b>Restrictions:</b> {{ strat['restrictions'] | markdown | safe }}</p>
+<p><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</p>
 {% endif %}
 </blockquote>
