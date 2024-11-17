@@ -58,6 +58,8 @@ def get_keyword(keyword):
     with open("althammer/data/keywords.json", "r+") as file:
         data=json.load(file)
 
+    data = data['weapon_keywords'].update(data['unit_keywords'])
+
     if keyword in data.keys():
         return keyword, data[keyword]
 

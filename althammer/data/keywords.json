@@ -1,73 +1,76 @@
 {
-    "Anti-Keyword X+": "When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of X or higher is considered a Critical Wound, and is successful.",
+    "weapon_keywords": {
+        "Anti-Keyword X+": "When making at attack against an enemy unit with the specified +Keyword+, an unmodified Wound roll of X or higher is considered a Critical Wound, and is successful.",
 
-    "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
+        "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
 
-    "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
-    
-    "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
+        "Blast": "For every five Models in the target unit, rounded down, increase the number of attacks by 1",
+        
+        "Devastating Wounds": "Critical Wounds automatically penetrate armor. The opponent may not roll an Armor Save. Instead, treat the attack as if the Armor Save Roll failed.",
 
-    "Extra Attacks": "Melee attacks may be made with this weapon in addition to attacks made with the originally selected melee weapon",
-    
-    "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
-    
-    "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
+        "Extra Attacks": "Melee attacks may be made with this weapon in addition to attacks made with the originally selected melee weapon",
+        
+        "Hazardous": "On an unmodified Hit roll of 1, the attacking unit takes 1 Mortal Damage.",
+        
+        "Heavy": "Attacks made with the weapon have +1 to the Hit roll if the unit does not move during its Activation.",
 
-    "Ignores Cover": "Terrain does not grant the Benefit of Cover against attacks made with this weapon. (Benefit of Cover may still be obtained from other sources.)",
-    
-    "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target.",
-    
-    "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" take d3 Mortal Damage; all units within 6\" take d6 Mortal Damage instead.",
-    
-    "Lance": "If this weapon's bearer made a Charge movement this Activation, add 1 to this weapon's Wound rolls.",
+        "Ignores Cover": "Terrain does not grant the Benefit of Cover against attacks made with this weapon. (Benefit of Cover may still be obtained from other sources.)",
+        
+        "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target.",
+        
+        "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" take d3 Mortal Damage; all units within 6\" take d6 Mortal Damage instead.",
+        
+        "Lance": "If this weapon's bearer made a Charge movement this Activation, add 1 to this weapon's Wound rolls.",
 
-    "Lethal Hits": "Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.",
-    
-    "Melta X": "Attacks made with this weapon against targets within half range have their Damage trait increased by X.",
+        "Lethal Hits": "Critical Hits automatically successfully Wound the target. Do not make a Wound Roll. Instead, treat the attack as if the Wound Roll is successful.",
+        
+        "Melta X": "Attacks made with this weapon against targets within half range have their Damage trait increased by X.",
 
-    "One-Shot": "This weapon may only be used once per battle.",
-    
-    "Pistol": "This weapon may target enemy units within Melee Distance.",
+        "One-Shot": "This weapon may only be used once per battle.",
+        
+        "Pistol": "This weapon may target enemy units within Melee Distance.",
 
-    "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.",
+        "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must select that Model during the Saving Throw step.",
 
-    "Psychic": "This keyword has no effect on its own. It's here to allow other rules and effects to interact with psychic weapons.",
-    
-    "Rapid Fire X": "If the target unit is within half range, make X additional attacks.",
-    
-    "Sustained Hits X": "Critical Hits trigger an extra X number of attacks. Do not make a Hit Roll for these additional attacks. Instead, treat the additional attacks as if the Hit roll already succeeded.",
-    
-    "Torrent": "Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.",
-    
-    "Twin-Linked": "Failed Wound rolls may be re-rolled.",
+        "Psychic": "This keyword has no effect on its own. It's here to allow other rules and effects to interact with psychic weapons.",
+        
+        "Rapid Fire X": "If the target unit is within half range, make X additional attacks.",
+        
+        "Sustained Hits X": "Critical Hits trigger an extra X number of attacks. Do not make a Hit Roll for these additional attacks. Instead, treat the additional attacks as if the Hit roll already succeeded.",
+        
+        "Torrent": "Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.",
+        
+        "Twin-Linked": "Failed Wound rolls may be re-rolled.",
+    },
+    "unit_keywords": {
 
 
+        "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6\" of the destroyed model suffers X Mortal Damage",
+        
+        "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.",
+        
+        "Entourage": "When mustering your army, only the primary model in this unit costs points. (This is taken into consideration in the on-site list builder)",
 
-    "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6\" of the destroyed model suffers X Mortal Damage",
-    
-    "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.",
-    
-    "Entourage": "When mustering your army, only the primary model in this unit costs points. (This is taken into consideration in the on-site list builder)",
+        "Fights First": "When this unit is selected as the target of a melee attack, if this unit has not yet Activated this Battle Round, it Fights as if it was Activated before the original melee attack is resolved.",
 
-    "Fights First": "When this unit is selected as the target of a melee attack, if this unit has not yet Activated this Battle Round, it Fights as if it was Activated before the original melee attack is resolved.",
+        "Firing Deck X": "After this unit Shoots, up to X models embarked within it may also Shoot.",
 
-    "Firing Deck X": "After this unit Shoots, up to X models embarked within it may also Shoot.",
+        "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
-    "Feel No Pain X+": "When this model or unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
+        "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",
 
-    "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",
+        "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Limit 1 +Leader+ per unit.",
 
-    "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Limit 1 +Leader+ per unit.",
+        "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
 
-    "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
+        "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
 
-    "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.",
+        "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+, following the same restrictions as the +Leader+ rule, provided that the other +Leader+ is not also a +Second in Command+. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
 
-    "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+, following the same restrictions as the +Leader+ rule, provided that the other +Leader+ is not also a +Second in Command+. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
+        "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 
-    "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
+        "Stealth": "If every model in a unit has the +Stealth+ ability, then all ranged attacks made against the unit have -1 to hit."
 
-    "Stealth": "If every model in a unit has the +Stealth+ ability, then all ranged attacks made against the unit have -1 to hit."
-
+    }
 }
 
