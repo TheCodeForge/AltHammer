@@ -1,0 +1,13 @@
+{
+    "name": "Special-Issue Bolt Pistol",
+    "keywords":[
+        "Pistol",
+        "Precise"
+    ],
+    "rng":12,
+    "atk":1,
+    "skl":3,
+    "str":4,
+    "ap": 1,
+    "dmg":1
+}

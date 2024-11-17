@@ -1,0 +1,28 @@
+{
+    "name": "Fealty",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":[
+                "Lethal Hits"
+            ],
+            "atk":8,
+            "skl":2,
+            "str":12,
+            "ap": 4,
+            "dmg":4
+        },
+        {
+            "name": "Sweep",
+            "keywords":[
+                "Sustained Hits 1"
+            ],
+            "atk":16,
+            "skl":2,
+            "str":6,
+            "ap": 3,
+            "dmg":1
+        }
+    ]
+    
+}

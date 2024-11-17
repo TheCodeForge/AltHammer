@@ -1,0 +1,52 @@
+{    
+    "name": "Roboute Guilliman",
+    "ppm": 285,
+    "move":8,
+    "tough": 9,
+    "save": 2,
+    "hp":10,
+    "lead": 5,
+    "oc": 4,
+    "invuln": 4,
+    "base":60,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Epic Hero",
+        "Supreme Commander",
+        "Primarch"
+    ],
+    "secondary_faction":"Ultramarines",
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Author of the Codex",
+            "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\"\n* Select an enemy unit; it becomes the Oath of Moment target if the main Oath of Moment target is destroyed this Battle Round.\n* Target a friendly unit within 12\" with a Strategem for 0 CP\n"
+        },
+        {
+            "name":"Ultramarines Bodyguard",
+            "text":"While within 3\" of a friendly +Adeptus Astartes Infantry+ unit, this model has +Lone Operative+."
+        },
+        {
+            "name":"Armor of Fate",
+            "text":"The first time this model is destroyed, roll d6. On a 3+, set this model back up on the battlefield as close to where it was as possible, not within Melee Distance, with 6 Health remaining."
+        }
+    ],
+    "range_weapons": [
+        "hand_of_dominion_ranged"
+    ],
+    "melee_weapons": [
+        "emperors_sword",
+        "hand_of_dominion_melee"
+    ],
+    "composition":[
+        "1 Roboute Guilliman"
+    ],
+    "models_min":1,
+    "models_max":1,
+    "default_gear":[
+        "hand_of_dominion_ranged",
+        "emperors_sword"
+    ]
+}

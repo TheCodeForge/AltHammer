@@ -1,0 +1,44 @@
+{    
+    "name": "The Sanguinor",
+    "ppm": 140,
+    "move":12,
+    "tough": 4,
+    "save": 2,
+    "hp":7,
+    "lead": 6,
+    "oc": 1,
+    "invuln": 4,
+    "base":25,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Jump Pack"
+    ],
+    "secondary_faction":"Blood Angels",
+    "core_rules": ["Deep Strike", "Lone Operative"],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Aura of Fervor",
+            "text":"Friendly +Adeptus Astartes+ units witin 6\" may re-roll Battle-Shock and Leadership tests."
+        },
+        {
+            "name":"Miraculous Savior",
+            "text":"Once per battle, after an enemy unit finishes a Charge, this model may be deployed from Reserves to the battlefield within Melee Distance of that enemy unit. This model then Fights that enemy unit, and counts as having been Activated this Battle Round"
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": [
+        "encarmine_broadsword"
+    ],
+    "composition":[
+        "1 Sanguinor"
+    ],
+    "models_min":1,
+    "models_max":1,
+    "default_gear":[
+        "encarmine_broadsword"
+    ]
+}

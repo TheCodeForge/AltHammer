@@ -1,0 +1,55 @@
+{    
+    "name": "Impulsor",
+    "ppm":80,
+    "move":12,
+    "tough": 9,
+    "save": 3,
+    "hp":11,
+    "lead": 6,
+    "oc": 2,
+    "base":100,
+    "keywords": [
+        "Vehicle",
+        "Transport",
+        "Dedicated Transport"
+    ],
+    "core_rules": [
+        "Deadly Demise D3",
+        "Firing Deck 6"
+    ],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Assault Vehicle",
+            "text":"Units may disembark from this +Transport+ after it has made an Advance move. Units that do so count as having made a Normal move, but cannot Charge this Battle Round."
+        }
+    ],
+    "range_weapons": [
+        "bellicatus_missile_array",
+        "dual_fragstorm_grenade_launcher",
+        "ironhail_heavy_stubber",
+        "ironhail_skytalon_array",
+        "dual_storm_bolter"
+    ],
+    "melee_weapons": ["armored_hull"],
+    "composition":[
+        "1 Impulsor"
+    ],
+    "default_gear":[
+        "dual_storm_bolter",
+        "armored_hull",
+        "ironhail_heavy_stubber",
+        "bellicatus_missile_array"
+    ],
+    "replacement_gear":{
+        "Dual Storm Bolter":["dual_fragstorm_grenade_launcher"],
+        "Bellicatus Missile Array":[
+            "ironhail_skytalon_array",
+            "orbital_comms_array",
+            "shield_dome"
+        ]
+    },
+    "transport_qty": 7,
+    "transport_type": ["Phobos", "Infantry"],
+    "transport_banned": ["Jump Pack"]
+}

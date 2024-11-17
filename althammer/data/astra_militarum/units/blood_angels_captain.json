@@ -1,0 +1,58 @@
+{    
+    "name": "Blood Angels Captain",
+    "secondary_faction": "Blood Angels",
+    "ppm":75,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":5,
+    "lead": 6,
+    "oc": 1,
+    "base": 40,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Primaris",
+        "Captain"
+    ],
+    "core_rules": [
+        "Leader [Primaris]"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Rites of Battle",
+            "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
+        },
+        {
+            "name":"Finest Hour",
+            "text":"This ability may be activated once per battle. Until the end of the phase, this model's melee weapons have +3 Attacks and +[Devastating Wounds]+."
+        }
+    ],
+    "range_weapons": [
+        "heavy_bolt_pistol",
+        "inferno_pistol"
+    ],
+    "melee_weapons": [
+        "master_crafted_chainsword",
+        "power_fist",
+        "relic_weapon"
+    ],
+    "composition":[
+        "1 Blood Angels Captain"
+    ],
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "master_crafted_chainsword"
+    ],
+    "replacement_gear":{
+        "This model's Heavy Bolt Pistol":[
+            "inferno_pistol"
+        ],
+        "This model's Master Crafted Chainsword":[
+            "power_fist",
+            "relic_weapon"
+        ]
+    }
+}

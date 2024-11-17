@@ -1,0 +1,64 @@
+{    
+    "name": "Chaplain Grimaldus",
+    "ppm": 130,
+    "profiles":[
+        {
+            "name": "Chaplain Grimaldus",
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":4,
+            "lead": 5,
+            "oc": 1,
+            "invuln": 4,
+            "base":40,
+            "keywords": ["Character", "Epic Hero", "Grenades"],
+            "default_gear":[
+                "plasma_pistol",
+                "artificer_crozius"
+            ]
+        },
+        {
+            "name": "Cenobyte Servitor",
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":1,
+            "lead": 8,
+            "oc": 1,
+            "invuln": 4,
+            "base":28,
+            "default_gear": [
+                "close_combat_weapon"
+            ]
+        }
+    ],
+    "keywords": [
+        "Infantry"
+    ],
+    "secondary_faction":"Black Templar",
+    "core_rules": ["Leader [Primaris]", "Feel No Pain 5+", "Entourage"],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Litanies of the Devout",
+            "text":"While Grimaldus is leading a unit, that unit's melee attacks may re-roll the Hit roll."
+        },
+        {
+            "name":"Temple Relics",
+            "text":"At the start of the Battle Round, if this unit contains one or more Cenobyte Servitor models, select one of the following effects; it lasts until the end of the Battle Round:\n* This unit may Charge after making an Advance or Fall Back movement.\n* This unit has !Feel No Pain 5+!\n* This unit's melee weapons' Armor Break trait is improved by 1."
+        }
+    ],
+    "range_weapons": [
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "artificer_crozius",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Chaplain Grimaldus",
+        "3 Cenobyte Servitors"
+    ],
+    "models_min":1,
+    "models_max":4
+}

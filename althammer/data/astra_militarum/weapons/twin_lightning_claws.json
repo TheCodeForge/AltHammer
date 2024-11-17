@@ -1,0 +1,12 @@
+{
+    "name":"Twin Lightning Claws",
+    "keywords":[
+        "Incendiary",
+        "Twin-Linked"
+    ],
+    "atk":7,
+    "skl":2,
+    "str":5,
+    "ap": 2,
+    "dmg":1
+}

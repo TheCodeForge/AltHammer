@@ -1,0 +1,44 @@
+{    
+    "name": "Heavy Intercessor Squad",
+    "ppm":19,
+    "move":5,
+    "tough": 6,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 2,
+    "base":50,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Gravis"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Unyielding in the Face of the Foe",
+            "text":"While within range of an objective marker you control, models in this unit have +1 to Saving rolls made against 1-Damage attacks."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "heavy_bolt_rifle",
+        "heavy_bolter"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Heavy Intercessor Sergeant",
+        "4-9 Heavy Intercessors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "heavy_bolt_rifle"
+    ],
+    "replacement_gear":{
+        "Every 5th model's Heavy Bolt Rifle":[
+            "heavy_bolter"
+        ]
+    }
+}

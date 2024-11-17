@@ -17,6 +17,10 @@
 
   <h1 class="small-caps">{{ f.name }}</h1>
 
+  {% if f.lore %}
+  <p><i>{{ f.lore }}</i></p>
+  {% endif %}
+
   {% filter numbered_markdown %}
 
   # {{ f.name }} Faction Rules

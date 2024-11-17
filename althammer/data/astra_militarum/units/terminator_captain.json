@@ -1,0 +1,64 @@
+{    
+    "name": "Terminator Captain",
+    "ppm":95,
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "base":50,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Terminator",
+        "Captain"
+    ],
+    "core_rules": [
+        "Deep Strike",
+        "Leader [Terminator]"
+    ],
+    "faction_rules": [
+        "Oath of Moment"],
+    "unit_rules": [{
+            "name":"Rites of Battle",
+            "text":"Once per Battle Round, you may target a friendly +Captain+ unit with a Strategem for 0 CP, even if that Strategem has already been used that Battle Round."
+        },
+        {
+            "name":"The Imperium's Sword",
+            "text":"You may re-roll Charge rolls made for this model's unit."
+        }
+    ],
+    "range_weapons": [
+        "combi_weapon",
+        "storm_bolter"
+    ],
+    "melee_weapons": [
+        "chain_fist",
+        "power_fist",
+        "relic_weapon",
+        "thunder_hammer",
+        "twin_lightning_claws"
+    ],
+    "composition":[
+        "1 Terminator Captain"
+    ],
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "astartes_chainsword"
+    ],
+    "replacement_gear":{
+        "Storm Bolter":[
+            "combi_weapon",
+            "power_fist",
+            "relic_weapon",
+            "thunder_hammer"
+        ],
+        "Relic Weapon":[
+            "chain_fist",
+            "power_fist",
+            "thunder_hammer"
+        ]
+    }
+}

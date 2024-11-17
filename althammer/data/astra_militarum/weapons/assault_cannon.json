@@ -1,0 +1,12 @@
+{
+    "name":"Assault Cannon",
+    "keywords":[
+        "Devastating Wounds"
+    ],
+    "rng":24,
+    "atk":6,
+    "skl":3,
+    "str":6,
+    "ap": 0,
+    "dmg":1
+}

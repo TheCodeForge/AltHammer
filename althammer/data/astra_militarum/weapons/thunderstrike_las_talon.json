@@ -1,0 +1,10 @@
+{
+    "name": "Thunderstrike Las-talon",
+    "keywords":[],
+    "rng":36,
+    "atk":2,
+    "skl":2,
+    "str":9,
+    "ap": 3,
+    "dmg":"d6 + 1"
+}

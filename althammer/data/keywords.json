@@ -30,7 +30,7 @@
         
         "Pistol": "This weapon may target enemy units within Melee Distance.",
 
-        "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must allocate the attack to that Model during the Saving Throw step.",
+        "Precise": "Before making Hit rolls, the attacking player may select a +Leader+ model which is attached to the target unit, and which is within range of, and visible to, the attacking models. The opposing player must allocate the attack to that Model during the Saving Throw step. Additionally, this weapon's attacks always pass Friendly Fire tests.",
 
         "Psychic": "This keyword has no effect on its own. It's here to allow other rules and effects to interact with psychic weapons.",
         

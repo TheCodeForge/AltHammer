@@ -1,0 +1,9 @@
+{
+    "name":"Dual Power Fist",
+    "keywords":["Twin-Linked"],
+    "atk":3,
+    "skl":4,
+    "str":8,
+    "ap": 2,
+    "dmg":2
+}

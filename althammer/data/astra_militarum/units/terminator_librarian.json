@@ -1,0 +1,52 @@
+{    
+    "name": "Terminator Librarian",
+    "ppm":75,
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":5,
+    "lead": 6,
+    "psyker": 1,
+    "oc": 1,
+    "base":40,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Psyker",
+        "Imperium",
+        "Terminator"
+    ],
+    "core_rules": [
+        "Deep Strike",
+        "Leader [Terminator]"
+    ],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Psychic Hood",
+            "text":"While leading a unit, +Bodyguard+ models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
+        },
+        {
+            "name":"Veil of Time",
+            "text":"While leading a unit, +Bodyguard+ models in the unit have +[Sustained Hits 1]+ on all their equipped weapons."
+        }
+    ],
+    "range_weapons": [
+        "combi_weapon",
+        "storm_bolter"
+    ],
+    "melee_weapons": [
+        "force_weapon"
+    ],
+    "composition":[
+        "1 Terminator Librarian"
+    ],
+    "default_gear":[
+        "storm_bolter",
+        "force_weapon"
+    ],
+    "replacement_gear":{
+        "Storm Bolter":[
+            "combi_weapon"
+        ]
+    }
+}
