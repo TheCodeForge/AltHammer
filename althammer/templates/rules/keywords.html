@@ -1,0 +1,26 @@
+{% extends "_core_centered.html" %}
+
+{% block pagecontent %}
+
+{% set data = (0|all_keywords) %}
+
+{% filter numbered_markdown %}
+
+# Weapon Keywords
+
+{% for entry in data['weapon_keywords'].keys()|sort %}
+
+## {{ entry }}
+
+{{ data['weapon_keywords'][entry] }}
+
+# Unit Keywords
+
+{% for entry in data['unit_keywords'].keys()|sort %}
+
+## {{ entry }}
+
+{{ data['unit_keywords'][entry] }}
+
+{% endfilter %}
+{% endblock %}
