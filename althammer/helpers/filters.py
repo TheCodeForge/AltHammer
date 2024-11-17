@@ -84,7 +84,7 @@ def markdown_inline_filter(x):
     return str(soup)
 
 @app.template_filter('numbered_markdown')
-def markdown_filter(x):
+def markdown_numbered_filter(x):
     
     with NumberedRenderer() as renderer:
         output = renderer.render(mistletoe.Document(x))
