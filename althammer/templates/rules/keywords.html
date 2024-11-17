@@ -6,13 +6,13 @@
 
 {% set data = (0|all_keywords) %}
 
-{% filter numbered_markdown(keyword_titles=True) %}
+{% filter numbered_markdown %}
 
 # Unit Keywords
 
 {% for entry in data['unit_keywords'].keys()|sort %}
 
-## {{ entry }}
+## <span class="keyword">{{ entry }}</span>
 
 {{ data['unit_keywords'][entry] }}
 
@@ -22,7 +22,7 @@
 
 {% for entry in data['weapon_keywords'].keys()|sort %}
 
-## {{ entry }}
+## <span class="keyword">{{ entry }}</span>
 
 {{ data['weapon_keywords'][entry] }}
 
