@@ -51,7 +51,7 @@
         
         "Entourage": "When mustering your army, only the primary model in this unit costs points. (This is taken into consideration in the on-site list builder)",
 
-        "Fights First": "When this unit is selected as the target of a melee attack, if this unit has not yet Activated this Battle Round, it Fights as if it was Activated before the original melee attack is resolved.",
+        "Fights First": "When this unit is selected as the target of a melee attack, if this unit has not yet Activated this Battle Round, it Fights as if it was Activated before the original melee attack is resolved. It may not then Fight during its own Activation later.",
 
         "Firing Deck X": "After this unit Shoots, up to X models embarked within it may also Shoot.",
 
@@ -59,7 +59,7 @@
 
         "Infiltrators": "If every model in a unit has the +Infiltrators+ ability, then at the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.",
 
-        "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Limit 1 +Leader+ per unit.",
+        "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
         "Lone Operative": "Unless part of an attached unit, this unit cannot be selected as the target of a ranged attack from over 12\" away.",
 

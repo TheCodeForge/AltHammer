@@ -2,13 +2,13 @@
 
 {% block pagecontent %}
 
-<h1>Keyword Reference</h1>
+<h1>Keyword Rules</h1>
 
 {% set data = (0|all_keywords) %}
 
 {% filter numbered_markdown %}
 
-# Unit Keywords
+# Unit Rules
 
 {% for entry in data['unit_keywords'].keys()|sort %}
 
@@ -18,7 +18,7 @@
 
 {% endfor %}
 
-# Weapon Keywords
+# Weapon Rules
 
 {% for entry in data['weapon_keywords'].keys()|sort %}
 
