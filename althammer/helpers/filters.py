@@ -73,13 +73,14 @@ def markdown_filter(x):
 @app.template_filter('markdown_inline')
 def markdown_inline_filter(x):
 
+    print(f'RAW {x}')
     x = markdown_filter(x)
-    print(x)
+    print(f'MARKDOWN {x}')
     soup=BeautifulSoup(x, 'html.parser')
-    print(soup)
+    print(f'SOUP {soup}')
 
     soup = soup.p.unwrap()
-    print(soup)
+    print(f'UNWRAPPED {soup}')
     return str(soup)
 
 @app.template_filter('numbered_markdown')
