@@ -1,5 +1,6 @@
 {    
     "name": "Basilisk",
+    "base": "Use Model"
     "ppm":140,
     "move": 8,
     "tough": 8,
