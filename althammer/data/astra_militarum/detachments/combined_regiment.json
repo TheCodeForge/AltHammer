@@ -11,17 +11,17 @@
     "spells": [
         {
             "name": "Nightshroud",
-            "difficulty": 7,
+            "difficulty": 6,
             "effect": "Enemy ranged attacks against this psyker's unit have -2 to their hit roll."
         },
         {
             "name": "Mental Shackles",
-            "difficulty": 7,
+            "difficulty": 6,
             "effect": "Select an enemy unit within 18\". Until the end of the Battle Round, its Movement trait is reduced by 2\", and it has -2 to its Advance and Charge rolls."
         },
         {
             "name": "Psychic Barrier",
-            "difficulty": 6,
+            "difficulty": 5,
             "effect": "Until the end of the Battle Round, models in this psyker's unit have an Invulnerable Save trait of 4+."
         }
     ],

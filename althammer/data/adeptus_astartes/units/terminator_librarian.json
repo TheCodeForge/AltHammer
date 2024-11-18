@@ -23,11 +23,11 @@
     "faction_rules": ["Oath of Moment"],
     "unit_rules": [{
             "name":"Psychic Hood",
-            "text":"While leading a unit, +Bodyguard+ models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
+            "text":"While leading a unit, models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
         },
         {
             "name":"Veil of Time",
-            "text":"While leading a unit, +Bodyguard+ models in the unit have +[Sustained Hits 1]+ on all their equipped weapons."
+            "text":"While leading a unit, models in the unit have +[Sustained Hits 1]+ on all their equipped weapons."
         }
     ],
     "range_weapons": [

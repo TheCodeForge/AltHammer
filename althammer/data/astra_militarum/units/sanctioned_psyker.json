@@ -1,14 +1,14 @@
 {    
-    "name": "Librarian",
-    "ppm":65,
-    "move":5,
-    "tough": 5,
-    "save": 2,
-    "hp":5,
-    "lead": 6,
-    "psyker": 1,
+    "name": "Sanctioned Psyker",
+    "ppm":60,
+    "move":6,
+    "tough": 3,
+    "save": 5,
+    "hp":3,
+    "lead": 7,
+    "psyker": 0,
     "oc": 1,
-    "base":40,
+    "base":32,
     "keywords": [
         "Infantry",
         "Character",
@@ -17,26 +17,25 @@
         "Primaris"
     ],
     "core_rules": [
-        "Deep Strike",
-        "Leader [Primaris]"
+        "Leader [Regiment]"
     ],
-    "faction_rules": ["Oath of Moment"],
+    "faction_rules": [],
     "unit_rules": [{
             "name":"Psychic Hood",
             "text":"While leading a unit, models in the unit have !Feel No Pain 4+! against +Psychic+ damage."
         }
     ],
     "range_weapons": [
-        "bolt_pistol"
+        "laspistol"
     ],
     "melee_weapons": [
         "force_weapon"
     ],
     "composition":[
-        "1 Librarian"
+        "1 Sanctioned Psyker"
     ],
     "default_gear":[
-        "bolt_pistol",
+        "laspistol",
         "force_weapon"
     ]
 }
