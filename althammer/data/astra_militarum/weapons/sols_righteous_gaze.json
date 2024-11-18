@@ -1,0 +1,12 @@
+{
+    "name": "Sol's Righteous Gaze",
+    "keywords":[
+        "Pistol"
+    ],
+    "rng":12,
+    "atk":2,
+    "skl":2,
+    "str":8,
+    "ap": 2,
+    "dmg":2
+}

@@ -1,0 +1,44 @@
+{    
+    "name": "Lord Solar Leontus",
+    "base": 80,
+    "ppm":125,
+    "move": 12,
+    "tough": 4,
+    "save": 3,
+    "hp":8,
+    "lead": 6,
+    "oc": 2,
+    "invuln": 4,
+    "keywords": [
+        "Mounted",
+        "Character",
+        "Epic Hero",
+        "Officer",
+        "Supreme Commander"
+    ],
+    "core_rules": ["Leader [Regiment]"],
+    "faction_rules": ["Voice of Command"],
+    "unit_rules": [
+        {
+            "name":"The Lord Solar",
+            "text": "At the start of the Battle Round, gain 1 CP."
+        }
+    ],
+    "range_weapons": [
+        "sols_righteous_gaze"
+    ],
+    "melee_weapons": [
+        "conquest",
+        "konstantins_hooves"
+    ],
+    "composition":[
+        "1 Lord Solar Leontus"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "sols_righteous_gaze",
+        "conquest",
+        "konstantins_hooves"
+    ]
+}
