@@ -1,0 +1,54 @@
+{    
+    "name": "Heavy Weapons Squad",
+    "ppm":17,
+    "base": 50,
+    "move": 6,
+    "tough": 3,
+    "save": 5,
+    "hp":2,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Artillery",
+        "Regiment",
+        "Grenades"
+    ],
+    "core_rules": [],
+    "faction_rules": [],
+    "unit_rules": [
+        {
+            "name":"Covering Fire",
+            "text": "When targeting this unit with the Fire Overwatch strategem, this unit hits on unmodified Hit rolls of 5+, or 4+ if within 6\" of a friendly +Platoon+ unit."
+        }
+    ],
+    "range_weapons": [
+        "mounted_autocannon",
+        "heavy_bolter",
+        "las_small_arms",
+        "lascannon",
+        "missile_launcher",
+        "mortar"
+    ],
+    "melee_weapons": [
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1-3 Heavy Weapons Teams"
+    ],
+    "models_min": 1,
+    "models_max": 3,
+    "default_gear":[
+        "heavy_bolter",
+        "las_small_arms"
+    ],
+    "replacement_gear":{
+        "Any model's Heavy Bolter":
+            [
+                "mounted_autocannon",
+                "lascannon",
+                "missile_launcher",
+                "mortar"
+            ]
+    }
+}

@@ -1,11 +1,12 @@
 {
     "name": "Heavy Bolter",
     "keywords":[
+        "Heavy"
         "Sustained Hits 1"
     ],
     "rng":36,
     "atk":3,
-    "skl":4,
+    "skl":5,
     "str":5,
     "ap": 1,
     "dmg":2
