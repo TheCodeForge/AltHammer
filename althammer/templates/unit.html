@@ -174,7 +174,7 @@
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.profiles[0].hp }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.profiles[0].lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.profiles[0].oc }}</span></th>
-            {% if 'psyker' in u.profiles[0].keys() %}
+            {% if 'psyker' in u.profiles[0].__dict__.keys() %}
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.profiles[0].psyker >= 1 else '' }}{{ u.profiles[0].psyker }}</span></th>
             {% endif %}
           </tr>
@@ -189,7 +189,7 @@
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ profile.hp }}</span></td>
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ profile.lead }}+</span></td>
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ profile.oc }}</span></td>
-            {% if profile.psyker %}
+            {% if 'psyker' in profile.__dict__.keys() %}
             <td scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if profile.psyker >= 1 else '' }}{{ profile.psyker }}</span></td>
             {% endif %}
           </tr>
@@ -203,7 +203,7 @@
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.hp }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.oc }}</span></th>
-            {% if u.psyker %}
+            {% if 'psyker' in u.__dict__.keys() %}
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.psyker >= 1 else '' }}{{ u.psyker }}</span></th>
             {% endif %}
           </tr>
