@@ -1,0 +1,67 @@
+{    
+    "name": "Cadian Castellan",
+    "ppm":28,
+    "move":6,
+    "tough": 3,
+    "save": 5,
+    "hp":4,
+    "lead": 7,
+    "oc": 1,
+    "invuln": 5,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Officer",
+        "Grenades",
+        "Cadian"
+    ],
+    "core_rules": [
+        "Leader [Cadian]"
+    ],
+    "faction_rules": ["Voice of Command"],
+    "unit_rules": [
+        {
+            "name":"Senior Officer",
+            "text":"While this model is leading a unit, ranged weapons equipped by models in that unit have +[SUSTAINED HITS 1]+."
+        },
+        {
+            "name":"Get Back in the Fight",
+            "text":"While this model is leading a unit, that unit may Shoot after making a Fall Back move."
+        },
+        {
+            "name":"Orders",
+            "text":"This +Officer+ can issue 1 Order to a +Regiment+ unit."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "boltgun",
+        "laspistol"
+    ],
+    "melee_weapons": [
+        "chainsword",
+        "power_fist",
+        "power_weapon"
+    ],
+    "composition":[
+        "1 Cadian Castellan"
+    ],
+    "default_gear":[
+        "laspistol",
+        "chainsword"
+    ],
+    "replacement_gear":{
+        "This model's Laspistol":
+            [
+                "bolt_pistol",
+                "plasma_pistol"
+            ],
+        "This model's Chainsword": 
+            [
+                "boltgun",
+                "power_fist",
+                "power_weapon"
+            ]
+    }
+}
