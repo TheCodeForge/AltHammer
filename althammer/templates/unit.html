@@ -174,7 +174,7 @@
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Health"><i class="fas fa-fw fa-heart"></i> {{ u.profiles[0].hp }}</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.profiles[0].lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.profiles[0].oc }}</span></th>
-            {% if u.profiles[0].psyker %}
+            {% if 'psyker' in u.profiles[0].keys() %}
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.profiles[0].psyker >= 1 else '' }}{{ u.profiles[0].psyker }}</span></th>
             {% endif %}
           </tr>
