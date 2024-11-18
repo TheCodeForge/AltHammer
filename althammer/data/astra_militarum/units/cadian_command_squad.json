@@ -37,7 +37,7 @@
         "Grenades",
         "Cadian"
     ],
-    "core_rules": ["Leader [Cadian]"],
+    "core_rules": ["Leader [Cadian]", "Second in Command"],
     "faction_rules": ["Voice of Command"],
     "unit_rules": [{
             "name":"Cadia Stands!",

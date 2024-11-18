@@ -1,0 +1,54 @@
+{    
+    "name": "Commissar",
+    "ppm":30,
+    "move":6,
+    "tough": 3,
+    "save": 5,
+    "hp":3,
+    "lead": 6,
+    "oc": 1,
+    "invuln": 5,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Officer"
+    ],
+    "core_rules": [
+        "Leader [Regiment]"
+    ],
+    "faction_rules": ["Voice of Command"],
+    "unit_rules": [
+        {
+            "name":"Summary Execution",
+            "text":"Once per Battle Round, before Activating a unit, select one friendly Battle-Shocked +Astra Militarum+ +Infantry+ unit within 12\". If you do, destroy one model in that unit, and it is no longer Battle-Shocked."
+        },
+        {
+            "name":"Political Overwatch",
+            "text":"While another +Officer+ is in the same unit as this model, this unit can re-roll Battle-Shock tests."
+        },
+        {
+            "name":"Orders",
+            "text":"This +Officer+ can issue one \"Duty and Honor!\" or \"Fix Bayonets!\" Order to a +Regiment+ unit."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "chainsword",
+        "power_weapon"
+    ],
+    "composition":[
+        "1 Commissar"
+    ],
+    "default_gear":[
+        "bolt_pistol",
+        "power_weapon"
+    ],
+    "replacement_gear":{
+        "This model's Bolt Pistol": ["plasma_pistol"],
+        "This model's Chainsword": ["power_weapon"]
+    }
+}
