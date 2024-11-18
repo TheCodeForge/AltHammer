@@ -23,7 +23,7 @@
     "unit_rules": [
         {
             "name":"Senior Officer",
-            "text":"While this model is leading a unit, ranged weapons equipped by models in that unit have +[SUSTAINED HITS 1]+."
+            "text":"While this model is leading a unit, ranged weapons equipped by models in that unit have +[Sustained Hits 1]+."
         },
         {
             "name":"Get Back in the Fight",
