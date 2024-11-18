@@ -1,0 +1,52 @@
+{    
+    "name": "Field Ordnance Battery",
+    "ppm":50,
+    "base": 100,
+    "move": 4,
+    "tough": 5,
+    "save": 4,
+    "hp":6,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Artillery",
+        "Regiment",
+        "Grenades"
+    ],
+    "core_rules": [],
+    "faction_rules": [],
+    "unit_rules": [
+        {
+            "name":"Rearm, Reload, Fire",
+            "text": "While this unit is under the effect of an Order, if it Remains Stationary, all of its +[Heavy]+ weapons gain +[Sustained Hits 1]+ until the end of the Activation."
+        }
+    ],
+    "range_weapons": [
+        "bombast_field_gun",
+        "heavy_lascannon",
+        "lasgun",
+        "laspistol",
+        "malleus_rocket_launcher"
+    ],
+    "melee_weapons": [
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1-2 Ordnance Teams"
+    ],
+    "models_min": 1,
+    "models_max": 2,
+    "default_gear":[
+        "malleus_rocket_launcher",
+        "lasgun",
+        "laspistol"
+    ],
+    "replacement_gear":{
+        "Any model's Malleus Rocket Launcher":
+            [
+                "bombast_field_gun",
+                "heavy_lascannon"
+            ]
+    }
+}

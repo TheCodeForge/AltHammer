@@ -1,5 +1,6 @@
 {    
     "name": "Armored Sentinel",
+    "base": 80,
     "ppm":65,
     "move": 8,
     "tough": 8,
