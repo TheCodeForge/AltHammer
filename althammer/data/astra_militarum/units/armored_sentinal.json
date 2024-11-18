@@ -1,0 +1,56 @@
+{    
+    "name": "Armored Sentinel",
+    "ppm":65,
+    "move": 8,
+    "tough": 8,
+    "save": 2,
+    "hp":7,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Vehicle",
+        "Walker",
+        "Regiment",
+        "Squadron"
+    ],
+    "core_rules": ["Deadly Demise 1"],
+    "faction_rules": [],
+    "unit_rules": [
+        {
+            "name":"Mobile Hunter-Killers",
+            "text": "Attacks made by this unit against a +Monster+ or +Vehicle+ have +[Twin-Linked]+"
+        }
+    ],
+    "range_weapons": [
+        "autocannon",
+        "heavy_flamer",
+        "hunter_killer_missile",
+        "lascannon",
+        "militarum_multi_laser",
+        "missile_launcher",
+        "plasma_cannon"
+    ],
+    "melee_weapons": [
+        "sentinel_chainsaw"
+    ],
+    "composition":[
+        "1-3 Armored Sentinels"
+    ],
+    "models_min": 1,
+    "models_max": 3,
+    "default_gear":[
+        "militarum_multi_laser",
+        "sentinel_chainsaw",
+        "hunter_killer_missile"
+    ],
+    "replacement_gear":{
+        "Any model's Militarum Multi-laser":
+        [
+        "autocannon",
+        "heavy_flamer",
+        "lascannon",
+        "missile_launcher",
+        "plasma_cannon"
+        ]
+    }
+}

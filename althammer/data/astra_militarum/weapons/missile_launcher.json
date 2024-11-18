@@ -1,0 +1,28 @@
+{
+    "name":"Missile Launcher",
+    "profiles":[
+        {
+            "name": "Frag",
+            "keywords":[
+                "Blast",
+                "Heavy"
+            ],
+            "rng":48,
+            "atk":"d6",
+            "skl":4,
+            "str":4,
+            "ap": 0,
+            "dmg":1
+        },
+        {
+            "name": "Krak",
+            "keywords":["Heavy"],
+            "rng":48,
+            "atk":1,
+            "skl":4,
+            "str":9,
+            "ap": 2,
+            "dmg":"d6"
+        }
+    ]
+}

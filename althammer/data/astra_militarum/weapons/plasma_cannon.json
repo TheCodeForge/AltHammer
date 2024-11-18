@@ -1,0 +1,33 @@
+{
+    "name": "Plasma Cannon",
+    "profiles":[
+        {
+            "name": "Standard",
+            "keywords":[
+                "Incendiary",
+                "Blast"
+            ],
+            "rng":36,
+            "atk":"d3",
+            "skl":4,
+            "str":7,
+            "ap": 2,
+            "dmg":1
+        },
+        {
+            "name": "Overcharged",
+            "keywords":[
+                "Hazardous",
+                "Incendiary",
+                "Blast"
+            ],
+            "rng":36,
+            "atk":"d3",
+            "skl":4,
+            "str":8,
+            "ap": 3,
+            "dmg":2
+        }
+    ]
+    
+}
