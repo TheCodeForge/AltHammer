@@ -150,7 +150,7 @@ blockquote {
 /*Faction unit list */
 
 #faction-units input.form-control {
-    width: 90px;
+    min-width: 100px;
 }
 table.table-faction input.form-control {
     width: 65px;
