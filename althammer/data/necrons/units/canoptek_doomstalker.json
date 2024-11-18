@@ -15,7 +15,12 @@
     ],
     "core_rules": ["Deadly Demise D3"],
     "faction_rules": ["Reanimation Protocols"],
-    "unit_rules": [],
+    "unit_rules": [
+        {
+            "name":"Sentinal Construct",
+            "text": "When targeting this unit with the Fire Overwatch strategem, this unit hits on unmodified Hit rolls of 5+."
+        }
+    ],
     "range_weapons": [
         "doomsday_blaster",
         "twin_gauss_flayer"
