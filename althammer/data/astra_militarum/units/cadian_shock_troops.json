@@ -1,0 +1,40 @@
+{    
+    "name": "Cadian Shock Troops",
+    "ppm":6,
+    "move":6,
+    "tough": 3,
+    "save": 5,
+    "hp":1,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Regiment",
+        "Platoon",
+        "Cadian"
+    ],
+    "core_rules": ["Secure Objectives"],
+    "faction_rules": [],
+    "unit_rules": [],
+    "range_weapons": [
+        "lasgun"
+    ],
+    "melee_weapons": [
+        "chainsword",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "9-18 Shock Troopers",
+        "1 Shock Trooper Sergeant per 9 Shock Troopers"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "lasgun",
+        "astartes_chainsword"
+    ],
+    "replacement_gear":{
+    }
+}

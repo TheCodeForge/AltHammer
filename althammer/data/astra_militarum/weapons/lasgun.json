@@ -1,0 +1,13 @@
+{
+    "name":"Lasgun",
+    "keywords":[
+        "Rapid Fire 1",
+        "Incendiary"
+    ],
+    "rng":24,
+    "atk":1,
+    "skl":4,
+    "str":3,
+    "ap": 0,
+    "dmg":1
+}
