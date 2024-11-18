@@ -1,5 +1,5 @@
 {    
-    "name": "Cadian Shock Troops",
+    "name": "Catachan Jungle Fighters",
     "ppm":6,
     "move":6,
     "tough": 3,
@@ -13,25 +13,30 @@
         "Grenades",
         "Regiment",
         "Platoon",
-        "Cadian"
+        "Catachan"
     ],
-    "core_rules": ["Secure Objectives"],
+    "core_rules": ["Scouts 6\""],
     "faction_rules": [],
-    "unit_rules": [],
+    "unit_rules": [
+        {
+            "name": "Jungle Fighters",
+            "text": "Whenever this unit makes a Charge move, or is the target of a successful Charge move, until the end of the Battle Round, improve the Strength and Armor Break traits of its melee weapons by 1."
+        }
+    ],
     "range_weapons": [
+        "flamer",
         "lasgun",
         "laspistol"
     ],
     "melee_weapons": [
-        "chainsword",
         "close_combat_weapon"
     ],
     "wargear":[
         "vox_caster"
     ],
     "composition":[
-        "9-18 Shock Troopers",
-        "1 Shock Trooper Sergeant per 9 Shock Troopers"
+        "9-18 Jungle Fighters",
+        "1 Jungle Fighter Sergeant per 9 Jungle Fighters"
     ],
     "models_min": 10,
     "models_max": 20,
@@ -42,6 +47,7 @@
     },
     "additional_gear": [
         "Shock Trooper Sergeants have their lasgun replaced with a laspistol",
-        "Every 10th model is equipped with a Vox-Caster"
+        "Every 10th model is equipped with a Vox-Caster",
+        "Every 5th model's Lasgun can be replaced with a Flamer"
     ]
 }
