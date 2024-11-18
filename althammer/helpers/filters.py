@@ -99,7 +99,9 @@ def nonce(x):
 @app.template_filter("snake")
 def snake(x):
 
-    return "_".join(x.lower().split())
+    output = "_".join(x.lower().split())
+    output = output.replace("'", "")
+    return output
 
 @app.template_filter("str")
 def to_str(x):
