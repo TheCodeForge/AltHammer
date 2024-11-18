@@ -19,7 +19,8 @@
     "faction_rules": [],
     "unit_rules": [],
     "range_weapons": [
-        "lasgun"
+        "lasgun",
+        "laspistol"
     ],
     "melee_weapons": [
         "chainsword",
@@ -32,9 +33,12 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "lasgun",
-        "astartes_chainsword"
+        "lasgun"
     ],
     "replacement_gear":{
-    }
+    },
+    "additional_gear": [
+        "Shock Trooper Sergeants have their lasgun replaced with a laspistol",
+        "Every 10th model is equipped with a Vox-Caster"
+    ]
 }
