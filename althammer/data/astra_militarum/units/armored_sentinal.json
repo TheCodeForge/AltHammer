@@ -46,12 +46,12 @@
     ],
     "replacement_gear":{
         "Any model's Militarum Multi-laser":
-        [
-        "autocannon",
-        "heavy_flamer",
-        "lascannon",
-        "missile_launcher",
-        "plasma_cannon"
-        ]
+            [
+                "autocannon",
+                "heavy_flamer",
+                "lascannon",
+                "missile_launcher",
+                "plasma_cannon"
+            ]
     }
 }

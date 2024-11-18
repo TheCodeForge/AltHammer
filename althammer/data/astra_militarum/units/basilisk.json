@@ -1,0 +1,45 @@
+{    
+    "name": "Basilisk",
+    "ppm":140,
+    "move": 8,
+    "tough": 8,
+    "save": 2,
+    "hp":7,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Vehicle",
+        "Artillery",
+        "Squadron"
+    ],
+    "core_rules": ["Deadly Demise d3"],
+    "faction_rules": [],
+    "unit_rules": [
+    ],
+    "range_weapons": [
+        "earthshaker_cannon",
+        "heavy_flamer",
+        "hunter_killer_missile",
+        "heavy_bolter"
+    ],
+    "melee_weapons": [
+        "armored_treads"
+    ],
+    "composition":[
+        "1 Basilisk"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "earthshaker_cannon",
+        "heavy_bolter",
+        "hunter_killer_missile",
+        "armored_treads"
+    ],
+    "replacement_gear":{
+        "This model's Heavy Bolter":
+            [
+                "heavy_flamer"
+            ]
+    }
+}
