@@ -6,7 +6,7 @@
     "save": 5,
     "hp":3,
     "lead": 7,
-    "psyker": 0,
+    "psyker": "0",
     "oc": 1,
     "base":32,
     "keywords": [
