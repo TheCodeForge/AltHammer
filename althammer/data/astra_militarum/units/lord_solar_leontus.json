@@ -22,6 +22,14 @@
         {
             "name":"The Lord Solar",
             "text": "At the start of the Battle Round, gain 1 CP."
+        },
+        {
+            "name":"The Collegiate Astrolex",
+            "text": "After both players have deployed their armies, select up to three +Astra Militarum+ units from your army and redeploy them. Selected units may alternatively be placed into Reserves."
+        },
+        {
+            "name":"Orders",
+            "text": "This +Officer+ can issue up to 3 Orders to +Astra Militarum+ units."
         }
     ],
     "range_weapons": [
