@@ -1,0 +1,49 @@
+{    
+    "name": "Inner Circle Companions",
+    "secondary_faction":"Dark Angels",
+    "ppm":30,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 2,
+    "base":40,
+    "keywords": [
+        "Infantry",
+        "Imperium",
+        "Deathwing"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Braziers of Judgement",
+            "text":"While a +Character+ is leading this unit, attacks against this unit have -1 to the Hit roll."
+        },
+        {
+            "name":"Emnity for the Unworthy",
+            "text":"Attacks made by this unit against a +Character+ unit have +1 to the Hit roll."
+        },
+        {
+            "name":"Wrath of the First",
+            "text":"Add +1 to the Hit roll of attacks made against your army's Oath of Moment target."
+        }
+    ],
+    "range_weapons": [
+        "heavy_bolt_pistol"
+    ],
+    "melee_weapons": [
+        "calabanite_greatsword"
+    ],
+    "composition":[
+        "3-6 Inner Circle Companions"
+    ],
+    "models_min": 3,
+    "models_max": 6,
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "calabanite_greatsword"
+    ],
+    "replacement_gear":{}
+}

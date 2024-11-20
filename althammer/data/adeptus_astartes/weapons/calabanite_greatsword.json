@@ -1,0 +1,28 @@
+{
+    "name": "Calabanite Greatsword",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":[
+                "Lethal Hits"
+            ],
+            "atk":4,
+            "skl":3,
+            "str":6,
+            "ap": 2,
+            "dmg":2
+        },
+        {
+            "name": "Sweep",
+            "keywords":[
+                "Sustained Hits 2"
+            ],
+            "atk":5,
+            "skl":3,
+            "str":6,
+            "ap": 2,
+            "dmg":1
+        }
+    ]
+    
+}
