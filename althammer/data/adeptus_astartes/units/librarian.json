@@ -14,7 +14,8 @@
         "Character",
         "Psyker",
         "Grenades",
-        "Primaris"
+        "Primaris",
+        "Librarian"
     ],
     "core_rules": [
         "Deep Strike",

@@ -14,7 +14,8 @@
         "Infantry",
         "Character",
         "Psyker",
-        "Terminator"
+        "Terminator",
+        "Chaplain"
     ],
     "core_rules": [
         "Deep Strike",

@@ -11,7 +11,8 @@
         "Infantry",
         "Character",
         "Grenades",
-        "Apothecary"
+        "Apothecary",
+        "Primaris"
     ],
     "core_rules": [
         "Leader [Primaris]",
