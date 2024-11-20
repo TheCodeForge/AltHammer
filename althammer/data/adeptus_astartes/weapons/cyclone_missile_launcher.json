@@ -1,0 +1,28 @@
+{
+    "name": "Cyclone Missile Launcher",
+    "profiles":[
+        {
+            "name": "Frag",
+            "keywords":[
+                "Blast"
+            ],
+            "rng":36,
+            "atk":"2d6",
+            "skl":3,
+            "str":4,
+            "ap": 0,
+            "dmg":1
+        },
+        {
+            "name": "Krak",
+            "keywords":[],
+            "rng":36,
+            "atk":2,
+            "skl":3,
+            "str":9,
+            "ap": 2,
+            "dmg":"d6"
+        }
+    ]
+    
+}

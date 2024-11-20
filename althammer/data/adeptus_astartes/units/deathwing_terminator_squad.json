@@ -32,7 +32,8 @@
     "range_weapons": [
         "assault_cannon",
         "heavy_flamer",
-        "storm_bolter"
+        "storm_bolter",
+        "cyclone_missile_launcher"
     ],
     "melee_weapons": [
         "chain_fist",
@@ -63,5 +64,8 @@
             "assault_cannon",
             "heavy_flamer"
         ]
-    }
+    },
+    "additional_gear": [
+        "Every 5th model has a Cyclone Missile Launcher"
+    ]
 }
