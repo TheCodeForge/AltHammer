@@ -1,0 +1,12 @@
+{
+    "name":"Mace of Absolution",
+    "keywords":[
+        "Anti-Monster 4+",
+        "Anti-Vehicle 4+"
+    ],
+    "atk":4,
+    "skl":2,
+    "str":6,
+    "ap": 2,
+    "dmg":2
+}

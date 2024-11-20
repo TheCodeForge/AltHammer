@@ -1,0 +1,61 @@
+{    
+    "name": "Deathwing Knights",
+    "secondary_faction": "Dark Angels",
+    "ppm":50,
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":4,
+    "lead": 6,
+    "oc": 1,
+    "base":40,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Terminator",
+        "Deathwing"
+    ],
+    "core_rules": [
+        "Deep Strike"
+    ],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"Inner Circle",
+            "text":"Attacks made against this unit have their Damage trait reduced by 1 (to a minimum of 1)."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": [
+        "great_weapon_unforgiven",
+        "mace_of_absolution",
+        "power_weapon",
+        "relic_weapon"
+    ],
+    "wargear":[
+        "teleport_homer",
+        "watcher_in_the_dark"
+    ],
+    "composition":[
+        "1 Knight Master",
+        "4 Deathwing Knights",
+        "1 Teleport Homer token",
+        "1 Watcher in the Dark token"
+    ],
+    "models_min": 5,
+    "models_max": 5,
+    "default_gear":[
+        "mace_of_absolution"
+    ],
+    "replacement_gear":{
+        "The Knight Master's Great Weapon of the Unforgiven":[
+            "relic_weapon"
+        ],
+        "Any model's Mace of Absolution":[
+            "power_weapon"
+        ]
+    },
+    "additional_gear": [
+        "The Knight Master has a Great Weapon of the Unforgiven"
+    ]
+}
