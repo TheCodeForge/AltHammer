@@ -7,11 +7,11 @@
     "hp":6,
     "lead": 6,
     "oc": 1,
+    "invuln": 4,
     "base":50,
     "keywords": [
         "Infantry",
         "Character",
-        "Imperium",
         "Terminator",
         "Captain"
     ],
