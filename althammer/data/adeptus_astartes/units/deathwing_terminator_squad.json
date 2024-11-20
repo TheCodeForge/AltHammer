@@ -1,6 +1,7 @@
 {    
-    "name": "Terminator Squad",
-    "ppm":34,
+    "name": "Deathwing Terminator Squad",
+    "secondary_faction": "Dark Angels",
+    "ppm":36,
     "move":5,
     "tough": 5,
     "save": 2,
@@ -11,13 +12,14 @@
     "invuln": 4,
     "keywords": [
         "Infantry",
-        "Terminator"
+        "Terminator",
+        "Deathwing"
     ],
     "core_rules": [
         "Deep Strike"
     ],
     "faction_rules": ["Oath of Moment"],
-    "unit_rules": [
+    "unit_rules": [,
         {
             "name":"Fury of the First",
             "text":"When attacking, you may choose to ignore any modifiers to Hit rolls and/or to the attack's Ranged Skill or Melee Skill."
@@ -38,12 +40,14 @@
         "power_weapon"
     ],
     "wargear":[
-        "teleport_homer"
+        "teleport_homer",
+        "watcher_in_the_dark"
     ],
     "composition":[
-        "1 Terminator Sergeant",
-        "4 Terminators",
-        "1 Teleport Homer token"
+        "1 Deathwing Terminator Sergeant",
+        "4-9 Deathwing Terminators",
+        "1 Teleport Homer token",
+        "1 Watcher in the Dark token"
     ],
     "models_min": 5,
     "models_max": 5,
