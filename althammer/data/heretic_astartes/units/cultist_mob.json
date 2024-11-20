@@ -19,7 +19,8 @@
     "unit_rules": [],
     "range_weapons": [
         "autopistol",
-        "bolt_pistol"
+        "bolt_pistol",
+        "cultist_autocannon"
     ],
     "melee_weapons": [
         "brutish_weapon"
