@@ -39,5 +39,8 @@
         "Cultist Champion's Autopistol":[
             "bolt_pistol"
         ]
-    }
+    },
+    "additional_gear":[
+        "Every 10th model (not the Champion) has its Autopistol replaced with a Cultist Autocannon"
+    ]
 }
