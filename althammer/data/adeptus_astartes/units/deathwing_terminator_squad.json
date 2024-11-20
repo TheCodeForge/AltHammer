@@ -19,7 +19,7 @@
         "Deep Strike"
     ],
     "faction_rules": ["Oath of Moment"],
-    "unit_rules": [,
+    "unit_rules": [
         {
             "name":"Fury of the First",
             "text":"When attacking, you may choose to ignore any modifiers to Hit rolls and/or to the attack's Ranged Skill or Melee Skill."
