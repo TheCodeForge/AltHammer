@@ -36,7 +36,7 @@
     ],
     "composition":[
         "9-18 Jungle Fighters",
-        "1 Jungle Fighter Sergeant per 9 Jungle Fighters"
+        "1-2 Jungle Fighter Sergeants (1 per 9 Jungle Fighters)"
     ],
     "models_min": 10,
     "models_max": 20,
@@ -47,7 +47,7 @@
     },
     "additional_gear": [
         "Shock Trooper Sergeants have their lasgun replaced with a laspistol",
-        "Every 10th model is equipped with a Vox-Caster",
-        "Every 5th model's Lasgun can be replaced with a Flamer"
+        "Every 10th model (not a Sergeant) is equipped with a Vox-Caster",
+        "Every 5th model (not a Sergeant) can have its Lasgun replaced with a Flamer"
     ]
 }
