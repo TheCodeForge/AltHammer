@@ -1,0 +1,91 @@
+{% extends "_core_centered.html" %}
+
+{% block pagecontent %}
+
+<h1>Missions</h1>
+
+{% filter numbered_markdown %}
+
+# Primary Mission
+
+## Take and Control
+
+In each Scoring phase, each player scores 5 VP for each objective marker they control, up to a limit of 15 VP per turn
+
+## Supply Drop
+
+At the start of the battle, randomly select two objective markers in No Man's Land. The first is the "Alpha" marker. The second is the "Omega" marker.
+
+At the end of the second Battle Round, remove the Alpha objective marker from the board. At the end of the fourth Battle Round, remove all objective markers in No Man's Land from the board, except the Omega objective marker.
+
+In each Scoring phase, each player scores 5 VP for each objective marker they control, up to a limit of 15 VP per Battle Round.
+
+## Purge the Enemy
+
+In each Scoring phase, each player scores 4 VP if they control at least one objective marker, and an additional 4 VP if they control more objective markers than their opponent.
+
+## Vital Target
+
+In each Scoring phase, each player scores as follows:
+
+* 2 VP if they control the objective marker in their own deployment zone, and
+* 5 VP for each objective marker in No-Man's Land they control, and
+* 6 VP if they control the objective marker in the opponent's deployment zone.
+
+These conditions stack.
+
+## Command Sites
+
+In each Scoring phase, each player scores 3 VP for each objective marker they control. Each player scores an additional 3 VP for each objective marker they control that has a friendly +Character+ model within range of it.
+
+## Deploy Disruptors
+
+Objective markers are disruptors, which must be pushed into enemy territory to interfere with their operations.
+
+During each scoring phase, objective markers may be moved up to 6" in any direction by their controlling player. When moving objective markers, they cannot end that move on top of any other objective marker or model, or inside impassable parts of terrain features.
+
+After moving objective markers, each player scores as follows:
+
+* 1 VP for each objective marker moved under their control
+* 2 VP for each objective marker wholly within 12" of the opponent's deployment zone
+* 5 VP for each objective marker wholly within 6" of the opponent's deployment zone
+* 8 VP for each objective marker wholly within the opponent's deployment zone
+
+These conditions do not stack; each objective marker may only award one of the options above each Battle Round.
+
+The objective markers that started the battle in each player's deployment zone are not worth any VP.
+
+## Priority Targets
+
+In each Scoring phase, each player scores 5 VP for each objective marker they control, up to a limit of 10 VP per Battle Round.
+
+# Mission Modifiers
+
+## Chill Mist
+
+No modifying rules are in effect.
+
+## Hidden Cache
+
+When setting up the battlefield, move the center objective 8" directly towards one of the battlefield corners (if No Man's Land touches a corner, it must be towards that corner). Then, place another objective marker 8" away from the center of the battlefield in the opposite direction.
+
+For half-size fields, move and place objective markers 6" away from the center instead.
+
+## Sweep and Clear
+
+All models with an Objective Control trait of 1 or higher also have the +Secure Objectives+ rule.
+
+## Minefields
+
+Whenever a unit makes an Advance roll of 6, that unit suffers 1 mortal damage.
+
+## Supply Lines
+
+During each scoring phase, if a player controls the objective marker in their own deployment zone, roll d6. On a 4+, that player gains 1 CP.
+
+## Vox Static
+
+The [Command Re-Roll](/rules/strategems#command_re-roll) strategem costs 2 CP.
+
+{% endfilter %}
+{% endblock %}
