@@ -20,7 +20,9 @@
     "range_weapons": [
         "spinemaws"
     ],
-    "melee_weapons": [],
+    "melee_weapons": [
+        "chitinous_claws_and_teeth"
+    ],
     "wargear": [],
     "composition":[
         "1-3 Ripper Swarms"
