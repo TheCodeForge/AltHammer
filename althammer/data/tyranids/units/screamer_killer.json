@@ -7,6 +7,7 @@
     "hp":9,
     "lead": 7,
     "oc": 3,
+    "base": 90,
     "keywords": [
         "Monster"
     ],
