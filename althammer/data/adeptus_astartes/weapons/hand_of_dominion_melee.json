@@ -1,6 +1,8 @@
 {
-    "name":"Hand of Dominion melee",
-    "keywords": ["Lethal Hits", "Extra Attacks"],
+    "name":"Hand of Dominion (melee)",
+    "keywords": [
+        "Lethal Hits"
+    ],
     "atk":7,
     "skl":2,
     "str":14,
