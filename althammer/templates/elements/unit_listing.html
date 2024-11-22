@@ -1,7 +1,7 @@
 <div class="px-2 px-sm-0">
   <p id="row_hide_container">
-    <a id="rows_hide_button" class="btn btn-white border border-rounded {% if session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
-    <a id="rows_show_button" class="btn btn-white border border-rounded {% if not session.get('hide_rows',0) %}d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
+    <a id="rows_hide_button" class="btn btn-white border border-rounded{% if session.get('hide_rows',0) %} d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye"></i></a>
+    <a id="rows_show_button" class="btn btn-white border border-rounded{% if not session.get('hide_rows',0) %} d-none{% endif %}" role="button"><i class="fas fa-fw fa-eye-slash"></i></a>
   </p>  
 </div>
 
@@ -10,7 +10,7 @@
 <table id="faction-units" class="table table-faction">
   <tr></tr>
   {% for role in unit_listing if unit_listing[role] %}
-  <thead id="header_{{ role | snake }}" class="unit-cat sticky-top{% if unit_listing|hide_cat(f, role) %}d-none{% endif %}" data-cat="{{ role | snake }}">
+  <thead id="header_{{ role | snake }}" class="unit-cat sticky-top{% if unit_listing|hide_cat(f, role) %} d-none{% endif %}" data-cat="{{ role | snake }}">
     <tr>
       <th scope="col">{{ role }}</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost per model"><i class="fas fa-fw fa-tag"></i></span></th>
@@ -20,7 +20,7 @@
   </thead>
   {% for unit in unit_listing[role] %}
   {% set ns.total = ns.total + (session.get('qty_'+unit.faction.id+'_'+unit.id, 0) | int )*unit.ppm %}
-  <tr id="unit_row_{{ unit.id }}" class="unit-row unit_cat_{{ role | snake }}{% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %}d-none{% endif %}">
+  <tr id="unit_row_{{ unit.id }}" class="unit-row unit_cat_{{ role | snake }}{% if session.get('hide_rows') and not session.get('qty_'+unit.faction.id+'_'+unit.id, 0) %} d-none{% endif %}">
     <td class="align-middle">
       {% if d %}
       <a href="{{ d.permalink }}/unit/{{ unit.id }}">{{ unit.display_name }}</a>
@@ -55,7 +55,7 @@
   {% endfor %}
 
   {% if f.upgrades %}
-  <thead id="header_upgrades" class="unit-cat {% if unit_listing|hide_cat(f, 'Upgrades') %}d-none{% endif %}" data-cat="upgrades">
+  <thead id="header_upgrades" class="unit-cat{% if unit_listing|hide_cat(f, 'Upgrades') %} d-none{% endif %}" data-cat="upgrades">
     <tr>
       <th scope="col">Army Upgrades</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost for upgrade"><i class="fas fa-fw fa-tag"></i></span></th>
@@ -65,7 +65,7 @@
   </thead>
   {% for upgrade in f.upgrades %}
   {% set ns.total = ns.total + (session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) | int )*upgrade.cost %}
-    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row unit_cat_upgrades {% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}d-none{% endif %}">
+    <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row unit_cat_upgrades{% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %} d-none{% endif %}">
     <td class="align-middle">
       <p class="mb-0"><b>{{ upgrade.name }}</b></p>
       {{ upgrade.text | markdown | safe }}
