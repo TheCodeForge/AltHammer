@@ -1,6 +1,7 @@
 {
     "name": "Psychoclastic Torrent",
     "keywords":["Ignores Cover","Torrent"],
+    "rng": 12,
     "atk":"d6",
     "skl":null,
     "str":6,
