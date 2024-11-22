@@ -1,6 +1,7 @@
 {
     "name": "Bio-Plasmic Scream",
     "keywords":["Assault","Blast"],
+    "rng":18,
     "atk":"d6 + 3",
     "skl":4,
     "str":8,
