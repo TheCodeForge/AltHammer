@@ -1,10 +1,10 @@
 <div class="card mb-2">
 <div class="card-header fw-bold">
-<span class="small-caps">{{ spell['name'] }}</span><br><span class="text-secondary text-small">{{ strat['difficulty'] }}+</span>
+<span class="small-caps">{{ spell['name'] }}</span><br><span class="text-secondary text-small">{{ spell['difficulty'] }}+</span>
 </div>
 <div class="card-body p-0">
 <ul class="list-group list-group-flush">
-<li class="list-group-item"><span class="fw-bold small-caps">Effect:</span> {{ strat['effect'] | markdown_inline | safe}}</li>
+<li class="list-group-item"><span class="fw-bold small-caps">Effect:</span> {{ spell['effect'] | markdown_inline | safe}}</li>
 </ul>
 </div>
 </div>
