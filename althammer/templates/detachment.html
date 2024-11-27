@@ -89,9 +89,8 @@
 
   ### Smite
 
-  > [6+] Smite
-  > 
-  > **Effect:** Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. Until the end of the battle, increase the Difficulty of this spell for your army by 1.
+  {% set spell = {'name':'Smite', 'difficulty': 6, 'effect': 'Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. Until the end of the battle, increase the Difficulty of this spell for your army by 1.'} %}
+  {% include "elements/spell.html" %}
 
   {% for spell in d.spells %}
   ### {{ spell['name'] }}
