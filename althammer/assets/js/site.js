@@ -259,3 +259,8 @@ $(document).ready(
     $('[data-bs-toggle="popover"]').popover()
   }
 )
+
+//#Prevent accidental form submission for army rosters
+$('form.no-submit').on('submit', function(event){
+  event.preventDefault()
+})
