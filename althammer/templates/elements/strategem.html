@@ -2,9 +2,11 @@
 <div class="card-body">
 <p class="card-title h5">{{ strat['name'] }}</p>
 <p class="card-subtitle mb-2 text-body-secondary h6">{{ strat['cost'] }} CP</p>
-<p><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</p>
-<p><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</p>
-<p><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</p>
-{% if strat.get('restrictions') %}<p><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</p>{% endif %}
+<ul class="list-group list-group-flush">
+<li><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
+<li><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
+<li><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</li>
+{% if strat.get('restrictions') %}<li><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</li>{% endif %}
+</ul>
 </div>
 </div>
