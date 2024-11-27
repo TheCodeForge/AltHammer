@@ -30,7 +30,7 @@
     </td>
     <td class="text-center align-middle">{{ unit.ppm }}</td>
     <td class="text-center align-middle">
-      <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}" method="post" action="/armylist" class="my-0 mx-0">
+      <form id="form_qty_{{ unit.faction.id }}_{{ unit.id }}" method="post" action="/armylist" class="no-submit m-0">
         <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
         <input type="hidden" name="faction" value="{{ unit.faction.id }}">
         <input type="hidden" name="unit_id" value="{{ unit.id }}">
@@ -72,7 +72,7 @@
     </td>
     <td class="text-center align-middle">{{ upgrade.cost }}</td>
     <td class="text-center align-middle">
-      <form id="form_qty_{{ upgrade.faction.id }}_{{ upgrade.id }}" method="post" action="/armylist" class="my-0 mx-0">
+      <form id="form_qty_{{ upgrade.faction.id }}_{{ upgrade.id }}" method="post" action="/armylist" class="no-submit m-0">
         <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
         <input type="hidden" name="faction" value="{{ upgrade.faction.id }}">
         <input type="hidden" name="unit_id" value="{{ upgrade.id }}">
