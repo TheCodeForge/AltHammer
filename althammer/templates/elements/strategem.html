@@ -1,13 +1,13 @@
 <div class="card mb-2">
-  <div class="card-header">
-    {{ strat['name'] }}
-  </div>
-  <div class="card-body">
-    <ul class="list-group list-group-flush">
-    <li class="list-group-item"><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
-    <li class="list-group-item"><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
-    <li class="list-group-item"><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</li>
-    {% if strat.get('restrictions') %}<li class="list-group-item"><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</li>{% endif %}
-    </ul>
-  </div>
+<div class="card-header">
+{{ strat['name'] }}
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item"><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
+<li class="list-group-item"><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
+<li class="list-group-item"><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</li>
+{% if strat.get('restrictions') %}<li class="list-group-item"><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</li>{% endif %}
+</ul>
+</div>
 </div>
