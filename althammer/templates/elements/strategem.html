@@ -1,8 +1,8 @@
 <div class="card mb-2">
 <div class="card-header">
-{{ strat['name'] }}
+<p><b>{{ strat['name'] }}</b><br><span class="color-secondary">{{ strat['cost'] }}</span></p>
 </div>
-<div class="card-body">
+<div class="card-body p-0">
 <ul class="list-group list-group-flush">
 <li class="list-group-item"><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
 <li class="list-group-item"><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
