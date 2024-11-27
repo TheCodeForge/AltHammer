@@ -67,19 +67,19 @@ $small-font-size: 12px;
 .nested-numbered-list {
     counter-reset: h1 h2 h3 h4 h5 h6;
 }
-.nested-numbered-list h1 :not(.card) {counter-set: h2}
-.nested-numbered-list h2 :not(.card) {counter-set: h3}
-.nested-numbered-list h3 :not(.card) {counter-set: h4}
-.nested-numbered-list h4 :not(.card) {counter-set: h5}
-.nested-numbered-list h5 :not(.card) {counter-set: h6}
+.nested-numbered-list h1:not(.card) {counter-set: h2}
+.nested-numbered-list h2:not(.card) {counter-set: h3}
+.nested-numbered-list h3:not(.card) {counter-set: h4}
+.nested-numbered-list h4:not(.card) {counter-set: h5}
+.nested-numbered-list h5:not(.card) {counter-set: h6}
 
 
-.nested-numbered-list h1 :not(.card),
-.nested-numbered-list h2 :not(.card),
-.nested-numbered-list h3 :not(.card),
-.nested-numbered-list h4 :not(.card),
-.nested-numbered-list h5 :not(.card),
-.nested-numbered-list h6 :not(.card) { 
+.nested-numbered-list h1:not(.card),
+.nested-numbered-list h2:not(.card),
+.nested-numbered-list h3:not(.card),
+.nested-numbered-list h4:not(.card),
+.nested-numbered-list h5:not(.card),
+.nested-numbered-list h6:not(.card) { 
     display: block;
     font-size: 1rem;
     font-weight: bold;
@@ -89,46 +89,46 @@ $small-font-size: 12px;
     content: counter(h1) " ";
     counter-increment: h1
 }
-.nested-numbered-list h2 :not(.card) :before {
+.nested-numbered-list h2:not(.card):before {
     content: counter(h1) "." counter(h2) " ";
     counter-increment: h2
     }
-.nested-numbered-list h3 :not(.card) :before {
+.nested-numbered-list h3:not(.card):before {
     content: counter(h1) "." counter(h2) "." counter(h3) " ";
     counter-increment: h3
     }
-.nested-numbered-list h4 :not(.card) :before {
+.nested-numbered-list h4:not(.card):before {
     content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";
     counter-increment: h4
     }
-.nested-numbered-list h5 :not(.card) :before {
+.nested-numbered-list h5:not(.card):before {
     content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";
     counter-increment: h5
     }
-.nested-numbered-list h6 :not(.card) :before {
+.nested-numbered-list h6:not(.card):before {
     content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";
     counter-increment: h6
     }
 
 .nested-numbered-list .h-block { margin-left: 15px }
 
-.nested-numbered-list h1 :not(.card) :hover::after,
-.nested-numbered-list h2 :not(.card) :hover::after,
-.nested-numbered-list h3 :not(.card) :hover::after,
-.nested-numbered-list h4 :not(.card) :hover::after,
-.nested-numbered-list h5 :not(.card) :hover::after,
-.nested-numbered-list h6 :not(.card) :hover::after {
+.nested-numbered-list h1:not(.card):hover::after,
+.nested-numbered-list h2:not(.card):hover::after,
+.nested-numbered-list h3:not(.card):hover::after,
+.nested-numbered-list h4:not(.card):hover::after,
+.nested-numbered-list h5:not(.card):hover::after,
+.nested-numbered-list h6:not(.card):hover::after {
     content: " click to copy";
     font-size: $small-font-size;
     color: lightgray;
 }
 
-.nested-numbered-list h1 :not(.card),
-.nested-numbered-list h2 :not(.card),
-.nested-numbered-list h3 :not(.card),
-.nested-numbered-list h4 :not(.card),
-.nested-numbered-list h5 :not(.card),
-.nested-numbered-list h6 :not(.card) {
+.nested-numbered-list h1:not(.card),
+.nested-numbered-list h2:not(.card),
+.nested-numbered-list h3:not(.card),
+.nested-numbered-list h4:not(.card),
+.nested-numbered-list h5:not(.card),
+.nested-numbered-list h6:not(.card) {
     cursor: pointer;
 }
 
