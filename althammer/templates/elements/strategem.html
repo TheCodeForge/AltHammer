@@ -1,9 +1,12 @@
-<blockquote>
-<p><b>[{{ strat['cost'] }} CP] {{ strat['name'] }}</b></p>
-<p><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</p>
-<p><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</p>
-<p><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</p>
-{% if strat.get('restrictions') %}
-<p><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</p>
-{% endif %}
-</blockquote>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ strat['name'] }}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">{{ strat['cost'] }} CP</h6>
+    <p><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</p>
+    <p><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</p>
+    <p><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</p>
+    {% if strat.get('restrictions') %}
+    <p><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</p>
+    {% endif %}
+  </div>
+</div>
