@@ -1,13 +1,13 @@
-x<div class="card mb-2">
+<div class="card mb-2">
 <div class="card-header fw-bold">
 {{ strat['name'] }}<br><span class="text-secondary">{{ strat['cost'] }} CP</span>
 </div>
 <div class="card-body p-0">
 <ul class="list-group list-group-flush">
-<li class="list-group-item"><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
-<li class="list-group-item"><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
-<li class="list-group-item"><b>Effect:</b> {{ strat['effect'] | markdown_inline | safe}}</li>
-{% if strat.get('restrictions') %}<li class="list-group-item"><b>Restrictions:</b> {{ strat['restrictions'] | markdown_inline | safe }}</li>{% endif %}
+<li class="list-group-item"><span class="fw-bold small-caps">When:</span> {{ strat['when'] | markdown_inline | safe }}</li>
+<li class="list-group-item"><span class="fw-bold small-caps">Target:</span> {{ strat['target'] | markdown_inline | safe}}</li>
+<li class="list-group-item"><span class="fw-bold small-caps">Effect:</span> {{ strat['effect'] | markdown_inline | safe}}</li>
+{% if strat.get('restrictions') %}<li class="list-group-item"><span class="fw-bold small-caps">Restrictions:</span> {{ strat['restrictions'] | markdown_inline | safe }}</li>{% endif %}
 </ul>
 </div>
 </div>
