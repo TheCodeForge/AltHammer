@@ -55,7 +55,7 @@
   {% endfor %}
 
   {% if f.upgrades %}
-  <thead id="header_upgrades" class="unit-cat{% if unit_listing|hide_cat(f, 'Upgrades') %} d-none{% endif %}" data-cat="upgrades">
+  <thead id="header_upgrades" class="unit-cat sticky-top{% if unit_listing|hide_cat(f, 'Upgrades') %} d-none{% endif %}" data-cat="upgrades">
     <tr>
       <th scope="col">Army Upgrades</th>
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Points cost for upgrade"><i class="fas fa-fw fa-tag"></i></span></th>
