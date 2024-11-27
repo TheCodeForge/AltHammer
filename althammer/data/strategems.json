@@ -33,7 +33,7 @@
             "cost": 1,
             "when": "Immediately before or after an enemy unit Moves, Charges, or immediately after an enemy unit is deployed from Reserves",
             "target": "A friendly unit",
-            "effect": "Your unit may perform a Shoot action, targeting the enemy unit that is moving or deploying. While using this Strategems, all weapons equipped by the targeted unit have a <i class=\"fas fa-fw fa-bullseye-arrow\"></i> Ranged Skill trait of 6+."
+            "effect": "Your unit may perform a Shoot action, targeting the enemy unit that is moving or deploying. Attacks made with this Strategem require a Hit roll of 6+ to be successful."
         },
         {
             "name": "Hit the Ground",
