@@ -1,7 +1,7 @@
 <div class="card">
 <div class="card-body">
-<p class="card-title h5">{{ strat['name'] }}</p>
-<p class="card-subtitle mb-2 text-body-secondary h6">{{ strat['cost'] }} CP</p>
+<p class="card-title">{{ strat['name'] }}</p>
+<p class="card-subtitle mb-2 text-body-secondary">{{ strat['cost'] }} CP</p>
 <ul class="list-group list-group-flush">
 <li class="list-group-item"><b>When:</b> {{ strat['when'] | markdown_inline | safe }}</li>
 <li class="list-group-item"><b>Target:</b> {{ strat['target'] | markdown_inline | safe}}</li>
