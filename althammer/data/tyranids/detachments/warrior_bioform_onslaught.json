@@ -31,26 +31,25 @@
     ],
     "strategems": [
         {
-            "name": "Rapid Regeneration",
+            "name": "Spontaneous Hypercorrosion",
             "cost": 1,
-            "when": "Just after an enemy unit has selected Shoot or Fight targets.",
-            "target": "Your unit being attacked",
-            "effect": "Until the end of the Battle Round, the selected unit has !Feel No Pain 6+!. While the selected unit is within Synapse Range, it has !Feel No Pain 5+! instead."
+            "when": "Your unit Activation.",
+            "target": "Your unit being Activated",
+            "effect": "Add 2 to the Strength trait of ranged weapons equipped by models in the unit. If the unit is a +Warrior+ or +Prime+ unit, also add 1 to the Strength trait of melee weapons equipped by models in the unit."
         },
         {
-            "name": "Synaptic Insight",
+            "name": "Restorative Impulse",
             "cost": 1,
             "when": "At the start of a Battle Round",
-            "target": "One friendly +Tyranids+ unit, or two friendly +Tyranids+ units within Synapse Range",
-            "effect": "Select a Hyper-Adaptation different to the one chosen at the start of the battle. Selected units gain that Hyper-Adaptation effect, in addition to any other Hyper-Adaptation effect already active.",
-            "restriction": "A unit may not be given a particular Hyper-Adaptation more than once."
+            "target": "A friendly +Warrior+ unit that is below its Starting Strength",
+            "effect": "Return 1 destroyed model (excluding +Character+ models) to the unit."
         },
         {
-            "name": "Endless Swarm",
+            "name": "Synaptic Micronodes",
             "cost": 1,
             "when": "At the start of a Battle Round",
-            "target": "One friendly +Endless Multitude+ unit, or two friendly +Endless Multitude+ units within Synapse Range.",
-            "effect": "Return up to d3 + 3 destroyed models to each selected unit."
+            "target": "A friendly +Warrior+ unit from your army.",
+            "effect": "Until the end of the Battle Round, the unit has the +Secure Objectives+ rule."
         }
     ]
 }
