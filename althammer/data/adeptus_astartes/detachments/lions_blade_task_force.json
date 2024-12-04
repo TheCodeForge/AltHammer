@@ -7,7 +7,7 @@
         {
             "name": "In the Lion's Claws",
             "lore": "Those unfortunate enough to be caught between the devastating speed of the Ravenwing and the adamantine might of the Deathwing are pinned in place and torn to shreds by their combined fury",
-            "text": "Each time an enemy unit (excluding +Monster+ and +Vehicle+ units) makes a Fall Back move, it must take a Leadership test, with a -1 to the roll if the unit is Battle-Shocked. If failed, the enemy unit suffers d3 mortal damage.\n\nEach time a +Deathwing+ unit from your army declares a Charge, if the target of the Charge is within melee distance of a friendly +Ravenwing+ unit, add 2 to the Charge roll."
+            "text": "Enemy units (excluding +Monster+ and +Vehicle+ units) cannot make Fall Back movements, except by using the [Desperate Breakout](/rules/strategems#desperate_breakout) strategem."
         }
     ],
     "spells": [
