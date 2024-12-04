@@ -49,8 +49,10 @@
   {% for rule in d.rules %}
   ## {{ rule['name'] }}
 
+  {% if rule.get('lore') %}
   *{{ rule['lore'] }}*
-
+  {% endif %}
+  
   {{ rule['text'] }}
 
   {% for option in rule['options'] %}
