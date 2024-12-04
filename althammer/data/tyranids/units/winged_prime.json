@@ -12,7 +12,8 @@
         "Infantry",
         "Character",
         "Fly",
-        "Synapse"
+        "Synapse",
+        "Prime"
     ],
     "core_rules": ["Leader [Infantry]"],
     "faction_rules": ["Shadow in the Warp", "Synapse"],
