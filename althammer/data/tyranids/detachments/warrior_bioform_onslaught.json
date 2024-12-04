@@ -5,11 +5,11 @@
         {
             "name": "Leader-Beasts",
             "lore": "Tyranid Warriors are adapted to shepherd the hive fleet’s teeming swarms to war. Benefiting from heightened senses, hardened forms and great strength, they serve as ferocious beacons for and enforcers of the Hive Mind’s indomitable will.",
-            "text": "+Warrior+ and +Prime+ units in your army have an Invulnerable Save trait of 5+.",
+            "text": "+Warrior+ and +Prime+ units in your army have an Invulnerable Save trait of 5+."
         },
         {
             "name": "Keywords",
-            "text": "The following units gain the +Warrior+ and +Battleline+ keywords and, while not Battle-Shocked, have an Objective Control trait of 3+:\n\n* Tyranid Warriors with Ranged Bio-Weapons\n* Tyranid Warriors with Melee Bio-Weapons",
+            "text": "The following units gain the +Warrior+ and +Battleline+ keywords and, while not Battle-Shocked, have an Objective Control trait of 3+:\n\n* Tyranid Warriors with Ranged Bio-Weapons\n* Tyranid Warriors with Melee Bio-Weapons"
         }
     ],
     "spells": [
