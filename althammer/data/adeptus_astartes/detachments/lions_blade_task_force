@@ -1,0 +1,46 @@
+{
+    "name": "Lion's Blade Force",
+    "color": "005221",
+    "secondary_faction":"Dark Angels",
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "In the Lion's Claws",
+            "lore": "Those unfortunate enough to be caught between the devastating speed of the Ravenwing and the adamantine might of the Deathwing are pinned in place and torn to shreds by their combined fury",
+            "text": "Each time an enemy unit (excluding +Monster+ and +Vehicle+ units) makes a Fall Back move, it must take a Leadership test, with a -1 to the roll if the unit is Battle-Shocked. If failed, the enemy unit suffers d3 mortal damage.\n\nEach time a +Deathwing+ unit from your army declares a Charge, if the target of the Charge is within melee distance of a friendly +Ravenwing+ unit, add 2 to the Charge roll."
+        }
+    ],
+    "spells": [
+        {
+            "name": "Mind Worm",
+            "difficulty": 7,
+            "effect": "Select an enemy unit within 18\". It suffers 1 mortal damage. If it has not yet been Activated yet this Battle-Round, it must be activated last this Battle-Round. If it has already been Activated this Battle-Round, it must be Activated last during the next Battle-Round instead."
+        },
+        {
+            "name": "Trephination",
+            "difficulty": 7,
+            "effect": "The nearest visible enemy unit within 18\" takes a Leadership test. If the test is passed, it suffers d3 mortal damage. If the test is failed, it suffers 3 mortal damage instead."
+        },
+        {
+            "name": "Engulfing Fear",
+            "difficulty": 8,
+            "effect": "Select one enemy unit within 24\". Until the end of the Battle Round: its models' Leadership trait is worsened by 1, its models Objective Control trait is worsened by 1 (to a minimum of 1), its +Secure Objectives+ ability (if any) is disabled, and the unit must pass a Leadership test to perform any actions."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Knights of Iron",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Ravenwing+ unit being Activated",
+            "effect": "The Activated unit can move horizontally through terrain features when making a Normal, Advance, or Charge movement."
+        },
+        {
+            "name": "Inescapable Wrath",
+            "cost": 1,
+            "when": "After all of your units have Activated for the Battle-Round. If your opponent has units remaining to Activate, this Strategem must be invoked after any of those units' Activations has been completed.",
+            "target": "A friendly +Deathwing Infantry+ or +Deathwing Walker+ unit.",
+            "effect": "Activate that unit. It may perform Charge and Fight actions."
+        }
+    ]
+}
