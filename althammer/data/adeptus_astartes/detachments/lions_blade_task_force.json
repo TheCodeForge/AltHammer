@@ -17,14 +17,14 @@
             "effect": "Select an enemy unit within 18\". It suffers 1 mortal damage. If it has not yet been Activated yet this Battle-Round, it must be activated last this Battle-Round. If it has already been Activated this Battle-Round, it must be Activated last during the next Battle-Round instead."
         },
         {
-            "name": "Trephination",
-            "difficulty": 7,
-            "effect": "The nearest visible enemy unit within 18\" takes a Leadership test. If the test is passed, it suffers d3 mortal damage. If the test is failed, it suffers 3 mortal damage instead."
+            "name": "Engulfing Fear",
+            "difficulty": 6,
+            "effect": "Until the end of the Battle-round, enemy units within 18\" must take Battle-Shock and Leadership tests by rolling three dice and discarding the highest roll. At the beginning of the next Battle-Round, enemy units within 18\" must take Battle-Shock tests the same way."
         },
         {
-            "name": "Engulfing Fear",
-            "difficulty": 8,
-            "effect": "Select one enemy unit within 24\". Until the end of the Battle Round: its models' Leadership trait is worsened by 1, its models Objective Control trait is worsened by 1 (to a minimum of 1), its +Secure Objectives+ ability (if any) is disabled, and the unit must pass a Leadership test to perform any actions."
+            "name": "Aversion",
+            "difficulty": 7,
+            "effect": "Select one enemy unit within 24\". Until the end of the Battle Round, it has -1 to all Hit rolls."
         }
     ],
     "strategems": [
