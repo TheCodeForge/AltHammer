@@ -44,7 +44,7 @@
             "name": "Rapid Regeneration",
             "cost": 1,
             "when": "Just after an enemy unit has selected Shoot or Fight targets.",
-            "target": "Your unit being attacked",
+            "target": "Your +Tyranids+ unit being attacked",
             "effect": "Until the end of the Battle Round, the selected unit has !Feel No Pain 6+!. While the selected unit is within Synapse Range, it has !Feel No Pain 5+! instead."
         },
         {
