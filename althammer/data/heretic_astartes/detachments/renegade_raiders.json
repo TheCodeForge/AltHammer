@@ -32,7 +32,7 @@
             "name": "Dread Corsair",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being activated",
+            "target": "Your +Heretic Astartes+ unit being activated",
             "effect": "Until the end of the Battle Round, if the selected unit is wholly within 12\" of your opponent's deployment zone, it may re-roll Hit rolls and Wound rolls."
         },
         {
@@ -46,7 +46,7 @@
             "name": "Tyrants Lash",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being activated",
+            "target": "Your +Heretic Astartes+ unit being activated",
             "effect": "Until the end of the Activation, you may re-roll Advance rolls, and your unit is eligible to Shoot after making a Fall Back move."
         }
     ]
