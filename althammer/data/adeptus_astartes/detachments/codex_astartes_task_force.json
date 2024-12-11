@@ -10,7 +10,7 @@
             "options": [
                 {
                     "name": "Devastator Doctrine",
-                    "lore": "The Codex Stellar explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
+                    "lore": "The Codex Astartes explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
                     "text": "Your +Adeptus Astartes+ units may Move, Advance and Shoot in a single Activation."
                 },
                 {
@@ -20,7 +20,7 @@
                 },
                 {
                     "name": "Assault Doctrine",
-                    "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
+                    "lore": "The Codex Astartes leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
                     "text": "Your +Adeptus Astartes+ units may Move, Advance and Charge in a single Activation."
                 }
             ]
