@@ -6,7 +6,7 @@
         {
             "name": "Lightning Assault",
             "lore": "Thousands of years of collated strategic data and hard-won combat experience have provided the Deathwatch with the ultimate battlefield tactics to combat almost any foe.",
-            "text": "Your units may Charge after making an Advance or Fall Back movement."
+            "text": "Your +Adeptus Astartes+ units may Charge after making an Advance or Fall Back movement."
         }
     ],
     "strategems": [
@@ -14,14 +14,14 @@
             "name": "Shock Assault",
             "cost": 1,
             "when": "Your unit's Activation, before it has made a Charge",
-            "target": "The +Mounted+ unit being Activated",
+            "target": "The +Adeptus Astartes+ +Mounted+ unit being Activated",
             "effect": "Until the end of the Activation, your unit can re-roll its Charge roll, and its equipped melee weapons have +[Lance]+."
         },
         {
             "name": "Ride Hard, Ride Fast",
             "cost": 1,
             "when": "Your opponent's Activation, after the Activated unit has declared Shoot targets.",
-            "target": "The friendly +Mounted+ or +Fly+ +Vehicle+ unit being attacked.",
+            "target": "The friendly +Adeptus Astartes+ +Mounted+ or +Adeptus Astartes+ +Fly+ +Vehicle+ unit being attacked.",
             "effect": "Until the end of the Battle Round, attacks made against the selected unit have -1 to the Hit roll and -1 to the Wound roll."
         }
     ],
