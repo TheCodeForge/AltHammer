@@ -32,7 +32,7 @@
             "name": "Unforgiven Fury",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Weapons equipped by models in the unit gain +[Lethal Hits]+. Additionally, if any of your units are Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
         },
         {
