@@ -34,7 +34,7 @@
             "name": "Spontaneous Hypercorrosion",
             "cost": 1,
             "when": "Your unit Activation.",
-            "target": "Your unit being Activated",
+            "target": "Your +Tyranids+ unit being Activated",
             "effect": "Add 2 to the Strength trait of ranged weapons equipped by models in the unit. If the unit is a +Warrior+ or +Prime+ unit, also add 1 to the Strength trait of melee weapons equipped by models in the unit."
         },
         {
