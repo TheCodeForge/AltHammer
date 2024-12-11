@@ -40,7 +40,7 @@
         {
             "name": "Psychic Fortress",
             "difficulty": 7,
-            "effect": "Until the end of the Battle Round, your +Adeptus Astartes+ units within 6\" have a 5++ Invulnerable Save."
+            "effect": "Until the end of the Battle Round, your +Adeptus Astartes+ units within 6\" have an Invulnerable Save trait of 5+."
         }
     ],
     "strategems": [
