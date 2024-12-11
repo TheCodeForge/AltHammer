@@ -32,21 +32,21 @@
             "name": "Depthless Cruelty",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being activated",
+            "target": "Your +Heretic Astartes+ unit being activated",
             "effect": "Until the end of the Activation, attacks targeting units that are below half strength or Battle-Shocked have their Armor Break trait improved by 1."
         },
         {
             "name": "Bloody Example",
             "cost": 1,
             "when": "After you destroy an enemy +Character+ unit",
-            "target": "Your Activated unit.",
+            "target": "Your Activated +Heretic Astartes+ unit.",
             "effect": "Enemy units within 12\" of, and visible to, your Activated unit must take a Battle-Shock test."
         },
         {
             "name": "Relentless Terror",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being activated",
+            "target": "Your +Heretic Astartes+ unit being activated",
             "effect": "Until the end of the Activation, you may re-roll Advance rolls, and your unit is eligible to Charge after making a Fall Back move."
         }
     ]
