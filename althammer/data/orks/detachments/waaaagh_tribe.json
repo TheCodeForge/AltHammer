@@ -5,7 +5,7 @@
         {
             "name": "Get Stuck In",
             "lore": "Once an Ork gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
-            "text": "Melee weapons equipped by your +Orks+ have +[Sustained Hits 1]+"
+            "text": "Melee weapons equipped by your +Orks+ units have +[Sustained Hits 1]+"
         }
     ],
     "spells": [
@@ -17,7 +17,7 @@
         {
             "name": "Spirit of Gork",
             "difficulty": 7,
-            "effect": "Select a friendly +Infantry+ unit within 12\". Until the end of the Battle Round, its equipped melee weapons have +[Devastating Wounds]+"
+            "effect": "Select a friendly +Orks+ +Infantry+ unit within 12\". Until the end of the Battle Round, its equipped melee weapons have +[Devastating Wounds]+"
         },
         {
             "name": "Da Jump",
@@ -37,7 +37,7 @@
             "name": "Careen!",
             "cost": 1,
             "when": "When an +Orks Vehicle+ unit from your army with the +Deadly Demise X+ ability is destroyed, after rolling for its +Deadly Demise X+ ability.",
-            "target": "The destroyed +Vehicle+ unit.",
+            "target": "The destroyed +Orks+ +Vehicle+ unit.",
             "effect": "The target +Vehicle+ can make a Normal or Fall Back movement before its +Deadly Demise X+ ability is resolved, and before any embarked units perform an Emergency Disembarkation. When making this movement, the target +Vehicle+ may move through enemy units (excluding +Monsters+ and +Vehicles+ as if they were not there."
         },
         {
