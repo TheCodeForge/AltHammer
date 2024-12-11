@@ -11,17 +11,17 @@
                 {
                     "name": "Devastator Doctrine",
                     "lore": "The Codex Stellar explains in detail the strategic value of overwhelming firepower applied to key targets while advancing into position in order to eliminate threats and create tactical openings.",
-                    "text": "Your units may Move, Advance and Shoot in a single Activation."
+                    "text": "Your +Adeptus Astartes+ units may Move, Advance and Shoot in a single Activation."
                 },
                 {
                     "name": "Tactical Doctrine",
                     "lore": "As the warring armies close upon one another and vicious fire-fights erupt, the Codex lays out strategies for swiftly seizing the initiative and combining versatility with firepower.",
-                    "text": "Your units may Fight and then Move an extra d6 inches."
+                    "text": "Your +Adeptus Astartes+ units may Fight and then Move an extra d6 inches."
                 },
                 {
                     "name": "Assault Doctrine",
                     "lore": "The Codex Stellar leaves no doubt that the killing blow in most engagements must be delivered with a decisive close-quarters strike. It presents plentiful tactical means to achieve this end.",
-                    "text": "Your units may Move, Advance and Charge in a single Activation."
+                    "text": "Your +Adeptus Astartes+ units may Move, Advance and Charge in a single Activation."
                 }
             ]
         }
@@ -30,7 +30,7 @@
         {
             "name": "Scion of the Codex",
             "difficulty": 7,
-            "effect": "Select one friendly unit within 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
+            "effect": "Select one friendly +Adeptus Astartes+ unit within 18\". Until the end of the Battle Round, you may re-roll Advance and Charge rolls made for that unit."
         },
         {
             "name": "Fury of the Ancients",
@@ -40,7 +40,7 @@
         {
             "name": "Psychic Fortress",
             "difficulty": 7,
-            "effect": "Until the end of the Battle Round, friendly units within 6\" have a 5++ Invulnerable Save."
+            "effect": "Until the end of the Battle Round, your +Adeptus Astartes+ units within 6\" have a 5++ Invulnerable Save."
         }
     ],
     "strategems": [
@@ -48,14 +48,14 @@
             "name": "Shield of Disgust",
             "cost": 1,
             "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
-            "target": "Your unit being attacked",
+            "target": "Your +Adeptus Astartes+ unit being attacked",
             "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
         },
         {
             "name": "Sword of Hatred",
             "cost": 1,
             "when": "Upon Activation of a friendly unit",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
         }
     ]
