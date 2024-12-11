@@ -4,7 +4,7 @@
         {
             "name": "Relentless Onslaught",
             "lore": "The necrons possess countless terrifying engines of war. When mustered in great number, these instruments of annihilation sweep across the battlefield, obliterating any foolish enough to cross their path.",
-            "text": "Attacks made against enemy units within range of an objective marker have +1 to the Hit roll. Ranged weapons equipped by your +Vehicle+ and +Mounted+ units (excluding +Titanic+ units) have +[Assault]+."
+            "text": "Attacks made against enemy units within range of an objective marker have +1 to the Hit roll. Ranged weapons equipped by your +Necrons+ +Vehicle+ and +Necrons+ +Mounted+ units (excluding +Titanic+ units) have +[Assault]+."
         }
     ],
     "strategems": [
@@ -12,21 +12,21 @@
             "name": "Dimensional Tunnel",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your +Vehicle+ or +Mounted+ unit being activated.",
+            "target": "Your +Necrons+ +Vehicle+ or +Necrons+ +Mounted+ unit being activated.",
             "effect": "Until the end of its Activation, models in your unit can move horizontally through models and terrain features."
         },
         {
             "name": "Endless Servitude",
             "cost": 1,
             "when": "After your unit Activation",
-            "target": "Your unit that just finished its Activation",
+            "target": "Your +Necrons+ unit that just finished its Activation",
             "effect": "Your unit's Reanimation Protocols activate."
         },
         {
             "name": "Merciless Reclamation",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Necrons+ unit being Activated",
             "effect": "Until the end of the Activation, whenever your unit attacks an enemy unit within range of an objective marker, add 1 to the attack's Wound roll."
         }
     ]
