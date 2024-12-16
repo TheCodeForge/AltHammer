@@ -1,0 +1,49 @@
+{    
+    "name": "Abaddon the Despoiler",
+    "ppm": 280,
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":9,
+    "lead": 5,
+    "oc": 4,
+    "invuln": 4,
+    "base":60,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Supreme Commander",
+        "Chaos Undivided",
+        "Terminator"
+    ],
+    "secondary_faction":"Black Legion",
+    "core_rules": ["Deep Strike", "Leader [Terminator]"],
+    "faction_rules": ["Dark Pacts"],
+    "unit_rules": [
+        {
+            "name":"Warmaster of Chaos",
+            "text":"At the start of the Battle Round, select one of the following abilities to be active until the end of the Battle Round:\n* Friendly +Heretic Astartes+ units (excluding +Damned+ units) within 6\" can re-roll their Hit rolls\n* Friendly +Heretic Astartes+ units (excluding +Damned+ units) within 6\" have an Invulnerable Save trait of 4+\n* Friendly +Heretic Astartes+ units (excluding +Damned+ units) within 6\" can re-roll their Leadership and Battle-Shock tests."
+        },
+        {
+            "name":"Dark Destity",
+            "text":"Each time this model's unit makes a Dark Pact and does not fail the resulting Leadership test, if the result of that Leadership test was 7+, gain 1 CP."
+        }
+    ],
+    "range_weapons": [
+        "talon_of_horus_ranged"
+    ],
+    "melee_weapons": [
+        "drachnyen",
+        "talon_of_horus_melee"
+    ],
+    "composition":[
+        "1 Abaddon the Despoiler"
+    ],
+    "models_min":1,
+    "models_max":1,
+    "default_gear":[
+        "talon_of_horus_ranged",
+        "drachnyen"
+    ]
+}
