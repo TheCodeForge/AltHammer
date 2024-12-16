@@ -1,0 +1,11 @@
+{
+    "name": "Drach'nyen",
+    "keywords":[
+        "Devastating Wounds"
+    ],
+    "atk":8,
+    "skl":2,
+    "str":14,
+    "ap": 4,
+    "dmg":3
+}
