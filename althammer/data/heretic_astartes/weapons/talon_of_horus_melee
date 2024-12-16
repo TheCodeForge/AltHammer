@@ -1,0 +1,11 @@
+{
+    "name": "Talon of Horus",
+    "keywords":[
+        "Devastating Wounds"
+    ],
+    "atk":14,
+    "skl":2,
+    "str":7,
+    "ap": 3,
+    "dmg":1
+}
