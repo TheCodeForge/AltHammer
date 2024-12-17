@@ -57,7 +57,7 @@
             "name": "Eternal Hate",
             "cost": 1,
             "when": "Immediately after an enemy unit selects a Fight target.",
-            "target": "Your unit being attacked",
+            "target": "Your +Heretic Astartes+ unit being attacked",
             "effect": "Until the end of the Battle Round, each time a model in your unit is destroyed, roll d6, adding 1 to the result if it is a +Khorne+ unit. On a 4+, the destroyed models fight back before being removed from play."
         },
         {
@@ -65,20 +65,20 @@
             "cost": 1,
             "when": "At the start of the Battle Round",
             "target": "One friendly +Heretic Astartes+ unit",
-            "effect": "One model in your unit regains up to 3 Health. In addition, if your unit is a +Tzeentch+ unit below starting strength, one destroyed non-+Character+ model is returned to your unit at full Health."
+            "effect": "One model in your unit regains up to 3 Health. In addition, if your unit is a +Tzeentch+ unit below starting strength, return 1 destroyed model (excluding +Character+ models) at full health to the unit."
         },
         {
             "name": "Dark Obscuration",
             "cost": 1,
             "when": "Immediately after an enemy unit selects a Shoot target",
-            "target": "Your unit being attacked",
+            "target": "Your +Heretic Astartes+ unit being attacked",
             "effect": "Until the end of the Battle Round, your unit has the Stealth ability. In addition, if your unit is a +Nurgle+ unit, your unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
         },
         {
             "name": "Unnatural Swiftness",
             "cost": 1,
             "when": "Your unit Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Heretic Astartes+ unit being Activated",
             "effect": "For this Activation, your unit may Shoot or Charge after making a Fall Back move. In addition, if your unit is a +Slaanesh+ unit, your unit may Shoot or Charge after making an Advance move."
         },
         {

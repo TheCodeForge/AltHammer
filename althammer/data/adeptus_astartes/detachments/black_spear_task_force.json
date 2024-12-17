@@ -12,17 +12,17 @@
                 {
                     "name": "Furor Tactics",
                     "lore": "When the enemy horde grows close, the Deathwatch will be tasked with the decimation of their core. ",
-                    "text": "Your units' weapons have +[Sustained Hits 1]+."
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Sustained Hits 1]+."
                 },
                 {
                     "name": "Malleus Tactics",
                     "lore": "Even the largest behemoth has a weak point, and the archives of the Deathwatch number them all.",
-                    "text": "Your units' weapons have +[Lethal Hits]+."
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Lethal Hits]+."
                 },
                 {
                     "name": "Purgatus Tactics",
                     "lore": "The Deathwatch focus their deadly ire upon the commanders of the enemy host, assassinating them one after another.",
-                    "text": "Your units' weapons have +[Precise]+."
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Precise]+."
                 }
             ]
         },

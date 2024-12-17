@@ -39,7 +39,7 @@
             "name": "Red Thirst",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "The target unit's melee weapons gain +[Lance]+ and +[Lethal Hits]+ until the end of its Activation."
         }
     ],

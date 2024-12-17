@@ -6,19 +6,19 @@
     "rules": [ 
         {
             "name": "Shield of the Imperium",
-            "text": "All ranged weapons equipped by models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, the weapon also gains +1 to the Wound Roll."
+            "text": "All ranged weapons equipped by +Adeptus Astartes+ models in your army gain +[Heavy]+. If the weapon already had +[Heavy]+, then whenever its bearer Remains Stationary, the weapon also gains +1 to the Wound Roll."
         }
     ],
     "spells": [
         {
             "name": "Armor of the Machine",
             "difficulty": 9,
-            "effect": "Select one friendly +Vehicle+ within 18\". Until the end of the Battle Round, it has !Feel No Pain 6+!."
+            "effect": "Select one friendly +Adeptus Astartes+ +Vehicle+ within 18\". Until the end of the Battle Round, it has !Feel No Pain 6+!."
         },
         {
             "name": "Defenders of Man",
             "difficulty": 8,
-            "effect": "Select one friendly unit within 18\". Until the end of the Battle Round, its Toughness trait is improved by 2. If the unit is a +Vehicle+, its Toughness is improved by 3 instead."
+            "effect": "Select one friendly +Adeptus Astartes+ unit within 18\". Until the end of the Battle Round, its Toughness trait is improved by 2. If the unit is a +Vehicle+, its Toughness is improved by 3 instead."
         }
     ],
     "strategems": [
@@ -26,14 +26,14 @@
             "name": "Battle Drill",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Until the end of the Battle Round, ranged weapons equipped by models in the unit gain +[Sustained Hits 1]+. Additionally, if the unit Remains Stationary, unmodified Hit rolls of 5+ score a Critical Hit."
         },
         {
             "name": "No Threat Too Great",
             "cost": 2,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Until the end of the Battle Round, your unit may re-roll Wound rolls for attacks made against a +Monster+ or +Vehicle+."
         }
     ],

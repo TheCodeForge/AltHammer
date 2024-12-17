@@ -5,7 +5,7 @@
         {
             "name": "Born Soldiers",
             "lore": "Regiments of numerous origins and tactical roles inculcate their soldiers from an early age with the legendary doctrines of the Tactica Imperium. Infantry and tank crews are drilled in close-range fire patterns in the expectation of being thrust into the front lines.",
-            "text": "Ranged attacks from your +Regiment+ units that target visible units (excluding +Monster+ and +Vehicle+ units) have +[Lethal Hits]+.\n\n Ranged attacks from your +Squadron+ units that target visible +Monster+ or +Vehicle+ units have +[Lethal Hits]+"
+            "text": "Ranged attacks from your +Astra Militarum+ +Regiment+ units that target visible units (excluding +Monster+ and +Vehicle+ units) have +[Lethal Hits]+.\n\n Ranged attacks from your +Astra Militarum+ +Squadron+ units that target visible +Monster+ or +Vehicle+ units have +[Lethal Hits]+"
         }
     ],
     "spells": [

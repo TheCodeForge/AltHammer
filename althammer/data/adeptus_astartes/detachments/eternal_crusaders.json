@@ -11,19 +11,19 @@
             "options": [
                 {
                     "name": "Suffer Not the Unclean to Live",
-                    "text": "Your melee weapons have +[Lethal Hits]+."
+                    "text": "Your +Adeptus Astartes+ units' melee weapons have +[Lethal Hits]+."
                 },
                 {
                     "name": "Uphold the Honor of the Emperor",
-                    "text": "Your units have !Feel No Pain 6+! and a 5+ Leadership trait."
+                    "text": "Your +Adeptus Astartes+ units have !Feel No Pain 6+! and a 5+ Leadership trait."
                 },
                 {
                     "name": "Abhor the Witch",
-                    "text": "Your units have a 4+ Invulnerable Save against +[Psychic]+ attacks, and your melee weapons have ![Anti-Psyker 4+]!."
+                    "text": "Your +Adeptus Astartes+ units have a 4+ Invulnerable Save against +[Psychic]+ attacks, and your melee weapons have ![Anti-Psyker 4+]!."
                 },
                 {
                     "name": "Accept Any Challenge",
-                    "text": "Your melee weapons have +[Sustained Hits 1]+."
+                    "text": "Your +Adeptus Astartes+ units' melee weapons have +[Sustained Hits 1]+."
                 }
             ]
         }
@@ -33,7 +33,7 @@
             "name": "Fervent Acclamation",
             "cost": 1,
             "when": "At the start of a Battle Round",
-            "target": "One +Character Leader+ model from your army",
+            "target": "One +Adeptus Astartes+ +Character+ +Leader+ model from your army",
             "effect": "Select one Templar Vow that is not active for your army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
         },
         {

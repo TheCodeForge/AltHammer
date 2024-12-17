@@ -5,8 +5,8 @@
     "banned_keywords": [],
     "rules": [ 
         {
-            "name": "The Red Thirst",
-            "lore": "Though they strive to restrain it, the murderous ferocity of the Blood Angels simmers beneath the surface of their thoughts. In battle, this rage drives them towards the foe and lends great strength to their blows.",
+            "name": "Grim Resolve",
+            "lore": "The Dark Angels are renowned for their unshakeable resolve, enduring tenacity and strict discipline in battle. They are tactically astute, able to prosecute their wars on any front. On the offence, they strike with all the martial pride of the Lion, while in defence they are stalwart, determined to accomplish their mission no matter the cost.",
             "text": "Whenever a friendly +Adeptus Astartes+ is Battle-Shocked, the Objective Control trait of models in that unit is 1, instead of 0."
         }
     ],
@@ -32,7 +32,7 @@
             "name": "Unforgiven Fury",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Weapons equipped by models in the unit gain +[Lethal Hits]+. Additionally, if any of your units are Battle-Shocked, unmodified Hit rolls of 5+ score a Critical Hit."
         },
         {

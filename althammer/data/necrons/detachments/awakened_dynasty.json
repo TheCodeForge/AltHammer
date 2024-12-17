@@ -4,7 +4,7 @@
         {
             "name": "Command Protocols",
             "lore": "The Necron nobility make war in a cold and calculated fashion. Their commond protocols crackle out across the battlefield, compelling their semi-sentient warriors into battle, one step at a time.",
-            "text": "Your +Leader+ models and their +Bodyguard+ units have +1 to Hit rolls."
+            "text": "Your +Necrons+ +Leader+ models and their +Necrons+ +Bodyguard+ units have +1 to Hit rolls."
         }
     ],
     "strategems": [
@@ -26,8 +26,8 @@
         {
             "name": "Protocol of the Sudden Storm",
             "cost": 1,
-            "when": "Upon Activation of a friendly unit",
-            "target": "Your unit being Activated",
+            "when": "Your unit Activation",
+            "target": "Your +Necrons+ unit being Activated",
             "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
         }
     ]

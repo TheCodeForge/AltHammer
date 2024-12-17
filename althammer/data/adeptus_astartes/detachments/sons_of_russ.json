@@ -50,21 +50,22 @@
             "name": "Go for the Throat",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
+            "target": "Your +Adeptus Astartes+ unit being Activated",
             "effect": "Until the end of the Activation, your unit's melee weapons have their Armor Break trait improved by 1. If the Saga of the Beastslayer has been completed by your army, such weapons also gain +[Lance]+."
         },
         {
             "name": "Relentless Assault",
             "cost": 1,
             "when": "Your unit's Activation",
-            "target": "Your unit being Activated",
-            "effect": "Until the end of the Activation, your unit is eligible to Shoot even if it performs a Fall Back or Advance movement. If the Saga of the Warrior has been completed by your army, your unit is also eligible to Charge."
+
+            "target": "Your +Adeptus Astartes+ unit being Activated",
+            "effect": "Until the end of the Activation, your unit is eligible Shoot even if it performs a Fall Back or Advance movement. If the Saga of the Warrior has been completed by your army, your unit is also eligible to Charge."
         },
         {
             "name": "Runic Wards",
             "cost": 1,
             "when": "Your opponent's Activation, after an enemy unit declares its Shooting or Fight targets",
-            "target": "Your unit being attacked",
+            "target": "Your +Adeptus Astartes+ unit being attacked",
             "effect": "Until the end of the Battle Round, your unit has !Feel No Pain 5+! against Mortal Damage and +Psychic+ attacks. If Saga of the Bear has been completed, your unit has !Feel No Pain 4+! against Mortal Damage and +Psychic+ attacks instead."
         }
     ],

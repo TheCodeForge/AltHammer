@@ -1,0 +1,55 @@
+{
+    "name": "Warrior Bioform Onslaught",
+    "army_restrictions":[],
+    "rules": [ 
+        {
+            "name": "Leader-Beasts",
+            "lore": "Tyranid Warriors are adapted to shepherd the hive fleet’s teeming swarms to war. Benefiting from heightened senses, hardened forms and great strength, they serve as ferocious beacons for and enforcers of the Hive Mind’s indomitable will.",
+            "text": "+Warrior+ and +Prime+ units in your army have an Invulnerable Save trait of 5+."
+        },
+        {
+            "name": "Keywords",
+            "text": "The following units gain the +Warrior+ and +Battleline+ keywords and, while not Battle-Shocked, have an Objective Control trait of 3+:\n\n* Tyranid Warriors with Ranged Bio-Weapons\n* Tyranid Warriors with Melee Bio-Weapons"
+        }
+    ],
+    "spells": [
+        {
+            "name": "Catalyst",
+            "difficulty": 7,
+            "effect": "Select a friendly +Tyranids+ unit within Synapse Range. Until the end of the Battle Round, the selected unit has !Feel No Pain 5+!. If the selected unit is +Titanic+, until the end of the Battle Round, it has !Feel No Pain 6+! instead."
+        },
+        {
+            "name": "Horror",
+            "difficulty": 6,
+            "effect": "Select an enemy unit within 24\". Until the end of the Battle Round, it has -3 to Battle-Shock tests and -2 to all other Leadership rolls."
+        },
+        {
+            "name": "Onslaught",
+            "difficulty": 7,
+            "effect": "Select a friendly +Tyranids+ unit within Synapse Range. Until the end of the Battle Round: It does not incur a penalty for Advancing and Shooting with +[Assault]+ weapons, its +[Heavy]+ weapons have +1 to hit rolls (but do not gain any additional bonus from remaining stationary), and it may Advance and Charge in the same Activation."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Spontaneous Hypercorrosion",
+            "cost": 1,
+            "when": "Your unit Activation.",
+            "target": "Your +Tyranids+ unit being Activated",
+            "effect": "Add 2 to the Strength trait of ranged weapons equipped by models in the unit. If the unit is a +Warrior+ or +Prime+ unit, also add 1 to the Strength trait of melee weapons equipped by models in the unit."
+        },
+        {
+            "name": "Restorative Impulse",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "A friendly +Warrior+ unit that is below its Starting Strength",
+            "effect": "Return 1 destroyed model (excluding +Character+ models) to the unit."
+        },
+        {
+            "name": "Synaptic Micronodes",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "A friendly +Warrior+ unit from your army.",
+            "effect": "Until the end of the Battle Round, the unit has the +Secure Objectives+ rule."
+        }
+    ]
+}

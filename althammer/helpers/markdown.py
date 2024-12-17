@@ -25,6 +25,14 @@ class KeywordAlt(SpanToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
+class Sub(SpanToken):
+
+    pattern = re.compile(r"\_\((.+)\)")
+    parse_inner = True
+
+    def __init__(self, match_obj):
+        self.target = match_obj.group(1)
+        
 class HBlock(BlockToken):
 
     start_pattern = re.compile(r"^\s*#{1,6} ")
@@ -60,6 +68,10 @@ class CustomRenderer(HTMLRenderer):
 
         for i in kwargs:
             self.__dict__[i] = kwargs[i]
+
+    def render_sub(self, token):
+
+        return f"<sub>{self.render_inner(token)}</sub>"
 
     def render_keyword(self, token):
 
