@@ -32,6 +32,14 @@ class Sub(SpanToken):
 
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
+
+class Sup(SpanToken):
+
+    pattern = re.compile(r"\^\((.+)\)")
+    parse_inner = True
+
+    def __init__(self, match_obj):
+        self.target = match_obj.group(1)
         
 class HBlock(BlockToken):
 
@@ -64,10 +72,14 @@ class HBlock(BlockToken):
 class CustomRenderer(HTMLRenderer):
 
     def __init__(self, *args, **kwargs):
-        super().__init__(Keyword, KeywordAlt, Sub, *args, **kwargs)
+        super().__init__(Keyword, KeywordAlt, Sub, Sup, *args, **kwargs)
 
         for i in kwargs:
             self.__dict__[i] = kwargs[i]
+
+    def render_sup(self, token):
+
+        return f"<sup>{self.render_inner(token)}</sup>"
 
     def render_sub(self, token):
 
