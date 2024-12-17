@@ -41,5 +41,22 @@
             "difficulty": 8,
             "effect": "Select a friendly +Raven Guard+ +Character+ unit within 18\". Move it anywhere on the battlefield at least 9\" away from enemy models."
         }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Keep to the Shadows",
+            "cost":40,
+            "text":"Your +Warlord+ gains the +Stealth+, +Lone Operative+, and +Secure Objectives+ rules. If your +Warlord+ already had any of these rules, gain 1 CP at the start of the battle for each duplicated rule."
+        }
     ]
 }
