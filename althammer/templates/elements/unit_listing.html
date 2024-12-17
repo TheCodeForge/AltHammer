@@ -54,7 +54,7 @@
   </thead>
   {% endfor %}
 
-  {% if f.upgrades %}
+  {% if d and d.upgrades %}
   <thead id="header_upgrades" class="unit-cat sticky-top{% if unit_listing|hide_cat(f, 'Upgrades') %} d-none{% endif %}" data-cat="upgrades">
     <tr>
       <th scope="col">Army Upgrades</th>
@@ -63,7 +63,7 @@
       <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Row points total"><i class="fas fa-fw fa-sigma"></i></span></th>
     </tr>
   </thead>
-  {% for upgrade in f.upgrades %}
+  {% for upgrade in d.upgrades %}
   {% set ns.total = ns.total + (session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) | int )*upgrade.cost %}
     <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row unit_cat_upgrades{% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %} d-none{% endif %}">
     <td class="align-middle">

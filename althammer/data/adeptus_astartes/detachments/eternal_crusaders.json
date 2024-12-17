@@ -34,7 +34,7 @@
             "cost": 1,
             "when": "At the start of a Battle Round",
             "target": "One +Character Leader+ model from your army",
-            "effect": "Select one Templar Vow that is not active for yoru army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
+            "effect": "Select one Templar Vow that is not active for your army. Until the end of the Battle Round, while the selected +Character+ is leading a unit, that unit gains the benefits of the selected Templar Vow, in addition to the effects of the Templar Vow selected at the start of the battle."
         },
         {
             "name": "No Escape",
@@ -42,6 +42,23 @@
             "when": "Immediately after an enemy unit is selected to Fall Back (excluding +Vehicle+ and +Monster+ units)",
             "target": "The Active enemy unit",
             "effect": "Roll d6. On a 4+, the enemy unit may not Fall Back, and must instead remain stationary. The opponent may use the Desperate Breakout strategem to move anyways; if they do, all models in the enemy unit will be considered to have \"moved through an enemy model\" for the purposes of that strategem."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Fervent Crusaders",
+            "cost":40,
+            "text":"At the start of the battle, select a second Templar Vow. It applies only to your +Warlord+ (and their attached unit, if any). Your +Warlord+ may not be targed with the Fervent Acclamation strategem."
         }
     ]
 }

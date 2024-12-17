@@ -24,7 +24,7 @@
         {
             "name": "Foresight",
             "difficulty": 6,
-            "effect": "Before the end of the Battle Round, this unit may change one Hit roll, Wound roll, or Save roll to an unmodified 6."
+            "effect": "Before the end of the Battle Round, this unit may change the result of one Hit roll, Wound roll, or Save roll to an unmodified 6."
         }
     ],
     "strategems": [
@@ -36,11 +36,28 @@
             "effect": "For the rest of the battle, your units may re-roll their Hit roll against the target enemy unit."
         },
         {
-            "name": "Red Rampage",
+            "name": "Red Thirst",
             "cost": 1,
             "when": "Your unit's Activation",
             "target": "Your unit being Activated",
             "effect": "The target unit's melee weapons gain +[Lance]+ and +[Lethal Hits]+ until the end of its Activation."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Black Rage",
+            "cost":40,
+            "text":"When using the Red Rampage strategem, you may pay an additional 1 CP. If you do, until the end of the Battle Round, the target unit's melee weapons also have their Attacks, Strength, Armor Break, and Damage traits improved by 1, and the unit becomes Battle-Shocked."
         }
     ]
 }

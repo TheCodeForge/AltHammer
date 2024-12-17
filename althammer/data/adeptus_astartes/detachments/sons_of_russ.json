@@ -58,7 +58,7 @@
             "cost": 1,
             "when": "Your unit's Activation",
             "target": "Your unit being Activated",
-            "effect": "Until the end of the Activation, your unit is eligible Shoot even if it performs a Fall Back or Advance movement. If the Saga of the Warrior has been completed by your army, your unit is also eligible to Charge."
+            "effect": "Until the end of the Activation, your unit is eligible to Shoot even if it performs a Fall Back or Advance movement. If the Saga of the Warrior has been completed by your army, your unit is also eligible to Charge."
         },
         {
             "name": "Runic Wards",
@@ -66,6 +66,23 @@
             "when": "Your opponent's Activation, after an enemy unit declares its Shooting or Fight targets",
             "target": "Your unit being attacked",
             "effect": "Until the end of the Battle Round, your unit has !Feel No Pain 5+! against Mortal Damage and +Psychic+ attacks. If Saga of the Bear has been completed, your unit has !Feel No Pain 4+! against Mortal Damage and +Psychic+ attacks instead."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Wolfen Rage",
+            "cost":40,
+            "text":"Units within 6\" of your +Warlord+ automatically pass Battle-Shock tests taken at the start of each Battle Round. (They do not automatically pass other Leadership or Battle-Shock tests)."
         }
     ]
 }

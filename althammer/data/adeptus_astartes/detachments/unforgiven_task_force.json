@@ -42,5 +42,22 @@
             "target": "A friendly +Adeptus Astartes+ unit in your army that had one or more of its models killed as a result of the attack.",
             "effect": "Your targeted unit may Shoot at the enemy unit that just resolved its Shoot action."
         }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Secret Misdirection",
+            "cost":40,
+            "text":"When deploying units from Reserve, if the opponent declares use of the Fire Overwatch strategem, the deploying unit may move up to 6\". After moving, the opponent may roll d6 instead of resolving the Fire Overwatch strategem; on a 4+ the CP cost of the strategem is refunded."
+        }
     ]
 }

@@ -47,5 +47,22 @@
             "target": "Up to two +Kill Team+ units from your army, or one +Adeptus Astartes+ unit from your army.",
             "effect": "Select a Mission Tactic. That Mission Tactic is active for the selected units until the end of the Battle Round, instead of the Mission tactic active for the rest of your army."
         }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Personal Teleportarium",
+            "cost":40,
+            "text":"Your +Warlord+ (and its attached unit, if any) may use the Teleportarium strategem for free. (Only your +Warlord+'s unit may be targeted with the strategem when doing so)."
+        }
     ]
 }

@@ -36,5 +36,22 @@
             "target": "Your unit being Activated",
             "effect": "Until the end of the Battle Round, your unit may re-roll Wound rolls for attacks made against a +Monster+ or +Vehicle+."
         }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Shield of the Imperium",
+            "cost":40,
+            "text":"Friendly +Adeptus Astartes+ Units within range of an objective marker gain !Feel No Pain 6+!. If the unit already had !Feel No Pain 6+!, it gains !Feel No Pain 5+! instead."
+        }
     ]
 }

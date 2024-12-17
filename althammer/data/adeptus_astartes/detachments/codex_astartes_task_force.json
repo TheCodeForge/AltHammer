@@ -1,6 +1,5 @@
 {
     "name": "Codex Astartes Task Force",
-    "secondary_faction":"Ultramarines",
     "banned_keywords": [],
     "rules": [ 
         {
@@ -57,6 +56,23 @@
             "when": "Upon Activation of a friendly unit",
             "target": "Your unit being Activated",
             "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Sworn Fury",
+            "cost":40,
+            "text":"Once during the battle, you may select two enemy units for Oath of Moment instead of one."
         }
     ]
 }
