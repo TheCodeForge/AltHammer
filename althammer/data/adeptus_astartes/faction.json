@@ -9,23 +9,6 @@
         "text": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +Adeptus Astartes+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
         }
     ],
-    "upgrades":[
-        {
-            "name":"Student of the Codex",
-            "cost":10,
-            "text":"At the start of the battle, gain 1 CP."
-        },
-        {
-            "name":"The Emperor Protects",
-            "cost":20,
-            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
-        },
-        {
-            "name":"Sworn Fury",
-            "cost":40,
-            "text":"Once during the battle, you may select two enemy units for Oath of Moment instead of one."
-        }
-    ],
     "strategems": [
         {
             "name": "Armor of Contempt",
