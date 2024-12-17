@@ -47,7 +47,7 @@
 
         "Deadly Demise X": "When this model is destroyed, roll d6. On an unmodified 6, every unit within 6\" of the destroyed model suffers X Mortal Damage",
         
-        "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.<br><br><sup>All models in a unit must have this rule in order to use it.</sup>",
+        "Deep Strike": "When deployed from Reserves, this unit may be placed anywhere on the battlefield that is at least 9\" away from all enemy models.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
         
         "Entourage": "When mustering your army, only the primary model in this unit costs points. (This is taken into consideration in the on-site list builder)",
 
@@ -57,19 +57,19 @@
 
         "Feel No Pain X+": "When this unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
-        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.<br><br><sup>All models in a unit must have this rule in order to use it.</sup>",
+        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
 
         "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
         "Lone Operative": "This unit cannot be selected as the target of a ranged attack from over 12\" away. This rule does not apply while part of an attached unit.",
 
-        "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.<br><br><sup>All models in a unit must have this rule in order to use it.</sup>",
+        "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
 
         "Second in Command": "This model may be attached as a second +Leader+ to a unit that already has a +Leader+, following the same restrictions as the +Leader+ rule, provided that the other +Leader+ is not also a +Second in Command+. If all +Bodyguard+ models are destroyed, both +Leader+ models become independent units again.",
 
         "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 
-        "Stealth": "All ranged attacks made against the unit have -1 to hit.<br><br><sup>All models in a unit must have this rule in order to use it.</sup>"
+        "Stealth": "All ranged attacks made against the unit have -1 to hit.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>"
 
     }
 }
