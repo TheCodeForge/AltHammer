@@ -202,6 +202,12 @@ class Detachment(Base):
     def strategems(self):
         return self.faction.__dict__.get("strategems", []) + self.__dict__.get('strategems',[])
     
+    @property
+    @cache.memoize()
+    def upgrades(self):
+
+        return [Base(x, faction=self, id='_'.join(x['name'].lower().replace("'","").split())) for x in self.__dict__.get('upgrades', [])]
+    
     
 
 class Faction(Base):
@@ -325,11 +331,5 @@ class Faction(Base):
     @property
     def color(self):
         return self.__dict__.get("color", "000000")
-    
-    @property
-    @cache.memoize()
-    def upgrades(self):
-
-        return [Base(x, faction=self, id='_'.join(x['name'].lower().replace("'","").split())) for x in self.__dict__.get('upgrades', [])]
 
     
