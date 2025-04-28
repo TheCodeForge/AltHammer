@@ -57,11 +57,11 @@ class Unit(Base):
         if "Stealth" in self.keywords:
             defensive *= 1.17
         
-        offensive = 0
-        for weapon in weapons:
-            offensive += weapon.weapon_points_raw
+        # offensive = 0
+        # for weapon in weapons:
+        #     offensive += weapon.weapon_points_raw
 
-        return int(offensive*defensive // 100)
+        # return int(offensive*defensive // 100)
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
@@ -71,7 +71,7 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
         
-        return int(offensive * defensive * strategic // 1000)                                                                       
+        return int(defensive * strategic // 100)                                                                       
 
     @property
     @cache.memoize()
