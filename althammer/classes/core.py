@@ -24,7 +24,7 @@ class Unit(Base):
         return f"{self.faction.permalink}/unit/{self.id}"
 
     @property
-    @cache.memoize
+    @cache.memoize()
     def ppm(self):
         
         defensive = self.hp * (7-self.save) * math.sqrt(self.tough) * (7-(self.__dict__.get('invuln',6)))
