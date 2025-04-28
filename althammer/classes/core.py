@@ -56,8 +56,6 @@ class Unit(Base):
         defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
         if "Stealth" in self.keywords:
             defensive *= 1.17
-
-        return defensive
         
         offensive = 0
         for weapon in weapons:
