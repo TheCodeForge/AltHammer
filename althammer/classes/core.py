@@ -131,7 +131,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}", is_profile=True) for x in self.__dict__.get('profiles', [])]
+        return [Unit(x, faction=self.faction, display_name=f"{self.name} / Profile: {x['name']}", id=f"{self.id} / {x['name'].lower()}", is_profile=True) for x in self.__dict__.get('profiles', [])]
 
     @property
     def display_name(self):
