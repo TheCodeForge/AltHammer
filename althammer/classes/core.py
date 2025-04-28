@@ -218,7 +218,7 @@ class Weapon(Base):
         if self.profiles:
             return max([x.weapon_points_raw for x in self.profiles])
 
-        if not self.str:
+        if not self.__dict__.get('str'):
             return 0
 
         if isinstance(self.dmg, str):
