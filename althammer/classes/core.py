@@ -207,7 +207,7 @@ class Unit(Base):
     @property
     @cache.memoize()
     def default_weapons(self):
-        output = sorted([self.faction.weapon(x) for x in self.__dict__["default_gear"]], key=lambda x: x.name)
+        output = sorted([self.faction.weapon(x) for x in self.__dict__.get("default_gear",[])], key=lambda x: x.name)
         if not self.__dict__.get('melee_weapons') and not self.__dict__.get('is_profile'):
             output.append(self.faction.default_melee_weapon)
 
