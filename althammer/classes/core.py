@@ -197,7 +197,7 @@ class Weapon(Base):
     @property
     @cache.memoize()
     def profiles(self):
-        return [Weapon(x, faction=self.faction, is_profile=True) for x in self.__dict__.get('profiles', [])]
+        return [Weapon(x, faction=self.faction, id=f"{self.id} / {x['name']}", is_profile=True) for x in self.__dict__.get('profiles', [])]
 
     @property
     @cache.memoize()
