@@ -67,7 +67,7 @@ class Unit(Base):
 
         try:
             for kwd in self.keywords_all:
-                if kwd.startwith("Leader"):
+                if kwd.startswith("Leader"):
                     strategic *= 1.3
                 if kwd=="Psyker":
                     strategic *= 1.3
