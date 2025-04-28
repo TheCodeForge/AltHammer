@@ -213,6 +213,8 @@ class Weapon(Base):
     @cache.memoize()
     def weapon_points_raw(self):
 
+        print(self.name)
+
         if self.profiles:
             return max([x.weapon_points_raw for x in self.profiles])
 
