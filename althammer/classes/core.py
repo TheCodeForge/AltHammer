@@ -84,7 +84,7 @@ class Unit(Base):
                 elif kwd=="Devastating Wounds":
                     weapon_pts *= 1.2
                 elif kwd=="Hazardous":
-                    weapon_pts *= 1 - (1/(6*self.hp))
+                    weapon_pts *= 1 - (1/(6*hp))
                 elif kwd=="Lethal Hits":
                     weapon_pts *= 1.5
                 elif kwd.startswith("Melta"):
