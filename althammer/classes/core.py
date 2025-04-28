@@ -76,7 +76,7 @@ class Unit(Base):
 
             rng = weapon.__dict__.get('rng',1)
 
-            weapon_pts = (atk * (7-skl) * math.sqrt(weapon.str) * math.sqrt(weapon.ap+1) * dmg * math.sqrt(weapon.rng/12))
+            weapon_pts = (atk * (7-skl) * math.sqrt(weapon.str) * math.sqrt(weapon.ap+1) * dmg * math.sqrt(rng/12))
 
             for kwd in weapon.keywords:
                 if kwd=="Blast":
