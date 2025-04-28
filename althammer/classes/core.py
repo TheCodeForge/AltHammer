@@ -1,6 +1,7 @@
 import json
 import math
 import os
+from althammer.helpers.lazy import lazy
 from werkzeug.utils import safe_join
 
 from flask import abort
@@ -24,7 +25,7 @@ class Unit(Base):
         return f"{self.faction.permalink}/unit/{self.id}"
 
     @property
-    @cache.memoize()
+    @lazy
     def ppm(self):
 
         if self.profiles:
@@ -67,7 +68,7 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
 
-        return int(defensive * strategic // 100)
+        return int(math.sqrt(defensive * strategic) / 100)
 
     @property
     @cache.memoize()
@@ -203,7 +204,7 @@ class Weapon(Base):
         return sorted(self.__dict__.get("keywords", []))
 
     @property
-    @cache.memoize()
+    @lazy
     def weapon_points_raw(self):
 
         if self.profiles:
@@ -354,7 +355,7 @@ class Faction(Base):
         output.faction=self
         return output
 
-    @cache.memoize()
+    @lazy
     def unit(self, id):
 
         path=safe_join(f"althammer/data/{self.id}/units", f"{id}.json")
@@ -370,7 +371,7 @@ class Faction(Base):
         output.faction=self
         return output
 
-    @cache.memoize()
+    @lazy
     def weapon(self, id):
 
         path=f"althammer/data/{self.id}/weapons/{id}.json"
