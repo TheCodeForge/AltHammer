@@ -78,25 +78,25 @@ class Unit(Base):
 
             weapon_pts = (atk * (7-skl) * math.sqrt(weapon.str) * math.sqrt(weapon.ap+1) * dmg * math.sqrt(rng/12))
 
-            for kwd in weapon.keywords:
-                if kwd=="Blast":
-                    weapon_pts*=1.2
-                elif kwd=="Devastating Wounds":
-                    weapon_pts *= 1.2
-                elif kwd=="Hazardous":
-                    weapon_pts *= 1 - (1/(6*hp))
-                elif kwd=="Lethal Hits":
-                    weapon_pts *= 1.5
-                elif kwd.startswith("Melta"):
-                    weapon_pts *= 1.5
-                elif kwd=="One-Shot":
-                    weapon_pts /= 5
-                elif kwd=="Rapid Fire":
-                    weapon_pts *= 1.5
-                elif kwd.startswith("Sustained Hits"):
-                    weapon_pts *= 1.17
-                elif kwd=="Twin-Linked":
-                    weapon_pts *= 1.25
+            # for kwd in weapon.keywords:
+            #     if kwd=="Blast":
+            #         weapon_pts*=1.2
+            #     elif kwd=="Devastating Wounds":
+            #         weapon_pts *= 1.2
+            #     elif kwd=="Hazardous":
+            #         weapon_pts *= 1 - (1/(6*hp))
+            #     elif kwd=="Lethal Hits":
+            #         weapon_pts *= 1.5
+            #     elif kwd.startswith("Melta"):
+            #         weapon_pts *= 1.5
+            #     elif kwd=="One-Shot":
+            #         weapon_pts /= 5
+            #     elif kwd=="Rapid Fire":
+            #         weapon_pts *= 1.5
+            #     elif kwd.startswith("Sustained Hits"):
+            #         weapon_pts *= 1.17
+            #     elif kwd=="Twin-Linked":
+            #         weapon_pts *= 1.25
 
             offensive += weapon_pts
 
