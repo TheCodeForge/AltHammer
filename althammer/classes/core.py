@@ -37,6 +37,10 @@ class Unit(Base):
             lead = self.profiles[0].lead
             oc = self.profiles[0].oc
             move = self.profiles[0].move
+            weapons=[]
+            for p in self.profiles:
+                for w in p.default_weapons:
+                    weapons.append(w)
         else:
             hp=self.hp
             save=self.save
@@ -45,13 +49,14 @@ class Unit(Base):
             lead=self.lead
             oc=self.oc
             move=self.move
+            weapons = self.default_weapons
 
         defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
         if "Stealth" in self.keywords:
             defensive *= 1.17
                                                                        
         offensive = 0
-        for weapon in self.default_weapons:
+        for weapon in weapons:
             if isinstance(weapon.dmg, str):
                 dmg = eval(weapon.dmg.replace("d6", "3.5").replace("d3", "2"))
             else:
