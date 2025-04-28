@@ -65,17 +65,12 @@ class Unit(Base):
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
-        try:
-            for kwd in self.keywords_all:
-                if kwd.startswith("Leader"):
-                    strategic *= 1.3
-                if kwd=="Psyker":
-                    strategic *= 1.3
-        except Exception as e:
-            print(self.name, kwd, e)
-            return int(defensive * strategic // 100)
+        for kwd in self.keywords_all:
+            if kwd.startswith("Leader"):
+                strategic *= 1.3
+            if kwd=="Psyker":
+                strategic *= 1.3
 
-        
         return int(defensive * strategic // 100)
 
     @property
