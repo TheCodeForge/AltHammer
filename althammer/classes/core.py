@@ -27,8 +27,6 @@ class Unit(Base):
     @cache.memoize()
     def ppm(self):
 
-        print(self.display_name)
-
         if self.profiles:
             hp = sum([x.hp for x in self.profiles])
             save = self.profiles[0].save
@@ -61,8 +59,6 @@ class Unit(Base):
         for weapon in weapons:
             offensive += weapon.weapon_points_raw
 
-        return offensive*defensive // 100
-
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
         for kwd in self.keywords:
@@ -71,10 +67,7 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
         
-        total = offensive * defensive * strategic // 1000
-        print(total)
-        return total
-                                                                       
+        return int(offensive * defensive * strategic // 1000)                                                                       
 
     @property
     @cache.memoize()
@@ -212,8 +205,6 @@ class Weapon(Base):
     @property
     @cache.memoize()
     def weapon_points_raw(self):
-
-        print(self.name)
 
         if self.profiles:
             return max([x.weapon_points_raw for x in self.profiles])
