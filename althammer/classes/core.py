@@ -56,9 +56,9 @@ class Unit(Base):
         if "Stealth" in self.keywords:
             defensive *= 1.17
         
-        # offensive = 0
-        # for weapon in weapons:
-        #     offensive += weapon.weapon_points_raw
+        offensive = 0
+        for weapon in weapons:
+            offensive += weapon.weapon_points_raw
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
