@@ -59,46 +59,7 @@ class Unit(Base):
         
         offensive = 0
         for weapon in weapons:
-            if isinstance(weapon.dmg, str):
-                dmg = eval(weapon.dmg.replace("d6", "3.5").replace("d3", "2"))
-            else:
-                dmg = weapon.dmg
-
-            if isinstance(weapon.atk, str):
-                atk = eval(weapon.atk.replace("d6", "3.5").replace("d3", "2"))
-            else:
-                atk = weapon.atk
-
-            if "Torrent" in weapon.keywords:
-                skl=1
-            else:
-                skl = weapon.skl
-
-            rng = weapon.__dict__.get('rng',1)
-
-            weapon_pts = (atk * (7-skl) * math.sqrt(weapon.str) * math.sqrt(weapon.ap+1) * dmg * math.sqrt(rng/12))
-
-            # for kwd in weapon.keywords:
-            #     if kwd=="Blast":
-            #         weapon_pts*=1.2
-            #     elif kwd=="Devastating Wounds":
-            #         weapon_pts *= 1.2
-            #     elif kwd=="Hazardous":
-            #         weapon_pts *= 1 - (1/(6*hp))
-            #     elif kwd=="Lethal Hits":
-            #         weapon_pts *= 1.5
-            #     elif kwd.startswith("Melta"):
-            #         weapon_pts *= 1.5
-            #     elif kwd=="One-Shot":
-            #         weapon_pts /= 5
-            #     elif kwd=="Rapid Fire":
-            #         weapon_pts *= 1.5
-            #     elif kwd.startswith("Sustained Hits"):
-            #         weapon_pts *= 1.17
-            #     elif kwd=="Twin-Linked":
-            #         weapon_pts *= 1.25
-
-            offensive += weapon_pts
+            offensive += weapon.weapon_points_raw
 
         return offensive*defensive // 100
 
@@ -247,6 +208,54 @@ class Weapon(Base):
     @cache.memoize()
     def keywords(self):
         return sorted(self.__dict__.get("keywords", []))
+
+    @property
+    @cache.memoize()
+    def weapon_points_raw(self):
+
+        if self.profiles:
+            return max([x.weapon_points_raw for x in self.profiles])
+
+        if isinstance(self.dmg, str):
+                dmg = eval(self.dmg.replace("d6", "3.5").replace("d3", "2"))
+            else:
+                dmg = self.dmg
+
+        if isinstance(self.atk, str):
+            atk = eval(self.atk.replace("d6", "3.5").replace("d3", "2"))
+        else:
+            atk = self.atk
+
+        if "Torrent" in self.keywords:
+            skl=1
+        else:
+            skl = self.skl
+
+        rng = self.__dict__.get('rng',1)
+
+        weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
+
+        for kwd in self.keywords:
+            if kwd=="Blast":
+                weapon_pts*=1.2
+            elif kwd=="Devastating Wounds":
+                weapon_pts *= 1.2
+            elif kwd=="Hazardous":
+                weapon_pts *= 1 - (1/(6*hp))
+            elif kwd=="Lethal Hits":
+                weapon_pts *= 1.5
+            elif kwd.startswith("Melta"):
+                weapon_pts *= 1.5
+            elif kwd=="One-Shot":
+                weapon_pts /= 5
+            elif kwd=="Rapid Fire":
+                weapon_pts *= 1.5
+            elif kwd.startswith("Sustained Hits"):
+                weapon_pts *= 1.17
+            elif kwd=="Twin-Linked":
+                weapon_pts *= 1.25
+
+        return weapon_pts
 
 class Detachment(Base):
 
