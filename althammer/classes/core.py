@@ -30,7 +30,7 @@ class Unit(Base):
         print(self.display_name)
 
         if self.profiles:
-            hp = sum([x.hp for x in self.profiles[0])
+            hp = sum([x.hp for x in self.profiles])
             save = self.profiles[0].save
             tough = self.profiles[0].tough
             invuln = self.profiles[0].__dict__.get('invuln', 7)
@@ -54,7 +54,9 @@ class Unit(Base):
         defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
         if "Stealth" in self.keywords:
             defensive *= 1.17
-                                                                       
+
+        return defensive
+        
         offensive = 0
         for weapon in weapons:
             if isinstance(weapon.dmg, str):
