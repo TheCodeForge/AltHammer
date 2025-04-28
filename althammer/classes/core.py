@@ -29,13 +29,26 @@ class Unit(Base):
 
         print(self.display_name)
 
-        try:
-            defensive = self.hp * (7-self.save) * math.sqrt(self.tough) * (7-(self.__dict__.get('invuln',6)))
-            if "Stealth" in self.keywords:
-                self.defensive *= 1.17
-        except Exception as e:
-            print(e)
-            raise e
+        if self.profiles:
+            hp = self.profiles[0]['hp']
+            save = self.profiles[0]['save']
+            tough = self.profiles[0]['tough']
+            invuln = self.profiles[0].get('invuln', 7)
+            lead = self.profiles[0]['lead']
+            oc = self.profiles[0]['oc']
+            move = self.profiles[0]['move']
+        else:
+            hp=self.hp
+            save=self.save
+            tough=self.tough
+            invuln=self.__dict__.get('invuln', 7)
+            lead=self.lead
+            oc=self.oc
+            move=self.move
+
+        defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
+        if "Stealth" in self.keywords:
+            defensive *= 1.17
 
         print(defensive)
                                                                        
@@ -82,7 +95,7 @@ class Unit(Base):
 
         print(offensive)
 
-        strategic = (13-self.lead) * (1 + self.oc)
+        strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
         for kwd in self.keywords:
             if kwd.startwith("Leader"):
