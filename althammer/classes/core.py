@@ -72,7 +72,7 @@ class Unit(Base):
                 if kwd=="Psyker":
                     strategic *= 1.3
         except Exception as e:
-            print(e)
+            print(self.name, kwd, e)
             return int(defensive * strategic // 100)
 
         
