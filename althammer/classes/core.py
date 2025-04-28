@@ -28,10 +28,14 @@ class Unit(Base):
     def ppm(self):
 
         print(self.display_name)
-        
-        defensive = self.hp * (7-self.save) * math.sqrt(self.tough) * (7-(self.__dict__.get('invuln',6)))
-        if "Stealth" in self.keywords:
-            self.defensive *= 1.17
+
+        try:
+            defensive = self.hp * (7-self.save) * math.sqrt(self.tough) * (7-(self.__dict__.get('invuln',6)))
+            if "Stealth" in self.keywords:
+                self.defensive *= 1.17
+        except Exception as e:
+            print(e)
+            raise e
 
         print(defensive)
                                                                        
