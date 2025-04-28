@@ -1,4 +1,5 @@
 import json
+import math
 import os
 from werkzeug.utils import safe_join
 
@@ -21,6 +22,66 @@ class Unit(Base):
     @cache.memoize()
     def permalink(self):
         return f"{self.faction.permalink}/unit/{self.id}"
+
+    @property
+    @cache.memoize
+    def ppm(self):
+        
+        defensive = self.hp * (7-self.save) * math.sqrt(self.tough) * (7-(self.__dict__.get('invuln',6)))
+        if "Stealth" in self.keywords:
+            self.defensive *= 1.17
+                                                                       
+        offensive = 0
+        for weapon in self.default_weapons:
+            if isinstance(weapon.dmg, str):
+                dmg = eval(weapon.dmg.replace("d6", "3.5").replace("d3", "2"))
+            else:
+                dmg = weapon.dmg
+
+            if isinstance(weapon.atk, str):
+                atk = eval(weapon.atk.replace("d6", "3.5").replace("d3", "2"))
+            else:
+                atk = weapon.atk
+
+            if "Torrent" in weapon.keywords:
+                skl=1
+            else:
+                skl = weapon.skl
+
+            weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(self.rng/12))
+
+            for kwd in weapon.keywords:
+                if kwd=="Blast":
+                    weapon_pts*=1.2
+                elif kwd=="Devastating Wounds":
+                    weapon_pts *= 1.2
+                elif kwd=="Hazardous":
+                    weapon_pts *= 1 - (1/(6*self.hp))
+                elif kwd="Lethal Hits":
+                    weapon_pts *= 1.5
+                elif kwd.startswith("Melta"):
+                    weapon_pts *= 1.5
+                elif kwd=="One-Shot":
+                    weapon_pts /= 5
+                elif kwd=="Rapid Fire":
+                    weapon_pts *= 1.5
+                elif kwd.startswith("Sustained Hits"):
+                    weapon_pts *= 1.17
+                elif kwd=="Twin-Linked":
+                    weapon_pts *= 1.25
+
+                offensive += weapon_pts
+
+            strategic = (13-self.lead) * (1 + self.oc)
+
+            for kwd in self.keywords:
+                if kwd.startwith("Leader"):
+                    strategic *= 1.3
+                if kwd=="Psyker":
+                    strategic *= 1.3
+                                 
+                
+                                                                       
 
     @property
     @cache.memoize()
