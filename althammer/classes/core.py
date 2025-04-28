@@ -65,11 +65,11 @@ class Unit(Base):
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
-        # for kwd in self.keywords:
-        #     if kwd.startwith("Leader"):
-        #         strategic *= 1.3
-        #     if kwd=="Psyker":
-        #         strategic *= 1.3
+        for kwd in self.keywords_all:
+            if kwd.startwith("Leader"):
+                strategic *= 1.3
+            if kwd=="Psyker":
+                strategic *= 1.3
         
         return int(defensive * strategic // 100)                                                                       
 
@@ -101,7 +101,7 @@ class Unit(Base):
         output = self.keywords
         if self.profiles:
             for profile in self.profiles:
-                output += profile.keywords
+                output += profile.__dict__.get('keywords',[])
 
         return output
 
