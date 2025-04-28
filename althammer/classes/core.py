@@ -30,7 +30,7 @@ class Unit(Base):
         print(self.display_name)
 
         if self.profiles:
-            hp = self.profiles[0].hp
+            hp = sum([x.hp for x in self.profiles[0])
             save = self.profiles[0].save
             tough = self.profiles[0].tough
             invuln = self.profiles[0].__dict__.get('invuln', 7)
@@ -72,7 +72,7 @@ class Unit(Base):
             else:
                 skl = weapon.skl
 
-            weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(self.rng/12))
+            weapon_pts = (atk * (7-skl) * math.sqrt(weapon.str) * math.sqrt(weapon.ap+1) * dmg * math.sqrt(weapon.rng/12))
 
             for kwd in weapon.keywords:
                 if kwd=="Blast":
