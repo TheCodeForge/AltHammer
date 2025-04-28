@@ -217,9 +217,9 @@ class Weapon(Base):
             return max([x.weapon_points_raw for x in self.profiles])
 
         if isinstance(self.dmg, str):
-                dmg = eval(self.dmg.replace("d6", "3.5").replace("d3", "2"))
-            else:
-                dmg = self.dmg
+            dmg = eval(self.dmg.replace("d6", "3.5").replace("d3", "2"))
+        else:
+            dmg = self.dmg
 
         if isinstance(self.atk, str):
             atk = eval(self.atk.replace("d6", "3.5").replace("d3", "2"))
