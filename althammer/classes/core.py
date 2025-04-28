@@ -65,11 +65,11 @@ class Unit(Base):
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
-        for kwd in self.keywords:
-            if kwd.startwith("Leader"):
-                strategic *= 1.3
-            if kwd=="Psyker":
-                strategic *= 1.3
+        # for kwd in self.keywords:
+        #     if kwd.startwith("Leader"):
+        #         strategic *= 1.3
+        #     if kwd=="Psyker":
+        #         strategic *= 1.3
         
         return int(defensive * strategic // 100)                                                                       
 
