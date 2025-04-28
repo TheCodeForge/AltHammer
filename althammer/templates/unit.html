@@ -14,7 +14,7 @@
     <p>FACTION RULES: <span class="fw-bold">{{ ', '.join(u.faction_rules) }}</span></p>
     {% endif %}
 
-    {% if u.unit_rules and 'Character' in u.keywords_all) %}
+    {% if u.unit_rules and 'Character' in u.keywords_all %}
     <p><span class="fw-bold text-faction">ABILITIES</span></p>
     <ul>
     {% for rule in u.unit_rules %}
