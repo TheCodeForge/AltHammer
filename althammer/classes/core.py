@@ -27,6 +27,8 @@ class Unit(Base):
     @cache.memoize()
     def ppm(self):
 
+        print(self.display_name)
+
         if self.profiles:
             hp = self.profiles[0].hp
             save = self.profiles[0].save
