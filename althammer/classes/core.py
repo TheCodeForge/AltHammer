@@ -27,16 +27,14 @@ class Unit(Base):
     @cache.memoize()
     def ppm(self):
 
-        print(self.display_name)
-
         if self.profiles:
-            hp = self.profiles[0]['hp']
-            save = self.profiles[0]['save']
-            tough = self.profiles[0]['tough']
-            invuln = self.profiles[0].get('invuln', 7)
-            lead = self.profiles[0]['lead']
-            oc = self.profiles[0]['oc']
-            move = self.profiles[0]['move']
+            hp = self.profiles[0].hp
+            save = self.profiles[0].save
+            tough = self.profiles[0].tough
+            invuln = self.profiles[0].__dict__.get('invuln', 7)
+            lead = self.profiles[0].lead
+            oc = self.profiles[0].oc
+            move = self.profiles[0].move
         else:
             hp=self.hp
             save=self.save
@@ -49,8 +47,6 @@ class Unit(Base):
         defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
         if "Stealth" in self.keywords:
             defensive *= 1.17
-
-        print(defensive)
                                                                        
         offensive = 0
         for weapon in self.default_weapons:
@@ -93,8 +89,6 @@ class Unit(Base):
 
                 offensive += weapon_pts
 
-        print(offensive)
-
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
         for kwd in self.keywords:
@@ -102,8 +96,6 @@ class Unit(Base):
                 strategic *= 1.3
             if kwd=="Psyker":
                 strategic *= 1.3
-
-        print(strategic)
         
         total = offensive * defensive * strategic // 1000
         print(total)
