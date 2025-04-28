@@ -41,6 +41,8 @@ class Unit(Base):
             for p in self.profiles:
                 for w in p.default_weapons:
                     weapons.append(w)
+            for w in self.default_weapons:
+                weapons.append(w)
         else:
             hp=self.hp
             save=self.save
