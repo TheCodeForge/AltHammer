@@ -68,7 +68,7 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
 
-        return int(math.sqrt(defensive * strategic) / 100)
+        return int(math.sqrt(defensive * strategic))
 
     @property
     @cache.memoize()
