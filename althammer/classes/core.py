@@ -98,7 +98,9 @@ class Unit(Base):
                 elif kwd=="Twin-Linked":
                     weapon_pts *= 1.25
 
-                offensive += weapon_pts
+            offensive += weapon_pts
+
+        return offensive*defensive // 100
 
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
