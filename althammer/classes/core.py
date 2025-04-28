@@ -61,6 +61,8 @@ class Unit(Base):
         for weapon in weapons:
             offensive += weapon.weapon_points_raw
 
+        return int(offensive*defensive // 100)
+
         strategic = (13-lead) * (1 + oc) * math.sqrt(move)
 
         for kwd in self.keywords:
@@ -253,7 +255,7 @@ class Weapon(Base):
             elif kwd=="Twin-Linked":
                 weapon_pts *= 1.25
 
-        return weapon_pts
+        return int(weapon_pts)
 
 class Detachment(Base):
 
