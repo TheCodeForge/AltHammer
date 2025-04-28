@@ -72,14 +72,15 @@ class Unit(Base):
 
                 offensive += weapon_pts
 
-            strategic = (13-self.lead) * (1 + self.oc)
+        strategic = (13-self.lead) * (1 + self.oc)
 
-            for kwd in self.keywords:
-                if kwd.startwith("Leader"):
-                    strategic *= 1.3
-                if kwd=="Psyker":
-                    strategic *= 1.3
-                                 
+        for kwd in self.keywords:
+            if kwd.startwith("Leader"):
+                strategic *= 1.3
+            if kwd=="Psyker":
+                strategic *= 1.3
+
+        return offensive * defensive * strategic // 1000
                 
                                                                        
 
