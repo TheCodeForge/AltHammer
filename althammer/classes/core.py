@@ -26,7 +26,7 @@ class Unit(Base):
 
     @property
     @lazy
-    def ppm(self):
+    def ppm_computed(self):
 
         if self.profiles:
             hp = sum([x.hp for x in self.profiles])
@@ -413,11 +413,22 @@ class Faction(Base):
 
         root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
         for filename in files:
-            with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+            with open(f"althammer/data/{self.id}/units/{filename}", "w+") as unitfile:
                 try:
                     u=Unit(json.load(unitfile))
-                    u.id=filename.split('.')[0]
+                    
+                    #save id and points the first time a file is viewed
+                    if 'id' not in u.__dict__:
+                        u.id=filename.split('.')[0]
+                        u.__dict__['ppm']=u.ppm_computed
+                        unitfile.seek(0)
+                        unitfile.write(json.dump(u.__dict__))
+                        unitfile.truncate()
+                        
+
+                    
                     u.faction=self
+                        
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
                 for kind in output:
