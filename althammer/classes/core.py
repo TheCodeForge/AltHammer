@@ -24,7 +24,6 @@ class Unit(Base):
     def permalink(self):
         return f"{self.faction.permalink}/unit/{self.id}"
 
-    @property
     @lazy
     def ppm_computed(self):
 
@@ -428,7 +427,7 @@ class Faction(Base):
                 if 'id' not in u.__dict__:
                     print(f'updating {filename}')
                     u.id=filename.split('.')[0]
-                    u.__dict__['ppm']=u.ppm_computed
+                    u.__dict__['ppm']=u.ppm_computed()
                     output = {x:u.__dict__[x] for x in u.__dict__}
                     output.pop('faction',None)
                     output.pop('_lazy', None)
