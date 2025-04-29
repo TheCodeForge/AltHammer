@@ -423,7 +423,7 @@ class Faction(Base):
 
                 print(f'loaded {filename} to unit')
 
-                save id and points the first time a file is viewed
+                # save id and points the first time a file is viewed
                 if 'id' not in u.__dict__:
                     print(f'updating {filename}')
                     u.id=filename.split('.')[0]
