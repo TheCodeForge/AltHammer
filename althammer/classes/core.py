@@ -398,7 +398,7 @@ class Faction(Base):
     @lazy
     def unit_listing(self):
 
-        output = {
+        categories = {
             "Epic Hero": [],
             "Character": [],
             "Infantry": [],
@@ -431,17 +431,16 @@ class Faction(Base):
                     output = {x:u.__dict__[x] for x in u.__dict__}
                     output.pop('faction',None)
                     output.pop('_lazy', None)
-                    print (u.id, output)
                     unitfile.seek(0)
                     unitfile.write(json.dumps(output))
                     unitfile.truncate()
                     print(f're-saved unit {u.display_name}')
 
-                for kind in output.keys():
+                for kind in categories.keys():
                     print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
                     if kind in u.keywords_all:
                         print(f"Categorize {u.display_name} -> {kind}")
-                        output[kind].append(u)
+                        categories[kind].append(u)
                         break
                 else:
                     print('cat error')
