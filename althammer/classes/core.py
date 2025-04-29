@@ -52,6 +52,9 @@ class Unit(Base):
             move=self.move
             weapons = self.default_weapons
 
+        if isinstance(move, str):
+            move = int(move.rstrip('+'))
+
         defensive = hp * (7-save) * math.sqrt(tough) * (8-invuln)
         if "Stealth" in self.keywords:
             defensive *= 1.17
@@ -68,7 +71,10 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
 
-        return int(math.sqrt(defensive * offensive * strategic))
+        ppm = int(math.sqrt(defensive * offensive * strategic))
+
+        print(self.name, defensive, offensive, strategic, ppm)
+        return ppm
 
     @property
     @cache.memoize()
