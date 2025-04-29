@@ -418,27 +418,29 @@ class Faction(Base):
                     print(unitfile.read())
                     unitfile.seek(0)
                     u=Unit(json.load(unitfile))
-                    
-                    #save id and points the first time a file is viewed
-                    if 'id' not in u.__dict__:
-                        u.id=filename.split('.')[0]
-                        u.__dict__['ppm']=u.ppm_computed
-                        output = {x:u.__dict__[x] for x in u.__dict__}
-                        output.pop('faction',None)
-                        output.pop('_lazy', None)
-                        print (u.id, output)
-                        unitfile.seek(0)
-                        unitfile.write(json.dump(output))
-                        unitfile.truncate()
-                    u.faction=self
-                        
                 except json.decoder.JSONDecodeError as e:
                     print(unitfile.read())
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
+
                 for kind in output:
                     if kind in u.keywords_all:
                         output[kind].append(u)
                         break
+                        
+                #save id and points the first time a file is viewed
+                if 'id' not in u.__dict__:
+                    u.id=filename.split('.')[0]
+                    u.__dict__['ppm']=u.ppm_computed
+                    output = {x:u.__dict__[x] for x in u.__dict__}
+                    output.pop('faction',None)
+                    output.pop('_lazy', None)
+                    print (u.id, output)
+                    unitfile.seek(0)
+                    unitfile.write(json.dump(output))
+                    unitfile.truncate()
+                u.faction=self
+                        
+
                 else:
                     raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
