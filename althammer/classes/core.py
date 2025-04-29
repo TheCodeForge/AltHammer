@@ -9,23 +9,7 @@ from flask import abort, jsonify
 from althammer.__main__ import app, cache
 
 
-OBJ_CACHE={}
-
 class Base():
-
-    def __new__(cls, *args, **kwargs):
-
-        cache_key = f"{cls.__name__};{[str(x) for x in args[1:]]};{sorted([str(x)+"="+str(kwargs[x]) for x in kwargs])}"
-
-        if not kwargs:
-            obj=OBJ_CACHE.get(cache_key)
-            if obj:
-                return obj
-
-        obj = super(Base, cls).__new__(cls)
-
-        return obj
-
     def __init__(self, data, *args, **kwargs):
         self.__dict__.update(data)
         self.__dict__.update(kwargs)
@@ -452,9 +436,3 @@ class Faction(Base):
     @property
     def color(self):
         return self.__dict__.get("color", "000000")
-
-    
-
-@app.get('/obj_cache')
-def get_obj_cache():
-    return jsonify(OBJ_CACHE)
