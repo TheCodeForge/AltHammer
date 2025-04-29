@@ -425,12 +425,14 @@ class Faction(Base):
 
                 for kind in output:
                     if kind in u.keywords_all:
+                        print(f"Categorize {u.display_name} -> {kind}")
                         output[kind].append(u)
                         break
                 else:
+                    print('cat error')
                     raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
-                print(f"{u.display_name} -> {kind}")
+                print(f"Complete and going to next")
 
                 #save id and points the first time a file is viewed
                 # if 'id' not in u.__dict__:
