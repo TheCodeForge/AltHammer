@@ -4,7 +4,7 @@ import os
 from althammer.helpers.lazy import lazy
 from werkzeug.utils import safe_join
 
-from flask import abort
+from flask import abort, jsonify
 
 from althammer.__main__ import app, cache
 
