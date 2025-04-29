@@ -6,7 +6,7 @@ from werkzeug.utils import safe_join
 
 from flask import abort
 
-from althammer.__main__ import cache
+from althammer.__main__ import app, cache
 
 
 OBJ_CACHE={}
