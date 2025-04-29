@@ -417,7 +417,7 @@ class Faction(Base):
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
-                    u.id=filename.split('.')[0]
+                    # u.id=filename.split('.')[0]
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
 
@@ -435,7 +435,7 @@ class Faction(Base):
                     unitfile.seek(0)
                     unitfile.write(json.dumps(output))
                     unitfile.truncate()
-                print(f're-saved unit {u.display_name}')
+                    print(f're-saved unit {u.display_name}')
 
                 for kind in output.keys():
                     if kind in u.keywords_all:
