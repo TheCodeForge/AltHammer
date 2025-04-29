@@ -431,6 +431,7 @@ class Faction(Base):
                     u.faction=self
                         
                 except json.decoder.JSONDecodeError as e:
+                    print(unitfile.read())
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
                 for kind in output:
                     if kind in u.keywords_all:
