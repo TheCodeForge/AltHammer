@@ -443,6 +443,8 @@ class Faction(Base):
         for kind in output:
             output[kind] = sorted(output[kind], key=lambda x: x.display_name)
 
+        print(output)
+
         return output
 
 
