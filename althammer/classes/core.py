@@ -451,11 +451,11 @@ class Faction(Base):
 
 
 
-            output[kind] = sorted(output[kind], key=lambda x: x.display_name)
+            categories[kind] = sorted(categories[kind], key=lambda x: x.display_name)
 
-        print(output)
+        print(categories)
 
-        return output
+        return categories
 
 
     @property
