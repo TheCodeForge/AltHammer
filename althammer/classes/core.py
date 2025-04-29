@@ -426,7 +426,9 @@ class Faction(Base):
                     if kind in u.keywords_all:
                         output[kind].append(u)
                         break
-                        
+                else:
+                    raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+
                 #save id and points the first time a file is viewed
                 if 'id' not in u.__dict__:
                     u.id=filename.split('.')[0]
@@ -439,10 +441,6 @@ class Faction(Base):
                     unitfile.write(json.dump(output))
                     unitfile.truncate()
                 u.faction=self
-                        
-
-                else:
-                    raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
         for kind in output:
             output[kind] = sorted(output[kind], key=lambda x: x.display_name)
