@@ -421,13 +421,16 @@ class Faction(Base):
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
 
+                print(f'loaded {filename} to unit')
+
                 for kind in output:
                     if kind in u.keywords_all:
                         output[kind].append(u)
-                        print(f"{u.display_name} -> {kind}")
                         break
                 else:
                     raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+
+                print(f"{u.display_name} -> {kind}")
 
                 #save id and points the first time a file is viewed
                 # if 'id' not in u.__dict__:
