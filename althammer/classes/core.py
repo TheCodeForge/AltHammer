@@ -423,6 +423,7 @@ class Faction(Base):
                 for kind in output:
                     if kind in u.keywords_all:
                         output[kind].append(u)
+                        print(f"{u.display_name} -> {kind}")
                         break
                 else:
                     raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
