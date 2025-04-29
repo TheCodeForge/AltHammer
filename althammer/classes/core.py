@@ -424,7 +424,7 @@ class Faction(Base):
 
                 print(f'loaded {filename} to unit')
 
-                for kind in output:
+                for kind in output.keys():
                     if kind in u.keywords_all:
                         print(f"Categorize {u.display_name} -> {kind}")
                         output[kind].append(u)
