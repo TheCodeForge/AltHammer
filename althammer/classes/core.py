@@ -415,8 +415,7 @@ class Faction(Base):
         for filename in files:
             with open(f"althammer/data/{self.id}/units/{filename}", "w+") as unitfile:
                 try:
-                    print(unitfile.read())
-                    unitfile.seek(0)
+
                     u=Unit(json.load(unitfile))
                 except json.decoder.JSONDecodeError as e:
                     print(unitfile.read())
@@ -438,7 +437,7 @@ class Faction(Base):
                     output.pop('_lazy', None)
                     print (u.id, output)
                     unitfile.seek(0)
-                    unitfile.write(json.dump(output))
+                    json.dump(output, unitfile)
                     unitfile.truncate()
                 u.faction=self
 
