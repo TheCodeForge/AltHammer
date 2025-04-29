@@ -421,12 +421,12 @@ class Faction(Base):
                     if 'id' not in u.__dict__:
                         u.id=filename.split('.')[0]
                         u.__dict__['ppm']=u.ppm_computed
+                        output = {x:u.__dict__[x] for x in u.__dict__}
+                        output.pop('faction',None)
+                        output.pop('_lazy', None)
                         unitfile.seek(0)
                         unitfile.write(json.dump(u.__dict__))
                         unitfile.truncate()
-                        
-
-                    
                     u.faction=self
                         
                 except json.decoder.JSONDecodeError as e:
