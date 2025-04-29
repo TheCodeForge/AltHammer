@@ -89,7 +89,7 @@ class Unit(Base):
 
         ppm = int(math.sqrt(defensive * offensive * strategic))
 
-        print(self.name, defensive, offensive, strategic, ppm)
+        print(self.name, int(defensive), int(offensive), int(strategic), ppm)
         return ppm
 
     @property
