@@ -413,7 +413,7 @@ class Faction(Base):
 
         root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
         for filename in files:
-            with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+            with open(f"althammer/data/{self.id}/units/{filename}", "w+") as unitfile:
                 print(f"trying {filename}")
                 try:
                     u=Unit(json.load(unitfile))
