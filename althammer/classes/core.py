@@ -418,6 +418,7 @@ class Faction(Base):
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
+                    u.id=filename.split('.')[0]
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
 
@@ -437,7 +438,6 @@ class Faction(Base):
                 #save id and points the first time a file is viewed
                 # if 'id' not in u.__dict__:
                 #     print(f'updating {filename}')
-                #     u.id=filename.split('.')[0]
                 #     u.__dict__['ppm']=u.ppm_computed
                 #     output = {x:u.__dict__[x] for x in u.__dict__}
                 #     output.pop('faction',None)
