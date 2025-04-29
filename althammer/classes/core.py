@@ -414,6 +414,7 @@ class Faction(Base):
         root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
         for filename in files:
             with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+                print(f"trying {filename}")
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
@@ -441,7 +442,7 @@ class Faction(Base):
                 #     unitfile.write(json.dumps(output))
                 #     unitfile.truncate()
 
-        for kind in output:
+
             output[kind] = sorted(output[kind], key=lambda x: x.display_name)
 
         print(output)
