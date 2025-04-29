@@ -415,6 +415,8 @@ class Faction(Base):
         for filename in files:
             with open(f"althammer/data/{self.id}/units/{filename}", "w+") as unitfile:
                 try:
+                    print(unitfile.read())
+                    unitfile.seek(0)
                     u=Unit(json.load(unitfile))
                     
                     #save id and points the first time a file is viewed
