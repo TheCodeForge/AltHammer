@@ -8,8 +8,8 @@ from flask import abort
 
 from althammer.__main__ import cache
 
-OBJ_CACHE={}
 
+OBJ_CACHE={}
 
 class Base():
 
@@ -412,7 +412,7 @@ class Faction(Base):
 
     
     @property
-    @cache.memoize()
+    @lazy
     def unit_listing(self):
 
         output = {
