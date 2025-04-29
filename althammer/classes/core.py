@@ -12,7 +12,7 @@ OBJ_CACHE={}
 
 
 class Base():
-    
+
     def __new__(cls, *args, **kwargs):
 
         cache_key = f"{cls.__name__};{[str(x) for x in args[1:]]};{sorted([str(x)+"="+str(kwargs[x]) for x in kwargs])}"
@@ -22,7 +22,7 @@ class Base():
             if obj:
                 return obj
 
-        obj = super(Object, cls).__new__(cls)
+        obj = super(Base, cls).__new__(cls)
 
         return obj
 
