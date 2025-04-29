@@ -424,8 +424,9 @@ class Faction(Base):
                         output = {x:u.__dict__[x] for x in u.__dict__}
                         output.pop('faction',None)
                         output.pop('_lazy', None)
+                        print (u.id, output)
                         unitfile.seek(0)
-                        unitfile.write(json.dump(u.__dict__))
+                        unitfile.write(json.dump(output))
                         unitfile.truncate()
                     u.faction=self
                         
