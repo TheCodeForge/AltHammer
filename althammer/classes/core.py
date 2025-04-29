@@ -8,7 +8,23 @@ from flask import abort
 
 from althammer.__main__ import cache
 
+OBJ_CACHE={}
+
+
 class Base():
+    
+    def __new__(cls, *args, **kwargs):
+
+        cache_key = f"{cls.__name__};{[str(x) for x in args[1:]]};{sorted([str(x)+"="+str(kwargs[x]) for x in kwargs])}"
+
+        if not kwargs:
+            obj=OBJ_CACHE.get(cache_key)
+            if obj:
+                return obj
+
+        obj = super(Object, cls).__new__(cls)
+
+        return obj
 
     def __init__(self, data, *args, **kwargs):
         self.__dict__.update(data)
