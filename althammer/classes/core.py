@@ -297,7 +297,7 @@ class Detachment(Base):
         return True
 
     @property
-    @cache.memoize()
+    @lazy
     def unit_listing(self):
         #get faction unit listing and then filter by detachment rules
         unit_listing = self.faction.unit_listing
@@ -454,3 +454,7 @@ class Faction(Base):
         return self.__dict__.get("color", "000000")
 
     
+
+@app.get('/obj_cache')
+def get_obj_cache():
+    return jsonify(OBJ_CACHE)
