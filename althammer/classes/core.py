@@ -423,19 +423,19 @@ class Faction(Base):
 
                 print(f'loaded {filename} to unit')
 
-                #save id and points the first time a file is viewed
-                # if 'id' not in u.__dict__:
-                #     print(f'updating {filename}')
-                #     u.id=filename.split('.')[0]
-                #     u.__dict__['ppm']=u.ppm_computed()
-                #     output = {x:u.__dict__[x] for x in u.__dict__}
-                #     output.pop('faction',None)
-                #     output.pop('_lazy', None)
-                #     print (u.id, output)
-                #     unitfile.seek(0)
-                #     unitfile.write(json.dumps(output))
-                #     unitfile.truncate()
-                # print(f're-saved unit {u.display_name}')
+                save id and points the first time a file is viewed
+                if 'id' not in u.__dict__:
+                    print(f'updating {filename}')
+                    u.id=filename.split('.')[0]
+                    u.__dict__['ppm']=u.ppm_computed()
+                    output = {x:u.__dict__[x] for x in u.__dict__}
+                    output.pop('faction',None)
+                    output.pop('_lazy', None)
+                    print (u.id, output)
+                    unitfile.seek(0)
+                    unitfile.write(json.dumps(output))
+                    unitfile.truncate()
+                print(f're-saved unit {u.display_name}')
 
                 for kind in output.keys():
                     if kind in u.keywords_all:
