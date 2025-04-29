@@ -416,6 +416,7 @@ class Faction(Base):
             with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
                 try:
                     u=Unit(json.load(unitfile))
+                    u.faction=self
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
 
@@ -438,7 +439,6 @@ class Faction(Base):
                 #     unitfile.seek(0)
                 #     unitfile.write(json.dumps(output))
                 #     unitfile.truncate()
-                u.faction=self
 
         for kind in output:
             output[kind] = sorted(output[kind], key=lambda x: x.display_name)
