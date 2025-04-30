@@ -371,12 +371,15 @@ class Faction(Base):
         try:
             with open(path, "r+") as file:
                 u = Unit(json.load(file))
+                u.faction=self
 
                 if 'id' not in u.__dict__:
                     # print(f'updating {filename}')
                     u.__dict__['id']=id
                     u.__dict__['ppm']=u.ppm_computed()
                     output = {x:u.__dict__[x] for x in u.__dict__}
+                    output.pop('faction',None)
+                    output.pop('_lazy',None)
                     file.seek(0)
                     file.write(json.dumps(output))
                     file.truncate()
@@ -384,7 +387,6 @@ class Faction(Base):
         except FileNotFoundError:
             abort(404)
             
-        u.faction=self
         
         return output
 
