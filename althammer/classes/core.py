@@ -451,10 +451,7 @@ class Faction(Base):
 
             print(f"Complete and going to next")
 
-
-
-
-            categories[kind] = sorted(categories[kind], key=lambda x: x.display_name)
+        categories[kind] = sorted(categories[kind], key=lambda x: x.display_name)
 
         print(categories)
 
