@@ -388,7 +388,7 @@ class Faction(Base):
             abort(404)
             
         
-        return output
+        return u
 
     @lazy
     def weapon(self, id):
