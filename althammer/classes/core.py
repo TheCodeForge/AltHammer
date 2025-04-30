@@ -242,15 +242,15 @@ class Weapon(Base):
 
         for kwd in self.keywords:
             if kwd=="Blast":
-                weapon_pts*=1.2
+                weapon_pts*=1.1
             elif kwd=="Devastating Wounds":
                 weapon_pts *= 1.2
             elif kwd=="Hazardous":
                 weapon_pts *= 5/6
             elif kwd=="Lethal Hits":
-                weapon_pts *= 1.5
+                weapon_pts *= 1.2
             elif kwd.startswith("Melta"):
-                weapon_pts *= 1.5
+                weapon_pts *= 1.2
             elif kwd=="One-Shot":
                 weapon_pts /= 5
             elif kwd=="Rapid Fire":
