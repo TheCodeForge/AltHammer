@@ -118,7 +118,7 @@ class Unit(Base):
         output = self.keywords
         if self.__dict__.get('profiles'):
             for profile in self.__dict__['profiles']:
-                output += profile.__dict__.get('keywords',[])
+                output += profile.get('keywords',[])
 
         return sorted(list(set(output)))
 
