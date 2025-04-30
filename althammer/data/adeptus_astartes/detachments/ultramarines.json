@@ -1,5 +1,6 @@
 {
     "name": "Ultramarines Chapter",
+    "secondary_faction":"Ultramarines",
     "banned_keywords": [],
     "rules": [ 
         {
