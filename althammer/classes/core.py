@@ -371,6 +371,16 @@ class Faction(Base):
         try:
             with open(path, "r+") as file:
                 data=json.load(file)
+
+                if 'id' not in data:
+                    # print(f'updating {filename}')
+                    data['id']=id
+                    data['ppm']=u.ppm_computed()
+                    output = {x:u.__dict__[x] for x in u.__dict__}
+                    file.seek(0)
+                    file.write(json.dumps(output))
+                    file.truncate()
+                    
         except FileNotFoundError:
             abort(404)
         
@@ -416,7 +426,7 @@ class Faction(Base):
         root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
         for filename in files:
             with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
-                print(f"trying {filename}")
+                # print(f"trying {filename}")
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
@@ -424,11 +434,11 @@ class Faction(Base):
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
 
-                print(f'loaded {filename} to unit')
+                # print(f'loaded {filename} to unit')
 
                 # save id and points the first time a file is viewed
                 if 'id' not in u.__dict__:
-                    print(f'updating {filename}')
+                    # print(f'updating {filename}')
                     u.id=filename.split('.')[0]
                     u.__dict__['ppm']=u.ppm_computed()
                     output = {x:u.__dict__[x] for x in u.__dict__}
@@ -437,19 +447,19 @@ class Faction(Base):
                     unitfile.seek(0)
                     unitfile.write(json.dumps(output))
                     unitfile.truncate()
-                    print(f're-saved unit {u.display_name}')
+                    # print(f're-saved unit {u.display_name}')
 
             for kind in categories.keys():
                 print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
                 if kind in u.keywords_all:
-                    print(f"Categorize {u.display_name} -> {kind}")
+                    # print(f"Categorize {u.display_name} -> {kind}")
                     categories[kind].append(u)
                     break
             else:
                 print('cat error')
                 raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
-            print(f"Complete and going to next")
+            # print(f"Complete and going to next")
 
         categories[kind] = sorted(categories[kind], key=lambda x: x.display_name)
 
