@@ -82,7 +82,9 @@ class Unit(Base):
                 strategic *= 1.3
             if kwd=="Psyker":
                 strategic *= 1.3
-
+            if kwd=="Secured Objectives":
+                strategic *= 2
+            
         ppm = int((defensive * offensive * strategic)**(1/3))
 
         print(self.name, int(defensive), int(offensive), int(strategic), ppm)
