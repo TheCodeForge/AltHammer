@@ -62,6 +62,9 @@ class Unit(Base):
         for weapon in weapons:
             offensive += weapon.weapon_points_raw
 
+        if isinstance(move, str):
+            move=int(move.rstrip('+'))
+            
         strategic = (13-lead) + oc + move
 
         for kwd in self.keywords_all:
