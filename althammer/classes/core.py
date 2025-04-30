@@ -108,7 +108,7 @@ class Unit(Base):
             for profile in self.profiles:
                 output += profile.__dict__.get('keywords',[])
 
-        return output
+        return sorted(list(set(output)))
 
     @property
     @cache.memoize()
