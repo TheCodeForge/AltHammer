@@ -70,7 +70,7 @@ class Unit(Base):
             if kwd=="Psyker":
                 strategic *= 1.3
 
-        ppm = int(math.sqrt(defensive * offensive * strategic))
+        ppm = int(defensive * offensive * strategic //1000)
 
         print(self.name, int(defensive), int(offensive), int(strategic), ppm)
         return ppm
