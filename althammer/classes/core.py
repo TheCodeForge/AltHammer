@@ -439,17 +439,17 @@ class Faction(Base):
                     unitfile.truncate()
                     print(f're-saved unit {u.display_name}')
 
-                for kind in categories.keys():
-                    print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
-                    if kind in u.keywords_all:
-                        print(f"Categorize {u.display_name} -> {kind}")
-                        categories[kind].append(u)
-                        break
-                else:
-                    print('cat error')
-                    raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
+            for kind in categories.keys():
+                print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
+                if kind in u.keywords_all:
+                    print(f"Categorize {u.display_name} -> {kind}")
+                    categories[kind].append(u)
+                    break
+            else:
+                print('cat error')
+                raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
-                print(f"Complete and going to next")
+            print(f"Complete and going to next")
 
 
 
