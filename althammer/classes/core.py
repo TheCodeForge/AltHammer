@@ -222,12 +222,12 @@ class Weapon(Base):
             return 0
 
         if isinstance(self.dmg, str):
-            dmg = eval(self.dmg.replace("d6", "3.5").replace("d3", "2"))
+            dmg = eval(self.dmg.replace("2d6", "7").replace("d6", "3.5").replace("d3", "2"))
         else:
             dmg = self.dmg
 
         if isinstance(self.atk, str):
-            atk = eval(self.atk.replace("d6", "3.5").replace("d3", "2"))
+            atk = eval(self.atk.replace("2d6", "7").replace("d6", "3.5").replace("d3", "2"))
         else:
             atk = self.atk
 
