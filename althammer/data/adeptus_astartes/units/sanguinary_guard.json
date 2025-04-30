@@ -32,7 +32,8 @@
         "inferno_pistol"
     ],
     "melee_weapons": [
-        "encarmine_blade"
+        "encarmine_blade",
+        "encarmine_spear"
     ],
     "composition":[
         "3-6 Sanguinary Guard"
