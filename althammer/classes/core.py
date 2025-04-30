@@ -85,9 +85,10 @@ class Unit(Base):
             if kwd=="Secured Objectives":
                 strategic *= 2
             
+        print(self.name, int(defensive), int(offensive), int(strategic))
         ppm = int((defensive * offensive * strategic)**(1/3))
+        print(ppm)
 
-        print(self.name, int(defensive), int(offensive), int(strategic), ppm)
         return ppm
 
     @property
