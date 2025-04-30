@@ -28,13 +28,16 @@
         "thunderstrike_las_talon",
         "twin_icarus_rocket_pod"
     ],
-    "melee_weapons": [],
+    "melee_weapons": [
+        "armored_hull"
+    ],
     "composition":[
         "1 Storm Speeder Thunderstrike"
     ],
     "default_gear":[
         "stormfury_missile",
         "thunderstrike_las_talon",
-        "twin_icarus_rocket_pod"
+        "twin_icarus_rocket_pod",
+        "armored_hull"
     ]
 }
