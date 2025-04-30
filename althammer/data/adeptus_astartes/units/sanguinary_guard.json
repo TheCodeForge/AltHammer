@@ -31,7 +31,9 @@
         "angelus_boltgun",
         "inferno_pistol"
     ],
-    "melee_weapons": [],
+    "melee_weapons": [
+        "encarmine_blade"
+    ],
     "composition":[
         "3-6 Sanguinary Guard"
     ],
