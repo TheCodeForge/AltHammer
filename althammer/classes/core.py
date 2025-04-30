@@ -451,20 +451,20 @@ class Faction(Base):
                     # print(f're-saved unit {u.display_name}')
 
             for kind in categories.keys():
-                print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
+                # print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
                 if kind in u.keywords_all:
                     # print(f"Categorize {u.display_name} -> {kind}")
                     categories[kind].append(u)
                     break
             else:
-                print('cat error')
+                # print('cat error')
                 raise ValueError(f"Unable to categorize unit {self.id}/{filename}")
 
             # print(f"Complete and going to next")
 
         categories[kind] = sorted(categories[kind], key=lambda x: x.display_name)
 
-        print(categories)
+        # print(categories)
 
         return categories
 
