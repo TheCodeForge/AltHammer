@@ -98,7 +98,7 @@ class Unit(Base):
         if not self.__dict__.get('is_profile'):
             output += self.faction.__dict__.get("keywords", [])
 
-        output = sorted(output)
+        output = sorted(list(set(output)))
         return output
 
     @property
