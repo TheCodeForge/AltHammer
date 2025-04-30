@@ -62,7 +62,7 @@ class Unit(Base):
         for weapon in weapons:
             offensive += weapon.weapon_points_raw
 
-        strategic = (13-lead) * (1 + oc) * math.sqrt(move)
+        strategic = (13-lead) + oc + move
 
         for kwd in self.keywords_all:
             if kwd.startswith("Leader"):
@@ -233,7 +233,7 @@ class Weapon(Base):
         else:
             skl = self.skl
 
-        rng = self.__dict__.get('rng',1)
+        rng = self.__dict__.get('rng',12)
 
         weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
 
