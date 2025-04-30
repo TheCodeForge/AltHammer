@@ -104,8 +104,8 @@ class Unit(Base):
     @property
     def keywords_all(self):
         output = self.keywords
-        if self.profiles:
-            for profile in self.profiles:
+        if self.__dict__.get('profiles'):
+            for profile in self.__dict__['profiles]:
                 output += profile.__dict__.get('keywords',[])
 
         return sorted(list(set(output)))
