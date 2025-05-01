@@ -40,7 +40,7 @@
     </ul>
     {% if u.profiles %}
     {% for profile in u.profiles if profile.default_gear %}
-    <p>Each {{ profile.name }} is equipped with:</p>
+    <p>{% if profile.__dict__.get('qty',2)>1 %}Each {% endif %}{{ profile.name }} is equipped with:</p>
       <ul>
       {% for weapon in profile.default_weapons %}
         <li>{{ weapon.name }}</li>

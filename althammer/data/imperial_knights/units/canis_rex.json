@@ -16,7 +16,8 @@
                 "chainbreaker_las_impulsor",
                 "chainbreaker_multi_laser",
                 "freedoms_hand"
-            ]
+            ],
+            "qty":1
         },
         {
             "name": "Sir Hekhtur",
@@ -31,7 +32,8 @@
             "default_gear": [
                 "hekhturs_pistol",
                 "hekhturs_knives"
-            ]
+            ],
+            "qty":1
         }
     ],
     "keywords": [
