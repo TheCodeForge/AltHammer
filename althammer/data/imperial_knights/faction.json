@@ -13,11 +13,11 @@
             "text": "At the start of the battle, select one of the Chivalric Oaths below. Your army gains the stated Oath Ability. If, at the start of a Battle Round, the corresponding Deed is completed, your army becomes \"Honored\" and you gain +3 Command Points (limit once per battle).",
             "options":[
                 {
-                    "name":"Lay Low the Tyrant"
+                    "name":"Lay Low the Tyrant",
                     "text":"* **Oath Ability:** Each Activation, this model may re-roll one Hit roll and one Wound roll.\n* **Deed:** Destroy the enemy +Warlord+."
                 },
                 {
-                    "name":"Reclaim the Realm"
+                    "name":"Reclaim the Realm",
                     "text":"* **Oath Ability:** Add 1\" to this model's Movement trait and add 1 to this model's Advance and Charge rolls.\n* **Deed:** Control one or more objective markers in your opponent's deployment zone."
                 }
             ]
