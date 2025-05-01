@@ -16,12 +16,16 @@
     ],
     "faction_rules": ["Code Chivalric"],
     "unit_rules": [],
-    "range_weapons": [],
+    "range_weapons": [
+        "dual_armiger_autocannon",
+        "questoris_heavy_stubber"
+    ],
     "melee_weapons": [],
     "composition":[
         "1 Armiger Helverin"
     ],
     "default_gear":[
-        "close_combat_weapon"
+        "dual_armiger_autocannon",
+        "questoris_heavy_stubber"
     ]
 }
