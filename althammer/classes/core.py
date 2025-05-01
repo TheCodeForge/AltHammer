@@ -32,7 +32,7 @@ class Unit(Base):
             ppm = sum([x.ppm_computed()*x.__dict__.get("qty",1) for x in self.profiles])
             if 'Entourage' not in self.core_rules:
                 ppm /= len(self.profiles)
-            return ppm
+            return int(ppm)
             
             # hp = sum([x.hp for x in self.profiles])
             # save = self.profiles[0].save
