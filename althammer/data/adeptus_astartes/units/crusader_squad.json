@@ -4,7 +4,7 @@
     "ppm": 16,
     "profiles":[
         {
-            "name": "Sword Brother, Initiates",
+            "name": "Sword Brother",
             "move":6,
             "tough": 4,
             "save": 3,
@@ -12,6 +12,26 @@
             "lead": 6,
             "oc": 2,
             "base":32
+            "default_gear":[
+                "boltgun",
+                "bolt_pistol",
+                "power_weapon"
+            ],
+        },
+        {
+            "name": "Initiates",
+            "move":6,
+            "tough": 4,
+            "save": 3,
+            "hp":2,
+            "lead": 6,
+            "oc": 2,
+            "base":32
+            "default_gear":[
+                "boltgun",
+                "bolt_pistol",
+                "astartes_chainsword"
+            ],
         },
         {
             "name": "Neophytes",
@@ -22,6 +42,10 @@
             "lead": 6,
             "oc": 2,
             "base":32
+            "default_gear":[
+                "astartes_shotgun",
+                "bolt_pistol"
+            ],
         }
     ],
     "keywords": [
