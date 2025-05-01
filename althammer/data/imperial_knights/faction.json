@@ -21,6 +21,10 @@
                     "text":"* **Oath Ability:** Add 1\" to this model's Movement trait and add 1 to this model's Advance and Charge rolls.\n* **Deed:** Control one or more objective markers in your opponent's deployment zone."
                 }
             ]
+        },
+        {
+            "name":"Bondsman",
+            "text":"Some +Imperial Knights+ have a \"Bondsman\" ability. When such a unit is Activated, select a friendly +Armiger+ unit within 12\" of the Activated unit. The Bondsman ability is applied to that unit. Units may not be affected by more than one Bondsman ability at a time."
         }
     ],
     "strategems": [
