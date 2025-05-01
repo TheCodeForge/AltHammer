@@ -256,19 +256,37 @@ class Weapon(Base):
         weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
 
         for kwd in self.keywords:
-            if kwd=="Blast":
+            if kwd.startswith("Anti-"):
+                weapon_pts *= 1.1
+            elif kwd=="Assault":
+                weapon_pts *= 1.1
+            elif kwd=="Blast":
                 weapon_pts*=1.1
             elif kwd=="Devastating Wounds":
                 weapon_pts *= 1.2
             elif kwd=="Hazardous":
                 weapon_pts *= 5/6
+            elif kwd=="Heavy":
+                weapon_pts *= 1.1
+            elif kwd=="Ignore Cover":
+                weapon_pts *= 1.2
+            elif kwd=="Incendiary":
+                weapon_pts *= 1.1
+            elif kwd=="Indirect Fire":
+                weapon_pts *= 1.1
+            elif kwd=="Lance":
+                weapon_pts *= 1.1
             elif kwd=="Lethal Hits":
                 weapon_pts *= 1.2
             elif kwd.startswith("Melta"):
                 weapon_pts *= 1.2
             elif kwd=="One-Shot":
                 weapon_pts /= 5
-            elif kwd=="Rapid Fire":
+            elif kwd=="Pistol":
+                weapon_pts *= 1.1
+            elif kwd=="Precise":
+                weapon_pts *= 1.1
+            elif kwd.startswith("Rapid Fire"):
                 weapon_pts *= 1.5
             elif kwd.startswith("Sustained Hits"):
                 weapon_pts *= 1.17
