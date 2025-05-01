@@ -79,7 +79,7 @@ class Unit(Base):
             
         strategic = (13-lead) + oc + move
 
-        for kwd in self.keywords_all:
+        for kwd in self.core_rules:
             if kwd.startswith("Deadly Demise"):
                 strategic *= 1.1
             elif kwd=="Deep Strike":
@@ -102,6 +102,10 @@ class Unit(Base):
                 strategic *= 1.1
             elif kwd=="Secured Objectives":
                 strategic *= 2
+
+        for kwd in self.keywords_all:
+            if kwd=="Fly":
+                strategic *= 1.1
             
         print(self.name, int(defensive), int(offensive), int(strategic))
         ppm = int((defensive * offensive * strategic)**(1/3))
