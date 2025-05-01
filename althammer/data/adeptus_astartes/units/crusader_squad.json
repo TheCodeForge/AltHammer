@@ -11,7 +11,7 @@
             "hp":2,
             "lead": 6,
             "oc": 2,
-            "base":32
+            "base":32,
             "default_gear":[
                 "boltgun",
                 "bolt_pistol",
@@ -26,7 +26,7 @@
             "hp":2,
             "lead": 6,
             "oc": 2,
-            "base":32
+            "base":32,
             "default_gear":[
                 "boltgun",
                 "bolt_pistol",
@@ -41,7 +41,7 @@
             "hp":2,
             "lead": 6,
             "oc": 2,
-            "base":32
+            "base":32,
             "default_gear":[
                 "astartes_shotgun",
                 "bolt_pistol"
