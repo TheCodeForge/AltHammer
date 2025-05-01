@@ -51,6 +51,8 @@ class Unit(Base):
             move=self.move
             weapons = self.default_weapons
 
+
+
         for x in self.core_rules:
             if not x.startswith('Feel No Pain'):
                 continue
@@ -62,6 +64,13 @@ class Unit(Base):
 
         if isinstance(move, str):
             move = int(move.rstrip('+'))
+
+        #bound defensives to prevent shenanigans
+        # fnp = min(max(2,fnp), 7)
+        # save = min(max(2,save), 7)
+        # invuln = min(max(2,invuln), 7)
+
+        print(self.name, hp, fnp, save, tough, invuln)
 
         defensive = hp * (6/fnp-1) * (6/(save-1)) * math.sqrt(tough) * math.sqrt(6/(invuln-1))
         
