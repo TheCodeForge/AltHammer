@@ -15,7 +15,8 @@
                 "slugga",
                 "big_choppa",
                 "squighog_teef"
-            ]
+            ],
+            "qty":1
         },
         {
             "name": "Squighog Boyz",
@@ -30,7 +31,8 @@
                 "saddlegit_gunz",
                 "stikka_range",
                 "squighog_teef"
-            ]
+            ],
+            "qty":3
         }
     ],
     "keywords": [
