@@ -477,16 +477,18 @@ class Faction(Base):
     @lazy
     def unit_listing(self):
 
-        categories = {
-            "Epic Hero": [],
-            "Character": [],
-            "Infantry": [],
-            "Mounted": [],
-            "Vehicle": [],
-            "Monster": [],
-            "Swarm": [],
-            "Fortification": []
-        }
+        cats = [
+            "Epic Hero",
+            "Character",
+            "Infantry",
+            "Mounted",
+            "Vehicle",
+            "Monster",
+            "Swarm",
+            "Fortification"
+        ]
+
+        categories = {x:[] for x in cats}
 
 
         root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
@@ -515,7 +517,7 @@ class Faction(Base):
                     unitfile.truncate()
                     # print(f're-saved unit {u.display_name}')
 
-            for kind in categories.keys():
+            for kind in cats:
                 # print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
                 if kind in u.keywords_all:
                     # print(f"Categorize {u.display_name} -> {kind}")
