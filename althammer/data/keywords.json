@@ -16,9 +16,9 @@
 
         "Ignores Cover": "Terrain does not grant the Benefit of Cover against attacks made with this weapon. (Benefit of Cover may still be obtained from other sources.)",
         
-        "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target. All models within range are \"visible to\" this weapon, regardless of terrain.",
-        
         "Incendiary": "If this attack destroys a +Vehicle+, roll d6. On a 5+: All units within 12\" of the destroyed +Vehicle+ take 1 Mortal Damage; all units within 6\" of the destroyed +Vehicle+ take d3 Mortal Damage instead.",
+        
+        "Indirect Fire": "Attacks do not require line of sight to the target. Attacks made without line of sight have -1 to the Hit roll, and grant Benefit of Cover to the target. All models within range are \"visible to\" this weapon, regardless of terrain.",
         
         "Lance": "If this weapon's bearer made a Charge movement this Activation, add 1 to this weapon's Wound rolls.",
 
