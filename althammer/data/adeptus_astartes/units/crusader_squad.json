@@ -31,7 +31,8 @@
                 "boltgun",
                 "bolt_pistol",
                 "astartes_chainsword"
-            ]
+            ],
+            "qty":4
         },
         {
             "name": "Neophytes",
@@ -45,7 +46,8 @@
             "default_gear":[
                 "astartes_shotgun",
                 "bolt_pistol"
-            ]
+            ],
+            "qty":0
         }
     ],
     "keywords": [
