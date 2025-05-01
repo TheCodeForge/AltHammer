@@ -518,9 +518,9 @@ class Faction(Base):
                     # print(f're-saved unit {u.display_name}')
 
             for kind in cats:
-                # print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
+                print(f"test {u.display_name} [{u.keywords_all}]for cat {kind}")
                 if kind in u.keywords_all:
-                    # print(f"Categorize {u.display_name} -> {kind}")
+                    print(f"Categorize {u.display_name} -> {kind}")
                     categories[kind].append(u)
                     break
             else:
