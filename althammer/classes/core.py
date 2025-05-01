@@ -68,7 +68,7 @@ class Unit(Base):
         defensive = hp * (6/(fnp-1)) * (6/(save-1)) * math.sqrt(tough) * math.sqrt(6/(invuln-1))
         
         if "Stealth" in self.keywords:
-            defensive *= 1.17
+            defensive *= 1.2
         
         offensive = 0
         for weapon in weapons:
@@ -80,11 +80,27 @@ class Unit(Base):
         strategic = (13-lead) + oc + move
 
         for kwd in self.keywords_all:
-            if kwd.startswith("Leader"):
+            if kwd.startswith("Deadly Demise"):
+                strategic *= 1.1
+            elif kwd=="Deep Strike":
                 strategic *= 1.3
-            if kwd=="Psyker":
+            elif kwd=="Fights First":
                 strategic *= 1.3
-            if kwd=="Secured Objectives":
+            elif kwd.startswith("Firing Deck"):
+                strategic *= 1.5
+            elif kwd=="Infiltrators":
+                strategic *= 1.3
+            elif kwd.startswith("Leader"):
+                strategic *= 1.3
+            elif kwd=="Lone Operative":
+                strategic *= 1.2
+            elif kwd=="Psyker":
+                strategic *= 1.3
+            elif kwd.startswith("Scouts"):
+                strategic *= 1.1
+            elif kwd=="Second in Command":
+                strategic *= 1.1
+            elif kwd=="Secured Objectives":
                 strategic *= 2
             
         print(self.name, int(defensive), int(offensive), int(strategic))
