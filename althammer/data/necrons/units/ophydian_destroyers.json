@@ -19,7 +19,8 @@
         }
     ],
     "range_weapons": [],
-    "melee_weapons": ["hyperphase_blades","plasmacyte"],
+    "melee_weapons": ["hyperphase_blades"],
+    "wargear":["Plasmacyte"],
     "composition":[
         "3-6 Ophydian Destroyers",
         "1 Plasmacyte token per 3 Ophydian Destroyers"

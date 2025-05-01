@@ -16,14 +16,11 @@
     "unit_rules": [{
             "name":"Whirling Onslaught",
             "text":"This unit may choose to ignore any or all modifiers to its Melee Skill property and/or Hit rolls."
-        },
-        {
-            "name":"Plasmacyte",
-            "text":"When declaring a Fight target, you may destroy one Plasmacyte token. If you do, until the end of the Battle Round, this unit's melee weapons have +[Devastating Wounds]+."
         }
     ],
     "range_weapons": [],
     "melee_weapons": ["hyperphase_blades"],
+    "wargear":["Plasmacyte"],
     "composition":[
         "3-6 Skorpekh Destroyers",
         "1 Plasmacyte token per 3 Skorpekh Destroyers"
