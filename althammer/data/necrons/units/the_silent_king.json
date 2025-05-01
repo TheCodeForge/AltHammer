@@ -31,7 +31,8 @@
             "base":50,
             "default_gear": [
                 "annihilator_beam"
-            ]
+            ],
+            "qty":2
         }
     ],
     "keywords": [
