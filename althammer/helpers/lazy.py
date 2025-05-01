@@ -8,7 +8,7 @@ def lazy(f):
 
         o = args[0]
 
-        key=f"{f.__name__}|{[str(x) for x in args[1:]]}|{sorted([str(x)+"="+str(kwargs[x]) for x in kwargs])}"
+        key=f"{f.__name__};{[str(x) for x in args[1:]]};{sorted([str(x)+"="+str(kwargs[x]) for x in kwargs])}"
 
         if "_lazy" not in o.__dict__:
             o.__dict__["_lazy"] = {}
