@@ -17,18 +17,15 @@
     "faction_rules": ["Code Chivalric"],
     "unit_rules": [],
     "range_weapons": [
-        "meltagun",
-        "thermal_spear"
+        "dual_armiger_autocannon",
+        "questoris_heavy_stubber"
     ],
-    "melee_weapons": [
-        "reaper_chain_cleaver"
-    ],
+    "melee_weapons": [],
     "composition":[
-        "1 Armiger Warglaive"
+        "1 Armiger Helverin"
     ],
     "default_gear":[
-        "meltagun",
-        "thermal_spear",
-        "reaper_chain_cleaver"
+        "dual_armiger_autocannon",
+        "questoris_heavy_stubber"
     ]
 }
