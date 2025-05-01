@@ -14,7 +14,8 @@
             "default_gear":[
                 "slugga",
                 "power_snappa"
-            ]
+            ],
+            "qty":1
         },
         {
             "name": "Beast Snagga Boy",
@@ -29,7 +30,8 @@
                 "slugga",
                 "choppa",
                 "close_combat_weapon"
-            ]
+            ],
+            "qty":9
         }
     ],
     "keywords": [
