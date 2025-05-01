@@ -1,0 +1,12 @@
+{
+    "name":"Chainbreaker Multi-Laser",
+    "keywords":[
+        "Sustained Hits 1"
+    ],
+    "rng":36,
+    "atk":4,
+    "skl":2,
+    "str":6,
+    "ap": 0,
+    "dmg":1
+}

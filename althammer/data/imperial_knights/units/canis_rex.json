@@ -1,0 +1,67 @@
+{    
+    "name": "Canis Rex",
+    "profiles":[
+        {
+            "name": "Canis Rex",
+            "move":10,
+            "tough": 12,
+            "save": 3,
+            "hp":22,
+            "lead": 5,
+            "oc": 10,
+            "invuln": 5,
+            "base":"170x109",
+            "keywords": ["Titanic", "Towering", "Questoris"],
+            "default_gear":[
+                "chainbreaker_las_impulsor",
+                "chainbreaker_multi_laser",
+                "freedoms_hand"
+            ]
+        },
+        {
+            "name": "Sir Hekhtur",
+            "move":6,
+            "tough": 3,
+            "save": 4,
+            "hp":3,
+            "lead": 5,
+            "oc": 1,
+            "base":25,
+            "keywords": ["Infantry"],
+            "default_gear": [
+                "hekhturs_pistol",
+                "hekhturs_knives"
+            ],
+        }
+    ],
+    "keywords": [
+        "Character, Epic Hero"
+    ],
+    "core_rules": ["Deadly Demise D6", "Entourage"],
+    "faction_rules": ["Code Chivalric"],
+    "unit_rules": [
+        {
+            "name":"Chainbreaker",
+            "text":"Canis Rex scores Critical Hits on unmodified Hit rolls of 5+."
+        },
+        {
+            "name":"Sir Hekhtur",
+            "text":"Sir Hekhtur begins the battle embarked within Canis Rex as if it were a +Transport+. Sir Hekhtur disembarks after Canis Rex is destroyed; he may not disembark earlier."
+        }
+    ],
+    "range_weapons": [
+        "chainbreaker_las_impulsor",
+        "chainbreaker_multi_laser",
+        "hekhturs_pistol",
+    ],
+    "melee_weapons": [
+        "freedoms_hand"
+        "hekhturs_knives"
+    ],
+    "composition":[
+        "1 Canis Rex",
+        "1 Sir Hekhtur"
+    ],
+    "models_min":1,
+    "models_max":1
+}

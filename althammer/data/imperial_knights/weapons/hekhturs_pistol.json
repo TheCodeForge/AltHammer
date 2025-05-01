@@ -1,0 +1,10 @@
+{
+    "name":"Hekhtur's Pistol",
+    "keywords":["Pistol"],
+    "rng":12,
+    "atk":1,
+    "skl":2,
+    "str":5,
+    "ap": 1,
+    "dmg":2
+}
