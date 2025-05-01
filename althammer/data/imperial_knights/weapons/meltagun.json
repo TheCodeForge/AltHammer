@@ -1,0 +1,12 @@
+{
+    "name":"Meltagun",
+    "keywords":[
+        "Melta 2"
+    ],
+    "rng":12,
+    "atk":1,
+    "skl":3,
+    "str":9,
+    "ap": 4,
+    "dmg":"d6"
+}

@@ -1,5 +1,6 @@
 {
     "name":"Dual Armiger Autocannon",
+    "rng":48,
     "atk":8,
     "skl":3,
     "str":9,

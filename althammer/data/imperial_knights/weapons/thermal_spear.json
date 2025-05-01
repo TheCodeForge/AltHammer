@@ -1,0 +1,12 @@
+{
+    "name":"Thermal Spear",
+    "keywords":[
+        "Melta 4"
+    ],
+    "rng":24,
+    "atk":2,
+    "skl":3,
+    "str":12,
+    "ap": 4,
+    "dmg":"d6"
+}
