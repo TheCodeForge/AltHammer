@@ -22,9 +22,9 @@
         }
     ],
     "range_weapons": [
-        "bolt_pistol",
         "heavy_bolt_rifle",
-        "heavy_bolter"
+        "heavy_bolter",
+        "bolt_pistol"
     ],
     "melee_weapons": [],
     "composition":[
@@ -34,7 +34,8 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "heavy_bolt_rifle"
+        "heavy_bolt_rifle",
+        "bolt_pistol"
     ],
     "replacement_gear":{
         "Every 5th model's Heavy Bolt Rifle":[
