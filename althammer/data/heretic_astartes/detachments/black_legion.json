@@ -32,7 +32,7 @@
     ],
     "restrictions":[
         "+Psyker+ units may not be given the +Khorne+ option.",
-        "+Character+ units with the Leader ability can only be attached to a Unit which shares the same keyword from the list above.",
+        "Units with the +Leader+ ability can only be attached to a Unit which shares the same keyword from the list above.",
         "A unit may only embark within (or start the battle embarked within) a +Transport+ if both units share the same keyword from the list above."
     ],
     "spells": [
