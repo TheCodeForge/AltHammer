@@ -28,19 +28,20 @@ class Unit(Base):
     def ppm_computed(self):
 
         if self.profiles:
-            hp = sum([x.hp for x in self.profiles])
-            save = self.profiles[0].save
-            tough = self.profiles[0].tough
-            invuln = self.profiles[0].__dict__.get('invuln', 7)
-            lead = self.profiles[0].lead
-            oc = self.profiles[0].oc
-            move = self.profiles[0].move
-            weapons=[]
-            for p in self.profiles:
-                for w in p.default_weapons:
-                    weapons.append(w)
-            for w in self.default_weapons:
-                weapons.append(w)
+            return sum([x.ppm_computed for x in self.profiles])
+            # hp = sum([x.hp for x in self.profiles])
+            # save = self.profiles[0].save
+            # tough = self.profiles[0].tough
+            # invuln = self.profiles[0].__dict__.get('invuln', 7)
+            # lead = self.profiles[0].lead
+            # oc = self.profiles[0].oc
+            # move = self.profiles[0].move
+            # weapons=[]
+            # for p in self.profiles:
+            #     for w in p.default_weapons:
+            #         weapons.append(w)
+            # for w in self.default_weapons:
+            #     weapons.append(w)
         else:
             hp=self.hp
             save=self.save
