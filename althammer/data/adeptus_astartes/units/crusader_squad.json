@@ -16,7 +16,7 @@
                 "boltgun",
                 "bolt_pistol",
                 "power_weapon"
-            ],
+            ]
         },
         {
             "name": "Initiates",
@@ -31,7 +31,7 @@
                 "boltgun",
                 "bolt_pistol",
                 "astartes_chainsword"
-            ],
+            ]
         },
         {
             "name": "Neophytes",
@@ -45,7 +45,7 @@
             "default_gear":[
                 "astartes_shotgun",
                 "bolt_pistol"
-            ],
+            ]
         }
     ],
     "keywords": [
