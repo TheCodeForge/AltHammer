@@ -35,7 +35,7 @@ def get_factions():
                 try:
                     d=Faction(json.load(unitfile))
                 except json.decoder.JSONDecodeError as e:
-                    raise ValueError(f"Unable to read detachment {self.id}/{filename}: {e}")
+                    raise ValueError(f"Unable to read detachment {filename}: {e}")
                 file_output.append(
                     {
                         "id":d.id,
