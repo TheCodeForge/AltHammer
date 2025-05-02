@@ -1,0 +1,13 @@
+{
+    "name":"Dual Shieldbreaker Missile Launcher",
+    "keywords":[
+        "Anti-Titanic 4+",
+        "Devastating Wounds"
+    ],
+    "rng":72,
+    "atk":2,
+    "skl":3,
+    "str":12,
+    "ap": 6,
+    "dmg":"d6+1"
+}

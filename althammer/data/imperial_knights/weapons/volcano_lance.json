@@ -1,0 +1,13 @@
+{
+    "name":"Volcano Lance",
+    "keywords":[
+        "Blast",
+        "Incendiary"
+    ],
+    "rng":72,
+    "atk":"d3",
+    "skl":3,
+    "str":18,
+    "ap": 5,
+    "dmg":"d6+8"
+}

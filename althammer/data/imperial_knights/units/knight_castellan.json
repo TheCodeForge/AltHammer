@@ -1,0 +1,42 @@
+{    
+    "name": "Knight Castellan",
+    "move":12,
+    "tough": 10,
+    "save": 3,
+    "hp":12,
+    "lead": 7,
+    "oc": 8,
+    "base":100,
+    "keywords": [
+        "Titanic",
+        "Towering",
+        "Character"
+    ],
+    "core_rules": [
+        "Deadly Demise D3"
+    ],
+    "faction_rules": [
+        "Code Chivalric",
+        "Super-Heavy Walker"
+    ],
+    "unit_rules": [],
+    "range_weapons": [
+        "plasma_decimator",
+        "dual_twin_meltagun",
+        "twin_siegebreaker_cannon",
+        "volcano_lance"
+    ],
+    "melee_weapons": [
+        "titanic_feet"
+    ],
+    "composition":[
+        "1 Armiger Helverin"
+    ],
+    "default_gear":[
+        "plasma_decimator",
+        "dual_twin_meltagun",
+        "twin_siegebreaker_cannon",
+        "volcano_lance",
+        "titanic_feet"
+    ]
+}

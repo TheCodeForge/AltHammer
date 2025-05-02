@@ -1,0 +1,33 @@
+{
+    "name": "Plasma Decimator",
+    "profiles":[
+        {
+            "name": "Standard",
+            "keywords":[
+                "Blast",
+                "Incendiary"
+            ],
+            "rng": 48,
+            "atk":"d6+3",
+            "skl":3,
+            "str":8,
+            "ap": 2,
+            "dmg":2
+        },
+        {
+            "name": "Supercharged",
+            "keywords":[
+                "Blast",
+                "Incendiary",
+                "Hazardous"
+            ],
+            "rng": 48,
+            "atk":"2d6",
+            "skl":3,
+            "str":9,
+            "ap": 3,
+            "dmg":3
+        }
+    ]
+    
+}

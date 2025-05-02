@@ -15,6 +15,10 @@
         {
             "name":"Bondsman",
             "text":"Some +Imperial Knights+ have a \"Bondsman\" ability. When such a unit is Activated, select a friendly +Armiger+ unit within 12\" of the Activated unit. The Bondsman ability is applied to that unit. Units may not be affected by more than one Bondsman ability at a time."
+        },
+        {
+            "name":"Super-Heavy Walker",
+            "text":"When a model with this ability makes a Normal, Advance, or Fall Back movement, it may move through other models (excluding +Titanic+ models) and terrain features. If it moves through a terrain feature 5\" tall or higher, it must take a Battle-Shock test after moving."
         }
     ],
     "strategems": [
