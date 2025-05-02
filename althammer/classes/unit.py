@@ -61,7 +61,7 @@ class Unit(Base):
         if isinstance(move, str):
             move = int(move.rstrip('+'))
 
-        defensive = hp * (6/(fnp-1)) * (6/(save-1)) * (6/(invuln-1) * math.sqrt(tough)
+        defensive = hp * (6/(fnp-1)) * (6/(save-1)) * (6/(invuln-1)) * math.sqrt(tough)
         
         if "Stealth" in self.keywords:
             defensive *= 1.2
