@@ -61,7 +61,7 @@ class Unit(Base):
         if isinstance(move, str):
             move = int(move.rstrip('+'))
 
-        defensive = hp * (6/(fnp-1)) * (6/(save-1)) * math.sqrt(tough) * math.sqrt(6/(invuln-1))
+        defensive = hp * (6/(fnp-1)) * (6/(save-1)) * (6/(invuln-1) * math.sqrt(tough)
         
         if "Stealth" in self.keywords:
             defensive *= 1.2
@@ -120,7 +120,7 @@ class Unit(Base):
                 strategic *= 1.1
             
         print(self.name, int(defensive), int(offensive), int(strategic))
-        ppm = int((defensive * offensive * strategic)**(1/3))
+        ppm = int((defensive * offensive * strategic)**(1/3) * 0.75)
         print(ppm)
 
         return ppm
