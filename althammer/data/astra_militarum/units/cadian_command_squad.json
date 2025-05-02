@@ -15,7 +15,8 @@
             "default_gear":[
                 "laspistol",
                 "chainsword"
-            ]
+            ],
+            "qty":1
         },
         {
             "name": "Cadian Veteran Guardsman",
@@ -29,7 +30,8 @@
             "default_gear": [
                 "laspistol",
                 "close_combat_weapon"
-            ]
+            ],
+            "qty":4
         }
     ],
     "keywords": [
