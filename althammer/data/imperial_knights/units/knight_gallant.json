@@ -1,12 +1,12 @@
 {    
     "name": "Knight Gallant",
     "move":12,
-    "tough": 10,
+    "tough": 12,
     "save": 3,
-    "hp":12,
-    "lead": 7,
-    "oc": 8,
-    "base":100,
+    "hp":22,
+    "lead": 6,
+    "oc": 10,
+    "base":"170x109",
     "keywords": [
         "Titanic",
         "Towering",
