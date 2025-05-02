@@ -1,6 +1,7 @@
 import math
 
 from althammer.helpers.lazy import lazy
+from althammer.helpers.sigmoid import sigmoid
 
 from .base import Base
 
@@ -48,7 +49,7 @@ class Weapon(Base):
 
         rng = self.__dict__.get('rng',12)
 
-        weapon_pts = (atk * (7-skl) * math.sqrt(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
+        weapon_pts = (atk * (7-skl) * sigmoid(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
 
         for kwd in self.keywords:
             if kwd.startswith("Anti-"):
