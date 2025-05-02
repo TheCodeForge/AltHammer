@@ -1,4 +1,5 @@
 from .base import Base
+from althammer.__main__ import cache
 
 class Faction(Base):
 
