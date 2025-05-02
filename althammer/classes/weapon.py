@@ -1,3 +1,5 @@
+import math
+
 from althammer.helpers.lazy import lazy
 
 from .base import Base
