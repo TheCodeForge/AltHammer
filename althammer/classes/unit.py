@@ -73,7 +73,7 @@ class Unit(Base):
         if isinstance(move, str):
             move=int(move.rstrip('+'))
             
-        strategic = (13-lead) + oc + move
+        strategic = (13-lead) * oc * move
 
         for kwd in self.core_rules:
             if kwd.startswith("Deadly Demise"):
