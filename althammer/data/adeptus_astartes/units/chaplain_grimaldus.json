@@ -16,7 +16,8 @@
             "default_gear":[
                 "plasma_pistol",
                 "artificer_crozius"
-            ]
+            ],
+            "qty":1
         },
         {
             "name": "Cenobyte Servitor",
@@ -30,7 +31,8 @@
             "base":28,
             "default_gear": [
                 "close_combat_weapon"
-            ]
+            ],
+            "qty":3
         }
     ],
     "keywords": [
