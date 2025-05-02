@@ -1,3 +1,5 @@
+import os
+
 from althammer.helpers.lazy import lazy
 
 from .base import Base
