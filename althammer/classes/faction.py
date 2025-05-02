@@ -5,6 +5,7 @@ from althammer.helpers.lazy import lazy
 
 from .base import Base
 from .detachment import Detachment
+from .unit import Unit
 from .weapon import Weapon
 
 from althammer.__main__ import cache
