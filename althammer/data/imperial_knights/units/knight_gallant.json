@@ -1,0 +1,48 @@
+{    
+    "name": "Knight Gallant",
+    "move":12,
+    "tough": 10,
+    "save": 3,
+    "hp":12,
+    "lead": 7,
+    "oc": 8,
+    "base":100,
+    "keywords": [
+        "Titanic",
+        "Towering",
+        "Character",
+        "Questoris"
+    ],
+    "core_rules": [
+        "Deadly Demise D3"
+    ],
+    "faction_rules": [
+        "Code Chivalric",
+        "Super-Heavy Walker"
+    ],
+    "unit_rules": [
+        {
+            "name":"Gallant's Duty (Bondsman)",
+            "text":"Models affected by this ability can re-roll their Charge rolls, and their melee Hit rolls."
+        },
+        {
+            "name":"Martial Pride",
+            "text":"Melee attacks against this model have -1 to their Hit roll."
+        }
+    ],
+    "range_weapons": [
+        "meltagun"
+    ],
+    "melee_weapons": [
+        "thunderstrike_gauntlet",
+        "reaper_chainsword"
+    ],
+    "composition":[
+        "1 Knight Gallant"
+    ],
+    "default_gear":[
+        "meltagun",
+        "thunderstrike_gauntlet",
+        "reaper_chainsword"
+    ]
+}
