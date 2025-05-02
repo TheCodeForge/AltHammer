@@ -6,6 +6,7 @@
     "hp":22,
     "lead": 6,
     "oc": 10,
+    "invuln": 5,
     "base":"170x109",
     "keywords": [
         "Titanic",
