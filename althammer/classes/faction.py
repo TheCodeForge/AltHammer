@@ -1,3 +1,4 @@
+from .base import Base
 
 class Faction(Base):
 

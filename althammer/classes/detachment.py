@@ -1,3 +1,5 @@
+from .base import Base
+
 class Detachment(Base):
 
     def __repr__(self):

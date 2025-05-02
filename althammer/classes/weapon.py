@@ -1,3 +1,5 @@
+from .base import Base
+
 class Weapon(Base):
 
     def __repr__(self):
