@@ -1,4 +1,7 @@
+from althammer.helpers.lazy import lazy
+
 from .base import Base
+
 from althammer.__main__ import cache
 
 class Unit(Base):
