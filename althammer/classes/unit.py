@@ -72,8 +72,24 @@ class Unit(Base):
 
         if isinstance(move, str):
             move=int(move.rstrip('+'))
+
+        #leadership, based on passing 2d6 roll
+
+        lead_map={
+            2:36,
+            3:35,
+            4:33,
+            5:30,
+            6:26,
+            7:21,
+            8:15,
+            9:10,
+            10:6,
+            11:3,
+            12:1,
+        }
             
-        strategic = (13-lead) * oc * move
+        strategic = lead_map[lead] + oc + move
 
         for kwd in self.core_rules:
             if kwd.startswith("Deadly Demise"):
