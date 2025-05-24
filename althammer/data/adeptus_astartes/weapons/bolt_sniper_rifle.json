@@ -1,0 +1,13 @@
+{
+    "name": "Bolt Sniper Rifle",
+    "keywords":[
+        "Heavy",
+        "Precise"
+    ],
+    "rng":36,
+    "atk":1,
+    "skl":3,
+    "str":5,
+    "ap": 2,
+    "dmg":3
+}

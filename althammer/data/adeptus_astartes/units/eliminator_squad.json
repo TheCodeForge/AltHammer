@@ -1,0 +1,43 @@
+{    
+    "name": "Eliminator Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Phobos"
+    ],
+    "core_rules": [
+        "Infiltrators",
+        "Stealth"
+    ],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "bolt_sniper_rifle",
+        "las_fusil"
+    ],
+    "melee_weapons": [
+    ],
+    "composition":[
+        "1 Eliminator Sergeant",
+        "2-5 Eliminators"
+    ],
+    "models_min": 3,
+    "models_max": 6,
+    "default_gear":[
+        "bolt_sniper_rifle",
+        "bolt_pistol"
+    ],
+    "replacement_gear":{
+        "Any Model's Bolt Sniper Rifle":[
+            "las_fusil"
+        ]
+    },
+}
