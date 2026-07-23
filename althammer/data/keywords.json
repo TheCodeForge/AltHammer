@@ -64,6 +64,8 @@
 
         "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
 
+        "Second in Command": "See +Support+",
+        
         "Support [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Support+ per unit. If all +Bodyguard+ models are destroyed, the +Leader+ and +Support+ units remain attached to eachother, and the +Support+ model gains the +Bodyguard+ keyword.",
 
         "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
