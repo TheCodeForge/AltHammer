@@ -56,7 +56,7 @@
 
         "Feel No Pain X+": "When this unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
-        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
+        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model <br><br><p><sup>All models in a unit must have this rule in order to use it.",
 
         "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. While attached, this model gains the +Leader+ keyword, and models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
