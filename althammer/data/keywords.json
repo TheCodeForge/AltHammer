@@ -58,7 +58,7 @@
 
         "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>",
 
-        "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
+        "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. While attached, this model gains the +Leader+ keyword, and models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
         "Lone Operative": "This unit cannot be selected as the target of a ranged attack from over 12\" away. This rule does not apply while part of an attached unit.",
 
@@ -66,11 +66,11 @@
 
         "Second in Command": "See +Support+",
         
-        "Support [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. Other models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Support+ per unit. If all +Bodyguard+ models are destroyed, the +Leader+ and +Support+ units remain attached to eachother, and the +Support+ model gains the +Bodyguard+ keyword.",
+        "Support [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. While attached, this model gains the +Support+ keyword, and models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Support+ per unit. If all +Bodyguard+ models are destroyed, the +Leader+ and +Support+ units remain attached to eachother, and this model replaces its +Support+ keyword with the +Bodyguard+ keyword instead.",
 
         "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 
-        "Stealth": "All ranged attacks made against the unit have -1 to hit.<br><br><p><sup>All models in a unit must have this rule in order to use it.</sup></p>"
+        "Stealth": "All ranged attacks made against the unit have -1 to hit. All models in a unit must have this rule in order to use it"
 
     }
 }
