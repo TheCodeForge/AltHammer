@@ -21,7 +21,7 @@ def rules_x(x):
 
 
 @app.get("/lore/<x>")
-def rules_x(x):
+def lore_x(x):
     try:
         return render_template(safe_join("lore", f"{x}.html"))
     except jinja2.exceptions.TemplateNotFound:
