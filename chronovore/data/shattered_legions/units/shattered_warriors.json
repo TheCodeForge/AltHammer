@@ -1,10 +1,9 @@
 {    
     "name": "Shattered Warriors",
-    "ppm":16,
     "move":6,
     "tough": 4,
     "save": 3,
-    "hp":5,
+    "hp":3,
     "lead": 6,
     "oc": 2,
     "base":32,
@@ -23,7 +22,7 @@
     ],
     "melee_weapons": [
         "close_combat_weapon",
-        "lightning"
+        "lightning_fist"
     ],
     "composition":[
         "1 Sergeant",
