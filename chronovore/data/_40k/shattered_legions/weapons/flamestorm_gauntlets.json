@@ -1,0 +1,14 @@
+{
+    "name":"Flamestorm Gauntlets",
+    "keywords":[
+        "Ignores Cover",
+        "Torrent",
+        "Twin-Linked"
+    ],
+    "rng":12,
+    "atk":"d6 + 1",
+    "skl":null,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}

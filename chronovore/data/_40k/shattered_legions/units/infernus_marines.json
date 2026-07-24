@@ -1,0 +1,40 @@
+{    
+    "name": "Infernus Marine Squad",
+    "ppm":16,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Imperium",
+        "Primaris"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [{
+            "name":"Purge the Foe",
+            "text":"After making a Shoot action, select a targeted enemy +Infantry+ unit. It must take a Battle-Shock test."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "pyreblaster"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Infernus Sergeant",
+        "4-9 Infernus Marines"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "bolt_pistol",
+        "pyreblaster"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Sternguard Bolt Rifle",
+    "keywords":[
+        "Assault",
+        "Devastating Wounds",
+        "Heavy",
+        "Rapid Fire 1"
+    ],
+    "rng":24,
+    "atk":2,
+    "skl":3,
+    "str":4,
+    "ap": 1,
+    "dmg":1
+}
