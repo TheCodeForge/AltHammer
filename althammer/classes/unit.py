@@ -17,6 +17,10 @@ class Unit(Base):
     def permalink(self):
         return f"{self.faction.permalink}/unit/{self.id}"
 
+    @property
+    def ppm(self):
+        return self.ppm_computed
+
     @lazy
     def ppm_computed(self):
 
