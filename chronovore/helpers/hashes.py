@@ -6,7 +6,7 @@ from .b36 import *
 from flask import g, session
 from os import environ
 
-from althammer.__main__ import app
+from chronovore.__main__ import app
 
 def generate_hash(string):
 

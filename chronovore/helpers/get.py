@@ -4,13 +4,13 @@ import re
 import os
 from werkzeug.utils import safe_join
 
-from althammer.classes import *
-from althammer.__main__ import app, cache
+from chronovore.classes import *
+from chronovore.__main__ import app, cache
 
 @cache.memoize()
 def get_faction(faction):
 
-    path=safe_join("althammer/data", faction)+"/faction.json"
+    path=safe_join("chronovore/data", faction)+"/faction.json"
 
     with open(path, "r+") as file:
         data=json.load(file)
@@ -20,7 +20,7 @@ def get_faction(faction):
 @cache.memoize()
 def get_factions():
 
-    path = "althammer/data/_factions.json"
+    path = "chronovore/data/_factions.json"
 
     try:
         with open(path, "r+") as file:
@@ -29,10 +29,10 @@ def get_factions():
     except FileNotFoundError:
         file_output = []
 
-        root, dirs, files = next(os.walk(f"althammer/data/"))
+        root, dirs, files = next(os.walk(f"chronovore/data/"))
         for directory in dirs:
 
-            with open(f"althammer/data/{directory}/faction.json", "r+") as unitfile:
+            with open(f"chronovore/data/{directory}/faction.json", "r+") as unitfile:
                 try:
                     d=Faction(json.load(unitfile))
                 except json.decoder.JSONDecodeError as e:
@@ -56,7 +56,7 @@ def get_factions():
 @cache.memoize()
 def get_keyword(keyword):
 
-    with open("althammer/data/keywords.json", "r+") as file:
+    with open("chronovore/data/keywords.json", "r+") as file:
         raw_data=json.load(file)
 
     data = raw_data['weapon_keywords']

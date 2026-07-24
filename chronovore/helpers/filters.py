@@ -4,9 +4,9 @@ from .markdown import CustomRenderer, NumberedRenderer
 import mistletoe
 import re
 
-from althammer.helpers.get import *
+from chronovore.helpers.get import *
 
-from althammer.__main__ import app, cache
+from chronovore.__main__ import app, cache
 
 @app.template_filter('all')
 def filter_all(iterable):
@@ -127,7 +127,7 @@ def keyword(x):
 @app.template_filter('all_keywords')
 def all_keywords(x):
 
-    with open("althammer/data/keywords.json", "r+") as file:
+    with open("chronovore/data/keywords.json", "r+") as file:
         data=json.load(file)
 
     return data
@@ -135,7 +135,7 @@ def all_keywords(x):
 @app.template_filter('core_strategems')
 def core_strategems(x):
 
-    with open("althammer/data/strategems.json", "r+") as file:
+    with open("chronovore/data/strategems.json", "r+") as file:
         data=json.load(file)
 
     return data["data"]
