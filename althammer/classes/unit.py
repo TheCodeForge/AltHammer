@@ -111,7 +111,7 @@ class Unit(Base):
                 strategic *= 1.3
             elif kwd.startswith("Scouts"):
                 strategic *= 1.1
-            elif kwd=="Second in Command":
+            elif kwd=="Second in Command" or kwd.startswith("Support"):
                 strategic *= 1.1
             elif kwd=="Secured Objectives":
                 strategic *= 2
