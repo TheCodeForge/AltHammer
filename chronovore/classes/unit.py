@@ -19,7 +19,7 @@ class Unit(Base):
 
     @property
     def ppm(self):
-        return self.ppm_computed
+        return self.ppm_computed()
 
     @lazy
     def ppm_computed(self):
