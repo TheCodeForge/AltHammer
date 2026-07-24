@@ -61,7 +61,7 @@
         {
             "name":"Fervent Crusaders",
             "cost":40,
-            "text":"At the start of the battle, select a second Templar Vow. It applies only to your +Warlord+ (and their attached unit, if any). Your +Warlord+ may not be targed with the Fervent Acclamation strategem."
+            "text":"At the start of the battle, select a \"Wisdom of the Shattered\" Tactic. It is active for your +Warlord+ (and their attached unit, if any) for the entire battle."
         }
     ]
 }

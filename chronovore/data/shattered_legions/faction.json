@@ -8,7 +8,7 @@
         {
         "name": "Vow of Eternity",
         "lore": "The Shattered Legions, in their service to the King and eachother, swear oaths before and during battle to accomplish their goals.",
-        "text": "At the start of the Battle Round, select one enemy unit. Until the end of the Battle Round, your +Shattered Legions+ units have +1 to Hit rolls made against that unit."
+        "text": "At the start of the Battle Round, select one enemy unit. Until the end of the Battle Round, your +Shattered Legions+ units may reroll failed Hit rolls for attacks made against that target."
         }
     ]
 }
