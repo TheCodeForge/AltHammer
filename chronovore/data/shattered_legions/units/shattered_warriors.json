@@ -19,15 +19,11 @@
     "range_weapons": [
         "bolt_pistol",
         "bolt_rifle",
-        "hand_flamer",
         "plasma_pistol"
     ],
     "melee_weapons": [
-        "astartes_chainsword",
         "close_combat_weapon",
-        "power_fist",
-        "power_weapon",
-        "thunder_hammer"
+        "lightning"
     ],
     "composition":[
         "1 Sergeant",
@@ -41,17 +37,8 @@
         "close_combat_weapon"
     ],
     "replacement_gear":{
-        "Sergeant's Bolt Rifle":[
-            "astartes_chainsword",
-            "hand_flamer",
-            "plasma_pistol",
-            "power_weapon"
-        ],
-        "Intercessor Sergeant's Close Combat Knives":[
-            "astartes_chainsword",
-            "power_fist",
-            "power_weapon",
-            "thunder_hammer"
+        "Sergeant's Close Combat Knives":[
+            "lightning_fist"
         ]
     }
 }
