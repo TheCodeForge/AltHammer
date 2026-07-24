@@ -1,1 +1,1 @@
-web: gunicorn althammer.__main__:app -k gevent
+web: gunicorn chronovore.__main__:app -k gevent
