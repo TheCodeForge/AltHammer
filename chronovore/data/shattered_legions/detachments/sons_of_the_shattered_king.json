@@ -56,7 +56,7 @@
         {
             "name":"Blessings of the Shattered King",
             "cost":20,
-            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!. If it already had !Feel No Pain 6+!, it gains !Feel No Pain 5+! instead."
         },
         {
             "name":"Fervent Crusaders",
