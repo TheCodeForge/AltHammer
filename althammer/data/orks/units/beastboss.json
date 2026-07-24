@@ -1,0 +1,48 @@
+{    
+    "name": "Beastboss",
+    "ppm": 80,
+    "move":6,
+    "tough": 5,
+    "save": 4,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "invuln":5,
+    "base":50,
+    "default_gear":[
+        "shoota",
+        "beast_snagga_klaw",
+        "beastchoppa"
+    ],
+    "keywords": [
+        "Infantry",
+        "Mob",
+        "Character",
+        "Beast Snagga",
+        "Warboss"
+    ],
+    "core_rules": ["Feel No Pain 6+", "Leader [Beast Snagga]"],
+    "faction_rules": ["WAAAAGH!"],
+    "unit_rules": [
+        {
+            "name":"Beastboss",
+            "text":"While leading a unit, models in that unit have +1 to their Hit roll."
+        },
+        {
+            "name":"Beastly Rage",
+            "text":"After making a charge move, this model's melee weapons gain +[Devastating Wounds]+ until the end of the Activation."
+        }
+    ],
+    "range_weapons": [
+        "shoota"
+    ],
+    "melee_weapons": [
+        "beast_snagga_klaw",
+        "beastchoppa"
+    ],
+    "composition":[
+        "1 Beastboss"
+    ],
+    "models_min":1,
+    "models_max":1
+}

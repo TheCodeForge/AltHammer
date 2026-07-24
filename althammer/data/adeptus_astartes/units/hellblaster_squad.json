@@ -1,0 +1,45 @@
+{    
+    "name": "Hellblaster Squad",
+    "ppm":23,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Primaris"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Oath of Moment"],
+    "unit_rules": [
+        {
+            "name":"For the Chapter!",
+            "text":"Each time a model in this unit is destroyed, roll d6. On a 3+, do not remove it from play. It may remain on the battlefield until the end of the Activation, Shooting and Fighting if its unit is selected to do so. It is then removed from the battlefield after the Activation."
+        }
+    ],
+    "range_weapons": [
+        "bolt_pistol",
+        "plasma_incinerator",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Hellblaster Sergeant",
+        "4-9 Hellblasters"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "bolt_pistol",
+        "plasma_incinerator"
+    ],
+    "replacement_gear":{
+        "Hellblaster Sergeant's Bolt Pistol":[
+            "plasma_pistol"
+        ]
+    }
+}

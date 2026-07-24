@@ -1,0 +1,12 @@
+{
+    "name": "Thump gun",
+    "keywords":[
+        "Blast"
+    ],
+    "rng":18,
+    "atk":"d3",
+    "skl":5,
+    "str":6,
+    "ap": 0,
+    "dmg":2
+}

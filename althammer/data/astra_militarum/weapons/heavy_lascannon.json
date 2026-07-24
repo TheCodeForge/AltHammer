@@ -1,0 +1,10 @@
+{
+    "name": "Heavy Lascannon",
+    "keywords":["Heavy", "Incendiary"],
+    "rng":48,
+    "atk":2,
+    "skl":5,
+    "str":15,
+    "ap": 3,
+    "dmg":"d6 + 1"
+}

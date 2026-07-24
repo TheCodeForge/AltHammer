@@ -1,0 +1,10 @@
+{
+    "name": "Autocannon",
+    "keywords":[],
+    "rng":48,
+    "atk":2,
+    "skl":4,
+    "str":9,
+    "ap": 1,
+    "dmg":3
+}

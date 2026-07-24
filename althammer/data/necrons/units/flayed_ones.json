@@ -1,0 +1,30 @@
+{    
+    "name": "Flayed Ones",
+    "ppm": 12,
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":1,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Infiltrators", "Stealth"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Flesh Hunger",
+            "text":"When attacking, if the target is below Half-Strength, all successfull Hit rolls are Critical Hits."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["flayer_claws"],
+    "composition":[
+        "5-10 Flayed Ones"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "flayer_claws"
+    ]
+}

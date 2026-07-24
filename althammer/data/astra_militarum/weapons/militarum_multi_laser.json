@@ -1,0 +1,11 @@
+{
+    "name":"Militarum Multi-laser",
+    "keywords":[
+    ],
+    "rng":36,
+    "atk":4,
+    "skl":4,
+    "str":6,
+    "ap": 0,
+    "dmg":1
+}

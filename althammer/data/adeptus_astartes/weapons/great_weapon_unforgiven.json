@@ -1,0 +1,12 @@
+{
+    "name":"Great Weapon of the Unforgiven",
+    "keywords":[
+        "Devastating Wounds",
+        "Sustained Hits 1"
+    ],
+    "atk":5,
+    "skl":2,
+    "str":6,
+    "ap": 2,
+    "dmg":2
+}

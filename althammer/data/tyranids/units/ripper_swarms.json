@@ -1,0 +1,40 @@
+{    
+    "name": "Ripper Swarms",
+    "ppm": 20,
+    "move":6,
+    "tough": 2,
+    "save": 6,
+    "hp":4,
+    "lead": 8,
+    "oc": 0,
+    "base": 40,
+    "keywords": [
+        "Swarm"
+    ],
+    "core_rules": ["Deep Strike"],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [{
+        "name":"Chitinous Horrors",
+        "text":"Enemy units within Melee Distance of this unit have their Objective Control property halved (rounded up)."
+    }],
+    "range_weapons": [
+        "spinemaws"
+    ],
+    "melee_weapons": [
+        "chitinous_claws_and_teeth"
+    ],
+    "wargear": [],
+    "composition":[
+        "1-3 Ripper Swarms"
+    ],
+    "models_min": 1,
+    "models_max": 3,
+    "default_gear":[
+        "spinemaws"
+    ],
+    "replacement_gear":{
+        "Any model's Fleshborer":[
+            "spinemaws"           
+        ]
+    }
+}

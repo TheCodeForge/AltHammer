@@ -1,0 +1,33 @@
+{    
+    "name": "Von Ryan's Leapers",
+    "ppm": 23,
+    "move":10,
+    "tough": 5,
+    "save": 4,
+    "hp":3,
+    "lead": 8,
+    "oc": 1,
+    "invuln":6,
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": ["Infiltrators", "Stealth"],
+    "faction_rules": ["Synapse"],
+    "unit_rules": [
+        {
+        "name": "Pouncing Leap",
+        "text": "Once per Battle Round, when an enemy unit finishes a Charge movement within 12\", this unit may attempt a Charge movement at that enemy unit. If successful, this unit fights first."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["leapers_talons"],
+    "wargear": [],
+    "composition":[
+        "3-6 Von Ryan's Leapers"
+    ],
+    "models_min": 3,
+    "models_max": 6,
+    "default_gear":[
+        "leapers_talons"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Reaper Chain-Cleaver",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":[
+            ],
+            "atk":4,
+            "skl":3,
+            "str":10,
+            "ap": 3,
+            "dmg":3
+        },
+        {
+            "name": "Sweep",
+            "keywords":[
+            ],
+            "atk":8,
+            "skl":3,
+            "str":8,
+            "ap": 2,
+            "dmg":1
+        }
+    ]
+    
+}

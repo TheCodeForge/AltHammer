@@ -1,0 +1,11 @@
+{
+    "name":"Force Weapon",
+    "keywords":[
+        "Psychic"
+    ],
+    "atk":4,
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":"d3"
+}

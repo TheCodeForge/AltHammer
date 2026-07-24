@@ -1,0 +1,13 @@
+{
+    "name":"Dual Twin Meltagun",
+    "keywords":[
+        "Melta 2",
+        "Twin-Linked"
+    ],
+    "rng":12,
+    "atk":2,
+    "skl":3,
+    "str":9,
+    "ap": 4,
+    "dmg":"d6"
+}

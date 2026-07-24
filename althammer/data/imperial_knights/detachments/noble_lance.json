@@ -1,0 +1,38 @@
+{
+    "name": "Noble Lance",
+    "secondary_faction":null,
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "Indomitable Heroes",
+            "lore": "Gathered into a powerful formation known as a lance, Imperial Knights and the Nobles who pilot them wage their honor-driven assaults with renowned resilience and bloody-minded determination",
+            "text": "All +Imperial Knights models from your army have the !Feel No Pain 6+! ability. If your army is Honored, those models have the !Feel No Pain 5+! ability instead."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Shoulder the Burden",
+            "cost": 2,
+            "when": "Upon Activation of a friendly unit",
+            "target": "Your +Imperial Knights+ unit being Activated",
+            "effect": "Until the end of the Battle Round, your unit's Movement, Toughness, Armor Save, Leadership, and Objective Control traits are improved by 1, and it has +1 to all Hit rolls."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Knightly Reverence",
+            "cost":10,
+            "text":"Your +Imperial Knights+ units within 6\" of another +Imperial Knights+ unit have their Leadership trait improved by 1. If your army is Honored, the range of this ability is increased to 12\"."
+        },
+        {
+            "name":"Unyielding Paragon",
+            "cost":20,
+            "text":"Attacks made against your +Questoris+ units have their Armor Break trait worsened by 1."
+        },
+        {
+            "name":"Mythic Heroes",
+            "cost":40,
+            "text":"Your Bondsman abilities may be applied to two +Armiger+ units at a time instead of just one. Units are still limited to being affected by one Bondsman ability at a time."
+        }
+    ]
+}

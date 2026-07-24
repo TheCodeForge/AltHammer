@@ -1,0 +1,10 @@
+{
+    "name": "Las Small Arms",
+    "keywords": ["Pistol"],
+    "rng": 18,
+    "atk": 1,
+    "skl": 4,
+    "str": 3,
+    "ap": 0,
+    "dmg": 1
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Twin Gauss Blaster",
+    "keywords":[
+        "Lethal Hits", "Twin-Linked"
+    ],
+    "rng":24,
+    "atk":2,
+    "skl":3,
+    "str":5,
+    "ap": 1,
+    "dmg":1
+}

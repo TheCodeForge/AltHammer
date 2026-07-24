@@ -1,0 +1,12 @@
+{
+    "name":"Impaling Legs",
+    "keywords": [
+        "Extra Attacks"
+    ],
+    "rng":36,
+    "atk":4,
+    "skl":3,
+    "str":6,
+    "ap": 1,
+    "dmg":1
+}

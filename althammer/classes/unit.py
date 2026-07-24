@@ -71,9 +71,6 @@ class Unit(Base):
         for weapon in weapons:
             offensive += weapon.weapon_points_raw
 
-        #account for damage output reducing as model count shrinks, in a triangular stairstep fashion
-        offensive *= (self.models_max*(self.models_max+1))/(2*(self.models_max**2))
-
         if isinstance(move, str):
             move=int(move.rstrip('+'))
 

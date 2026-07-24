@@ -1,0 +1,28 @@
+{
+    "name": "Freedom's Hand",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":[
+                "Sustained Hits 1"
+            ],
+            "atk":5,
+            "skl":2,
+            "str":20,
+            "ap": 3,
+            "dmg":9
+        },
+        {
+            "name": "Sweep",
+            "keywords":[
+                "Sustained Hits 1"
+            ],
+            "atk":10,
+            "skl":2,
+            "str":10,
+            "ap": 2,
+            "dmg":3
+        }
+    ]
+    
+}

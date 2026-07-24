@@ -1,0 +1,11 @@
+{
+    "name":"Power Weapon",
+    "keywords":[
+        "Incendiary"
+    ],
+    "atk":3,
+    "skl":3,
+    "str":4,
+    "ap": 2,
+    "dmg":1
+}

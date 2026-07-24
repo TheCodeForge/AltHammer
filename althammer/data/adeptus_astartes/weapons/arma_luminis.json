@@ -1,0 +1,31 @@
+{
+    "name": "Arma Luminis",
+    "profiles":[
+        {
+            "name": "Bolt",
+            "keywords":[
+                "Pistol"
+            ],
+            "rng":12,
+            "atk":4,
+            "skl":2,
+            "str":4,
+            "ap": 1,
+            "dmg":2
+        },
+        {
+            "name": "Plasma",
+            "keywords":[
+                "Incendiary",
+                "Pistol"
+            ],
+            "rng":12,
+            "atk":2,
+            "skl":2,
+            "str":8,
+            "ap": 3,
+            "dmg":2
+        }
+    ]
+    
+}

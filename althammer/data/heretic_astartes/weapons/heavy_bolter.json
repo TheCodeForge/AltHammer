@@ -1,0 +1,14 @@
+{
+    "name": "Heavy Bolter",
+    "keywords":[
+        "Assault",
+        "Heavy",
+        "Sustained Hits 1"
+    ],
+    "rng":36,
+    "atk":3,
+    "skl":4,
+    "str":5,
+    "ap": 1,
+    "dmg":2
+}

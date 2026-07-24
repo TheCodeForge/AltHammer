@@ -1,0 +1,10 @@
+{
+    "name": "Bombast Field Gun",
+    "keywords":["Blast", "Heavy", "Indirect Fire"],
+    "rng":48,
+    "atk":"d6",
+    "skl":5,
+    "str":7,
+    "ap": 1,
+    "dmg":2
+}

@@ -1,0 +1,13 @@
+{
+    "name":"Twin Siegebreaker Cannon",
+    "keywords":[
+        "Blast",
+        "Twin-Linked"
+    ],
+    "rng":36,
+    "atk":"d6",
+    "skl":3,
+    "str":6,
+    "ap": 0,
+    "dmg":1
+}

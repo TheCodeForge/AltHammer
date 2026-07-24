@@ -1,0 +1,10 @@
+{
+    "name":"Voltaic Storm",
+    "keywords":["Blast", "Sustained Hits 2"],
+    "rng":18,
+    "atk":"d6 + 3",
+    "skl":2,
+    "str":7,
+    "ap": 1,
+    "dmg":2
+}

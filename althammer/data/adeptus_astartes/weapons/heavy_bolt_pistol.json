@@ -1,0 +1,12 @@
+{
+    "name": "Heavy Bolt Pistol",
+    "keywords":[
+        "Pistol"
+    ],
+    "rng":18,
+    "atk":1,
+    "skl":3,
+    "str":4,
+    "ap": 1,
+    "dmg":1
+}

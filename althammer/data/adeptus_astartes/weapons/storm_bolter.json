@@ -1,0 +1,12 @@
+{
+    "name":"Storm Bolter",
+    "keywords":[
+        "Rapid Fire 2"
+    ],
+    "rng":24,
+    "atk":2,
+    "skl":2,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}

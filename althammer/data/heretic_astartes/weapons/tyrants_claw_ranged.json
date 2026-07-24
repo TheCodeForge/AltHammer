@@ -1,0 +1,14 @@
+{
+    "name":"Tyrant's Claw",
+    "keywords":[
+        "Ignores Cover",
+        "Incendiary",
+        "Torrent"
+    ],
+    "rng":12,
+    "atk":"d6",
+    "skl":null,
+    "str":6,
+    "ap": 1,
+    "dmg":1
+}

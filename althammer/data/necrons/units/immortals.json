@@ -1,0 +1,39 @@
+{    
+    "name": "Immortals",
+    "ppm": 15,
+    "move":5,
+    "tough": 5,
+    "save": 3,
+    "hp":1,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Implacable Eradication",
+            "text":"This unit may re-roll Wound rolls of 1. If the attack's target is within range of an objective marker, this unit may re-roll all Wound rolls instead."
+        }
+    ],
+    "range_weapons": [
+        "gauss_blaster",
+        "tesla_carbine"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "5-10 Immortals"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "gauss_blaster"
+    ],
+    "replacement_gear":{
+        "Any model's Gauss Blaster":[
+            "tesla_carbine"
+        ]
+    }
+}

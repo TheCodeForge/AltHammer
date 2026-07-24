@@ -1,0 +1,36 @@
+{    
+    "name": "Hexmark Destroyer",
+    "ppm": 70,
+    "move":7,
+    "tough": 5,
+    "save": 3,
+    "hp":5,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Destroyer",
+        "Character"
+    ],
+    "core_rules": ["Deep Strike", "Lone Operative"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Inescapable Death",
+            "text":"Once per Battle Round, one unit with this ability may use the Overwatch strategem for 0 CP, even if that Strategem has already been used this Battle Round. Additionally, while using the Overwatch strategem, unmodified Hit rolls of 2+ are successful."
+        },
+        {
+            "name":"Multi-Threat Eliminator",
+            "text":"After an enemy unit Shoots a friendly +Necrons+ unit within 3\", this model can perform a Shoot action."
+        }
+    ],
+    "range_weapons": ["enmitic_disintegrator_pistols"],
+    "melee_weapons": [],
+    "composition":[
+        "1 Hexmark Destroyer"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "enmitic_disintegrator_pistols"
+    ]
+}

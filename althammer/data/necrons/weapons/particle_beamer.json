@@ -1,0 +1,13 @@
+{
+    "name": "Particle Beamer",
+    "keywords":[
+        "Blast",
+        "Devastating Wounds"
+    ],
+    "rng":18,
+    "atk":"d6",
+    "skl":2,
+    "str":6,
+    "ap": 0,
+    "dmg":1
+}

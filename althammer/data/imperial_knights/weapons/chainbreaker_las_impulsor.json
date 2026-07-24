@@ -1,0 +1,32 @@
+{
+    "name": "Chainbreaker Las-Impulsor",
+    "profiles":[
+        {
+            "name": "High Intensity",
+            "keywords":[
+                "Blast",
+                "Sustained Hits 1"
+            ],
+            "rng": 24,
+            "atk":"d6",
+            "skl":2,
+            "str":14,
+            "ap": 3,
+            "dmg":4
+        },
+        {
+            "name": "Low Intensity",
+            "keywords":[
+                "Blast",
+                "Sustained Hits 1"
+            ],
+            "rng": 36,
+            "atk":"2d6",
+            "skl":2,
+            "str":7,
+            "ap": 1,
+            "dmg":2
+        }
+    ]
+    
+}

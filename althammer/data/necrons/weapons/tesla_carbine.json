@@ -1,0 +1,13 @@
+{
+    "name": "Tesla Carbine",
+    "keywords":[
+        "Assault",
+        "Sustained Hits 1"
+    ],
+    "rng":18,
+    "atk":2,
+    "skl":3,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}

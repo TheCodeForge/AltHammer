@@ -1,0 +1,68 @@
+{
+    "name": "Deathwatch Chapter",
+    "color": "383f42",
+    "secondary_faction":"Deathwatch",
+    "banned_keywords": ["Mounted"],
+    "rules": [
+        {
+            "name": "Mission Tactics",
+            "lore": "Thousands of years of collated strategic data and hard-won combat experience have provided the Deathwatch with the ultimate battlefield tactics to combat almost any foe.",
+            "text": "At the start of each Battle Round, select one of the following Mission Tactics to be active for your army until the end of the Battle Round.",
+            "options": [
+                {
+                    "name": "Furor Tactics",
+                    "lore": "When the enemy horde grows close, the Deathwatch will be tasked with the decimation of their core. ",
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Sustained Hits 1]+."
+                },
+                {
+                    "name": "Malleus Tactics",
+                    "lore": "Even the largest behemoth has a weak point, and the archives of the Deathwatch number them all.",
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Lethal Hits]+."
+                },
+                {
+                    "name": "Purgatus Tactics",
+                    "lore": "The Deathwatch focus their deadly ire upon the commanders of the enemy host, assassinating them one after another.",
+                    "text": "Your +Adeptus Astartes+ units' weapons have +[Precise]+."
+                }
+            ]
+        },
+        {
+            "name": "Kill Teams",
+            "lore": "When faced with an array of missions to complete and varying enemies to lay low, the Deathwatch are highly adept at forming effective kill teams that mesh starkly diverse armour and equipment.",
+            "text": "Attacks which target your +Kill Team+ units use the Toughness trait of the majority of models in the unit. If two or more Toughness traits are tied, use the better Toughness trait."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Teleportarium",
+            "cost": 1,
+            "when": "At the end of a Battle Round",
+            "target": "Up to two +Kill Team+ units from your army, or one +Adeptus Astartes+ unit from your army.",
+            "effect": "Remove the selected units and place them in Reserves. They may be deployed during the next Battle Round."
+        },
+        {
+            "name": "Adoptive Tactics",
+            "cost": 1,
+            "when": "At the start of a Battle Round",
+            "target": "Up to two +Kill Team+ units from your army, or one +Adeptus Astartes+ unit from your army.",
+            "effect": "Select a Mission Tactic. That Mission Tactic is active for the selected units until the end of the Battle Round, instead of the Mission tactic active for the rest of your army."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Student of the Codex",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"The Emperor Protects",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Personal Teleportarium",
+            "cost":40,
+            "text":"Your +Warlord+ (and its attached unit, if any) may use the Teleportarium strategem for free. (Only your +Warlord+'s unit may be targeted with the strategem when doing so)."
+        }
+    ]
+}

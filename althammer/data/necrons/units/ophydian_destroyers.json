@@ -1,0 +1,33 @@
+{    
+    "name": "Ophydian Destroyers",
+    "ppm": 30,
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":3,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Destroyer"
+    ],
+    "core_rules": ["Deep Strike"],
+    "faction_rules": ["Reanimation Protocols"],
+    "unit_rules": [{
+            "name":"Tunneling Horrors",
+            "text": "At the end of the Battle Round, if this unit is not within Melee Distance, it may be removed from the battlefield. At the start of the next Battle Round, set it up anywhere on the Battlefield that is more than 9\" horizontally from all enemy models."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["hyperphase_blades"],
+    "wargear":["plasmacyte"],
+    "composition":[
+        "3-6 Ophydian Destroyers",
+        "1 Plasmacyte token per 3 Ophydian Destroyers"
+    ],
+    "models_min": 3,
+    "models_max": 6,
+    "default_gear":[
+        "hyperphase_blades"
+    ]
+}

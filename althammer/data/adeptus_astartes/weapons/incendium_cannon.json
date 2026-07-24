@@ -1,0 +1,10 @@
+{
+    "name":"Incendium Cannon",
+    "keywords":["Ignores Cover", "Torrent", "Incendiary"],
+    "rng":12,
+    "atk":"d6 + 3",
+    "skl":null,
+    "str":6,
+    "ap": 1,
+    "dmg":1
+}

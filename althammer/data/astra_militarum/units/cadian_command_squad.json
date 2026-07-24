@@ -1,0 +1,77 @@
+{    
+    "name": "Cadian Command Squad",
+    "ppm": 13,
+    "profiles": [
+        {
+            "name": "Cadian Commander",
+            "base": 28,
+            "move":6,
+            "tough": 3,
+            "save": 5,
+            "hp":3,
+            "lead": 7,
+            "oc": 1,
+            "keywords": ["Character", "Officer"],
+            "default_gear":[
+                "laspistol",
+                "chainsword"
+            ],
+            "qty":1
+        },
+        {
+            "name": "Cadian Veteran Guardsman",
+            "base": 28,
+            "move":6,
+            "tough": 3,
+            "save": 5,
+            "hp":1,
+            "lead": 7,
+            "oc": 1,
+            "default_gear": [
+                "laspistol",
+                "close_combat_weapon"
+            ],
+            "qty":4
+        }
+    ],
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Cadian"
+    ],
+    "core_rules": ["Leader [Cadian]", "Second in Command"],
+    "faction_rules": ["Voice of Command"],
+    "unit_rules": [{
+            "name":"Cadia Stands!",
+            "text":"While this unit contains a +Cadian Officer+ model, this unit may ignore any or all modifiers to this unit's traits and to any roll or test made for models in the unit (excluding modifiers to Save rolls)."
+        },
+        {
+            "name":"Orders",
+            "text":"This unit's +Officer+ can issue 1 Order to a +Regiment+ unit."
+        }
+    ],
+    "range_weapons": [
+        "laspistol"
+    ],
+    "melee_weapons": [
+        "chainsword",
+        "close_combat_weapon"
+    ],
+    "wargear":[
+        "master_vox",
+        "medi_pack",
+        "regimental_standard"
+    ],
+    "composition":[
+        "1 Cadian Commander",
+        "4-9 Cadian Veteran Guardsmen"
+    ],
+    "models_min": 5,
+    "models_max": 5,
+    "additional_gear":[
+        "1 Cadian Veteran Guardsman has a Chainsword",
+        "1 other Cadian Veteran Guardsman has a Master Vox",
+        "1 other Cadian Veteran Guardsman has a Medi-pack",
+        "1 other Cadian Veteran Guardsman has a Regimental Standard"
+    ]
+}

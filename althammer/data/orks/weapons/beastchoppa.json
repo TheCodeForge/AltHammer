@@ -1,0 +1,12 @@
+{
+    "name": "Beastchoppa",
+    "keywords":[
+        "Anti-Monster 4+",
+        "Anti-Vehicle 4+"
+    ],
+    "atk":6,
+    "skl":2,
+    "str":6,
+    "ap": 1,
+    "dmg":2
+}

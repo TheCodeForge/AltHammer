@@ -1,0 +1,10 @@
+{
+    "name": "Sceptre of Eternal Glory",
+    "keywords": ["Devastating Wounds"],
+    "rng":24,
+    "atk":2,
+    "skl":2,
+    "str":10,
+    "ap": 4,
+    "dmg":3
+}

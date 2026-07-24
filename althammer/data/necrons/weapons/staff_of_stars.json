@@ -1,0 +1,10 @@
+{
+    "name": "Staff of Stars",
+    "keywords": ["Indirect Fire"],
+    "rng":24,
+    "atk":12,
+    "skl":2,
+    "str":6,
+    "ap": 1,
+    "dmg":1
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Tachyon Arrow",
+    "keywords": ["One-Shot"],
+    "rng":72,
+    "atk":1,
+    "skl":2,
+    "str":16,
+    "ap": 5,
+    "dmg":"d6 + 2"
+}

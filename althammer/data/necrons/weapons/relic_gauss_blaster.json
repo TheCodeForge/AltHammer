@@ -1,0 +1,13 @@
+{
+    "name": "Relic Gauss Blaster",
+    "keywords":[
+        "Lethal Hits",
+        "Rapid Fire 2"
+    ],
+    "rng":24,
+    "atk":2,
+    "skl":3,
+    "str":5,
+    "ap": 1,
+    "dmg":2
+}

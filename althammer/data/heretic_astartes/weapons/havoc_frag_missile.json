@@ -1,0 +1,12 @@
+{
+    "name":"Havoc Frag Missile",
+    "keywords":[
+        "Blast"
+    ],
+    "rng":48,
+    "atk":"d6",
+    "skl":3,
+    "str":4,
+    "ap": 0,
+    "dmg":1
+}
