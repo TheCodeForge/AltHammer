@@ -19,6 +19,14 @@ def rules_x(x):
     except jinja2.exceptions.TemplateNotFound:
         abort(404)
 
+
+@app.get("/lore/<x>")
+def rules_x(x):
+    try:
+        return render_template(safe_join("lore", f"{x}.html"))
+    except jinja2.exceptions.TemplateNotFound:
+        abort(404)
+
 @app.get("/assets/style/<stylefile>.css")
 @app.get("/assets/style/<stylefile>/<color>.css")
 @cache.memoize()
