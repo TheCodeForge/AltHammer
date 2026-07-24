@@ -3,5 +3,12 @@
     "name": "Shattered Legions",
     "lore": "Engineered superhuman warriors designed by the Shattered King himself, the Legions follow in His footsteps to rid the universe of the threats it contains, and seek a permanent end to the Cataclysm.",
     "keywords": ["Humanity"],
-    "color":"c8ad55"
+    "color":"c8ad55",
+    "rules": [
+        {
+        "name": "Vow of Eternity",
+        "lore": "The Shattered Legions, in their service to the King and eachother, swear oaths before and during battle to accomplish their goals.",
+        "text": "At the start of the Battle Round, select an enemy unit. Until the end of the Battle Round, your +Shattered Legions+ units have +1 to Hit rolls made against that unit."
+        }
+    ],
 }

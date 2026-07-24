@@ -1,0 +1,67 @@
+{
+    "name": "Sons of the Shattered King",
+    "color": "363d42",
+    "secondary_faction":null,
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "Wisdom of the Shattered",
+            "lore": "The warriors of the Shattered Legions strive to emulate their King in all they do. Inspired by recorded accounts of His deeds in battle, they employ ever-shifting tactics to respond to threats and eliminate their enemies. Few can match their flexibility and adaptability in warfare.",
+            "text": "At the start of each Battle Round, select one of the three Tactics below. It is active for your whole army until the end of the Battle Round.",
+            "options": [
+                {
+                    "name": "Unrelenting Aggression",
+                    "text": "Your +Shattered Legions+ units can Shoot after making an Advance move."
+                },
+                {
+                    "name": "Feigned Retreat",
+                    "text": "Your +Shattered Legions+ units can Shoot and Charge after making a Fall Back move."
+                },
+                {
+                    "name": "Unrelenting Aggression",
+                    "text": "Your +Shattered Legions+ units can Charge after making an Advance move."
+                }
+            ]
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Second Vow",
+            "cost": 1,
+            "when": "At the start of the Battle Round",
+            "target": "Any one enemy unit",
+            "effect": "Until the end of the Battle Round, if the enemy unit selected for \"Vow of Eternity\" is destroyed, the target unit immediately becomes selected for Vow of Eternity."
+        },
+        {
+            "name": "Inhuman Strategy",
+            "cost": 1,
+            "when": "Any time",
+            "target": "A \"Wisdom of the Shattered\" Tactic, other than the one chosen at the beginning of the Battle Round. ",
+            "effect": "Until the end of the Battle Round, the target Tactic is now active for your army, instead of any other Tactic."
+        },
+        {
+            "name": "Protection of the Shattered King",
+            "cost": 1,
+            "when": "After an Activated enemy unit declares an attack",
+            "target": "The +Shattered Legions+ unit being attacked",
+            "effect": "Until the end of the Battle Round, attacks made against the target unit have their Armor Break worsened by 1 (to a minimum of 0)."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Scion of the Shattered",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"Blessings of the Shattered King",
+            "cost":20,
+            "text":"Your +Warlord+ gains !Feel No Pain 6+!."
+        },
+        {
+            "name":"Fervent Crusaders",
+            "cost":40,
+            "text":"At the start of the battle, select a second Templar Vow. It applies only to your +Warlord+ (and their attached unit, if any). Your +Warlord+ may not be targed with the Fervent Acclamation strategem."
+        }
+    ]
+}
