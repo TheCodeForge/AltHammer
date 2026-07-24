@@ -3,21 +3,5 @@
     "name": "Shattered Legions",
     "lore": "Engineered superhuman warriors designed by the Shattered King himself, the Legions follow in His footsteps to rid the universe of the threats it contains, and seek a permanent end to the Cataclysm",
     "keywords": ["Humanity"],
-    // "rules": [
-    //     {
-    //     "name": "Oath of Moment",
-    //     "lore": "In battle, Space Marines swear mighty oaths to ruin the enemies of the Imperium and uphold the honor of their Chapter. When the Space Marines strike, they do so with precision, reading the shifting battle with post-human speed and clarity, directing their wrath towards one priority target after another. Command assets, heavy artilery, and vaunted elites are laid waste with horrifying speed, until the Emperor's angels stand victorious over a field of smoulering ruin.",
-    //     "text": "At the start of your Command phase, select one unit from your opponent’s army. Until the start of your next Command phase, each time an +Adeptus Astartes+ model from your army makes an attack that targets that enemy unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
-    //     }
-    // ],
-    // "strategems": [
-    //     {
-    //         "name": "Armor of Contempt",
-    //         "cost": 1,
-    //         "when": "Immediately after an enemy unit has declared a Ranged or Melee attack",
-    //         "target": "Your unit being attacked",
-    //         "effect": "Until the end of the Battle Round, your unit has +1 to its Saving Rolls."
-    //     }
-    // ],
     "color":"004488"
 }
