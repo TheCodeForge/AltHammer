@@ -52,7 +52,6 @@ class Unit(Base):
             lead=self.lead
             oc=self.oc
             move=self.move
-            weapons = self.default_weapons
 
         for x in self.core_rules:
             if not x.startswith('Feel No Pain'):
@@ -71,9 +70,22 @@ class Unit(Base):
         if "Stealth" in self.keywords:
             defensive *= 1.2
         
-        offensive = 0
-        for weapon in weapons:
-            offensive += weapon.weapon_points_raw
+        ranged_offensive = 0
+        melee_offensive = 0
+
+        #monsters and vehicles can fire all guns; infantry cannot
+        if any([x in self.keywords for x in ["Vehicle", "Monster"]])
+            for weapon in self.ranged_weapons:
+                ranged_offensive += weapon.weapon_points_raw
+        else:
+            ranged_offensive = max([weapon.weapon_points_raw for weapon in self.ranged_weapons if weapon in self.default_weapons])
+
+        #count highest melee, then add extra attacks
+        melee_offensive = max([weapon.weapon_points_raw for weapon in self.melee_weapons if "Extra Attacks" not in weapon.keywords])
+        for weapon in self.melee weapons if "Extra Attacks" in weapon.keywords:
+            melee_offensive += weapon.weapon_points_raw
+
+        offensive = melee_offensive + ranged_offensive
 
         if isinstance(move, str):
             move=int(move.rstrip('+'))
