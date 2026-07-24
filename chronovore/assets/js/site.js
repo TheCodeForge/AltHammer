@@ -185,7 +185,7 @@ $("#dark-mode-toggle").click(function(){
     })
 })
 
-$('.list-qty').change(function(){
+$('.list-qty').input(function(){
 
   //skip from 0 to acceptable min value and back
   if ($(this).val()<parseInt($(this).data('min')) ){
