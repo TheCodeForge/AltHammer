@@ -1,0 +1,57 @@
+{    
+    "name": "Shattered Warriors",
+    "ppm":16,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 2,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades"
+    ],
+    "core_rules": ["Secure Objectives"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [],
+    "range_weapons": [
+        "bolt_pistol",
+        "bolt_rifle",
+        "hand_flamer",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "astartes_chainsword",
+        "close_combat_weapon",
+        "power_fist",
+        "power_weapon",
+        "thunder_hammer"
+    ],
+    "composition":[
+        "1 Sergeant",
+        "4-9 Warriors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "bolt_pistol",
+        "bolt_rifle",
+        "close_combat_weapon"
+    ],
+    "replacement_gear":{
+        "Sergeant's Bolt Rifle":[
+            "astartes_chainsword",
+            "hand_flamer",
+            "plasma_pistol",
+            "power_weapon"
+        ],
+        "Intercessor Sergeant's Close Combat Knives":[
+            "astartes_chainsword",
+            "power_fist",
+            "power_weapon",
+            "thunder_hammer"
+        ]
+    }
+}
