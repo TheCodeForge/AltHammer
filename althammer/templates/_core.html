@@ -10,7 +10,7 @@
   <link href="/assets/fontawesome/css/all.min.css" rel="stylesheet">
 
   {% block metadata %}
-  {% block title %}<title>{{ SITE_NAME | app_config }}</title>{% endblock %}
+  {% block title %}<title>{{ 'SITE_NAME' | app_config }}</title>{% endblock %}
   {% block meta %}<meta name="description" content="Tabletop Wargaming Done Right">{% endblock %}
   {% endblock %}
 
@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light px-2 px-md-5">
     <div class="container-fluid">
-      <a class="navbar-brand text-primary" href="/">{{ SITE_NAME | app_config }}</a>
+      <a class="navbar-brand text-primary" href="/">{{ 'SITE_NAME' | app_config }}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
