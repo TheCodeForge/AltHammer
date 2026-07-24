@@ -1,8 +1,8 @@
-from althammer.helpers.get import *
+from chronovore.helpers.get import *
 
 from flask import *
 
-from althammer.__main__ import app
+from chronovore.__main__ import app
 
 
 @app.post('/armylist')

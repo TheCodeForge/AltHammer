@@ -2,14 +2,14 @@ import json
 import os
 from werkzeug.utils import safe_join
 
-from althammer.helpers.lazy import lazy
+from chronovore.helpers.lazy import lazy
 
 from .base import Base
 from .detachment import Detachment
 from .unit import Unit
 from .weapon import Weapon
 
-from althammer.__main__ import cache
+from chronovore.__main__ import cache
 
 class Faction(Base):
 
@@ -26,9 +26,9 @@ class Faction(Base):
 
         output = []
 
-        root, dirs, files = next(os.walk(f"althammer/data/{self.id}/detachments"))
+        root, dirs, files = next(os.walk(f"chronovore/data/{self.id}/detachments"))
         for filename in files:
-            with open(f"althammer/data/{self.id}/detachments/{filename}", "r+") as unitfile:
+            with open(f"chronovore/data/{self.id}/detachments/{filename}", "r+") as unitfile:
                 try:
                     d=Detachment(json.load(unitfile), id=filename.split('.')[0])
                     d.faction=self
@@ -43,7 +43,7 @@ class Faction(Base):
     @cache.memoize()
     def detachment(self, id):
 
-        path = safe_join(f"althammer/data/{self.id}/detachments", f"{id}.json")
+        path = safe_join(f"chronovore/data/{self.id}/detachments", f"{id}.json")
 
         try:
             with open(path, "r+") as file:
@@ -60,7 +60,7 @@ class Faction(Base):
     @lazy
     def unit(self, id):
 
-        path=safe_join(f"althammer/data/{self.id}/units", f"{id}.json")
+        path=safe_join(f"chronovore/data/{self.id}/units", f"{id}.json")
 
         try:
             with open(path, "r+") as file:
@@ -87,7 +87,7 @@ class Faction(Base):
     @lazy
     def weapon(self, id):
 
-        path=f"althammer/data/{self.id}/weapons/{id}.json"
+        path=f"chronovore/data/{self.id}/weapons/{id}.json"
 
         with open(path, "r+") as file:
             data=json.load(file)
@@ -120,9 +120,9 @@ class Faction(Base):
         categories = {x:[] for x in cats}
 
 
-        root, dirs, files = next(os.walk(f"althammer/data/{self.id}/units"))
+        root, dirs, files = next(os.walk(f"chronovore/data/{self.id}/units"))
         for filename in files:
-            with open(f"althammer/data/{self.id}/units/{filename}", "r+") as unitfile:
+            with open(f"chronovore/data/{self.id}/units/{filename}", "r+") as unitfile:
                 # print(f"trying {filename}")
                 try:
                     u=Unit(json.load(unitfile))

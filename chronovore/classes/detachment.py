@@ -1,8 +1,8 @@
-from althammer.helpers.lazy import lazy
+from chronovore.helpers.lazy import lazy
 
 from .base import Base
 
-from althammer.__main__ import cache
+from chronovore.__main__ import cache
 
 class Detachment(Base):
 

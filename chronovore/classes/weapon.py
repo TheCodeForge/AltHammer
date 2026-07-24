@@ -1,11 +1,11 @@
 import math
 
-from althammer.helpers.lazy import lazy
-from althammer.helpers.sigmoid import sigmoid
+from chronovore.helpers.lazy import lazy
+from chronovore.helpers.sigmoid import sigmoid
 
 from .base import Base
 
-from althammer.__main__ import cache
+from chronovore.__main__ import cache
 
 class Weapon(Base):
 
